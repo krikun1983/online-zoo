@@ -1,13 +1,19 @@
 /* COLORS */
 @import 'basic';
 $bg-header: #F58021;
+$bg-btn: #F58021;
+$bg-btn-hover: #D26004;
 $bg-white: #FFFFFF;
+$text-white: #FFFFFF;
 $text-default: #000000;
 $text-alter: #20113D;
 $nav-active: #00A092;
+$main-header:#00A092;
 
 /* FONTS */
+$main-text-font: 'Montserrat Regular';
 $nav-font: 'Montserrat Semibold';
+$main-header-font: 'Montserrat Bold';
 
 /* DEVICE-WIDTH */
 $desktop: 140rem;

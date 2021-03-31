@@ -16,13 +16,14 @@
   width: 100%;
   height: 11rem;
   background-color: $bg-header;
-}
 
-.header__container {
-  @include flex-block-justify();
-  margin: 0 auto;
-  width: 100%;
-  max-width: $desktop;
+    &__container {
+      @include flex-block-justify();
+      margin: 0 auto;
+      width: 100%;
+      max-width: $desktop;
+    }
+
 }
 
 //==menu==//
@@ -30,39 +31,43 @@
   @include flex-block-justify();
   width: 100%;
   max-width: 80rem;
-}
 
-.nav__list {
-  @include flex-block-justify();
-  width: 100%;
-  max-width: 55rem;
-}
+    &__list {
+      @include flex-block-justify();
+      width: 100%;
+      max-width: 55rem;
+    }
 
-.nav__item {
-  cursor: pointer;
-  text-transform: uppercase;
-  font-family: $nav-font;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
+    &__item {
+      cursor: pointer;
+      text-transform: uppercase;
+      font-family: $nav-font;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+    }
+
 }
 
 .nav__link {
   text-decoration: none;
   color: $text-default;
+
   &:hover {
     filter: opacity(0.5);
   }
+
   &:active {
     color: $nav-active;
     filter: opacity(0.5);
   }
-}
 
-.nav__link_active {
-  color:$nav-active;
-  &:hover {
-    filter: none;
+  &_active {
+    color:$nav-active;
+    &:hover {
+      filter: none;
+    }
   }
+
 }
 
 //==social==//
@@ -70,14 +75,14 @@
   @include flex-block-justify();
   width: 180px;
   list-style: none;
-}
 
-.social__item {
-  display: block;
-  width: 40px;
-  height: 40px;
-    &:hover {
-    opacity: .6;
+    &__item {
+    display: block;
+    width: 40px;
+    height: 40px;
+      &:hover {
+      opacity: .6;
+      }
     }
 }
 
@@ -97,5 +102,61 @@
   background-image: url('../icons/Facebook.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+//======Watch your favorite animal online======//
+.favorite {
+  width: 100%;
+  height: 790px;
+  background-image: url('../images/bgPanda.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $desktop;
+      padding-top: 12.8rem;
+    }
+    &__header {
+      width: 89rem;
+      font-family: $main-header-font;
+      font-size: 8.2rem;
+      line-height: 10rem;
+      text-transform: uppercase;
+      color: $main-header;
+      letter-spacing: 0.07rem;
+      margin-bottom: 3.2rem;
+    }
+    &__text {
+      width: 43rem;
+      font-family: $main-text-font;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-default;
+      margin-bottom: 4.5rem;
+    }
+    &__btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 24rem;
+      height: 7.4rem;
+      background-color: $bg-btn;
+      font-family: $nav-font;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 5px;
+      border: none;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-btn-hover;
+      }
+    }
 }
 
