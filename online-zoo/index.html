@@ -45,7 +45,7 @@
         <h2 class="favorite__header">Watch your favorite animal online</h2>
         <p class="favorite__text">Explore the exciting and mysterious world of wild animals in a natural setting without
           leaving your home.</p>
-        <button class="favorite__btn">view live cam <img src="assets/icons/Union.svg" alt=""></button>
+        <button class="favorite__btn" type="submit">view live cam <img src="assets/icons/Union.svg" alt=""></button>
       </div>
     </section>
     <section class="welcome">
@@ -77,8 +77,24 @@
         </article>
       </div>
     </section>
-
+    <section class="donation">
+      <div class="donation__container">
+        <div class="donation__main">
+          <h4 class="donation__heading">Your donation makes a difference!</h4>
+          <p class="donation__text">The Online Zoo's animal webcams are some of the most famous on the internet. Tune in
+            to watch your
+            favourite animals — live, 24/7!</p>
+        </div>
+        <form class="donation__form" action="#">
+          <label class="donation__label" for="donations" name="donation">Quick Donate</label>
+          <input class="donation__input" type="number" id="donations" placeholder="Donation amount" min="0" max="9999"
+            maxlength="9999">
+          <button class="donation__btn" type="submit"><img src="assets/icons/Union.svg" alt=""></button>
+        </form>
+      </div>
+    </section>
   </main>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

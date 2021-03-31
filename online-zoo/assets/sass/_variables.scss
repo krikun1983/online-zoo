@@ -1,6 +1,7 @@
 /* COLORS */
 @import 'basic';
 $bg-header: #F58021;
+$bg-donation: #20113D;
 $bg-btn: #F58021;
 $bg-btn-hover: #D26004;
 $bg-white: #FFFFFF;
@@ -11,8 +12,9 @@ $nav-active: #00A092;
 $main-header:#00A092;
 
 /* FONTS */
-$main-text-font: 'Montserrat Regular';
-$nav-font: 'Montserrat Semibold';
+$main-text-font: 'Montserrat Regular'; //400
+$donation-header-font: 'Montserrat Medium'; //500
+$nav-font: 'Montserrat Semibold'; //600
 $heading-font: 'Montserrat Semibold';
 $main-header-font: 'Montserrat Bold';
 
