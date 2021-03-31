@@ -1,0 +1,9 @@
+@font-face {
+  font-family: 'Montserrat Semibold';
+  src: url('Montserrat-SemiBold.eot');
+  src: url('Montserrat-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url('Montserrat-SemiBold.woff') format('woff'),
+  url('Montserrat-SemiBold.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}

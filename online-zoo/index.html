@@ -6,12 +6,50 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="assets/css/normalize.css">
+  <link rel="stylesheet" href="assets/css/fonts.css">
   <link rel="stylesheet" href="assets/css/style.css">
   <title>online-zoo</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo">
+        <a href="#" title="Logo">
+          <img src="assets/images/logo.svg" alt="logo">
+        </a>
+      </div>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item nav__item_active"><a class="nav__link" href="#"></a>about</li>
+          <li class="nav__item"><a class="nav__link" href="#"></a>map</li>
+          <li class="nav__item"><a class="nav__link" href="#"></a>zoos</li>
+          <li class="nav__item"><a class="nav__link" href="#"></a>contact us</li>
+          <li class="nav__item"><a class="nav__link" href="#"></a>Design</li>
+        </ul>
+        <ul class="social">
+          <li><a class="social__item icon_yt" href="#"></a></li>
+          <li><a class="social__item icon_inst" href="#"></a></li>
+          <li><a class="social__item icon_fb" href="#"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
 </body>
 
 </html>
+
+<!-- Header (<header> содержит только логотип, панель навигации и иконки соц. сетей)
+  Логотип находится слева. Нажатие на логотип работает по принципу нажатия на About, перебрасывает нас на текущую
+  страницу, на First Page (Landing).
+  Интерактивная панель навигации.
+  Нажатие на Map перебрасывает нас на Map Page.
+  Нажатие на Zoos перебрасывает нас на Zoos Page Panda.
+  Нажатие на Contact Us перебрасывает нас на Contact Us.
+  Нажатие на Design перебрасывает нас на оригинальную страницу Figma.
+  Должен быть подсвечен первый элемент About. И он должен перестать быть интерактивным.
+  Интерактивная панель соцсетей. Нажатия на иконки соцсетей могут вести просто на заглавные страницы соотвествующих
+  ресурсов.
+  На странице обязательно должен присутствовать один элемент <h1>. В нем должен быть текст Online Zoo.
+    Хедер "липким" делать не нужно. Т.е. при скролле он остается на своей позиции. -->
