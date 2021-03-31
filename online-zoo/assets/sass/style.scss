@@ -35,26 +35,34 @@
 .nav__list {
   @include flex-block-justify();
   width: 100%;
-  max-width: 55.6rem;
+  max-width: 55rem;
 }
 
 .nav__item {
   cursor: pointer;
-  font-size: 1.8rem;
-  font-family: $nav-font;
   text-transform: uppercase;
-  line-height: 150%;
+  font-family: $nav-font;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: $text-default;
   &:hover {
     filter: opacity(0.5);
   }
   &:active {
-    color:$nav-active;
+    color: $nav-active;
     filter: opacity(0.5);
   }
 }
 
-.nav__item_active {
+.nav__link_active {
   color:$nav-active;
+  &:hover {
+    filter: none;
+  }
 }
 
 //==social==//

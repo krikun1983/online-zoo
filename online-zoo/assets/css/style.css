@@ -59,7 +59,7 @@ li {
           align-items: center;
   margin: 0 auto;
   width: 100%;
-  max-width: 144rem;
+  max-width: 140rem;
 }
 
 .nav {
@@ -87,30 +87,40 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 55.6rem;
+  max-width: 55rem;
 }
 
 .nav__item {
   cursor: pointer;
-  font-size: 1.8rem;
-  font-family: "Montserrat Semibold";
   text-transform: uppercase;
-  line-height: 150%;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
 }
 
-.nav__item:hover {
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__link:hover {
   -webkit-filter: opacity(0.5);
           filter: opacity(0.5);
 }
 
-.nav__item:active {
+.nav__link:active {
   color: #00A092;
   -webkit-filter: opacity(0.5);
           filter: opacity(0.5);
 }
 
-.nav__item_active {
+.nav__link_active {
   color: #00A092;
+}
+
+.nav__link_active:hover {
+  -webkit-filter: none;
+          filter: none;
 }
 
 .social {
