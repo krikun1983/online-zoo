@@ -73,13 +73,13 @@
 //==social==//
 .social {
   @include flex-block-justify();
-  width: 180px;
+  width: 18rem;
   list-style: none;
 
     &__item {
     display: block;
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
       &:hover {
       opacity: .6;
       }
@@ -160,3 +160,55 @@
     }
 }
 
+//======Welcome to the zoo / How it works======//
+.welcome {
+  width: 100%;
+  height: 15.1rem;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $desktop;
+    }
+
+    &__news {
+      @include flex-block-justify();
+      margin-top: 15rem;
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__heading {
+      font-family: $heading-font;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $main-header;
+      margin-bottom: 5rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 56rem;
+      font-family: $main-text-font;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-default;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 80rem;
+
+      img {
+        width: 100%;
+        height: auto;
+      }
+
+    }
+}
+
+//======Your donation makes a difference======//
