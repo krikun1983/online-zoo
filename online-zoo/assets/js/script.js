@@ -1,3 +1,4 @@
+//Ограничеваю фрму с донатом в 4 символа
 document.querySelector('.donation__input').onclick = numberLimitation;
 
 function numberLimitation(input, limit) {
@@ -21,3 +22,16 @@ function numberLimitation(input, limit) {
 }
 
 numberLimitation("#donations", 4);
+
+//меняю стрелку у кнопок
+
+// document.querySelector('.friends__left').onclick = arrow;
+// document.querySelector('.friends__right').onclick = arrow;
+
+// function arrow(cls, img, color) {
+//   document.querySelector(`${cls} img`).setAttribute('src', img);
+//   document.querySelector(cls).style.backgroundColor = color;
+// }
+
+// arrow('.friends__left', '../assets/icons/UnionLeftInvert.svg', '#20113D');
+// arrow('.friends__right', '../assets/icons/UnionRightInvert.svg', '#20113D');
