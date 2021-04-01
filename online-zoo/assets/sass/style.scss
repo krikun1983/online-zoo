@@ -549,9 +549,89 @@
 }
 
 //======Pay and feed======//
-
-.pay-feed {
+.payfeed {
   width: 100%;
   height: 220.5rem;
   background-color: $bg-donation;
+
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
+  }
+
+  &__heading {
+    font-family: $nav-font;
+    font-size: 5.4rem;
+    line-height: 6.6rem;
+    color: $text-white;
+    padding-top: 9rem;
+  }
+  &__numbers {
+    margin: 10rem 0 5rem;
+    width: 100%;
+    color: $text-white;
+    font-family: $donation-header-font;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    @include flex-block-justify();
+    hr {
+      width: 92%;
+    }
+  }
+  &__items {
+    padding-top: 3rem;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+  &__block {
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-right: 12rem;
+    width: 100%;
+    max-width: 56rem;
+    color: $text-white;
+
+      &_foods {
+        display: inline-block;
+        width: 100%;
+      }
+      &_heading {
+        width: 100%;
+        max-width: 51rem;
+        margin: 3rem 0 5rem;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        font-family: $donation-header-font;
+      }
+      &_text {
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        font-family: $main-text-font;
+      }
+  }
+  &__btn {
+    margin-top: 4rem;
+    margin-left: 72rem;
+    @include flex-block-center();
+    width: 24rem;
+    height: 7.4rem;
+    background-color: $bg-btn;
+    font-family: $nav-font;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-btn-hover;
+      }
+  }
 }
