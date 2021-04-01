@@ -635,3 +635,171 @@
       }
   }
 }
+
+//======What our users think======//
+.users_think {
+  padding-top: 10rem;
+  width: 100%;
+  height: 177.6rem;
+  background-color: $bg-donation;
+  background-image: url('../images/pandaGradient.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  &__container {
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
+  }
+
+  &__heading {
+    width: 100%;
+    max-width: 44rem;
+    font-family: $nav-font;
+    font-size: 5.4rem;
+    line-height: 6.6rem;
+    text-transform: uppercase;
+    color: $text-white;
+  }
+
+  &__text {
+    margin-top: 4rem;
+    width: 100%;
+    max-width: 56rem;
+    font-family: $nav-font;
+    font-size: 2.6rem;
+    line-height: 3.4rem;
+    color: $text-white;
+    letter-spacing: -0.2px;
+  }
+
+  &__cards {
+    position: absolute;
+    top: 0;
+    right: -25rem;
+    display: flex;
+    flex-wrap: wrap;
+    width: 106rem;
+    gap: 3rem;
+  }
+
+  &__card {
+    position: relative;
+    padding-top: 13.6rem;
+    padding-left: 5rem;
+    width: 51.5rem;
+    height: 46.3rem;
+    background-color: $bg-white;
+    border-radius: 0.5rem;
+    &::before {
+      content: "“";
+      position: absolute;
+      top: 2rem;
+      left: 3.7rem;
+      font-family: $cards-font;
+      font-size: 12rem;
+      line-height: 14.6rem;
+      color: $cards-icon;
+    }
+    &_heading {
+      font-family: $donation-header-font;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      margin-bottom: 2rem;
+    }
+    &_text {
+      width: 41.5rem;
+      font-family: $main-text-font;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+    }
+    &_author {
+      position: absolute;
+      left: 5rem;
+      bottom: 7rem;
+      margin-top: 4.6rem;
+      text-transform: uppercase;
+      font-family: $nav-font;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+    }
+  }
+
+  &__arrow {
+    width: 18.5rem;
+    margin: 0 auto;
+    margin-top: 70rem;
+    @include flex-block-center();
+    justify-content: space-between;
+  }
+
+  &__left {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-white;
+    background-color: transparent;
+    background-image: url('../icons/UnionLeftWhite.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      background-color: $btn-alt;
+      background-image: url('../icons/UnionLeftWhite.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+  &__right {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-white;
+    background-color: $bg-white;
+    background-color: transparent;
+    background-image: url('../icons/UnionRightWhite.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      background-color: $btn-alt;
+      background-image: url('../icons/UnionRightWhite.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+
+  &__leave {
+    margin-top: 38rem;
+    width: 100%;
+  }
+  &__leave_btn {
+    @include flex-block-center();
+    text-transform: uppercase;
+    width: 36rem;
+    height: 7.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-white;
+    background-color: transparent;
+    background-image: url('../icons/UnionRightWhite.svg');
+    background-repeat: no-repeat;
+    background-position: 77% 50%;
+    padding-right: 35px;
+    &:hover {
+      background-color: $btn-alt;
+      background-image: url('../icons/UnionRightInvert.svg');
+      background-repeat: no-repeat;
+      background-position: 77% 50%;
+    }
+  }
+  &__leave_link {
+    text-decoration: none;
+    font-family: $nav-font;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    &:hover {
+      color: $text-white;
+    }
+  }
+}
