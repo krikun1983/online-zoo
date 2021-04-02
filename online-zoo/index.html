@@ -19,6 +19,7 @@
           <img src="assets/images/logo.svg" alt="logo">
         </a>
       </div>
+      <h1 class="main_heading">Online Zoo</h1>
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item"><a class="nav__link nav__link_active" href="index.html">about</a></li>
@@ -50,7 +51,7 @@
     </section>
     <section class="welcome">
       <div class="welcome__container">
-        <article class="welcome__news">
+        <div class="welcome__news">
           <div class="welcome__main">
             <h3 class="welcome__heading">Welcome to the Online Zoo!</h3>
             <p class="welcome__text">On our website, using live webcams, fans of all ages can observe various animals.
@@ -62,8 +63,8 @@
           <div class="welcome__img">
             <img src="assets/images/group11.png" alt="Welcome to the Online Zoo!">
           </div>
-        </article>
-        <article class="welcome__news">
+        </div>
+        <div class="welcome__news">
           <div class="welcome__img">
             <img src="assets/images/group12.png" alt="How we work">
           </div>
@@ -74,7 +75,7 @@
               wellness of the animals. To continue these efforts, we need your help. We're so grateful to our numerous
               supporters. All donations, large and small, go a long way to the conservation efforts of our pets.</p>
           </div>
-        </article>
+        </div>
       </div>
     </section>
     <section class="donation">
@@ -86,9 +87,8 @@
             favourite animals — live, 24/7!</p>
         </div>
         <form class="donation__form" action="#">
-          <label class="donation__label" for="donations" name="donation">Quick Donate</label>
-          <input class="donation__input" type="number" id="donations" placeholder="Donation amount" min="0" max="9999"
-            maxlength="9999">
+          <label class="donation__label" for="donations">Quick Donate</label>
+          <input class="donation__input" type="number" id="donations" placeholder="Donation amount" min="0" max="9999">
           <button class="donation__btn" type="submit"><img src="assets/icons/Union.svg" alt=""></button>
         </form>
       </div>
@@ -107,106 +107,107 @@
         <div class="friends__carts">
           <div class="friends__hidden"></div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Lucas</div>
-              <a class="friends__cart_link" href="pages/zoos/panda.html"><img class="friends__cart_img"
-                  src="/assets/images/CardPanda.jpg" alt="Giant Panda"></a>
-              <div class="friends__cart_heading">Giant Panda</div>
-              <p class="friends__cart_text">Native to central China, giant pandas have come to symbolize vulnerable
-                species.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="pages/zoos/panda.html">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Lucas</div>
+                <img class="friends__cart_img" src="/assets/images/CardPanda.jpg" alt="Giant Panda">
+                <div class="friends__cart_heading">Giant Panda</div>
+                <p class="friends__cart_text">Native to central China, giant pandas have come to symbolize vulnerable
+                  species.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Andy</div>
-              <a class="friends__cart_link" href="pages/zoos/lemur.html"><img class="friends__cart_img"
-                  src="/assets/images/CardLemur.jpg" alt="Madagascarian Lemur"></a>
-              <div class="friends__cart_heading">Madagascarian Lemur</div>
-              <p class="friends__cart_text">Lemurs are considered the world’s most endangered group of mammals.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="pages/zoos/lemur.html">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Andy</div>
+                <img class="friends__cart_img" src="/assets/images/CardLemur.jpg" alt="Madagascarian Lemur">
+                <div class="friends__cart_heading">Madagascarian Lemur</div>
+                <p class="friends__cart_text">Lemurs are considered the world’s most endangered group of mammals.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Glen</div>
-              <a class="friends__cart_link" href="pages/zoos/gorilla.html"><img class="friends__cart_img"
-                  src="/assets/images/CardGorilla.jpg" alt="Gorilla in Congo"></a>
-              <div class="friends__cart_heading">Gorilla in Congo</div>
-              <p class="friends__cart_text">Variety of snacks very important for the healthy life of gorillas and his
-                plenty of babies.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="pages/zoos/gorilla.html">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Glen</div>
+                <img class="friends__cart_img" src="/assets/images/CardGorilla.jpg" alt="Gorilla in Congo">
+                <div class="friends__cart_heading">Gorilla in Congo</div>
+                <p class="friends__cart_text">Variety of snacks very important for the healthy life of gorillas and his
+                  plenty of babies.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Mike</div>
-              <a class="friends__cart_link" href="#"><img class="friends__cart_img"
-                  src="/assets/images/CardAlligator.jpg" alt="Chinese Alligator"></a>
-              <div class="friends__cart_heading">Chinese Alligator</div>
-              <p class="friends__cart_text">From nose to tail, belly to back, hard scales protect this petite alligator.
-              </p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="#">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Mike</div>
+                <img class="friends__cart_img" src="/assets/images/CardAlligator.jpg" alt="Chinese Alligator">
+                <div class="friends__cart_heading">Chinese Alligator</div>
+                <p class="friends__cart_text">From nose to tail, belly to back, hard scales protect this petite
+                  alligator.
+                </p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Sam & Lora</div>
-              <a class="friends__cart_link" href="pages/zoos/baldEagle.html"><img class="friends__cart_img"
-                  src="/assets/images/CardEagles.jpg" alt="West End Bald Eagles"></a>
-              <div class="friends__cart_heading">West End Bald Eagles</div>
-              <p class="friends__cart_text">Pair of eagle parents lay and protect eggs, feed their chicks and teach them
-                to hunt and fly.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="pages/zoos/baldEagle.html">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Sam & Lora</div>
+                <img class="friends__cart_img" src="/assets/images/CardEagles.jpg" alt="West End Bald Eagles">
+                <div class="friends__cart_heading">West End Bald Eagles</div>
+                <p class="friends__cart_text">Pair of eagle parents lay and protect eggs, feed their chicks and teach
+                  them to hunt and fly.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Liz</div>
-              <a class="friends__cart_link" href="#"><img class="friends__cart_img" src="/assets/images/CardKoala.jpg"
-                  alt="Australian Koala"></a>
-              <div class="friends__cart_heading">Australian Koala</div>
-              <p class="friends__cart_text">The elevated walkways bring you to eye level with the koalas as they perch
-                in
-                their forest.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="#">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Liz</div>
+                <img class="friends__cart_img" src="/assets/images/CardKoala.jpg" alt="Australian Koala">
+                <div class="friends__cart_heading">Australian Koala</div>
+                <p class="friends__cart_text">The elevated walkways bring you to eye level with the koalas as they perch
+                  in
+                  their forest.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Shake</div>
-              <a class="friends__cart_link" href="#"><img class="friends__cart_img" src="/assets/images/CardLion.jpg"
-                  alt="African Lion"></a>
-              <div class="friends__cart_heading">African Lion</div>
-              <p class="friends__cart_text">Lions roam the savannas and grasslands of Africa, hunting and raising cubs
-                in
-                the pride.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="#">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Shake</div>
+                <img class="friends__cart_img" src="/assets/images/CardLion.jpg" alt="African Lion">
+                <div class="friends__cart_heading">African Lion</div>
+                <p class="friends__cart_text">Lions roam the savannas and grasslands of Africa, hunting and raising cubs
+                  in the pride.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="friends__cart_wrapper">
-            <div class="friends__cart">
-              <div class="friends__cart_frame">Senja</div>
-              <a class="friends__cart_link" href="#"><img class="friends__cart_img" src="/assets/images/CardTiger.jpg"
-                  alt="Sumatran Tiger"></a>
-              <div class="friends__cart_heading">Sumatran Tiger</div>
-              <p class="friends__cart_text">Sumatran Tigers are the smallest of the five sub-species, and are found in
-                Indonesia.</p>
-              <button class="friends__btn" type="submit">view live cam <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+            <a class="friends__cart_link" href="#">
+              <div class="friends__cart">
+                <div class="friends__cart_frame">Senja</div>
+                <img class="friends__cart_img" src="/assets/images/CardTiger.jpg" alt="Sumatran Tiger">
+                <div class="friends__cart_heading">Sumatran Tiger</div>
+                <p class="friends__cart_text">Sumatran Tigers are the smallest of the five sub-species, and are found in
+                  Indonesia.</p>
+                <span class="friends__btn">view live cam <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
         </div>
         <div class="friends__choose">
-          <button class="friends__choose_btn" type="button"><a class="friends__choose_link"
-              href="pages/map/map.html">choose your favourite</a></button>
+          <span class="friends__choose_btn">
+            <a class="friends__choose_link" href="pages/map/map.html">choose your favourite</a>
+          </span>
         </div>
       </div>
     </section>
@@ -324,9 +325,9 @@
           <button class="users_think__right" type="submit"></button>
         </div>
         <div class="users_think__leave">
-          <button class="users_think__leave_btn" type="button">
+          <span class="users_think__leave_btn">
             <a class="users_think__leave_link" href="">leave feedback</a>
-          </button>
+          </span>
         </div>
       </div>
     </section>
@@ -338,58 +339,54 @@
           <div class="animals_love__cards_big"><img class="animals_love__cards_big_img"
               src="assets/images/koala_big.png" alt="koala"></div>
           <div class="animals_love__card_wrapper">
-            <div class="animals_love__card">
-              <a class="animals_love__card_link" href="pages/zoos/panda.html">
+            <a class="animals_love__card_link" href="pages/zoos/panda.html">
+              <div class="animals_love__card">
                 <img class="animals_love__card_img" src="assets/images/panda.png" alt="Panda Lucas">
-              </a>
-              <p class="animals_love__card_text">
-                Your $30 could give Lucas <br>a slice of panda cake, made with our secret recipe.
-              </p>
-              <button class="animals_love__btn" type="submit">feed <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+                <p class="animals_love__card_text">
+                  Your $30 could give Lucas <br>a slice of panda cake, made with our secret recipe.
+                </p>
+                <span class="animals_love__btn">feed <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="animals_love__card_wrapper">
-            <div class="animals_love__card">
-              <a class="animals_love__card_link" href="#">
+            <a class="animals_love__card_link" href="#">
+              <div class="animals_love__card">
                 <img class="animals_love__card_img" src="assets/images/tiger.png" alt="Tiger Senja">
-              </a>
-              <p class="animals_love__card_text">
-                Your $150 will help to care for Senja, <br>a Sumatran tiger, for three weeks.
-              </p>
-              <button class="animals_love__btn" type="submit">feed <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+                <p class="animals_love__card_text">
+                  Your $150 will help to care for Senja, <br>a Sumatran tiger, for three weeks.
+                </p>
+                <span class="animals_love__btn">feed <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="animals_love__card_wrapper">
-            <div class="animals_love__card">
-              <a class="animals_love__card_link" href="pages/zoos/lemur.html">
+            <a class="animals_love__card_link" href="pages/zoos/lemur.html">
+              <div class="animals_love__card">
                 <img class="animals_love__card_img" src="assets/images/lemur.png" alt="Lemur Andy">
-              </a>
-              <p class="animals_love__card_text">
-                With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its
-                natural habitat.
-              </p>
-              <button class="animals_love__btn" type="submit">feed <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+                <p class="animals_love__card_text">
+                  With your support, we can give Andy his favorite fruits. Especially when it's not fruit season in its
+                  natural habitat.
+                </p>
+                <span class="animals_love__btn">feed <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
           <div class="animals_love__card_wrapper">
-            <div class="animals_love__card">
-              <a class="animals_love__card_link" href="pages/zoos/baldEagle.html">
+            <a class="animals_love__card_link" href="pages/zoos/baldEagle.html">
+              <div class="animals_love__card">
                 <img class="animals_love__card_img" src="assets/images/lora.png" alt="eagle Sam & Lora">
-              </a>
-              <p class="animals_love__card_text">
-                Sam & Lora have hatched and raised numerous young and will be happy with your help.
-              </p>
-              <button class="animals_love__btn" type="submit">feed <img src="assets/icons/UnionOrange.svg"
-                  alt=""></button>
-            </div>
+                <p class="animals_love__card_text">
+                  Sam & Lora have hatched and raised numerous young and will be happy with your help.
+                </p>
+                <span class="animals_love__btn">feed <img src="assets/icons/UnionOrange.svg" alt=""></span>
+              </div>
+            </a>
           </div>
         </div>
         <div class="animals_love__choose">
-          <button class="animals_love__choose_btn" type="button"><a class="animals_love__choose_link"
-              href="pages/map/map.html">choose your favourite</a></button>
+          <span class="animals_love__choose_btn"><a class="animals_love__choose_link" href="pages/map/map.html">choose
+              your favourite</a></span>
         </div>
         <div class="animals_love__screen">
           <img src="/assets/images/screen.jpg" alt="screen">
@@ -397,6 +394,7 @@
       </div>
     </section>
   </main>
+  <footer></footer>
   <script src="assets/js/script.js">
 
   </script>

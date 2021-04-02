@@ -15,6 +15,9 @@
 }
 
 //====!!==HEADER==!!====//
+.main_heading {
+  visibility: hidden;
+}
 .header {
   display: flex;
   align-items: center;
@@ -28,7 +31,6 @@
       width: 100%;
       max-width: $desktop;
     }
-
 }
 
 //==menu==//
@@ -123,7 +125,6 @@
       width: 100%;
       max-width: $desktop;
       padding-top: 12.8rem;
-      outline: 1px solid red;
     }
     &__header {
       width: 89rem;
@@ -463,6 +464,9 @@
     border-top-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
+  &__cart_link {
+    text-decoration: none;
+  }
   &__cart_img {
     width: 100%;
     border-top-left-radius: 0.5rem;
@@ -476,7 +480,7 @@
     color: $text-white;
   }
   &__cart_text {
-    width: 38rem;
+    width: 35rem;
     margin: 0 auto;
     font-family: $main-text-font;
     font-size: 1.8rem;
@@ -503,9 +507,6 @@
     border: none;
     img {
       margin-left: 1rem;
-    }
-    &:hover {
-      background-color: $bg-btn-hover;
     }
   }
   &__choose {
@@ -786,7 +787,6 @@
     background-image: url('../icons/UnionRightWhite.svg');
     background-repeat: no-repeat;
     background-position: 77% 50%;
-    padding-right: 35px;
     &:hover {
       background-color: $btn-alt;
       background-image: url('../icons/UnionRightInvert.svg');
@@ -795,6 +795,10 @@
     }
   }
   &__leave_link {
+    padding-right: 35px;
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
     text-decoration: none;
     font-family: $nav-font;
     font-size: 1.8rem;
@@ -856,7 +860,6 @@
       height: 69.8rem;
       padding: 2rem;
     }
-
   }
 
   &__card {
@@ -894,9 +897,13 @@
       text-align: center;
       color: $text-white;
     }
+    &_link {
+      text-decoration: none;
+    }
   }
 
   &__btn {
+    cursor: pointer;
     margin-left: -7rem;
     position: absolute;
     left: 50%;
@@ -915,9 +922,6 @@
     border: none;
     img {
       margin-left: 0.5rem;
-    }
-    &:hover {
-      background-color: $bg-btn-hover;
     }
   }
 
