@@ -655,19 +655,27 @@ li {
           justify-content: center;
   width: 24rem;
   height: 7.3rem;
-  background-color: #20113D;
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
   color: #F58021;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  border-radius: 0.5;
+  border-radius: 0.5rem;
   border: none;
+  background-color: transparent;
+  background-image: url("../icons/UnionOrange.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  padding-right: 3.6rem;
 }
 
-.friends__btn img {
-  margin-left: 1rem;
+.friends__btn:hover {
+  color: #FFFFFF;
+  background-color: #D26004;
+  background-image: url("../icons/UnionRightInvert.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
 }
 
 .friends__choose {
@@ -852,7 +860,7 @@ li {
   line-height: 2.2rem;
   color: #FFFFFF;
   text-transform: uppercase;
-  border-radius: 0.5;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -1044,7 +1052,7 @@ li {
 }
 
 .users_think__leave_btn:hover {
-  background-color: #20113D;
+  background-color: #00A092;
   background-image: url("../icons/UnionRightInvert.svg");
   background-repeat: no-repeat;
   background-position: 77% 50%;
@@ -1202,7 +1210,6 @@ li {
           justify-content: center;
   width: 14.2rem;
   height: 7.3rem;
-  background-color: #20113D;
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
@@ -1211,10 +1218,19 @@ li {
   letter-spacing: 0.05rem;
   border-radius: 0.5rem;
   border: none;
+  background-color: transparent;
+  background-image: url("../icons/UnionOrange.svg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
+  padding-right: 3.6rem;
 }
 
-.animals_love__btn img {
-  margin-left: 0.5rem;
+.animals_love__btn:hover {
+  color: #FFFFFF;
+  background-color: #D26004;
+  background-image: url("../icons/UnionRightInvert.svg");
+  background-repeat: no-repeat;
+  background-position: 75% 50%;
 }
 
 .animals_love__choose {
@@ -1397,8 +1413,8 @@ li {
 }
 
 .footer__leave_btn:hover {
-  background-color: #20113D;
-  background-image: url("../icons/UnionRightInvert.svg");
+  background-color: #FFFFFF;
+  background-image: url("../icons/UnionRight.svg");
   background-repeat: no-repeat;
   background-position: 90% 50%;
 }
@@ -1424,7 +1440,7 @@ li {
 }
 
 .footer__leave_link:hover {
-  color: #FFFFFF;
+  color: #20113D;
 }
 
 .footer__footer {

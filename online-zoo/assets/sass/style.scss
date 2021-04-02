@@ -496,17 +496,25 @@
     @include flex-block-center();
     width: 24rem;
     height: 7.3rem;
-    background-color: $btn-alt;
     font-family: $nav-font;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $bg-text;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
-    border-radius: 0.5;
+    border-radius: 0.5rem;
     border: none;
-    img {
-      margin-left: 1rem;
+    background-color: transparent;
+    background-image: url('../icons/UnionOrange.svg');
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    padding-right: 3.6rem;
+    &:hover {
+      color: $text-white;
+      background-color: $bg-btn-hover;
+      background-image: url('../icons/UnionRightInvert.svg');
+      background-repeat: no-repeat;
+      background-position: 90% 50%;
     }
   }
   &__choose {
@@ -628,7 +636,7 @@
     line-height: 2.2rem;
     color: $text-white;
     text-transform: uppercase;
-    border-radius: 0.5;
+    border-radius: 0.5rem;
     border: none;
       img {
         margin-left: 1rem;
@@ -788,7 +796,7 @@
     background-repeat: no-repeat;
     background-position: 77% 50%;
     &:hover {
-      background-color: $btn-alt;
+      background-color: $nav-active;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 77% 50%;
@@ -910,7 +918,6 @@
     @include flex-block-center();
     width: 14.2rem;
     height: 7.3rem;
-    background-color: $btn-alt;
     font-family: $nav-font;
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -919,8 +926,17 @@
     letter-spacing: 0.05rem;
     border-radius: 0.5rem;
     border: none;
-    img {
-      margin-left: 0.5rem;
+    background-color: transparent;
+    background-image: url('../icons/UnionOrange.svg');
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    padding-right: 3.6rem;
+    &:hover {
+      color: $text-white;
+      background-color: $bg-btn-hover;
+      background-image: url('../icons/UnionRightInvert.svg');
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
     }
   }
 
@@ -1034,8 +1050,8 @@
     background-repeat: no-repeat;
     background-position: 90% 50%;
     &:hover {
-      background-color: $btn-alt;
-      background-image: url('../icons/UnionRightInvert.svg');
+      background-color: $bg-white;
+      background-image: url('../icons/UnionRight.svg');
       background-repeat: no-repeat;
       background-position: 90% 50%;
     }
@@ -1051,7 +1067,7 @@
     line-height: 2.2rem;
     color: $text-white;
     &:hover {
-      color: $text-white;
+      color: $text-alter;
     }
   }
   &__footer {
