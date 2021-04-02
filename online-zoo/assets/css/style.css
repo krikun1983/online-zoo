@@ -180,6 +180,7 @@ li {
   width: 100%;
   max-width: 140rem;
   padding-top: 12.8rem;
+  outline: 1px solid red;
 }
 
 .favorite__header {
@@ -699,7 +700,6 @@ li {
   background-image: url("../icons/UnionRight.svg");
   background-repeat: no-repeat;
   background-position: 89% 50%;
-  padding-right: 35px;
 }
 
 .friends__choose_btn img {
@@ -714,10 +714,22 @@ li {
 }
 
 .friends__choose_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
   text-decoration: none;
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
+  padding-right: 35px;
   color: #20113D;
 }
 
@@ -1046,5 +1058,226 @@ li {
 
 .users_think__leave_link:hover {
   color: #FFFFFF;
+}
+
+.animals_love {
+  width: 100%;
+  max-width: 100%;
+  height: 296.5rem;
+}
+
+.animals_love__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
+.animals_love__heading {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 65.5rem;
+  font-family: "Montserrat Semibold";
+  font-size: 5.4rem;
+  line-height: 6.5rem;
+  text-transform: uppercase;
+  color: #00A092;
+  text-align: center;
+  margin-top: 13.6rem;
+  margin-bottom: 5rem;
+}
+
+.animals_love__text {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 53.7rem;
+  font-family: "Montserrat Medium";
+  font-size: 2.6rem;
+  line-height: 3.6rem;
+  text-align: center;
+  color: #000000;
+}
+
+.animals_love__cards {
+  width: 146rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 7.5rem;
+  margin-left: -2rem;
+  margin-right: 10rem;
+}
+
+.animals_love__cards_big {
+  width: 96rem;
+  height: 69.8rem;
+  padding: 2rem;
+}
+
+.animals_love__card {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 44rem;
+  height: 65.8rem;
+  background-color: #20113D;
+  border-radius: 0.5rem;
+}
+
+.animals_love__card:hover {
+  width: 48rem;
+  height: 69.8rem;
+  -webkit-transition-duration: 2s;
+          transition-duration: 2s;
+  z-index: 50;
+}
+
+.animals_love__card_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 48rem;
+  height: 69.8rem;
+}
+
+.animals_love__card_img {
+  width: 100%;
+  border-top-left-radius: 0.5rem;
+  border-top-right-radius: 0.5rem;
+}
+
+.animals_love__card_text {
+  margin: 3rem auto 0;
+  width: 89%;
+  font-family: "Montserrat Regular";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.animals_love__btn {
+  margin-left: -7rem;
+  position: absolute;
+  left: 50%;
+  bottom: 5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 14.2rem;
+  height: 7.3rem;
+  background-color: #20113D;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #F58021;
+  text-transform: uppercase;
+  letter-spacing: 0.05rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.animals_love__btn img {
+  margin-left: 0.5rem;
+}
+
+.animals_love__btn:hover {
+  background-color: #D26004;
+}
+
+.animals_love__choose {
+  margin-top: 8rem;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.animals_love__choose_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  width: 36rem;
+  height: 7.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #20113D;
+  background-color: #FFFFFF;
+  background-image: url("../icons/UnionRight.svg");
+  background-repeat: no-repeat;
+  background-position: 89% 50%;
+}
+
+.animals_love__choose_btn img {
+  margin-left: 1rem;
+}
+
+.animals_love__choose_btn:hover {
+  background-color: #20113D;
+  background-image: url("../icons/UnionRightInvert.svg");
+  background-repeat: no-repeat;
+  background-position: 89% 50%;
+}
+
+.animals_love__choose_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  padding-right: 35px;
+  color: #20113D;
+}
+
+.animals_love__choose_link:hover {
+  color: #FFFFFF;
+}
+
+.animals_love__screen {
+  margin: 15rem auto;
+}
+
+.animals_love__screen img {
+  width: 100%;
 }
 /*# sourceMappingURL=style.css.map */
