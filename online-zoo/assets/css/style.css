@@ -172,7 +172,7 @@ li {
 
 .favorite {
   width: 100%;
-  height: 790px;
+  height: 79rem;
   background-image: url("../images/bgPanda.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -224,7 +224,7 @@ li {
   line-height: 2.2rem;
   color: #FFFFFF;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -362,7 +362,7 @@ li {
 .donation__label::before {
   content: "$";
   position: absolute;
-  padding-left: 10px;
+  padding-left: 1rem;
   z-index: 15;
   top: 7rem;
   left: 0.3rem;
@@ -431,7 +431,7 @@ li {
   width: 8rem;
   height: 7.4rem;
   background-color: #F58021;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border-top: 1px solid #FFFFFF;
   border-right: 1px solid #FFFFFF;
   border-bottom: 1px solid #FFFFFF;
@@ -459,7 +459,7 @@ li {
   right: 0%;
   width: 100%;
   max-width: 25rem;
-  height: 1534px;
+  height: 153.4rem;
   background: white;
   background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.515844)), color-stop(89%, white));
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.515844) 20%, white 89%);
@@ -662,7 +662,7 @@ li {
   color: #F58021;
   text-transform: uppercase;
   letter-spacing: 0.15rem;
-  border-radius: 5px;
+  border-radius: 0.5;
   border: none;
 }
 
@@ -732,7 +732,7 @@ li {
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
-  padding-right: 35px;
+  padding-right: 3.5rem;
   color: #20113D;
 }
 
@@ -852,7 +852,7 @@ li {
   line-height: 2.2rem;
   color: #FFFFFF;
   text-transform: uppercase;
-  border-radius: 5px;
+  border-radius: 0.5;
   border: none;
 }
 
@@ -1051,7 +1051,7 @@ li {
 }
 
 .users_think__leave_link {
-  padding-right: 35px;
+  padding-right: 3.5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1077,7 +1077,6 @@ li {
 .animals_love {
   width: 100%;
   max-width: 100%;
-  height: 296.5rem;
 }
 
 .animals_love__container {
@@ -1210,7 +1209,7 @@ li {
   color: #F58021;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
-  border-radius: 5px;
+  border-radius: 0.5rem;
   border: none;
 }
 
@@ -1280,7 +1279,7 @@ li {
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
-  padding-right: 35px;
+  padding-right: 3.5rem;
   color: #20113D;
 }
 
@@ -1289,10 +1288,187 @@ li {
 }
 
 .animals_love__screen {
-  margin: 15rem auto;
+  margin: 15rem auto 14.8rem;
 }
 
 .animals_love__screen img {
   width: 100%;
+}
+
+.footer {
+  width: 100%;
+  height: 32.9rem;
+  background-color: #20113D;
+}
+
+.footer__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 21.4rem;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 41.4rem;
+}
+
+.footer__menu {
+  width: 100%;
+  max-width: 42.6rem;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer__link:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.footer__link:active {
+  color: #00A092;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.footer__leave_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  width: 35.9rem;
+  height: 7.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  background-image: url("../icons/UnionRightWhite.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.footer__leave_btn:hover {
+  background-color: #20113D;
+  background-image: url("../icons/UnionRightInvert.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.footer__leave_link {
+  padding-right: 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+}
+
+.footer__leave_link:hover {
+  color: #FFFFFF;
+}
+
+.footer__footer {
+  margin-top: 3.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 44.8rem;
+  font-family: "Montserrat Regular";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  list-style: none;
 }
 /*# sourceMappingURL=style.css.map */
