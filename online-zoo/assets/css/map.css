@@ -1,1 +1,409 @@
-/* No CSS *//*# sourceMappingURL=map.css.map */
+/* BASIC */
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* COLORS */
+/* BASIC */
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+/* FONTS */
+/* DEVICE-WIDTH */
+.main_heading {
+  visibility: hidden;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 11rem;
+  background-color: #F58021;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 80rem;
+}
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 55rem;
+}
+
+.nav__item {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.nav__link {
+  text-decoration: none;
+  color: #000000;
+}
+
+.nav__link:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.nav__link:active {
+  color: #00A092;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.nav__link_active {
+  color: #00A092;
+}
+
+.nav__link_active:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 18rem;
+  list-style: none;
+}
+
+.social__item {
+  display: block;
+  width: 4rem;
+  height: 4rem;
+}
+
+.social__item:hover {
+  opacity: .6;
+}
+
+.icon_yt {
+  background-image: url("../icons/YouTube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon_inst {
+  background-image: url("../icons/Instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon_fb {
+  background-image: url("../icons/Facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.main {
+  width: 100%;
+  height: 130.3rem;
+}
+
+.map {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
+.map__header {
+  margin: 4rem auto 7rem;
+  text-align: center;
+  width: 100%;
+  max-width: 60rem;
+  font-family: "Montserrat Semibold";
+  font-size: 5.4rem;
+  line-height: 6.5rem;
+  color: #20113D;
+  text-transform: uppercase;
+}
+
+.maps {
+  margin: 0 auto;
+  display: block;
+  width: 100%;
+  max-width: 140rem;
+  background-color: tomato;
+}
+
+#map {
+  width: 100%;
+  max-width: 140rem;
+}
+
+.full-map__pin_body {
+  -webkit-filter: drop-shadow(0px 4px 20px #20113d) drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+          filter: drop-shadow(0px 4px 20px #20113d) drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
+}
+
+.full-map__pin_body,
+.full-map__pin_icon {
+  cursor: pointer;
+}
+
+.full-map__pin:hover > .full-map__pin_body {
+  fill: #fff;
+  -webkit-filter: drop-shadow(0px 4px 20px #20113d) drop-shadow(0px 4px 30px rgba(255, 255, 255, 0.5));
+          filter: drop-shadow(0px 4px 20px #20113d) drop-shadow(0px 4px 30px rgba(255, 255, 255, 0.5));
+  -webkit-transition: linear 0.3s;
+  transition: linear 0.3s;
+}
+
+.full-map__pin:hover > .full-map__pin_outline {
+  stroke-width: 3px;
+  stroke-opacity: 1;
+  -webkit-transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+
+.footer {
+  width: 100%;
+  height: 32.9rem;
+  background-color: #20113D;
+}
+
+.footer__container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
+.footer__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 21.4rem;
+}
+
+.footer__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 41.4rem;
+}
+
+.footer__menu {
+  width: 100%;
+  max-width: 42.6rem;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__item {
+  cursor: pointer;
+  text-transform: uppercase;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.footer__link:hover {
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.footer__link:active {
+  color: #00A092;
+  -webkit-filter: opacity(0.5);
+          filter: opacity(0.5);
+}
+
+.footer__leave_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-transform: uppercase;
+  width: 35.9rem;
+  height: 7.4rem;
+  border-radius: 0.5rem;
+  border: 1px solid #FFFFFF;
+  background-color: transparent;
+  background-image: url("../icons/UnionRightWhite.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.footer__leave_btn:hover {
+  background-color: #FFFFFF;
+  background-image: url("../icons/UnionRight.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.footer__leave_link {
+  padding-right: 3.6rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+}
+
+.footer__leave_link:hover {
+  color: #20113D;
+}
+
+.footer__footer {
+  margin-top: 3.7rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  max-width: 44.8rem;
+  font-family: "Montserrat Regular";
+  font-size: 1.8rem;
+  line-height: 2.2rem;
+  color: #FFFFFF;
+}
+
+.footer__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 20rem;
+  list-style: none;
+}
+/*# sourceMappingURL=map.css.map */
