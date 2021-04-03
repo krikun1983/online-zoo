@@ -15,7 +15,13 @@
 
 //====!!==HEADER==!!====//
 .main_heading {
+  display: inline;
+  width: 1px;
+  height: 1px;
+  font-size: 0.1rem;
   visibility: hidden;
+  margin: 0;
+  padding: 0;
 }
 .header {
   display: flex;

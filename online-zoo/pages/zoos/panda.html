@@ -2,13 +2,149 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/../assets/css/normalize.css">
+  <link rel="stylesheet" href="/../assets/css/fonts.css">
+  <link rel="stylesheet" href="/../assets/css/panda.css">
+  <title>Online-zoo - Panda</title>
 </head>
 
 <body>
+  <header class="header">
+    <div class="header__container">
+      <div class="logo">
+        <a href="/../index.html" title="Logo">
+          <img src="/../assets/images/logo.svg" alt="logo">
+        </a>
+      </div>
+      <h1 class="main_heading">Online Zoo</h1>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="/../index.html">about</a></li>
+          <li class="nav__item"><a class="nav__link" href="/../pages/map/map.html">map</a></li>
+          <li class="nav__item"><a class="nav__link nav__link_active" href="/../pages/zoos/panda.html">zoos</a></li>
+          <li class="nav__item"><a class="nav__link" href="/../pages/contacts/contactsUs.html">contact us</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link" href="https://www.figma.com/file/lnK11foY8Aoa6oOlDXovVN/Online-ZOO-Project"
+              target="_blank">Design
+            </a>
+          </li>
+        </ul>
+        <ul class="social">
+          <li><a class="social__item icon_yt" href="https://www.youtube.com/" target="_blank"></a></li>
+          <li><a class="social__item icon_inst" href="https://www.instagram.com/" target="_blank"></a></li>
+          <li><a class="social__item icon_fb" href="https://www.facebook.com/" target="_blank"></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+
+    <section class="cams">
+      <div class="cams__container"></div>
+    </section>
+
+    <section class="donation">
+      <div class="donation__container">
+        <div class="donation__main">
+          <h4 class="donation__heading">make the Bamboo Donation!</h4>
+          <p class="donation__text">Our process for bamboo donations first starts with a site evaluation. It is
+            important that our team sees where the bamboo is growing, then determining if the bamboo is a species that
+            our animals are currently eating. Thank you for your interest in donating bamboo for our pandas.</p>
+        </div>
+        <form class="donation__form" action="#">
+          <label class="donation__label" for="donations">Quick Donate</label>
+          <input class="donation__input" type="number" id="donations" placeholder="Donation amount" min="0" max="9999">
+          <button class="donation__btn" type="submit"><img src="/../assets/icons/Union.svg" alt=""></button>
+        </form>
+      </div>
+    </section>
+
+    <section class="information">
+      <div class="information__container">
+        <div class="information__knowledge">
+          <h2 class="information__knowledge_heading">did you know?</h2>
+          <p class="information__knowledge_text">Pandas are often seen eating in a relaxed sitting posture, with their
+            hind legs stretched out before them. They may appear sedentary, but they are skilled tree-climbers and
+            efficient swimmers.</p>
+        </div>
+        <div class="information__block">
+          <div class="information__card">
+            <p class="information__card_item">Common name:<span>Giant Panda</span></p>
+            <p class="information__card_item">Scientific name:<span>Ailuropoda melanoleuca</span></p>
+            <p class="information__card_item">Type:<span>Herbivore</span></p>
+            <p class="information__card_item">Size:<span>4 to 5 feet</span></p>
+            <p class="information__card_item">Diet:<span>Omnivore</span></p>
+            <p class="information__card_item">Habitat:<span>Forests</span></p>
+            <p class="information__card_item">Range:<span>Eastern Asia</span></p>
+            <a class="information__card_link" href="/pages/map/map.html">
+              <span class="information__btn">view map</span>
+            </a>
+          </div>
+          <div class="information__block_img">
+            <img src="/../assets/images/knowsPanda.png" alt="Panda">
+          </div>
+        </div>
+        <p class="information__text">Giant pandas are very unusual animals that eat almost exclusively bamboo, which is
+          very low in nutrients. Because of this, they have many unique adaptations for their low-energy lifestyle.
+          Giant pandas are solitary. They have a highly developed sense of smell that males use to avoid each other and
+          to find females for mating in the spring. After a five-month pregnancy, females give birth to a cub or two,
+          though they cannot care for both twins. The blind infants weigh only 5 ounces at birth and cannot crawl until
+          they reach three months of age. They are born white, and develop their much loved coloring later. Habitat loss
+          is the primary threat to this species. Its popularity around the world has helped the giant panda become the
+          focus of successful conservation programs.</p>
+      </div>
+    </section>
+
+  </main>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__header">
+        <div class="footer__logo">
+          <a href="/../index.html" title="Logo">
+            <img src="/../assets/images/logoInvert.svg" alt="logo" title="Online Zoo">
+          </a>
+          <img src="/../assets/images/YemDigital.svg" alt="logo" title="Yem Digital">
+          <img src="/../assets/images/rs_school_js_logo.svg" alt="logo" title="Rolling Scopes School">
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item"><a class="footer__link" href="/../index.html">about</a></li>
+            <li class="footer__item"><a class="footer__link" href="/../pages/map/map.html">map</a></li>
+            <li class="footer__item"><a class="footer__link" href="/../pages/zoos/panda.html">zoos</a></li>
+            <li class="footer__item"><a class="footer__link" href="/../pages/contacts/contactsUs.html">contact us</a>
+            </li>
+          </ul>
+        </div>
+        <span class="footer__leave_btn">
+          <a class="footer__leave_link" href="#">donate for volunteers</a>
+        </span>
+      </div>
+      <hr>
+      <div class="footer__footer">
+        <div class="footer__texts">
+          <div>© 2021 krikun1983</div>
+          <div>© Yem Digital</div>
+          <div>© RSSchool</div>
+        </div>
+        <div class="footer__social">
+          <ul class="footer__social">
+            <li><a class="social__item icon_yt" href="https://www.youtube.com/" target="_blank"></a></li>
+            <li><a class="social__item icon_inst" href="https://www.instagram.com/" target="_blank"></a></li>
+            <li><a class="social__item icon_fb" href="https://www.facebook.com/" target="_blank"></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="/../assets/js/script.js">
+
+  </script>
+
+
 
 </body>
 
