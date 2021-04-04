@@ -117,14 +117,308 @@
 }
 
 //======main======//
+.sidebar {
+  position: sticky;
+  top: 0;
+  width: 21rem;
+  height: 84.6rem;
+  background-color: $bg-donation;
+  z-index: 1000;
+  &__container {
+    position: relative;
+    padding-top: 8rem;
+    width: 100%;
+  }
+  &__life {
+    @include flex-block-center();
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 11rem;
+    height: 3.8rem;
+    border-bottom-right-radius: 0.5rem;
+    color: $text-white;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.9rem;
+    text-transform: uppercase;
+    background-color: $bg-header;
+    img {
+      margin-left: 1rem;
+    }
+  }
+
+  &__link_brackets {
+    width: 1.6rem;
+    height: 1.6rem;
+    color: $text-white;
+    position: absolute;
+    top: 3rem;
+    right: 3rem;
+    z-index: 50;
+    background-image: url("../icons/brackets.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__list {
+    @include flex-block-justify();
+    flex-direction: column;
+  }
+  &__item {
+    width: 100%;
+    height: 17.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid $bg-white;
+    &:last-child {
+      border-bottom: 1px solid $bg-white;
+    }
+    &_bg {
+      position: relative;
+      z-index: 15;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 1rem;
+      width: 10.5rem;
+      height: 10.5rem;
+      border-radius: 50%;
+      background-color: $bg-btn-hover;
+      img {
+        display: block;
+        width: 75%;
+        height: 75%;
+      }
+    }
+    &_link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    &_active {
+      background-color: $bg-white;
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 11.5rem;
+        height: 11.5rem;
+        border: 3px solid $bg-white;
+        border-radius: 50%;
+      }
+    }
+  }
+
+  &__arrow {
+    display: block;
+    width: 0.9rem;
+    height: 1.5rem;
+    position: absolute;
+    bottom: -5.2rem;
+    right: 11rem;
+    z-index: 10;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+
 //======Live cams======//
 .cams {
   width: 100%;
-  height: 149.7rem;
   &__container {
     margin: 0 auto;
+    margin-top: -84.5rem;
     width: 100%;
     max-width: $desktop;
+  }
+
+  &__top {
+    margin: 5.4rem 0;
+    position: relative;
+    &_heading {
+      width: 100%;
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.58rem;
+      text-transform: uppercase;
+      color: $color-green;
+      text-align: center;
+    }
+
+    &_btn {
+    position: absolute;
+    top: -5%;
+    right: 0;
+    @include flex-block-center();
+    width: 24rem;
+    height: 7.4rem;
+    background-color: $bg-btn;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-btn-hover;
+      }
+    }
+  }
+
+  &__video {
+    position: relative;
+    padding-bottom: 54%;
+    padding-top: 30px;
+    height: 0;
+    overflow: hidden;
+      &_iframe {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+      &_default {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 5%;
+        padding-left: 1%;
+        font-family: $fontsMont-500;
+        font-size: 2.84rem;
+        line-height: 3.69rem;
+        color: $text-white;
+        z-index: 10;
+      }
+      &_plug {
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: transparent;
+        width: 100%;
+        height: 100%;
+        z-index: 9;
+      }
+  }
+
+  &__heading_small {
+    margin-top: 10rem;
+    margin-bottom: 2.8rem;
+    text-align: center;
+    font-family: $fontsMont-500;
+    font-size: 4.2rem;
+    line-height: 5.12rem;
+    text-transform: uppercase;
+  }
+
+  &__preview {
+  @include flex-block-justify();
+  margin: 0 auto;
+  margin-left: 10.5%;
+  margin-bottom: 14.9rem;
+  width: 100%;
+  max-width: 122.6rem;
+  height: 100%;
+  max-height: 20.9rem;
+
+    &_active {
+      border: 3px solid $bg-btn;
+    }
+
+    &_list {
+      @include flex-block-justify();
+      width: 100%;
+      max-width: 104rem;
+    }
+    &_item {
+      position: relative;
+      padding-top: 30px;
+      height: 0;
+      overflow: hidden;
+      width: 32rem;
+      height: 20.9rem;
+      border-radius: 0.5rem;
+    }
+
+    &_iframe_small {
+      position: absolute;
+      top:0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &_left {
+      width: 8rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: $bg-white;
+      background-image: url('../icons/UnionLeft.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+        &:hover {
+          background-color: $btn-alt;
+          background-image: url('../icons/UnionLeftInvert.svg');
+          background-repeat: no-repeat;
+          background-position: center;
+        }
+    }
+    &_right {
+      width: 8rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: $bg-white;
+      background-image: url('../icons/UnionRight.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $btn-alt;
+        background-image: url('../icons/UnionRightInvert.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &_webs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      width: 100%;
+      max-width: 18.9rem;
+      height: 4.4rem;
+      border-bottom: 1px solid $text-white;
+      border-right: 1px solid $text-white;
+      border-bottom-right-radius: 0.5rem;
+      color: $text-white;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.16rem;
+      img {
+        margin-left: 1rem;
+      }
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    right: 2%;
+    bottom: 8.5%;
   }
 }
 //======Your donation makes a difference======//
@@ -264,11 +558,11 @@
       -moz-box-shadow:1px 1px 50px 4px rgba(0,0,0,0.25);
     &_heading {
       margin: 0 auto 2rem;
-      width: 37rem;
       font-family: $fontsMont-500;
-      color: $color-green;
       font-size: 4.2rem;
       line-height: 5.12rem;
+      text-align: center;
+      color: $color-green;
       text-transform: uppercase;
     }
     &_text {
