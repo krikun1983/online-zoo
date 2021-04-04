@@ -53,7 +53,7 @@
     &__item {
       cursor: pointer;
       text-transform: uppercase;
-      font-family: $nav-font;
+      font-family: $fontsMont-600;
       font-size: 1.8rem;
       line-height: 2.7rem;
     }
@@ -269,7 +269,7 @@
   &__item {
     cursor: pointer;
     text-transform: uppercase;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.7rem;
   }
@@ -309,7 +309,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;

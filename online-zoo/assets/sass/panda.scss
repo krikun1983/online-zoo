@@ -53,7 +53,7 @@
     &__item {
       cursor: pointer;
       text-transform: uppercase;
-      font-family: $nav-font;
+      font-family: $fontsMont-600;
       font-size: 1.8rem;
       line-height: 2.7rem;
     }
@@ -438,7 +438,7 @@
 
   &__heading {
     text-transform: uppercase;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 4.2rem;
     line-height: 5.12rem;
     color: $text-white;
@@ -449,7 +449,7 @@
   &__text {
     width: 100%;
     max-width: 87.3rem;
-    font-family: $main-text-font;
+    font-family: $fontsMont-400;
     font-size: 1.8rem;
     line-height: 2.7rem;
     color: $text-white;
@@ -464,7 +464,7 @@
   &__label {
     display: block;
     width: 60%;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 3.38rem;
     color: $text-white;
@@ -477,7 +477,7 @@
         left: 0.3rem;
         font-size: 1.8rem;
         line-height: 2.2rem;
-        font-family: $nav-font;
+        font-family: $fontsMont-600;
         color: $text-white;
     }
   }
@@ -492,7 +492,7 @@
     border: 1px solid $bg-white;
     border-radius: 0.5rem;
     background-color: $bg-donation;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     text-transform: uppercase;
@@ -619,7 +619,7 @@
     @include flex-block-center();
     width: 24rem;
     height: 7.4rem;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $bg-text;
@@ -683,7 +683,7 @@
   &__item {
     cursor: pointer;
     text-transform: uppercase;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.7rem;
   }
@@ -723,7 +723,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;
@@ -739,7 +739,7 @@
     @include flex-block-justify();
     width: 100%;
     max-width: 44.8rem;
-    font-family: $main-text-font;
+    font-family: $fontsMont-400;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;

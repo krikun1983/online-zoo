@@ -56,7 +56,7 @@
     &__item {
       cursor: pointer;
       text-transform: uppercase;
-      font-family: $nav-font;
+      font-family: $fontsMont-600;
       font-size: 1.8rem;
       line-height: 2.7rem;
     }
@@ -138,7 +138,7 @@
     }
     &__header {
       width: 89rem;
-      font-family: $main-header-font;
+      font-family: $fontsMont-800;
       font-size: 8.2rem;
       line-height: 10rem;
       text-transform: uppercase;
@@ -148,7 +148,7 @@
     }
     &__text {
       width: 43rem;
-      font-family: $main-text-font;
+      font-family: $fontsMont-400;
       font-size: 1.8rem;
       line-height: 2.7rem;
       color: $text-default;
@@ -159,7 +159,7 @@
       width: 24rem;
       height: 7.4rem;
       background-color: $bg-btn;
-      font-family: $nav-font;
+      font-family: $fontsMont-600;
       font-size: 1.8rem;
       line-height: 2.2rem;
       color: $text-white;
@@ -197,7 +197,7 @@
     }
 
     &__heading {
-      font-family: $heading-font;
+      font-family: $fontsMont-600;
       font-size: 5.4rem;
       line-height: 6.5rem;
       text-transform: uppercase;
@@ -208,7 +208,7 @@
     &__text {
       width: 100%;
       max-width: 56rem;
-      font-family: $main-text-font;
+      font-family: $fontsMont-400;
       font-size: 1.8rem;
       line-height: 2.7rem;
       color: $text-default;
@@ -243,7 +243,7 @@
 
   &__heading {
     text-transform: uppercase;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 4.2rem;
     line-height: 5.12rem;
     color: $text-white;
@@ -253,7 +253,7 @@
   &__text {
     width: 100%;
     max-width: 60.9rem;
-    font-family: $main-text-font;
+    font-family: $fontsMont-400;
     font-size: 1.8rem;
     line-height: 2.7rem;
     color: $text-white;
@@ -266,7 +266,7 @@
   &__label {
     display: block;
     width: 60%;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 3.38rem;
     color: $text-white;
@@ -279,7 +279,7 @@
         left: 0.3rem;
         font-size: 1.8rem;
         line-height: 2.2rem;
-        font-family: $nav-font;
+        font-family: $fontsMont-600;
         color: $text-white;
     }
   }
@@ -294,7 +294,7 @@
     border: 1px solid $bg-white;
     border-radius: 0.5rem;
     background-color: $bg-donation;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     text-transform: uppercase;
@@ -367,7 +367,7 @@
   }
 
   &__heading {
-      font-family: $heading-font;
+      font-family: $fontsMont-600;
       font-size: 5.4rem;
       line-height: 6.5rem;
       text-transform: uppercase;
@@ -381,7 +381,7 @@
     width: 100%;
     margin: 0 auto;
     max-width: 92rem;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 3.3rem;
     text-align: center;
@@ -466,7 +466,7 @@
     position: absolute;
     padding: 0 3rem;
     height: 6rem;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 5.4rem;
     color: $text-white;
@@ -484,7 +484,7 @@
   }
   &__cart_heading {
     margin: 3rem auto 1.5rem;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 3.4rem;
     color: $text-white;
@@ -492,7 +492,7 @@
   &__cart_text {
     width: 35rem;
     margin: 0 auto;
-    font-family: $main-text-font;
+    font-family: $fontsMont-400;
     font-size: 1.8rem;
     line-height: 2.7rem;
     text-align: center;
@@ -506,7 +506,7 @@
     @include flex-block-center();
     width: 24rem;
     height: 7.3rem;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $bg-text;
@@ -558,7 +558,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     padding-right: 3.5rem;
@@ -582,7 +582,7 @@
   }
 
   &__heading {
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 5.4rem;
     line-height: 6.6rem;
     color: $text-white;
@@ -592,7 +592,7 @@
     margin: 10rem 0 5rem;
     width: 100%;
     color: $text-white;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 3.4rem;
     @include flex-block-justify();
@@ -626,12 +626,12 @@
         margin: 3rem 0 5rem;
         font-size: 2.6rem;
         line-height: 3.4rem;
-        font-family: $donation-header-font;
+        font-family: $fontsMont-500;
       }
       &_text {
         font-size: 1.8rem;
         line-height: 2.7rem;
-        font-family: $main-text-font;
+        font-family: $fontsMont-400;
       }
   }
   &__btn {
@@ -641,7 +641,7 @@
     width: 24rem;
     height: 7.4rem;
     background-color: $bg-btn;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;
@@ -678,7 +678,7 @@
   &__heading {
     width: 100%;
     max-width: 44rem;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 5.4rem;
     line-height: 6.6rem;
     text-transform: uppercase;
@@ -689,7 +689,7 @@
     margin-top: 4rem;
     width: 100%;
     max-width: 56rem;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 2.6rem;
     line-height: 3.4rem;
     color: $text-white;
@@ -719,20 +719,20 @@
       position: absolute;
       top: 2rem;
       left: 3.7rem;
-      font-family: $cards-font;
+      font-family: $fontsMont-alternate;
       font-size: 12rem;
       line-height: 14.6rem;
       color: $cards-icon;
     }
     &_heading {
-      font-family: $donation-header-font;
+      font-family: $fontsMont-500;
       font-size: 2.6rem;
       line-height: 3.4rem;
       margin-bottom: 2rem;
     }
     &_text {
       width: 41.5rem;
-      font-family: $main-text-font;
+      font-family: $fontsMont-400;
       font-size: 1.8rem;
       line-height: 2.7rem;
     }
@@ -742,7 +742,7 @@
       bottom: 7rem;
       margin-top: 4.6rem;
       text-transform: uppercase;
-      font-family: $nav-font;
+      font-family: $fontsMont-600;
       font-size: 1.8rem;
       line-height: 2.2rem;
     }
@@ -818,7 +818,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;
@@ -844,7 +844,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 65.5rem;
-    font-family: $heading-font;
+    font-family: $fontsMont-600;
     font-size: 5.4rem;
     line-height: 6.5rem;
     text-transform: uppercase;
@@ -858,7 +858,7 @@
     margin: 0 auto;
     width: 100%;
     max-width: 53.7rem;
-    font-family: $donation-header-font;
+    font-family: $fontsMont-500;
     font-size: 2.6rem;
     line-height: 3.6rem;
     text-align: center;
@@ -908,7 +908,7 @@
     &_text {
       margin: 3rem auto 0;
       width: 89%;
-      font-family: $main-text-font;
+      font-family: $fontsMont-400;
       font-size: 1.8rem;
       line-height: 2.7rem;
       text-align: center;
@@ -928,7 +928,7 @@
     @include flex-block-center();
     width: 14.2rem;
     height: 7.3rem;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $bg-text;
@@ -981,7 +981,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     padding-right: 3.5rem;
@@ -1032,7 +1032,7 @@
   &__item {
     cursor: pointer;
     text-transform: uppercase;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.7rem;
   }
@@ -1072,7 +1072,7 @@
     width: 100%;
     height: 100%;
     text-decoration: none;
-    font-family: $nav-font;
+    font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;
@@ -1088,7 +1088,7 @@
     @include flex-block-justify();
     width: 100%;
     max-width: 44.8rem;
-    font-family: $main-text-font;
+    font-family: $fontsMont-400;
     font-size: 1.8rem;
     line-height: 2.2rem;
     color: $text-white;
