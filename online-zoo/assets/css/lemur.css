@@ -318,27 +318,27 @@ li {
 }
 
 .sidebar__item.item1 {
-  -webkit-box-ordinal-group: 4;
-      -ms-flex-order: 3;
-          order: 3;
-}
-
-.sidebar__item.item2 {
-  -webkit-box-ordinal-group: 1;
-      -ms-flex-order: 0;
-          order: 0;
-}
-
-.sidebar__item.item3 {
   -webkit-box-ordinal-group: 2;
       -ms-flex-order: 1;
           order: 1;
 }
 
-.sidebar__item.item4 {
+.sidebar__item.item2 {
   -webkit-box-ordinal-group: 3;
       -ms-flex-order: 2;
           order: 2;
+}
+
+.sidebar__item.item3 {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+}
+
+.sidebar__item.item4 {
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
 }
 
 .sidebar__arrow {
@@ -804,7 +804,7 @@ li {
 .information__card {
   position: relative;
   width: 100%;
-  max-width: 60rem;
+  max-width: 56rem;
 }
 
 .information__card_item {
@@ -1045,4 +1045,4 @@ li {
   width: 20rem;
   list-style: none;
 }
-/*# sourceMappingURL=baldEagle.css.map */
+/*# sourceMappingURL=lemur.css.map */

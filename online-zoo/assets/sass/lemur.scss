@@ -173,6 +173,7 @@
     justify-content: center;
     align-items: center;
     border-top: 1px solid $bg-white;
+
     &_bg {
       position: relative;
       z-index: 15;
@@ -210,6 +211,18 @@
         border-radius: 50%;
       }
     }
+    &.item1 {
+      order: 1;
+    }
+    &.item2 {
+      order: 2;
+    }
+    &.item3 {
+      order: 3;
+    }
+    &.item4 {
+      order: 0;
+    }
   }
 
   &__arrow {
@@ -224,7 +237,6 @@
     background-size: cover;
   }
 }
-
 
 //======Live cams======//
 .cams {
@@ -446,7 +458,7 @@
 
   &__text {
     width: 100%;
-    max-width: 87.3rem;
+    max-width: 92rem;
     font-family: $main-text-font;
     font-size: 1.8rem;
     line-height: 2.7rem;
@@ -593,7 +605,7 @@
   &__card {
     position: relative;
     width: 100%;
-    max-width: 47.9rem;
+    max-width: 56rem;
     &_item {
       margin-bottom: 2.15rem;
       font-family: $fontsMont-500;
