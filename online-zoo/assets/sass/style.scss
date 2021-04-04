@@ -78,7 +78,9 @@
 
   &_active {
     color:$nav-active;
+    cursor: default;
     &:hover {
+      cursor: default;
       filter: none;
     }
   }

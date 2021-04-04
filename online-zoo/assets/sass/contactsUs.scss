@@ -77,8 +77,8 @@
     color:$nav-active;
     cursor: default;
     &:hover {
-      cursor: default;
       filter: none;
+      cursor: default;
     }
   }
 
@@ -119,59 +119,122 @@
 }
 
 //======main======//
-.main {
+.touch {
   width: 100%;
-  height: 130.3rem;
-}
-
-.map {
-  margin: 0 auto;
-  width: 100%;
-  max-width: $desktop;
-  &__header {
-    margin: 4rem auto 7rem;
-    text-align: center;
+  &__countainer {
+    margin: 0 auto;
     width: 100%;
-    max-width: 60rem;
-    font-family: $nav-font;
-    font-size: 5.4rem;
-    line-height: 6.5rem;
-    color: $text-alter;
-    text-transform: uppercase;
+    max-width: $desktop;
+    img {
+      width: 100%;
+    }
   }
 }
 
-.maps {
-  margin: 0 auto;
-  display: block;
+.form {
   width: 100%;
-  max-width: $desktop;
-  background-color: tomato;
-}
+  &__countainer {
+    @include flex-block-justify();
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
+    padding-top: 15rem;
+    margin-bottom: 15rem;
+  }
 
-#map {
-  width: 100%;
-  max-width: $desktop;
-}
+  &__info {
+    width: 100%;
+    max-width: 54.5rem;
+    &_heading {
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.6rem;
+      color: $color-green;
+      text-transform: uppercase;
+    }
+    &_text {
+      margin-top: 5rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+    }
+  }
 
-.full-map__pin_body {
-  filter: drop-shadow(0px 4px 20px #20113d)
-    drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
-}
-.full-map__pin_body,
-.full-map__pin_icon {
-  cursor: pointer;
-}
-.full-map__pin:hover > .full-map__pin_body {
-  fill: #fff;
-  filter: drop-shadow(0px 4px 20px #20113d)
-    drop-shadow(0px 4px 30px rgba(255, 255, 255, 0.5));
-  transition: linear 0.3s;
-}
-.full-map__pin:hover > .full-map__pin_outline {
-  stroke-width: 3px;
-  stroke-opacity: 1;
-  transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+  &__forms {
+    width: 100%;
+    max-width: 68rem;
+    &_body {
+      margin: 0;
+      padding: 0;
+      label {
+        display: block;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        height: 3.5rem;
+        span {
+          color: $color-green;
+        }
+      }
+      input {
+        border: 1px solid $text-default;
+      }
+      &_input {
+        display: block;
+        padding-left: 2rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 6rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin-bottom: 3.1rem;
+        color: #969696;
+      }
+      textarea {
+        display: block;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        border: 1px solid $text-default;
+        border-radius: 0.5rem;
+        width: 100%;
+        height: 20rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin-bottom: 3rem;
+        color: #969696;
+      }
+    }
+    &_btns {
+      margin-top: 7rem;
+      input {
+        border: none;
+      }
+    }
+    &_btn {
+      display: block;
+      padding-right: 3.5rem;
+      width: 100%;
+      max-width: 35.9rem;
+      height: 7.4rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-white;
+      background-color: $color-green;
+      border-radius: 0.5rem;
+      text-transform: uppercase;
+      background-image: url('../icons/UnionRightInvert.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-position: 74% 50%;
+      &:hover {
+        background-color: $color-green-dark;
+      }
+    }
+  }
 }
 
 //======footer======//
@@ -181,14 +244,13 @@
   background-color: $bg-donation;
 
   &__container {
-
       margin: 0 auto;
       width: 100%;
       max-width: $desktop;
   }
   &__header {
     @include flex-block-justify();
-    height: 21.4rem;
+    padding: 7rem 0;
   }
 
   &__logo {
@@ -256,7 +318,7 @@
     }
   }
   &__footer {
-    margin-top: 3.7rem;
+    padding: 3.7rem 0;
     @include flex-block-justify();
   }
   &__texts {

@@ -129,9 +129,11 @@ li {
 
 .nav__link_active {
   color: #00A092;
+  cursor: default;
 }
 
 .nav__link_active:hover {
+  cursor: default;
   -webkit-filter: none;
           filter: none;
 }
