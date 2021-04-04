@@ -28,7 +28,7 @@
   align-items: center;
   width: 100%;
   height: 11rem;
-  background-color: $bg-header;
+  background-color: $bg-orange;
 
     &__container {
       @include flex-block-justify();
@@ -69,12 +69,12 @@
   }
 
   &:active {
-    color: $nav-active;
+    color: $text-green-lite;
     filter: opacity(0.5);
   }
 
   &_active {
-    color:$nav-active;
+    color: $text-green-lite;
     cursor: default;
     &:hover {
       cursor: default;
@@ -124,7 +124,7 @@
   top: 0;
   width: 21rem;
   height: 84.6rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
   z-index: 1000;
   &__container {
     position: relative;
@@ -145,7 +145,7 @@
     font-size: 1.8rem;
     line-height: 2.9rem;
     text-transform: uppercase;
-    background-color: $bg-header;
+    background-color: $bg-orange;
     img {
       margin-left: 1rem;
     }
@@ -185,7 +185,7 @@
       width: 10.5rem;
       height: 10.5rem;
       border-radius: 50%;
-      background-color: $bg-btn-hover;
+      background-color: $bg-dark-orange;
       img {
         display: block;
         width: 75%;
@@ -247,7 +247,7 @@
       font-size: 5.4rem;
       line-height: 6.58rem;
       text-transform: uppercase;
-      color: $color-green;
+      color: $text-green-lite;
       text-align: center;
     }
 
@@ -258,7 +258,7 @@
     @include flex-block-center();
     width: 24rem;
     height: 7.4rem;
-    background-color: $bg-btn;
+    background-color: $bg-orange;
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -270,7 +270,7 @@
         margin-left: 1rem;
       }
       &:hover {
-        background-color: $bg-btn-hover;
+        background-color: $bg-dark-orange;
       }
     }
   }
@@ -332,7 +332,7 @@
   max-height: 20.9rem;
 
     &_active {
-      border: 3px solid $bg-btn;
+      border: 3px solid $bg-orange;
     }
 
     &_list {
@@ -368,7 +368,7 @@
       background-repeat: no-repeat;
       background-position: center;
         &:hover {
-          background-color: $btn-alt;
+          background-color: $bg-dark-blue;
           background-image: url('../icons/UnionLeftInvert.svg');
           background-repeat: no-repeat;
           background-position: center;
@@ -384,7 +384,7 @@
       background-repeat: no-repeat;
       background-position: center;
       &:hover {
-        background-color: $btn-alt;
+        background-color: $bg-dark-blue;
         background-image: url('../icons/UnionRightInvert.svg');
         background-repeat: no-repeat;
         background-position: center;
@@ -426,7 +426,7 @@
 .donation {
   @include flex-block-center();
   width: 100%;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
 
   &__container {
       @include flex-block-justify();
@@ -491,7 +491,7 @@
     height: 7.4rem;
     border: 1px solid $bg-white;
     border-radius: 0.5rem;
-    background-color: $bg-donation;
+    background-color: $bg-dark-blue;
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -527,14 +527,14 @@
       @include flex-block-center();
       width: 8rem;
       height: 7.4rem;
-      background-color: $bg-btn;
+      background-color: $bg-orange;
       border-radius: 0.5rem;
       border-top: 1px solid $bg-white;
       border-right: 1px solid $bg-white;
       border-bottom: 1px solid $bg-white;
       border-left: none;
       &:hover {
-        background-color: $bg-btn-hover;
+        background-color: $bg-dark-orange;
       }
   }
 }
@@ -562,7 +562,7 @@
       font-size: 4.2rem;
       line-height: 5.12rem;
       text-align: center;
-      color: $color-green;
+      color: $text-green-lite;
       text-transform: uppercase;
     }
     &_text {
@@ -622,7 +622,7 @@
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
-    color: $bg-text;
+    color: $text-orange;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     border-radius: 0.5rem;
@@ -634,7 +634,7 @@
     padding-right: 3.7rem;
     &:hover {
       color: $text-white;
-      background-color: $bg-btn-hover;
+      background-color: $bg-dark-orange;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 78% 50%;
@@ -655,7 +655,7 @@
 .footer {
   width: 100%;
   height: 32.9rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
 
   &__container {
       margin: 0 auto;
@@ -694,7 +694,7 @@
     filter: opacity(0.5);
     }
     &:active {
-    color: $nav-active;
+    color: $text-green-lite;
     filter: opacity(0.5);
     }
   }
@@ -728,7 +728,7 @@
     line-height: 2.2rem;
     color: $text-white;
     &:hover {
-      color: $text-alter;
+      color: $text-dark-blue;
     }
   }
   &__footer {

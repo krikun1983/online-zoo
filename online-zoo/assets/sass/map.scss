@@ -28,7 +28,7 @@
   align-items: center;
   width: 100%;
   height: 11rem;
-  background-color: $bg-header;
+  background-color: $bg-orange;
 
     &__container {
       @include flex-block-justify();
@@ -69,12 +69,12 @@
   }
 
   &:active {
-    color: $nav-active;
+    color: $text-green-lite;
     filter: opacity(0.5);
   }
 
   &_active {
-    color:$nav-active;
+    color: $text-green-lite;
     cursor: default;
     &:hover {
       cursor: default;
@@ -136,7 +136,7 @@
     font-family: $fontsMont-600;
     font-size: 5.4rem;
     line-height: 6.5rem;
-    color: $text-alter;
+    color: $text-dark-blue;
     text-transform: uppercase;
   }
 }
@@ -178,7 +178,7 @@
 .footer {
   width: 100%;
   height: 32.9rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
 
   &__container {
 
@@ -218,7 +218,7 @@
     filter: opacity(0.5);
     }
     &:active {
-    color: $nav-active;
+    color: $text-green-lite;
     filter: opacity(0.5);
     }
   }
@@ -252,7 +252,7 @@
     line-height: 2.2rem;
     color: $text-white;
     &:hover {
-      color: $text-alter;
+      color: $text-dark-blue;
     }
   }
   &__footer {

@@ -1,28 +1,30 @@
 /* COLORS */
 @import 'basic';
-$bg-header: #F58021;
-$bg-donation: #20113D;
-$bg-btn: #F58021;
-$bg-text: #F58021;
-$btn-alt: #20113D;
-$bg-cards: #20113D;
-$bg-btn-hover: #D26004;
-$bg-white: #FFFFFF;
-$text-white: #FFFFFF;
-$text-default: #000000;
-$text-alter: #20113D;
-$nav-active: #00A092;
-$main-header:#00A092;
-$cards-icon:#00A092;
-$color-green:#00A092;
-$color-green-dark:#05786E;
 
-/* FONTS NEW*/
+/* COLORS */
+$bg-default: #000000;
+$bg-white: #ffffff;
+$bg-orange: #f58021;
+$bg-dark-orange: #d26004;
+$bg-dark-blue: #20113d;
+$bg-green-lite: #00A092;
+$bg-green-dark: #05786e;
+
+$text-default: #000000;
+$text-white: #ffffff;
+$text-orange: #f58021;
+$text-dark-orange: #d26004;
+$text-dark-blue: #20113d;
+$text-green-lite: #00A092;
+$text-green-dark: #05786e;
+
+/* FONTS*/
 $fontsMont-400: 'Montserrat Regular'; //400
 $fontsMont-500: 'Montserrat Medium'; //500
 $fontsMont-600: 'Montserrat Semibold'; //600
 $fontsMont-800: 'Montserrat Bold'; //800
 $fontsMont-alternate: 'Montserrat Alternates ExtraBold';
+
 /* DEVICE-WIDTH */
 $desktop: 140rem;
 // $tablet-landscape: 1024px;

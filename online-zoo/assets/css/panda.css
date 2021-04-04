@@ -33,7 +33,8 @@ li {
   list-style: none;
 }
 
-/* FONTS NEW*/
+/* COLORS */
+/* FONTS*/
 /* DEVICE-WIDTH */
 .main_heading {
   display: inline;
@@ -54,7 +55,7 @@ li {
           align-items: center;
   width: 100%;
   height: 11rem;
-  background-color: #F58021;
+  background-color: #f58021;
 }
 
 .header__container {
@@ -183,7 +184,7 @@ li {
   top: 0;
   width: 21rem;
   height: 84.6rem;
-  background-color: #20113D;
+  background-color: #20113d;
   z-index: 1000;
 }
 
@@ -191,7 +192,7 @@ li {
   position: relative;
   padding-top: 8rem;
   width: 100%;
-  border-bottom: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
 }
 
 .sidebar__life {
@@ -210,12 +211,12 @@ li {
   width: 11rem;
   height: 3.8rem;
   border-bottom-right-radius: 0.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.9rem;
   text-transform: uppercase;
-  background-color: #F58021;
+  background-color: #f58021;
 }
 
 .sidebar__life img {
@@ -225,7 +226,7 @@ li {
 .sidebar__link_brackets {
   width: 1.6rem;
   height: 1.6rem;
-  color: #FFFFFF;
+  color: #ffffff;
   position: absolute;
   top: 3rem;
   right: 3rem;
@@ -263,7 +264,7 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  border-top: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
 }
 
 .sidebar__item_bg {
@@ -282,7 +283,7 @@ li {
   width: 10.5rem;
   height: 10.5rem;
   border-radius: 50%;
-  background-color: #D26004;
+  background-color: #d26004;
 }
 
 .sidebar__item_bg img {
@@ -306,7 +307,7 @@ li {
 }
 
 .sidebar__item_active {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
 }
 
 .sidebar__item_active::after {
@@ -315,7 +316,7 @@ li {
   position: absolute;
   width: 11.5rem;
   height: 11.5rem;
-  border: 3px solid #FFFFFF;
+  border: 3px solid #ffffff;
   border-radius: 50%;
 }
 
@@ -372,11 +373,11 @@ li {
           justify-content: center;
   width: 24rem;
   height: 7.4rem;
-  background-color: #F58021;
+  background-color: #f58021;
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #FFFFFF;
+  color: #ffffff;
   text-transform: uppercase;
   border-radius: 0.5rem;
   border: none;
@@ -387,7 +388,7 @@ li {
 }
 
 .cams__top_btn:hover {
-  background-color: #D26004;
+  background-color: #d26004;
 }
 
 .cams__video {
@@ -415,7 +416,7 @@ li {
   font-family: "Montserrat Medium";
   font-size: 2.84rem;
   line-height: 3.69rem;
-  color: #FFFFFF;
+  color: #ffffff;
   z-index: 10;
 }
 
@@ -459,7 +460,7 @@ li {
 }
 
 .cams__preview_active {
-  border: 3px solid #F58021;
+  border: 3px solid #f58021;
 }
 
 .cams__preview_list {
@@ -499,14 +500,14 @@ li {
   height: 7.4rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: url("../icons/UnionLeft.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .cams__preview_left:hover {
-  background-color: #20113D;
+  background-color: #20113d;
   background-image: url("../icons/UnionLeftInvert.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -517,14 +518,14 @@ li {
   height: 7.4rem;
   border-radius: 0.5rem;
   border: none;
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: url("../icons/UnionRight.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .cams__preview_right:hover {
-  background-color: #20113D;
+  background-color: #20113d;
   background-image: url("../icons/UnionRightInvert.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -547,10 +548,10 @@ li {
   width: 100%;
   max-width: 18.9rem;
   height: 4.4rem;
-  border-bottom: 1px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
+  border-bottom: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
   border-bottom-right-radius: 0.5rem;
-  color: #FFFFFF;
+  color: #ffffff;
   font-family: "Montserrat Medium";
   font-size: 2.6rem;
   line-height: 3.16rem;
@@ -577,7 +578,7 @@ li {
       -ms-flex-pack: center;
           justify-content: center;
   width: 100%;
-  background-color: #20113D;
+  background-color: #20113d;
 }
 
 .donation__container {
@@ -603,7 +604,7 @@ li {
   font-family: "Montserrat Medium";
   font-size: 4.2rem;
   line-height: 5.12rem;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-top: 5rem;
   margin-bottom: 2rem;
 }
@@ -614,7 +615,7 @@ li {
   font-family: "Montserrat Regular";
   font-size: 1.8rem;
   line-height: 2.7rem;
-  color: #FFFFFF;
+  color: #ffffff;
   margin-bottom: 4.7rem;
 }
 
@@ -629,7 +630,7 @@ li {
   font-family: "Montserrat Medium";
   font-size: 2.6rem;
   line-height: 3.38rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .donation__label::before {
@@ -642,7 +643,7 @@ li {
   font-size: 1.8rem;
   line-height: 2.2rem;
   font-family: "Montserrat Semibold";
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .donation__input {
@@ -652,23 +653,23 @@ li {
   padding-right: 9rem;
   width: 32rem;
   height: 7.4rem;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   border-radius: 0.5rem;
-  background-color: #20113D;
+  background-color: #20113d;
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
   text-transform: uppercase;
-  color: #FFFFFF;
+  color: #ffffff;
   -moz-appearance: textfield;
 }
 
 .donation__input::-webkit-input-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .donation__input::-moz-placeholder {
-  color: #FFFFFF;
+  color: #ffffff;
   opacity: 1;
 }
 
@@ -703,16 +704,16 @@ li {
           justify-content: center;
   width: 8rem;
   height: 7.4rem;
-  background-color: #F58021;
+  background-color: #f58021;
   border-radius: 0.5rem;
-  border-top: 1px solid #FFFFFF;
-  border-right: 1px solid #FFFFFF;
-  border-bottom: 1px solid #FFFFFF;
+  border-top: 1px solid #ffffff;
+  border-right: 1px solid #ffffff;
+  border-bottom: 1px solid #ffffff;
   border-left: none;
 }
 
 .donation__btn:hover {
-  background-color: #D26004;
+  background-color: #d26004;
 }
 
 .information {
@@ -818,7 +819,7 @@ li {
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #F58021;
+  color: #f58021;
   text-transform: uppercase;
   letter-spacing: 0.05rem;
   border-radius: 0.5rem;
@@ -831,8 +832,8 @@ li {
 }
 
 .information__btn:hover {
-  color: #FFFFFF;
-  background-color: #D26004;
+  color: #ffffff;
+  background-color: #d26004;
   background-image: url("../icons/UnionRightInvert.svg");
   background-repeat: no-repeat;
   background-position: 78% 50%;
@@ -850,7 +851,7 @@ li {
 .footer {
   width: 100%;
   height: 32.9rem;
-  background-color: #20113D;
+  background-color: #20113d;
 }
 
 .footer__container {
@@ -913,7 +914,7 @@ li {
 
 .footer__link {
   text-decoration: none;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__link:hover {
@@ -941,7 +942,7 @@ li {
   width: 35.9rem;
   height: 7.4rem;
   border-radius: 0.5rem;
-  border: 1px solid #FFFFFF;
+  border: 1px solid #ffffff;
   background-color: transparent;
   background-image: url("../icons/UnionRightWhite.svg");
   background-repeat: no-repeat;
@@ -949,7 +950,7 @@ li {
 }
 
 .footer__leave_btn:hover {
-  background-color: #FFFFFF;
+  background-color: #ffffff;
   background-image: url("../icons/UnionRight.svg");
   background-repeat: no-repeat;
   background-position: 90% 50%;
@@ -972,11 +973,11 @@ li {
   font-family: "Montserrat Semibold";
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__leave_link:hover {
-  color: #20113D;
+  color: #20113d;
 }
 
 .footer__footer {
@@ -1007,7 +1008,7 @@ li {
   font-family: "Montserrat Regular";
   font-size: 1.8rem;
   line-height: 2.2rem;
-  color: #FFFFFF;
+  color: #ffffff;
 }
 
 .footer__social {

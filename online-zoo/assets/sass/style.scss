@@ -31,7 +31,7 @@
   align-items: center;
   width: 100%;
   height: 11rem;
-  background-color: $bg-header;
+  background-color: $bg-orange;
 
     &__container {
       @include flex-block-justify();
@@ -72,12 +72,12 @@
   }
 
   &:active {
-    color: $nav-active;
+    color: $text-green-lite;
     filter: opacity(0.5);
   }
 
   &_active {
-    color:$nav-active;
+    color: $text-green-lite;
     cursor: default;
     &:hover {
       cursor: default;
@@ -142,7 +142,7 @@
       font-size: 8.2rem;
       line-height: 10rem;
       text-transform: uppercase;
-      color: $main-header;
+      color: $text-green-lite;
       letter-spacing: 0.07rem;
       margin-bottom: 3.2rem;
     }
@@ -158,7 +158,7 @@
       @include flex-block-center();
       width: 24rem;
       height: 7.4rem;
-      background-color: $bg-btn;
+      background-color: $bg-orange;
       font-family: $fontsMont-600;
       font-size: 1.8rem;
       line-height: 2.2rem;
@@ -170,7 +170,7 @@
         margin-left: 1rem;
       }
       &:hover {
-        background-color: $bg-btn-hover;
+        background-color: $bg-dark-orange;
       }
     }
 }
@@ -201,7 +201,7 @@
       font-size: 5.4rem;
       line-height: 6.5rem;
       text-transform: uppercase;
-      color: $main-header;
+      color: $text-green-lite;
       margin-bottom: 5rem;
     }
 
@@ -232,7 +232,7 @@
   @include flex-block-center();
   width: 100%;
   height: 22.1rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
 
   &__container {
       @include flex-block-justify();
@@ -293,7 +293,7 @@
     height: 7.4rem;
     border: 1px solid $bg-white;
     border-radius: 0.5rem;
-    background-color: $bg-donation;
+    background-color: $bg-dark-blue;
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -329,14 +329,14 @@
       @include flex-block-center();
       width: 8rem;
       height: 7.4rem;
-      background-color: $bg-btn;
+      background-color: $bg-orange;
       border-radius: 0.5rem;
       border-top: 1px solid $bg-white;
       border-right: 1px solid $bg-white;
       border-bottom: 1px solid $bg-white;
       border-left: none;
       &:hover {
-        background-color: $bg-btn-hover;
+        background-color: $bg-dark-orange;
       }
   }
 }
@@ -371,7 +371,7 @@
       font-size: 5.4rem;
       line-height: 6.5rem;
       text-transform: uppercase;
-      color: $main-header;
+      color: $text-green-lite;
       text-align: center;
       margin-top: 13.6rem;
       margin-bottom: 5rem;
@@ -399,13 +399,13 @@
     width: 6rem;
     height: 6rem;
     border-radius: 0.5rem;
-    border: 1px solid $btn-alt;
+    border: 1px solid $bg-dark-blue;
     background-color: $bg-white;
     background-image: url('../icons/UnionLeft.svg');
     background-repeat: no-repeat;
     background-position: center;
     &:hover {
-      background-color: $btn-alt;
+      background-color: $bg-dark-blue;
       background-image: url('../icons/UnionLeftInvert.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -415,13 +415,13 @@
     width: 6rem;
     height: 6rem;
     border-radius: 0.5rem;
-    border: 1px solid $btn-alt;
+    border: 1px solid $bg-dark-blue;
     background-color: $bg-white;
     background-image: url('../icons/UnionRight.svg');
     background-repeat: no-repeat;
     background-position: center;
     &:hover {
-      background-color: $btn-alt;
+      background-color: $bg-dark-blue;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -445,7 +445,7 @@
     position: relative;
     width: 44rem;
     height: 74.7rem;
-    background-color: $bg-cards;
+    background-color: $bg-dark-blue;
     border-radius: 0.5rem;
     &:hover {
       width: 48rem;
@@ -470,7 +470,7 @@
     font-size: 2.6rem;
     line-height: 5.4rem;
     color: $text-white;
-    background-color: $bg-cards;
+    background-color: $bg-dark-blue;
     border-top-left-radius: 0.5rem;
     border-bottom-right-radius: 0.5rem;
   }
@@ -509,7 +509,7 @@
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
-    color: $bg-text;
+    color: $text-orange;
     text-transform: uppercase;
     letter-spacing: 0.15rem;
     border-radius: 0.5rem;
@@ -521,7 +521,7 @@
     padding-right: 3.6rem;
     &:hover {
       color: $text-white;
-      background-color: $bg-btn-hover;
+      background-color: $bg-dark-orange;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 90% 50%;
@@ -538,7 +538,7 @@
     width: 36rem;
     height: 7.4rem;
     border-radius: 0.5rem;
-    border: 1px solid $btn-alt;
+    border: 1px solid $bg-dark-blue;
     background-color: $bg-white;
     background-image: url('../icons/UnionRight.svg');
     background-repeat: no-repeat;
@@ -547,7 +547,7 @@
       margin-left: 1rem;
     }
     &:hover {
-      background-color: $btn-alt;
+      background-color: $bg-dark-blue;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 89% 50%;
@@ -562,7 +562,7 @@
     font-size: 1.8rem;
     line-height: 2.2rem;
     padding-right: 3.5rem;
-    color: $btn-alt;
+    color: $text-dark-blue;
     &:hover {
       color: $text-white;
     }
@@ -573,7 +573,7 @@
 .payfeed {
   width: 100%;
   height: 220.5rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
 
   &__container {
     margin: 0 auto;
@@ -640,7 +640,7 @@
     @include flex-block-center();
     width: 24rem;
     height: 7.4rem;
-    background-color: $bg-btn;
+    background-color: $bg-orange;
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
@@ -652,7 +652,7 @@
         margin-left: 1rem;
       }
       &:hover {
-        background-color: $bg-btn-hover;
+        background-color: $bg-dark-orange;
       }
   }
 }
@@ -662,7 +662,7 @@
   padding-top: 10rem;
   width: 100%;
   height: 177.6rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
   background-image: url('../images/pandaGradient.png');
   background-repeat: no-repeat;
   background-position: center;
@@ -722,7 +722,7 @@
       font-family: $fontsMont-alternate;
       font-size: 12rem;
       line-height: 14.6rem;
-      color: $cards-icon;
+      color: $text-green-lite;
     }
     &_heading {
       font-family: $fontsMont-500;
@@ -766,7 +766,7 @@
     background-repeat: no-repeat;
     background-position: center;
     &:hover {
-      background-color: $btn-alt;
+      background-color: $bg-dark-blue;
       background-image: url('../icons/UnionLeftWhite.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -783,7 +783,7 @@
     background-repeat: no-repeat;
     background-position: center;
     &:hover {
-      background-color: $btn-alt;
+      background-color: $bg-dark-blue;
       background-image: url('../icons/UnionRightWhite.svg');
       background-repeat: no-repeat;
       background-position: center;
@@ -806,7 +806,7 @@
     background-repeat: no-repeat;
     background-position: 77% 50%;
     &:hover {
-      background-color: $nav-active;
+      background-color: $bg-green-lite;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 77% 50%;
@@ -848,7 +848,7 @@
     font-size: 5.4rem;
     line-height: 6.5rem;
     text-transform: uppercase;
-    color: $main-header;
+    color: $text-green-lite;
     text-align: center;
     margin-top: 13.6rem;
     margin-bottom: 5rem;
@@ -885,7 +885,7 @@
     flex-direction: column;
     width: 44rem;
     height: 65.8rem;
-    background-color: $bg-cards;
+    background-color: $bg-dark-blue;
     border-radius: 0.5rem;
     &:hover {
       width: 48rem;
@@ -931,7 +931,7 @@
     font-family: $fontsMont-600;
     font-size: 1.8rem;
     line-height: 2.2rem;
-    color: $bg-text;
+    color: $text-orange;
     text-transform: uppercase;
     letter-spacing: 0.05rem;
     border-radius: 0.5rem;
@@ -943,7 +943,7 @@
     padding-right: 3.6rem;
     &:hover {
       color: $text-white;
-      background-color: $bg-btn-hover;
+      background-color: $bg-dark-orange;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 75% 50%;
@@ -961,7 +961,7 @@
     width: 36rem;
     height: 7.4rem;
     border-radius: 0.5rem;
-    border: 1px solid $btn-alt;
+    border: 1px solid $bg-dark-blue;
     background-color: $bg-white;
     background-image: url('../icons/UnionRight.svg');
     background-repeat: no-repeat;
@@ -970,7 +970,7 @@
       margin-left: 1rem;
     }
     &:hover {
-      background-color: $btn-alt;
+      background-color: $bg-dark-blue;
       background-image: url('../icons/UnionRightInvert.svg');
       background-repeat: no-repeat;
       background-position: 89% 50%;
@@ -985,7 +985,7 @@
     font-size: 1.8rem;
     line-height: 2.2rem;
     padding-right: 3.5rem;
-    color: $btn-alt;
+    color: $text-dark-blue;
     &:hover {
       color: $text-white;
     }
@@ -1003,7 +1003,7 @@
 .footer {
   width: 100%;
   height: 32.9rem;
-  background-color: $bg-donation;
+  background-color: $bg-dark-blue;
 
   &__container {
 
@@ -1043,7 +1043,7 @@
     filter: opacity(0.5);
     }
     &:active {
-    color: $nav-active;
+    color: $text-green-lite;
     filter: opacity(0.5);
     }
   }
@@ -1077,7 +1077,7 @@
     line-height: 2.2rem;
     color: $text-white;
     &:hover {
-      color: $text-alter;
+      color: $text-dark-blue;
     }
   }
   &__footer {
