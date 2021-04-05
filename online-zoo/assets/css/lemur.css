@@ -473,6 +473,7 @@ li {
 
 .cams__top {
   margin: 5.4rem 0;
+  margin-bottom: 5rem;
   position: relative;
 }
 
@@ -539,7 +540,7 @@ li {
   position: absolute;
   left: 0;
   top: 0;
-  padding-top: 5%;
+  padding-top: 1%;
   padding-left: 1%;
   font-family: "Montserrat Medium";
   font-size: 2.84rem;
@@ -559,7 +560,7 @@ li {
 }
 
 .cams__heading_small {
-  margin-top: 10rem;
+  margin-top: 10.4rem;
   margin-bottom: 2.8rem;
   text-align: center;
   font-family: "Montserrat Medium";
@@ -846,7 +847,7 @@ li {
 
 .information {
   width: 100%;
-  padding-bottom: 15rem;
+  padding-bottom: 17.8rem;
 }
 
 .information__container {
@@ -859,7 +860,7 @@ li {
   margin: 15rem 0 15rem 17%;
   width: 100%;
   max-width: 104rem;
-  padding: 4.6rem 6rem 5rem;
+  padding: 5rem 6rem 4.2rem;
   box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.25);
   -webkit-box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.25);
@@ -880,7 +881,7 @@ li {
   font-family: "Montserrat Medium";
   text-align: center;
   font-size: 2.6rem;
-  line-height: 3.38rem;
+  line-height: 3.4rem;
 }
 
 .information__block {
@@ -911,7 +912,7 @@ li {
 .information__card {
   position: relative;
   width: 100%;
-  max-width: 56rem;
+  max-width: 50.6rem;
 }
 
 .information__card_item {
