@@ -141,6 +141,7 @@
 
   &__top {
     margin: 5.4rem 0;
+    margin-bottom: 5rem;
     position: relative;
     &_heading {
       width: 100%;
@@ -213,8 +214,8 @@
   }
 
   &__heading_small {
-    margin-top: 10rem;
-    margin-bottom: 2.8rem;
+    margin-top: 10.3rem;
+    margin-bottom: 2.9rem;
     text-align: center;
     font-family: $fontsMont-500;
     font-size: 4.2rem;
@@ -443,7 +444,7 @@
 //======Did you know======//
 .information {
   width: 100%;
-  padding-bottom: 15rem;
+  padding-bottom: 15.1rem;
   &__container {
     margin: 0 auto;
     width: 100%;
@@ -453,7 +454,7 @@
     margin: 15rem 0 15rem 17%;
     width: 100%;
     max-width: 104rem;
-    padding: 4.6rem 6rem 5rem;
+    padding: 5rem 6rem 5rem;
     box-shadow:1px 1px 50px 4px rgba(0,0,0,0.25);
       -webkit-box-shadow:1px 1px 50px 4px rgba(0,0,0,0.25);
       -moz-box-shadow:1px 1px 50px 4px rgba(0,0,0,0.25);
@@ -471,7 +472,7 @@
       font-family: $fontsMont-500;
       text-align: center;
       font-size: 2.6rem;
-      line-height: 3.38rem;
+      line-height: 3.4rem;
     }
   }
 
