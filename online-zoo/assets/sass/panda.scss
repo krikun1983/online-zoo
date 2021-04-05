@@ -1,122 +1,10 @@
-@import 'basic';
-@import 'variables';
+@import "basic";
+@import "variables";
+@import "mixins";
 
-@mixin flex-block-justify() {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
 
-@mixin flex-block-center() {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-//====!!==HEADER==!!====//
-.main_heading {
-  display: inline;
-  width: 1px;
-  height: 1px;
-  font-size: 0.1rem;
-  visibility: hidden;
-  margin: 0;
-  padding: 0;
-}
-.header {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 11rem;
-  background-color: $bg-orange;
-
-    &__container {
-      @include flex-block-justify();
-      margin: 0 auto;
-      width: 100%;
-      max-width: $desktop;
-    }
-}
-
-//==menu==//
-.nav {
-  @include flex-block-justify();
-  width: 100%;
-  max-width: 80rem;
-
-    &__list {
-      @include flex-block-justify();
-      width: 100%;
-      max-width: 55rem;
-    }
-
-    &__item {
-      cursor: pointer;
-      text-transform: uppercase;
-      font-family: $fontsMont-600;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-    }
-
-}
-
-.nav__link {
-  text-decoration: none;
-  color: $text-default;
-
-  &:hover {
-    filter: opacity(0.5);
-  }
-
-  &:active {
-    color: $text-green-lite;
-    filter: opacity(0.5);
-  }
-
-  &_active {
-    color: $text-green-lite;
-    cursor: default;
-    &:hover {
-      cursor: default;
-      filter: none;
-    }
-  }
-
-}
-
-//==social==//
-.social {
-  @include flex-block-justify();
-  width: 18rem;
-  list-style: none;
-
-    &__item {
-    display: block;
-    width: 4rem;
-    height: 4rem;
-      &:hover {
-      opacity: .6;
-      }
-    }
-}
-
-.icon_yt {
-  background-image: url('../icons/YouTube.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon_inst {
-  background-image: url('../icons/Instagram.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.icon_fb {
-  background-image: url('../icons/Facebook.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
+//====HEADER====//
+@import "header";
 
 //======main======//
 .sidebar {
@@ -364,12 +252,12 @@
       border-radius: 0.5rem;
       border: none;
       background-color: $bg-white;
-      background-image: url('../icons/UnionLeft.svg');
+      background-image: url("../icons/UnionLeft.svg");
       background-repeat: no-repeat;
       background-position: center;
         &:hover {
           background-color: $bg-dark-blue;
-          background-image: url('../icons/UnionLeftInvert.svg');
+          background-image: url("../icons/UnionLeftInvert.svg");
           background-repeat: no-repeat;
           background-position: center;
         }
@@ -380,12 +268,12 @@
       border-radius: 0.5rem;
       border: none;
       background-color: $bg-white;
-      background-image: url('../icons/UnionRight.svg');
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: center;
       &:hover {
         background-color: $bg-dark-blue;
-        background-image: url('../icons/UnionRightInvert.svg');
+        background-image: url("../icons/UnionRightInvert.svg");
         background-repeat: no-repeat;
         background-position: center;
       }
@@ -628,14 +516,14 @@
     border-radius: 0.5rem;
     border: none;
     background-color: transparent;
-    background-image: url('../icons/UnionOrange.svg');
+    background-image: url("../icons/UnionOrange.svg");
     background-repeat: no-repeat;
     background-position: 78% 50%;
     padding-right: 3.7rem;
     &:hover {
       color: $text-white;
       background-color: $bg-dark-orange;
-      background-image: url('../icons/UnionRightInvert.svg');
+      background-image: url("../icons/UnionRightInvert.svg");
       background-repeat: no-repeat;
       background-position: 78% 50%;
     }
@@ -651,103 +539,5 @@
   }
 }
 
-//======footer======//
-.footer {
-  width: 100%;
-  height: 32.9rem;
-  background-color: $bg-dark-blue;
-
-  &__container {
-      margin: 0 auto;
-      width: 100%;
-      max-width: $desktop;
-  }
-  &__header {
-    @include flex-block-justify();
-    padding: 7rem 0;
-  }
-
-  &__logo {
-    @include flex-block-justify();
-    width: 100%;
-    max-width: 41.4rem;
-  }
-  &__menu {
-    width: 100%;
-    max-width: 42.6rem;
-  }
-  &__list {
-    @include flex-block-justify();
-  }
-
-  &__item {
-    cursor: pointer;
-    text-transform: uppercase;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-  }
-  &__link {
-    text-decoration: none;
-    color: $text-white;
-    &:hover {
-    filter: opacity(0.5);
-    }
-    &:active {
-    color: $text-green-lite;
-    filter: opacity(0.5);
-    }
-  }
-
-  &__leave_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 35.9rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-white;
-    background-color: transparent;
-    background-image: url('../icons/UnionRightWhite.svg');
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    &:hover {
-      background-color: $bg-white;
-      background-image: url('../icons/UnionRight.svg');
-      background-repeat: no-repeat;
-      background-position: 90% 50%;
-    }
-  }
-  &__leave_link {
-    padding-right: 3.6rem;
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    &:hover {
-      color: $text-dark-blue;
-    }
-  }
-  &__footer {
-    padding: 3.7rem 0;
-    @include flex-block-justify();
-  }
-  &__texts {
-    @include flex-block-justify();
-    width: 100%;
-    max-width: 44.8rem;
-    font-family: $fontsMont-400;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-  }
-
-  &__social {
-  @include flex-block-justify();
-  width: 20rem;
-  list-style: none;
-  }
-}
+//====FOOTER====//
+@import "footer";

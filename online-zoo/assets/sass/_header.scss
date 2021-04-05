@@ -1,0 +1,110 @@
+@import "basic";
+
+//====!!==HEADER==!!====//
+.main_heading {
+  display: inline;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  font-size: 0.1rem;
+  visibility: hidden;
+}
+
+.header {
+  width: 100%;
+  background-color: $bg-orange;
+}
+
+.links {
+  @include flex-block-justify();
+  padding-top: 3rem;
+  padding-bottom: 2.8rem;
+}
+
+.logo {
+  &__img {
+    width: 100%;
+    max-width: 9.6rem;
+    height: auto;
+  }
+}
+
+//==menu==//
+.nav {
+  @include flex-block-justify();
+  width: 100%;
+  max-width: 80rem;
+}
+
+.menu {
+  @include flex-block-justify();
+  width: 100%;
+  max-width: 55rem;
+
+  &__item {
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    text-transform: uppercase;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: $text-default;
+      &:hover {
+        filter: opacity(.5);
+      }
+      &:active {
+        filter: opacity(.5);
+        color: $text-green-lite;
+      }
+
+    &_active {
+      color: $text-green-lite;
+        &:hover {
+          cursor: default;
+          filter: none;
+        }
+    }
+  }
+}
+
+//==social==//
+.social {
+  @include flex-block-justify();
+  width: 100%;
+  max-width: 18rem;
+
+  &__item {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+      &:hover {
+        filter: opacity(.5);
+      }
+  }
+}
+
+.icon_yt {
+  background-image: url("../icons/YouTube.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon_inst {
+  background-image: url("../icons/Instagram.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.icon_fb {
+  background-image: url("../icons/Facebook.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}

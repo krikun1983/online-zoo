@@ -1,0 +1,30 @@
+@import "basic";
+@import "variables";
+
+//====containers====//
+@mixin container-desktop() {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $desktop;
+}
+
+//====BLOCK-ALIGN====//
+
+@mixin flex-block-justify() {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@mixin flex-block-center() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+//====TEXT====//
+@mixin text-18-27-400 () {
+font-family: $fontsMont-400;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+}

@@ -1,0 +1,24 @@
+@import "basic";
+
+.color_white-blue {
+  &:hover {
+    background-color: $bg-white;
+  }
+  &_link {
+    color: $text-white;
+    &:hover {
+      color: $text-dark-blue;
+    }
+  }
+}
+
+.arrow_white-blue {
+  background-image: url("../icons/UnionRightWhite.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+  &:hover {
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+  }
+}
