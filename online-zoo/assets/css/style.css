@@ -198,7 +198,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 55rem;
+  max-width: 55.3rem;
 }
 
 .menu__item {
@@ -296,7 +296,7 @@ li {
   margin: 0 auto;
   width: 100%;
   max-width: 140rem;
-  padding-top: 12.8rem;
+  padding-top: 12.9rem;
 }
 
 .favorite__header {
@@ -306,7 +306,7 @@ li {
   line-height: 10rem;
   text-transform: uppercase;
   color: #00A092;
-  letter-spacing: 0.07rem;
+  letter-spacing: 0.08rem;
   margin-bottom: 3.2rem;
 }
 
@@ -316,7 +316,7 @@ li {
   font-size: 1.8rem;
   line-height: 2.7rem;
   color: #000000;
-  margin-bottom: 4.5rem;
+  margin-bottom: 4.3rem;
 }
 
 .favorite__btn {
@@ -337,8 +337,9 @@ li {
   line-height: 2.2rem;
   color: #ffffff;
   text-transform: uppercase;
-  border-radius: 0.5rem;
   border: none;
+  border-radius: 0.5rem;
+  padding-left: 3px;
 }
 
 .favorite__btn img {
@@ -349,15 +350,35 @@ li {
   background-color: #d26004;
 }
 
+.temp {
+  position: relative;
+  top: -1.1rem;
+}
+
 .welcome {
   width: 100%;
-  height: 136.2rem;
 }
 
 .welcome__container {
   margin: 0 auto;
   width: 100%;
   max-width: 140rem;
+}
+
+.welcome__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 121.4rem;
+  margin-top: 15rem;
+  margin-bottom: 14.8rem;
 }
 
 .welcome__news {
@@ -370,7 +391,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 15rem;
 }
 
 .welcome__main {
@@ -436,7 +456,11 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   margin: 0 auto;
+  padding-top: 0.9rem;
   width: 100%;
   max-width: 140rem;
 }
@@ -557,7 +581,6 @@ li {
 
 .friends {
   width: 100%;
-  height: 242.2rem;
   overflow: hidden;
 }
 
@@ -587,6 +610,7 @@ li {
   color: #00A092;
   text-align: center;
   margin-top: 13.6rem;
+  margin-left: 2rem;
   margin-bottom: 5rem;
 }
 
@@ -596,26 +620,25 @@ li {
   max-width: 92rem;
   font-family: "Montserrat Medium";
   font-size: 2.6rem;
-  line-height: 3.3rem;
+  line-height: 3.4rem;
   text-align: center;
   color: #000000;
 }
 
 .friends__arrow {
-  width: 18.5rem;
-  margin: 10.5rem auto 0;
+  width: 100%;
+  max-width: 17.5rem;
+  margin: 0 auto;
+  margin-top: 10.1rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .friends__left {
@@ -713,7 +736,7 @@ li {
 .friends__cart_frame {
   display: inline-block;
   position: absolute;
-  padding: 0 3rem;
+  padding: 0 2.5rem;
   height: 6rem;
   font-family: "Montserrat Medium";
   font-size: 2.6rem;
@@ -779,7 +802,7 @@ li {
   background-color: transparent;
   background-image: url("../icons/UnionOrange.svg");
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 92% 50%;
   padding-right: 3.6rem;
 }
 
@@ -788,7 +811,7 @@ li {
   background-color: #d26004;
   background-image: url("../icons/UnionRightInvert.svg");
   background-repeat: no-repeat;
-  background-position: 90% 50%;
+  background-position: 92% 50%;
 }
 
 .friends__choose {
@@ -862,6 +885,7 @@ li {
 }
 
 .payfeed {
+  margin-top: 15rem;
   width: 100%;
   height: 220.5rem;
   background-color: #20113d;
@@ -873,16 +897,20 @@ li {
   max-width: 140rem;
 }
 
+.payfeed__list {
+  margin-bottom: 1rem;
+}
+
 .payfeed__heading {
   font-family: "Montserrat Semibold";
   font-size: 5.4rem;
   line-height: 6.6rem;
   color: #ffffff;
   padding-top: 9rem;
+  margin-bottom: 10rem;
 }
 
 .payfeed__numbers {
-  margin: 10rem 0 5rem;
   width: 100%;
   color: #ffffff;
   font-family: "Montserrat Medium";
@@ -904,7 +932,7 @@ li {
 }
 
 .payfeed__items {
-  padding-top: 3rem;
+  padding-top: 8.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -940,21 +968,23 @@ li {
 
 .payfeed__block_heading {
   width: 100%;
-  max-width: 51rem;
+  max-width: 50.2rem;
   margin: 3rem 0 5rem;
+  font-family: "Montserrat Medium";
+  font-weight: normal;
   font-size: 2.6rem;
   line-height: 3.4rem;
-  font-family: "Montserrat Medium";
 }
 
 .payfeed__block_text {
+  font-family: "Montserrat Regular";
   font-size: 1.8rem;
   line-height: 2.7rem;
-  font-family: "Montserrat Regular";
+  margin-bottom: 9.2rem;
 }
 
 .payfeed__btn {
-  margin-top: 4rem;
+  margin-top: -4.7rem;
   margin-left: 72rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -994,6 +1024,7 @@ li {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 .users_think__container {
@@ -1014,7 +1045,7 @@ li {
 }
 
 .users_think__text {
-  margin-top: 4rem;
+  margin-top: 3.9rem;
   width: 100%;
   max-width: 56rem;
   font-family: "Montserrat Semibold";
@@ -1027,7 +1058,7 @@ li {
 .users_think__cards {
   position: absolute;
   top: 0;
-  right: -25rem;
+  right: -26rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1053,7 +1084,7 @@ li {
   content: "“";
   position: absolute;
   top: 2rem;
-  left: 3.7rem;
+  left: 5rem;
   font-family: "Montserrat Alternates ExtraBold";
   font-size: 12rem;
   line-height: 14.6rem;
@@ -1086,9 +1117,11 @@ li {
 }
 
 .users_think__arrow {
-  width: 18.5rem;
+  position: relative;
+  right: 1rem;
+  width: 18.4rem;
   margin: 0 auto;
-  margin-top: 70rem;
+  margin-top: 71rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1141,7 +1174,7 @@ li {
 }
 
 .users_think__leave {
-  margin-top: 38rem;
+  margin-top: 37.6rem;
   width: 100%;
 }
 

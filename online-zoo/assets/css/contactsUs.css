@@ -197,7 +197,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 55rem;
+  max-width: 55.3rem;
 }
 
 .menu__item {
@@ -345,6 +345,14 @@ li {
   max-width: 68rem;
 }
 
+.form__forms_error {
+  display: none;
+  font-family: "Montserrat Regular";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  color: #f58021;
+}
+
 .form__forms_body {
   margin: 0;
   padding: 0;
@@ -377,6 +385,11 @@ li {
   line-height: 2.7rem;
   margin-bottom: 3.1rem;
   color: #969696;
+}
+
+.form__forms_body_input:focus {
+  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+  box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
 }
 
 .form__forms_body textarea {

@@ -197,7 +197,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  max-width: 55rem;
+  max-width: 55.3rem;
 }
 
 .menu__item {
@@ -836,9 +836,9 @@ li {
   width: 100%;
   max-width: 104rem;
   padding: 4.6rem 6rem 5rem;
-  box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 1px 1px 50px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px 4px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 4px 4px 50px 4px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 4px 4px 50px 4px rgba(0, 0, 0, 0.25);
 }
 
 .information__knowledge_heading {
