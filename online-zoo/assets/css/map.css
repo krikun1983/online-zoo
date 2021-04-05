@@ -74,6 +74,53 @@ li {
 /* COLORS */
 /* FONTS*/
 /* DEVICE-WIDTH */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
+/* BASIC */
+html {
+  font-size: 10px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+li {
+  list-style: none;
+}
+
+.color_white-blue:hover {
+  background-color: #ffffff;
+}
+
+.color_white-blue_link {
+  color: #ffffff;
+}
+
+.color_white-blue_link:hover {
+  color: #20113d;
+}
+
+.arrow_white-blue {
+  background-image: url("../icons/UnionRightWhite.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
+.arrow_white-blue:hover {
+  background-image: url("../icons/UnionRight.svg");
+  background-repeat: no-repeat;
+  background-position: 90% 50%;
+}
+
 /* BASIC */
 html {
   font-size: 10px;

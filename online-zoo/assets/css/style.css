@@ -75,6 +75,12 @@ li {
 /* COLORS */
 /* FONTS*/
 /* DEVICE-WIDTH */
+.container {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 140rem;
+}
+
 /* BASIC */
 html {
   font-size: 10px;
@@ -114,12 +120,6 @@ li {
   background-image: url("../icons/UnionRight.svg");
   background-repeat: no-repeat;
   background-position: 90% 50%;
-}
-
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 140rem;
 }
 
 /* BASIC */

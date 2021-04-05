@@ -3,9 +3,6 @@
 @import "mixins";
 @import "btn";
 
-.container {
-  @include container-desktop();
-}
 //====HEADER====//
 @import "header";
 
