@@ -389,6 +389,11 @@ li {
   padding-bottom: 3.7rem;
 }
 
+nav {
+  width: 100%;
+  max-width: 42.6rem;
+}
+
 .logos {
   display: -webkit-box;
   display: -ms-flexbox;
