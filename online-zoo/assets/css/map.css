@@ -284,17 +284,16 @@ li {
 
 .main {
   width: 100%;
-  height: 130.3rem;
 }
 
 .map {
   margin: 0 auto;
   width: 100%;
-  max-width: 140rem;
+  max-width: 140.6rem;
 }
 
 .map__header {
-  margin: 4rem auto 7rem;
+  margin: 4rem auto 7.2rem;
   text-align: center;
   width: 100%;
   max-width: 60rem;
@@ -305,12 +304,10 @@ li {
   text-transform: uppercase;
 }
 
-.maps {
-  margin: 0 auto;
-  display: block;
-  width: 100%;
-  max-width: 140rem;
-  background-color: tomato;
+.map-img {
+  position: relative;
+  left: -0.3rem;
+  margin-bottom: 14.7rem;
 }
 
 #map {
