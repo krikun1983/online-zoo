@@ -599,6 +599,9 @@
     height: 46.3rem;
     background-color: $bg-white;
     border-radius: 0.5rem;
+    -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+    -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+    box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
     &::before {
       content: "“";
       position: absolute;

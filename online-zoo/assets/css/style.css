@@ -1045,6 +1045,8 @@ li {
   height: 46.3rem;
   background-color: #ffffff;
   border-radius: 0.5rem;
+  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
 }
 
 .users_think__card::before {
