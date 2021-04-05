@@ -320,8 +320,7 @@ li {
           filter: drop-shadow(0px 4px 20px #20113d) drop-shadow(0px 4px 30px rgba(245, 128, 33, 0.7));
 }
 
-.full-map__pin_body,
-.full-map__pin_icon {
+.pointer {
   cursor: pointer;
 }
 
