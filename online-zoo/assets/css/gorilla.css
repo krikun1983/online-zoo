@@ -791,6 +791,7 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   -moz-appearance: textfield;
+  /* Firefox */
 }
 
 .donation__input::-webkit-input-placeholder {
@@ -816,6 +817,15 @@ li {
 
 .donation__input:focus {
   -moz-appearance: none;
+}
+
+.donation__input::-webkit-outer-spin-button, .donation__input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.donation__input[type=number] {
+  -moz-appearance: textfield;
 }
 
 .donation__btn {
