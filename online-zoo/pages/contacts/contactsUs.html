@@ -14,7 +14,7 @@
 <body>
   <header class="header">
     <h1 class="main_heading">Online Zoo</h1>
-    <div class="container">
+    <div class="container-header">
       <div class="links">
         <a class="logo" href="../../index.html" title="Online-zoo">
           <img class="logo__img" src="../../assets/images/logo.svg" alt="Logo Online-zoo">
@@ -48,7 +48,11 @@
   <main class="main">
     <div class="touch">
       <div class="touch__countainer">
-        <img src="../../assets/images/touchAnimal.jpg" alt="Touch the animal">
+        <picture>
+          <source media="(min-width: 1201px)" srcset="../../assets/images/touchAnimal.jpg">
+          <source media="(max-width: 1200px)" srcset="../../assets/images/1200/touchAnimal__1200.jpg">
+          <img src="../../assets/images/touchAnimal.jpg" alt="Touch the animal">
+        </picture>
       </div>
     </div>
     <section class="form">
@@ -85,7 +89,7 @@
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container-footer">
       <div class="footer__top">
         <div class="logos">
           <a class="logo" href="../../index.html" title="Online-zoo">

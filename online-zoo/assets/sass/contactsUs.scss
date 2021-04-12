@@ -19,7 +19,21 @@
     }
   }
 }
-
+//////////1200//////////
+@media screen and (max-width: 1200px) {
+  .touch {
+    width: 100%;
+    &__countainer {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $tablet-landscape;
+      img {
+        width: 100%;
+        height: 81.5rem;
+      }
+    }
+  }
+}
 .form {
   width: 100%;
   &__countainer {
@@ -121,6 +135,7 @@
       }
     }
     &_btn {
+      cursor: pointer;
       display: block;
       padding-right: 3.5rem;
       width: 100%;
@@ -139,6 +154,133 @@
       background-position: 74% 50%;
       &:hover {
         background-color: $bg-green-dark;
+      }
+    }
+  }
+}
+//////////1200//////////
+@media screen and (max-width: 1200px) {
+
+  .form {
+    width: 100%;
+    max-width: 100%;
+    &__countainer {
+      @include flex-block-justify();
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      max-width: $tablet-landscape;
+      padding-top: 5rem;
+      margin-bottom: 10.1rem;
+    }
+
+    &__info {
+      width: 100%;
+      max-width: 100%;
+      &_heading {
+        margin: 0 auto;
+        font-family: $fontsMont-600;
+        font-size: 5.4rem;
+        line-height: 6.6rem;
+        text-align: center;
+        padding-right: 1rem;
+        color: $text-green-lite;
+        text-transform: uppercase;
+      }
+      &_text {
+        // max-width: 83.5rem;
+        margin-top: 3rem;
+        padding-left: 22.3rem;
+        padding-right: 14.2rem;
+        text-align: center;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+    }
+
+    &__forms {
+      width: 100%;
+      max-width: 74rem;
+      margin-top: 5rem;
+      &_body {
+        margin: 0;
+        padding: 0;
+        label {
+          display: block;
+          font-family: $fontsMont-400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          height: 3.5rem;
+          span {
+            color: $text-green-lite;
+          }
+        }
+        input {
+          border: 1px solid $bg-default;
+          &:invalid {
+            // background-color: red;
+            // display: block;
+          }
+        }
+        &_input {
+          display: block;
+          padding-left: 2rem;
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 6rem;
+          font-family: $fontsMont-400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          margin-bottom: 3.1rem;
+          color: #969696;
+          &:focus {
+            -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+            -moz-box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+            box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+          }
+        }
+        textarea {
+          display: block;
+          padding-top: 2rem;
+          padding-left: 2rem;
+          border: 1px solid $bg-default;
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 20rem;
+          font-family: $fontsMont-400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          margin-bottom: 3rem;
+          color: #969696;
+        }
+      }
+      &_btns {
+        margin-top: 5.2rem;
+        input {
+          border: none;
+        }
+      }
+      &_btn {
+        display: block;
+        padding-right: 3.5rem;
+        width: 100%;
+        max-width: 35.9rem;
+        height: 7.4rem;
+        font-family: $fontsMont-600;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        color: $text-white;
+        background-color: $bg-green-lite;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        background-image: url('../icons/UnionRightInvert.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 74% 50%;
+        &:hover {
+          background-color: $bg-green-dark;
+        }
       }
     }
   }

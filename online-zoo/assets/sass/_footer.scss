@@ -1,4 +1,11 @@
 @import "basic";
+@import "mixins";
+
+.container-footer {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $desktop;
+}
 
 //====!!==FOOTER==!!====//
 .footer {
@@ -69,4 +76,46 @@ nav {
 .btn-donate-vor-vol {
   border: 1px solid $bg-white;
   padding-right: 3.6rem;
+}
+
+////////////////1200////////////////////////
+@media screen and (max-width: 1200px) {
+
+  .container-footer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $tablet-landscape;
+  }
+
+  .logos {
+    @include flex-block-justify();
+    margin-left: 4rem;
+    width: 100%;
+    max-width: 34.4rem;
+  }
+
+  nav {
+    width: 100%;
+    max-width: 34.7rem;
+  }
+
+  .btn-transparent {
+    margin-right: 3.9rem;
+  }
+
+  .copyrights {
+    @include flex-block-justify();
+    margin-left: 4rem;
+    width: 100%;
+    max-width: 44.8rem;
+    @include text-18-27-400();
+    color: $text-white;
+  }
+
+  .social_more {
+    width: 100%;
+    max-width: 20rem;
+    margin-right: 3.9rem;
+  }
+
 }

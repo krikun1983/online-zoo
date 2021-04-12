@@ -1,13 +1,6 @@
 @import "basic";
 @import "variables";
 
-//====containers====//
-.container {
-  margin: 0 auto;
-  width: 100%;
-  max-width: $desktop;
-}
-
 //====BLOCK-ALIGN====//
 
 @mixin flex-block-justify() {
@@ -18,13 +11,19 @@
 
 @mixin flex-block-center() {
   display: flex;
-  align-items: center;
   justify-content: center;
+  align-items: center;
 }
 
 //====TEXT====//
 @mixin text-18-27-400 () {
-font-family: $fontsMont-400;
+  font-family: $fontsMont-400;
   font-size: 1.8rem;
   line-height: 2.7rem;
+}
+
+@mixin text-54-66-600 () {
+  font-family: $fontsMont-600;
+  font-size: 5.4rem;
+  line-height: 6.6rem;
 }

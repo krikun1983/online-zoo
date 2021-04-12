@@ -42,6 +42,7 @@
 font-family: 'Montserrat Alternates ExtraBold';
 src: url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.eot');
 src: url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.eot?#iefix') format('embedded-opentype'),
+url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.woff2') format('woff2'),
 url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.woff') format('woff'),
 url('../fonts/MontserratAlternates/MontserratAlternates-ExtraBold.ttf') format('truetype');
 font-weight: normal;

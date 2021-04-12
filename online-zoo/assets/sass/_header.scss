@@ -1,4 +1,13 @@
 @import "basic";
+@import "mixins";
+@import 'variables';
+
+//====containers====//
+.container-header {
+  margin: 0 auto;
+  width: 100%;
+  max-width: $desktop;
+}
 
 //====!!==HEADER==!!====//
 .main_heading {
@@ -107,4 +116,34 @@
   background-image: url("../icons/Facebook.svg");
   background-repeat: no-repeat;
   background-position: center;
+}
+
+////////////////1200////////////////////////
+@media screen and (max-width: 1200px) {
+  .container-header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $tablet-landscape;
+    padding-left: 10rem;
+    padding-right: 10rem;
+  }
+
+ .links {
+    @include flex-block-justify();
+    padding-top: 3rem;
+    padding-bottom: 2.8rem;
+  }
+
+  //==menu==//
+  .nav {
+    @include flex-block-justify();
+    width: 100%;
+    max-width: 74.1rem;
+  }
+
+  .menu {
+    @include flex-block-justify();
+    width: 100%;
+    max-width: 48.1rem;
+  }
 }
