@@ -14,7 +14,7 @@
 <body>
   <header class="header">
     <h1 class="main_heading">Online Zoo</h1>
-    <div class="container">
+    <div class="container-header">
       <div class="links">
         <a class="logo" href="index.html" title="Online-zoo">
           <img class="logo__img" src="assets/images/logo.svg" alt="Logo Online-zoo">
@@ -296,40 +296,46 @@
     </section>
     <section class="users_think">
       <div class="users_think__container">
-        <div class="users_think__block">
-          <h3 class="users_think__heading">what our users think</h3>
-          <p class="users_think__text">We are continuously striving to improve the experiences of our future guests.
-            Below you can leave your own feedback, or simply view feedback from past clients.</p>
-        </div>
-        <div class="users_think__cards">
-          <div class="users_think__card">
-            <div class="users_think__card_heading">New Jersey, June 2020</div>
-            <p class="users_think__card_text">I am writing to thank you for your mission is to bring people closer to
-              nature! Like myself, children were very impressed by the opportunity to explore the life of incredible
-              animals in real-time.</p>
-            <div class="users_think__card_author">Karen Maithlan</div>
+        <div class="users_think__wrapper">
+          <div class="users_think__block">
+            <h3 class="users_think__heading">what our users think</h3>
+            <p class="users_think__text">We are continuously striving to improve the experiences of our future guests.
+              Below you can leave your own feedback, or simply view feedback from past clients.</p>
           </div>
-          <div class="users_think__card">
-            <div class="users_think__card_heading">Toronto, November 2020</div>
-            <p class="users_think__card_text">We so enjoy the ever-evolving selection of animals from around the globe.
-              THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our
-              understanding of the animal kingdom.</p>
-            <div class="users_think__card_author">Carol Larsen</div>
-          </div>
-          <div class="users_think__card">
-            <div class="users_think__card_heading">London, February 2020</div>
-            <p class="users_think__card_text">A fantastic experience for kids and adults alike! If anyone is looking for
-              an attraction that educates people on wild animals –<br>it's for you! I highly recommend seeing for
-              yourself
-              the variety of animals on your screen.</p>
-            <div class="users_think__card_author">C. Stockman</div>
-          </div>
-          <div class="users_think__card">
-            <div class="users_think__card_heading">Amsterdam, June 2020</div>
-            <p class="users_think__card_text">I want to thank you for the amazing sites you find to put your cameras to
-              let each of us see things that we would probably never see on our own. There are so many positives on Zoo
-              Online and I'm grateful for it. Thank you so much!</p>
-            <div class="users_think__card_author">Tomas Ray</div>
+          <div class="users_think__cards">
+            <div class="users_think__card">
+              <div class="users_think__card_heading">New Jersey, June 2020</div>
+              <p class="users_think__card_text">I am writing to thank you for your mission is to bring people closer to
+                nature! Like myself, children were very impressed by the opportunity to explore the life of incredible
+                animals in real-time.</p>
+              <div class="users_think__card_author">Karen Maithlan</div>
+            </div>
+            <div class="users_think__card">
+              <div class="users_think__card_heading">Toronto, November 2020</div>
+              <p class="users_think__card_text">We so enjoy the ever-evolving selection of animals from around the
+                globe.
+                THANK YOU for sharing these fascinating animal friends with us so that we may learn and increase our
+                understanding of the animal kingdom.</p>
+              <div class="users_think__card_author">Carol Larsen</div>
+            </div>
+            <div class="users_think__card">
+              <div class="users_think__card_heading">London, February 2020</div>
+              <p class="users_think__card_text">A fantastic experience for kids and adults alike! If anyone is looking
+                for
+                an attraction that educates people on wild animals –<br>it's for you! I highly recommend seeing for
+                yourself
+                the variety of animals on your screen.</p>
+              <div class="users_think__card_author">C. Stockman</div>
+            </div>
+            <div class="users_think__card">
+              <div class="users_think__card_heading">Amsterdam, June 2020</div>
+              <p class="users_think__card_text">I want to thank you for the amazing sites you find to put your cameras
+                to
+                let each of us see things that we would probably never see on our own. There are so many positives on
+                Zoo
+                Online and I'm grateful for it. Thank you so much!</p>
+              <div class="users_think__card_author">Tomas Ray</div>
+            </div>
           </div>
         </div>
         <div class="users_think__arrow">
@@ -348,8 +354,13 @@
         <h3 class="animals_love__heading">care for the animals you love</h3>
         <p class="animals_love__text">You can help to look after the animals you love with your gift today</p>
         <div class="animals_love__cards">
-          <div class="animals_love__cards_big"><img class="animals_love__cards_big_img"
-              src="assets/images/koala_big.png" alt="koala"></div>
+          <div class="animals_love__cards_big">
+            <picture>
+              <source media="(min-width: 1201px)" srcset="assets/images/koala_big.png">
+              <source media="(max-width: 1200px)" srcset="assets/images/1200/koala_big__1200.png">
+              <img src="assets/images/koala_big.png" alt="koala">
+            </picture>
+          </div>
           <div class="animals_love__card_wrapper">
             <a class="animals_love__card_link" href="pages/zoos/panda.html">
               <div class="animals_love__card">
@@ -401,13 +412,17 @@
               your favourite</a></span>
         </div>
         <div class="animals_love__screen">
-          <img src="assets/images/screen.jpg" alt="screen">
+          <picture>
+            <source media="(min-width: 1201px)" srcset="assets/images/screen.jpg">
+            <source media="(max-width: 1200px)" srcset="assets/images/1200/screen__1200.jpg">
+            <img src="assets/images/screen.jpg" alt="screen">
+          </picture>
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
+    <div class="container-footer">
       <div class="footer__top">
         <div class="logos">
           <a class="logo" href="index.html" title="Online-zoo">
