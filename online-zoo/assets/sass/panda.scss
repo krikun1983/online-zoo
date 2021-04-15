@@ -57,6 +57,7 @@ aside {
   }
 
   &__link_brackets {
+    cursor: pointer;
     width: 1.6rem;
     height: 1.6rem;
     color: $text-white;
@@ -124,6 +125,7 @@ aside {
   }
 
   &__arrow {
+    cursor: pointer;
     display: block;
     width: 0.9rem;
     height: 1.5rem;

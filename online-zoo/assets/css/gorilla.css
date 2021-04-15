@@ -455,6 +455,7 @@ aside {
 }
 
 .sidebar__link_brackets {
+  cursor: pointer;
   width: 1.6rem;
   height: 1.6rem;
   color: #ffffff;
@@ -584,6 +585,7 @@ aside {
 }
 
 .sidebar__arrow {
+  cursor: pointer;
   display: block;
   width: 0.9rem;
   height: 1.5rem;
@@ -761,6 +763,7 @@ aside {
 }
 
 .cams__preview_left {
+  cursor: pointer;
   width: 8rem;
   height: 7.4rem;
   border-radius: 0.5rem;
@@ -779,6 +782,7 @@ aside {
 }
 
 .cams__preview_right {
+  cursor: pointer;
   width: 8rem;
   height: 7.4rem;
   border-radius: 0.5rem;
@@ -1328,6 +1332,7 @@ aside {
 }
 
 .donation__btn {
+  cursor: pointer;
   position: absolute;
   right: 0;
   bottom: 0;
