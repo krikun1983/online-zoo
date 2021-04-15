@@ -282,6 +282,7 @@ aside {
     }
 
     &_left {
+      cursor: pointer;
       width: 8rem;
       height: 7.4rem;
       border-radius: 0.5rem;
@@ -298,6 +299,7 @@ aside {
         }
     }
     &_right {
+      cursor: pointer;
       width: 8rem;
       height: 7.4rem;
       border-radius: 0.5rem;
@@ -344,7 +346,6 @@ aside {
     bottom: 8.5%;
   }
 }
-//======Your donation makes a difference======//
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
 
@@ -668,6 +669,8 @@ aside {
   //======Live cams======//
 
 }
+//======Your donation makes a difference======//
+
 .donation {
   @include flex-block-center();
   width: 100%;

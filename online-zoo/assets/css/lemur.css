@@ -761,6 +761,7 @@ aside {
 }
 
 .cams__preview_left {
+  cursor: pointer;
   width: 8rem;
   height: 7.4rem;
   border-radius: 0.5rem;
@@ -779,6 +780,7 @@ aside {
 }
 
 .cams__preview_right {
+  cursor: pointer;
   width: 8rem;
   height: 7.4rem;
   border-radius: 0.5rem;
