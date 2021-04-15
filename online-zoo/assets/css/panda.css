@@ -413,7 +413,7 @@ aside {
   position: sticky;
   top: 0;
   left: 0;
-  width: 22rem;
+  width: 21rem;
   height: 84.6rem;
   background-color: #20113d;
   z-index: 1000;
@@ -439,7 +439,7 @@ aside {
   position: absolute;
   top: 0;
   left: 0;
-  width: 12rem;
+  width: 11.2rem;
   height: 3.8rem;
   border-bottom-right-radius: 0.5rem;
   color: #ffffff;
@@ -514,12 +514,6 @@ aside {
   height: 10.5rem;
   border-radius: 50%;
   background-color: #d26004;
-}
-
-.sidebar__item_bg img {
-  display: block;
-  width: 75%;
-  height: 75%;
 }
 
 .sidebar__item_link {

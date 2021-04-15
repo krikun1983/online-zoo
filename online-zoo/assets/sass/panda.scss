@@ -27,7 +27,7 @@ aside {
   position: sticky;
   top: 0;
   left: 0;
-  width: 22rem;
+  width: 21rem;
   height: 84.6rem;
   background-color: $bg-dark-blue;
   z-index: 1000;
@@ -42,7 +42,7 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    width: 12rem;
+    width: 11.2rem;
     height: 3.8rem;
     border-bottom-right-radius: 0.5rem;
     color: $text-white;
@@ -90,11 +90,6 @@ aside {
       height: 10.5rem;
       border-radius: 50%;
       background-color: $bg-dark-orange;
-      img {
-        display: block;
-        width: 75%;
-        height: 75%;
-      }
     }
     &_link {
         display: flex;
@@ -141,7 +136,6 @@ aside {
   }
 }
 
-
 //======Live cams======//
 .cams {
   width: 100%;
@@ -157,7 +151,6 @@ aside {
     margin-bottom: 5rem;//=================
     position: relative;
     &_heading {
-
       width: 100%;
       font-family: $fontsMont-600;
       font-size: 5.4rem;
