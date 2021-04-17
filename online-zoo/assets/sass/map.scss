@@ -74,6 +74,39 @@
 
 }
 
+////////////////640////////////////////////
+@media screen and (max-width: 640px) {
+
+  .map {
+    margin: 11rem auto 0;
+    padding-top: 0.1rem;
+    width: 100%;
+    max-width: $tablet-mini;
+    &__header {
+      margin: 3.1rem auto 6.6rem;
+      text-align: center;
+      width: 100%;
+      max-width: 60rem;
+      font-family: $fontsMont-600;
+      font-size: 4.2rem;
+      line-height: 5.12rem;
+      color: $text-dark-blue;
+      text-transform: uppercase;
+    }
+  }
+
+  .map-img {
+    position: relative;
+    left: 0rem;
+    margin-bottom: 9.9rem;
+  }
+
+  #map {
+    width: 100%;
+    max-width: $tablet-landscape;
+  }
+
+}
 
 .full-map__pin_body {
   filter: drop-shadow(0px 4px 20px #20113d)

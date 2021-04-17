@@ -2151,8 +2151,8 @@ li {
     border-radius: 0.5rem;
   }
   .friends__cart:hover {
-    width: 31rem;
-    height: 62rem;
+    width: 29rem;
+    height: 60rem;
     position: relative;
     -webkit-transition-duration: 2s;
             transition-duration: 2s;
