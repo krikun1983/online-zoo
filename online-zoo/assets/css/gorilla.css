@@ -408,7 +408,7 @@ li {
     left: 0;
     right: 0;
     max-width: 64rem;
-    z-index: 200;
+    z-index: 3000;
     background-color: #f58021;
   }
   .container-header {

@@ -30,7 +30,7 @@ aside {
   width: 21rem;
   height: 84.6rem;
   background-color: $bg-dark-blue;
-  z-index: 500;
+  z-index: 150;
   &__container {
     position: relative;
     padding-top: 8rem;
@@ -337,6 +337,7 @@ aside {
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
+
   //======main======//
   .main {
     position: relative;
@@ -658,7 +659,310 @@ aside {
   }
 
 }
+////////////////640////////////////////////
+@media screen and (max-width: 640px) {
 
+  //======main======//
+  .main {
+    margin-top: 11rem;
+    position: relative;
+  }
+  .sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24.4%;
+  }
+  .sidebar {
+    position: sticky;
+    top: 11rem;
+    left: 0;
+    width: 7.8rem;
+    height: 50rem;
+    background-color: $bg-dark-blue;
+    z-index: 1000;
+    &__container {
+      position: relative;
+      padding-top: 5rem;
+      width: 100%;
+      border-bottom: 1px solid $bg-white;
+    }
+    &__life {
+      display: none;
+    }
+
+    &__link_brackets {
+      width: 1.6rem;
+      height: 1.5rem;
+      color: $text-white;
+      position: absolute;
+      top: 1.65rem;
+      right: 41%;
+      z-index: 50;
+      background-image: url("../icons/brackets.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__list {
+      @include flex-block-justify();
+      flex-direction: column;
+    }
+    &__item {
+      padding-left: 1rem;
+      width: 100%;
+      height: 10.0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid $bg-white;
+      &_bg {
+        position: relative;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color: transparent;
+       }
+      &_link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          svg {
+            fill: white;
+          }
+      }
+
+      &_body {
+        width: 3.5rem;
+        height: 4rem;
+      }
+      &_icon {
+        fill: $bg-orange;
+      }
+      .panda {
+        width: 4.3rem;
+        height: 4rem;
+      }
+
+      &_active {
+        background-color: transparent;
+        .sidebar__item_icon {
+          fill: $bg-white;
+        }
+        &::after {
+          content: "";
+          display: none;
+        }
+      }
+    }
+
+    &__arrow {
+      display: block;
+      width: 0.9rem;
+      height: 1.5rem;
+      position: absolute;
+      bottom: -3.5rem;
+      right: 50%;
+      z-index: 10;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .sidebar__icon {
+    fill: #ffffff;
+  }
+
+  //======Live cams======//
+  .cams {
+    width: 100%;
+    &__container {
+      padding-top: 2.8rem;
+      padding-right: 2.1rem;
+      margin: 0 auto;
+      width: 100%;
+      max-width: $tablet-mini;
+    }
+
+    &__top {
+      margin: 0 auto;
+      margin-bottom: 1.9rem;//=================
+      position: relative;
+      &_heading {
+        padding-left: 6.4rem;
+        width: 100%;
+        font-family: $fontsMont-600;
+        font-size: 4.2rem;
+        line-height: 5.12rem;
+        text-transform: uppercase;
+        color: $text-green-lite;
+        text-align: center;
+      }
+
+      &_btn {
+      cursor: pointer;
+      position: absolute;
+      top: 492px;
+      right: 0;
+      @include flex-block-center();
+      width: 21.2rem;
+      height: 4.8rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
+        img {
+          margin-left: 1rem;
+        }
+        &:hover {
+          background-color: $bg-dark-orange;
+        }
+      }
+    }
+
+    &__video {
+      position: relative;
+      margin-left: 7.8rem;
+      padding-bottom: 60%;
+      padding-top: 3rem;
+      border-top-right-radius: 0.5rem;
+      height: 0;
+      overflow: hidden;
+        &_iframe {
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        &_default {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding-top: 1%;
+          padding-left: 1%;
+          font-family: $fontsMont-500;
+          font-size: 1.45rem;
+          line-height: 1.89rem;
+          color: $text-white;
+          z-index: 10;
+        }
+        &_plug {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: transparent;
+          width: 100%;
+          height: 100%;
+          z-index: 9;
+        }
+    }
+
+    &__heading_small {
+      margin-top: 9rem;//==================
+      margin-bottom: 2rem;
+      padding-left: 0rem;
+      padding-right: 11%;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+      text-transform: none;
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &__preview {
+      @include flex-block-justify();
+      margin: 0 auto;
+      margin-left: 17.4rem;
+      margin-bottom: 8rem;
+      width: 100%;
+      max-width: 44.5rem;
+      height: 100%;
+      max-height: 10.6rem;
+
+      &_active {
+        border: 3px solid $bg-orange;
+      }
+
+      &_list {
+        @include flex-block-justify();
+        width: 100%;
+        max-width: 83.5rem;
+      }
+      &_item {
+        position: relative;
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+        width: 13.5rem;
+        height: 10.6rem;
+        border-radius: 0.5rem;
+      }
+
+      &_iframe_small {
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      &_left {
+        display: none;
+      }
+      &_right {
+        display: none;
+      }
+
+      &_webs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        max-width: 7.0rem;
+        height: 2.1rem;
+        border-bottom: 1px solid $text-white;
+        border-right: 1px solid $text-white;
+        border-bottom-right-radius: 0.28rem;
+        color: $text-white;
+        font-family: $fontsMont-500;
+        font-size: 1.02rem;
+        line-height: 1.53rem;
+        img {
+          width: 1.13rem;
+          height: 1.13rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      width: 5.36rem;
+      height: 2.79rem;
+      right: 4%;
+      bottom: 8%;
+    }
+  }
+
+}
 //======Your donation makes a difference======//
 
 .donation {
@@ -921,6 +1225,147 @@ aside {
   }
 }
 }
+
+////////////////640////////////////////////
+@media screen and (max-width: 640px) {
+
+  .donation {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: 51.5rem;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 1.9rem;
+      padding-top: 0;
+      padding-left: 2.7rem;
+      padding-right: 2.7rem;
+      width: 100%;
+      max-width: $tablet-mini;
+    }
+
+    &__heading {
+      max-width: 56.5rem;
+      padding-left: 1.7rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 4.2rem;
+      line-height: 5.12rem;
+      font-weight: normal;
+      color: $text-white;
+      margin-bottom: 3.1rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 60rem;
+      text-align: center;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-white;
+      margin-bottom: 0.2rem;
+    }
+
+    &__form {
+      position: relative;
+      margin-top: 2.7rem;
+    }
+
+    &__label {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+      color: $text-white;
+      &::before {
+          content: "$";
+          position: absolute;
+          padding-left: 3.4rem;
+          z-index: 15;
+          top: 7rem;
+          left: 0.3rem;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-family: $fontsMont-600;
+          color: $text-white;
+      }
+    }
+
+  &__input {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 5.5rem;
+    padding-right: 9rem;
+    width: 36.3rem;
+    height: 7.4rem;
+    border: 1px solid $bg-white;
+    border-radius: 0.5rem;
+    background-color: $bg-dark-blue;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: $text-white;
+    -moz-appearance: textfield;
+      &::-webkit-input-placeholder {
+        color: $text-white;
+      }
+      &::-moz-placeholder {
+        color: $text-white;
+        opacity:1;
+      }
+      &:focus::-webkit-input-placeholder {
+         opacity:0;
+      }
+      &:focus::-moz-placeholder {
+         opacity:0;
+      }
+
+      &:hover {
+        -moz-appearance: none;
+      }
+      &:focus {
+        -moz-appearance: none;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+  }
+
+  &__btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include flex-block-center();
+      width: 7.4rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      border-radius: 0.5rem;
+      border-top: 1px solid $bg-white;
+      border-right: 1px solid $bg-white;
+      border-bottom: 1px solid $bg-white;
+      border-left: none;
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
 //======Did you know======//
 .information {
   width: 100%;
@@ -1034,6 +1479,7 @@ aside {
 
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
+
   .information {
     width: 100%;
     padding-bottom: 10rem; //======================
@@ -1149,7 +1595,133 @@ aside {
     font-size: 1.8rem;
     line-height: 2.7rem;
   }
+  }
+
 }
+
+////////////////640////////////////////////
+@media screen and (max-width: 640px) {
+
+  .information {
+    width: 100%;
+    padding-bottom: 10rem;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $tablet-mini;
+    }
+  &__knowledge {
+    margin: 8rem auto 8rem auto;
+    width: 100%;
+    max-width: 60rem;
+    padding: 0 2rem 4.4rem;
+    border-radius: 0.5rem;
+    box-shadow:4px 4px 50px 4px rgba(0,0,0,0.25);
+      -webkit-box-shadow:4px 4px 50px 4px rgba(0,0,0,0.25);
+      -moz-box-shadow:4px 4px 50px 4px rgba(0,0,0,0.25);
+      &_heading {
+        margin: 0 auto 3rem;
+        padding-top: 2.5rem;
+        padding-left: 0rem;
+        padding-right: 1.1rem;
+        font-family: $fontsMont-500;
+        font-size: 4.2rem;
+        line-height: 5.12rem;
+        text-align: center;
+        color: $text-green-lite;
+        text-transform: uppercase;
+      }
+      &_text {
+        width: 100%;
+        max-width: 54rem;
+        margin: 0 auto;
+        font-family: $fontsMont-500;
+        text-align: center;
+        font-size: 2.6rem;
+        line-height: 3.4rem; //=========================
+      }
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 60rem;
+    &_img {
+      width: 100%;
+      max-width: 60rem;
+      img{
+        display: block;
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+  }
+
+  &__card {
+    position: relative;
+    width: 100%;
+    max-width: 47.9rem;
+    margin-top: 8.1rem;
+    &_item {
+      margin-bottom: 2.15rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+    }
+    &_item > span {
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      margin-left: 2rem;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include flex-block-center();
+    width: 24rem;
+    height: 7.4rem;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: transparent;
+    background-image: url("../icons/UnionOrange.svg");
+    background-repeat: no-repeat;
+    background-position: 78% 50%;
+    padding-right: 3.7rem;
+    &:hover {
+      color: $text-white;
+      background-color: $bg-dark-orange;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 78% 50%;
+    }
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 60rem;
+    margin: 5rem auto 0;
+    font-family: $fontsMont-400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  }
+
 }
 ////////////////1200////////////////////////
 //====FOOTER====//
