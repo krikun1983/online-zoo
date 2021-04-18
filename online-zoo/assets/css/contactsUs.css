@@ -560,7 +560,23 @@ li {
   }
   .touch__countainer img {
     width: 100%;
-    height: 81.5rem;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .touch {
+    width: 100%;
+    margin-top: 11rem;
+  }
+  .touch__countainer {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 64rem;
+  }
+  .touch__countainer img {
+    width: 100%;
+    height: auto;
   }
 }
 
@@ -830,6 +846,136 @@ li {
     background-repeat: no-repeat;
     background-position: center;
     background-position: 74% 50%;
+  }
+  .form__forms_btn:hover {
+    background-color: #05786e;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .form {
+    width: 100%;
+    max-width: 100%;
+  }
+  .form__countainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    max-width: 120rem;
+    padding-top: 4.7rem;
+    margin-bottom: 10.0rem;
+  }
+  .form__info {
+    width: 100%;
+    max-width: 60rem;
+  }
+  .form__info_heading {
+    margin: 0 auto;
+    font-family: "Montserrat Semibold";
+    font-size: 5.4rem;
+    line-height: 6.6rem;
+    text-align: center;
+    padding-right: 0rem;
+    color: #00A092;
+    text-transform: uppercase;
+  }
+  .form__info_text {
+    margin-top: 1.7rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+    text-align: center;
+    font-family: "Montserrat Regular";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+  }
+  .form__forms {
+    width: 100%;
+    max-width: 60rem;
+    margin-top: 5rem;
+  }
+  .form__forms_body {
+    margin: 0;
+    padding: 0;
+  }
+  .form__forms_body label {
+    display: block;
+    font-family: "Montserrat Regular";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    height: 3.5rem;
+  }
+  .form__forms_body label span {
+    color: #00A092;
+  }
+  .form__forms_body input {
+    border: 1px solid #000000;
+  }
+  .form__forms_body_input {
+    display: block;
+    padding-left: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 6rem;
+    font-family: "Montserrat Regular";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin-bottom: 3.1rem;
+    color: #969696;
+  }
+  .form__forms_body_input:focus {
+    -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+    box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+  }
+  .form__forms_body textarea {
+    display: block;
+    padding-top: 2rem;
+    padding-left: 2rem;
+    border: 1px solid #000000;
+    border-radius: 0.5rem;
+    width: 100%;
+    height: 20rem;
+    font-family: "Montserrat Regular";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    margin-bottom: 3rem;
+    color: #969696;
+  }
+  .form__forms_btns {
+    margin-top: 5.4rem;
+    margin-left: 25.6%;
+  }
+  .form__forms_btns input {
+    border: none;
+  }
+  .form__forms_btn {
+    display: block;
+    padding-right: 3.5rem;
+    width: 100%;
+    max-width: 29rem;
+    height: 7.4rem;
+    font-family: "Montserrat Semibold";
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: #ffffff;
+    background-color: #00A092;
+    border-radius: 0.5rem;
+    text-transform: uppercase;
+    background-image: url("../icons/UnionRightInvert.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position: 80% 50%;
   }
   .form__forms_btn:hover {
     background-color: #05786e;

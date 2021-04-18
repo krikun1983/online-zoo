@@ -29,11 +29,31 @@
       max-width: $tablet-landscape;
       img {
         width: 100%;
-        height: 81.5rem;
+        height: auto;
       }
     }
   }
 }
+
+//////////640//////////
+@media screen and (max-width: 640px) {
+  .touch {
+    width: 100%;
+    margin-top: 11rem;
+    &__countainer {
+      margin: 0 auto;
+      width: 100%;
+      max-width: $tablet-mini;
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
+}
+
+
+
 .form {
   width: 100%;
   &__countainer {
@@ -278,6 +298,135 @@
         background-repeat: no-repeat;
         background-position: center;
         background-position: 74% 50%;
+        &:hover {
+          background-color: $bg-green-dark;
+        }
+      }
+    }
+  }
+
+}
+//////////640//////////
+@media screen and (max-width: 640px) {
+
+.form {
+    width: 100%;
+    max-width: 100%;
+    &__countainer {
+      @include flex-block-justify();
+      flex-direction: column;
+      margin: 0 auto;
+      width: 100%;
+      max-width: $tablet-landscape;
+      padding-top: 4.7rem;
+      margin-bottom: 10.0rem;
+    }
+
+    &__info {
+      width: 100%;
+      max-width: 60rem;
+      &_heading {
+        margin: 0 auto;
+        font-family: $fontsMont-600;
+        font-size: 5.4rem;
+        line-height: 6.6rem;
+        text-align: center;
+        padding-right: 0rem;
+        color: $text-green-lite;
+        text-transform: uppercase;
+      }
+      &_text {
+        // max-width: 83.5rem;
+        margin-top: 1.7rem;
+        padding-left: 0rem;
+        padding-right: 0rem;
+        text-align: center;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+    }
+
+    &__forms {
+      width: 100%;
+      max-width: 60rem;
+      margin-top: 5rem;
+      &_body {
+        margin: 0;
+        padding: 0;
+        label {
+          display: block;
+          font-family: $fontsMont-400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          height: 3.5rem;
+          span {
+            color: $text-green-lite;
+          }
+        }
+        input {
+          border: 1px solid $bg-default;
+          &:invalid {
+            // background-color: red;
+            // display: block;
+          }
+        }
+        &_input {
+          display: block;
+          padding-left: 2rem;
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 6rem;
+          font-family: $fontsMont-400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          margin-bottom: 3.1rem;
+          color: #969696;
+          &:focus {
+            -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+            -moz-box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+            box-shadow: 4px 4px 50px 0px rgba(0, 160, 146, 0.3);
+          }
+        }
+        textarea {
+          display: block;
+          padding-top: 2rem;
+          padding-left: 2rem;
+          border: 1px solid $bg-default;
+          border-radius: 0.5rem;
+          width: 100%;
+          height: 20rem;
+          font-family: $fontsMont-400;
+          font-size: 1.8rem;
+          line-height: 2.7rem;
+          margin-bottom: 3rem;
+          color: #969696;
+        }
+      }
+      &_btns {
+        margin-top: 5.4rem;
+        margin-left: 25.6%;
+        input {
+          border: none;
+        }
+      }
+      &_btn {
+        display: block;
+        padding-right: 3.5rem;
+        width: 100%;
+        max-width: 29rem;
+        height: 7.4rem;
+        font-family: $fontsMont-600;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        color: $text-white;
+        background-color: $bg-green-lite;
+        border-radius: 0.5rem;
+        text-transform: uppercase;
+        background-image: url('../icons/UnionRightInvert.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-position: 80% 50%;
         &:hover {
           background-color: $bg-green-dark;
         }
