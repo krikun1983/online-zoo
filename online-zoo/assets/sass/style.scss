@@ -22,7 +22,8 @@
       padding-top: 12.9rem;
     }
     &__header {
-      width: 89rem;
+      width: 100%;
+      max-width: 89rem;
       font-family: $fontsMont-800;
       font-size: 8.2rem;
       line-height: 10rem;
@@ -78,20 +79,22 @@
       margin: 0 auto;
       width: 100%;
       max-width: $tablet-landscape;
+      padding-left: 4rem;
       padding-top: 10rem;
     }
     &__header {
-      width: 89rem;
-      margin-left: 4rem;
+      width: 100%;
+      max-width: 89rem;
+      margin-left: 0;
       margin-bottom: 1.3rem;
     }
     &__text {
       width: 33.9rem;
-      margin-left: 4rem;
+      margin-left: 0;
       margin-bottom: 2.2rem;
     }
     &__btn {
-      margin-left: 4rem;
+      margin-left: 0;
       padding-left: 3px;
     }
   }
