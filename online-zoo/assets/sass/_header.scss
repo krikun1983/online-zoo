@@ -128,6 +128,16 @@
     padding-right: 10rem;
   }
 
+  .logo {
+      margin-right: 2rem;
+    &__img {
+      width: 100%;
+      max-width: 9.6rem;
+      height: auto;
+
+    }
+  }
+
  .links {
     @include flex-block-justify();
     padding-top: 3rem;
@@ -146,6 +156,67 @@
     width: 100%;
     max-width: 48.1rem;
   }
+}
+
+////////////////1024////////////////////////
+@media screen and (max-width: 1024px) {
+  .container-header {
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1024px;
+    padding-left: 9rem;
+    padding-right: 9rem;
+  }
+
+    .logo {
+      margin-right: 1.5rem;
+    &__img {
+      width: 100%;
+      max-width: 9.6rem;
+      height: auto;
+
+    }
+  }
+
+ .links {
+    width: 100%;
+    @include flex-block-justify();
+    padding-top: 3rem;
+    padding-bottom: 2.8rem;
+  }
+
+  //==menu==//
+  .nav-header {
+    @include flex-block-justify();
+    width: 100%;
+    max-width: 69.1rem;
+  }
+
+  .menu-header {
+    @include flex-block-justify();
+    width: 100%;
+    max-width: 48.1rem;
+  }
+  .social {
+    @include flex-block-justify();
+    width: 100%;
+    max-width: 18rem;
+    margin-left: 1rem;
+
+  &__item {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__link {
+    display: block;
+    width: 100%;
+    height: 100%;
+      &:hover {
+        filter: opacity(.5);
+      }
+  }
+}
 }
 
 
