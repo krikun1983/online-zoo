@@ -466,6 +466,8 @@
       margin: 0 auto;
       width: 100%;
       max-width: $tablet-landscape;
+      padding-left: 0rem;
+      padding-right: 0rem;
     }
 
     &__block {
@@ -476,8 +478,6 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-
-
     }
 
     &__news {
@@ -3285,9 +3285,9 @@
 @media screen and (max-width: 1200px) {
 
   .users_think {
-    padding-top: 6.8rem;
+    padding-top: 10rem;
     width: 100%;
-    height: 177.6rem;
+    height: 188rem;
     background-color: $bg-dark-blue;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
@@ -3467,8 +3467,6 @@
   }
 
 }
-
-
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
 
@@ -3846,6 +3844,7 @@
 .animals_love {
   width: 100%;
   max-width: 100%;
+  overflow: hidden;
 
   &__container {
     margin: 0 auto;

@@ -227,8 +227,7 @@ li {
 }
 
 .logo__img {
-  width: 100%;
-  max-width: 9.6rem;
+  width: 9.6rem;
   height: auto;
 }
 
@@ -354,8 +353,7 @@ li {
     margin-right: 2rem;
   }
   .logo__img {
-    width: 100%;
-    max-width: 9.6rem;
+    width: 9.6rem;
     height: auto;
   }
   .links {
@@ -411,8 +409,7 @@ li {
     margin-right: 1.5rem;
   }
   .logo__img {
-    width: 100%;
-    max-width: 9.6rem;
+    width: 9.6rem;
     height: auto;
   }
   .links {
@@ -616,7 +613,7 @@ li {
   .burger-header {
     position: fixed;
     top: 4rem;
-    right: 3rem;
+    right: 4.7rem;
     z-index: 3000;
     cursor: pointer;
     width: 3rem;
@@ -1454,6 +1451,8 @@ li {
     margin: 0 auto;
     width: 100%;
     max-width: 120rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
   .welcome__block {
     width: 100%;
@@ -4844,9 +4843,9 @@ li {
 
 @media screen and (max-width: 1200px) {
   .users_think {
-    padding-top: 6.8rem;
+    padding-top: 10rem;
     width: 100%;
-    height: 177.6rem;
+    height: 188rem;
     background-color: #20113d;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
@@ -5492,6 +5491,7 @@ li {
 .animals_love {
   width: 100%;
   max-width: 100%;
+  overflow: hidden;
 }
 
 .animals_love__container {

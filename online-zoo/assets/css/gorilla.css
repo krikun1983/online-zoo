@@ -226,8 +226,7 @@ li {
 }
 
 .logo__img {
-  width: 100%;
-  max-width: 9.6rem;
+  width: 9.6rem;
   height: auto;
 }
 
@@ -353,8 +352,7 @@ li {
     margin-right: 2rem;
   }
   .logo__img {
-    width: 100%;
-    max-width: 9.6rem;
+    width: 9.6rem;
     height: auto;
   }
   .links {
@@ -410,8 +408,7 @@ li {
     margin-right: 1.5rem;
   }
   .logo__img {
-    width: 100%;
-    max-width: 9.6rem;
+    width: 9.6rem;
     height: auto;
   }
   .links {
@@ -615,7 +612,7 @@ li {
   .burger-header {
     position: fixed;
     top: 4rem;
-    right: 3rem;
+    right: 4.7rem;
     z-index: 3000;
     cursor: pointer;
     width: 3rem;
