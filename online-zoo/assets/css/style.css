@@ -884,7 +884,7 @@ li {
     margin: 0 auto;
     width: 100%;
     max-width: 120rem;
-    padding-left: 0rem;
+    padding-left: 3.4%;
     padding-top: 10rem;
   }
   .favorite__header {
@@ -930,12 +930,10 @@ li {
     text-transform: uppercase;
     color: #00A092;
     letter-spacing: 0.08rem;
-    margin-left: 2rem;
     margin-bottom: 1.6rem;
   }
   .favorite__text {
     width: 33.9rem;
-    margin-left: 2rem;
     margin-bottom: 2.4rem;
   }
   .favorite__btn {
@@ -950,7 +948,6 @@ li {
             align-items: center;
     width: 28.5rem;
     height: 7.4rem;
-    margin-left: 2rem;
     padding-left: 0;
     background-color: #f58021;
     font-family: "Montserrat Semibold";
@@ -1001,6 +998,7 @@ li {
     max-width: 32rem;
     height: 68.6rem;
     padding-top: 2.1rem;
+    padding-left: 3.4%;
   }
   .favorite__header {
     width: 30rem;
@@ -1011,10 +1009,12 @@ li {
     color: #00A092;
     letter-spacing: 0.01rem;
     margin: 0 auto 1.6rem;
+    margin-left: 0;
   }
   .favorite__text {
     width: 30rem;
     margin: 1.5rem auto 2.5rem;
+    margin-left: 0;
   }
   .favorite__btn {
     display: -webkit-box;
@@ -1038,6 +1038,7 @@ li {
     text-transform: uppercase;
     border: none;
     border-radius: 0.5rem;
+    margin-left: 0;
   }
   .favorite__btn_link {
     display: -webkit-box;
@@ -1609,7 +1610,7 @@ li {
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  height: 22.1rem;
+  height: auto;
   background-color: #20113d;
 }
 
@@ -1630,6 +1631,8 @@ li {
   padding-top: 0.9rem;
   width: 100%;
   max-width: 140rem;
+  padding-top: 50px;
+  padding-bottom: 46px;
 }
 
 .donation__heading {
@@ -1767,7 +1770,7 @@ li {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
-    height: 31.3rem;
+    height: auto;
   }
   .donation__container {
     display: -webkit-box;
@@ -1782,156 +1785,13 @@ li {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    margin-top: 5rem;
-    padding-top: 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     padding-left: 9.7rem;
     padding-right: 10rem;
+    padding-bottom: 4.9rem;
     width: 100%;
     max-width: 120rem;
-  }
-  .donation__heading {
-    max-width: 57.8rem;
-    text-transform: uppercase;
-    font-family: "Montserrat Medium";
-    font-size: 4.2rem;
-    line-height: 5.12rem;
-    font-weight: normal;
-    color: #ffffff;
-    margin-bottom: 3.1rem;
-  }
-  .donation__text {
-    width: 100%;
-    max-width: 57.6rem;
-    font-family: "Montserrat Regular";
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    color: #ffffff;
-  }
-  .donation__form {
-    position: relative;
-    margin-top: 0.3rem;
-  }
-  .donation__label {
-    display: block;
-    width: 60%;
-    font-family: "Montserrat Medium";
-    font-size: 2.6rem;
-    line-height: 3.38rem;
-    color: #ffffff;
-  }
-  .donation__label::before {
-    content: "$";
-    position: absolute;
-    padding-left: 1rem;
-    z-index: 15;
-    top: 7rem;
-    left: 0.3rem;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    font-family: "Montserrat Semibold";
-    color: #ffffff;
-  }
-  .donation__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 9rem;
-    width: 32rem;
-    height: 7.4rem;
-    border: 1px solid #ffffff;
-    border-radius: 0.5rem;
-    background-color: #20113d;
-    font-family: "Montserrat Semibold";
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-    color: #ffffff;
-    -moz-appearance: textfield;
-    /* Firefox */
-  }
-  .donation__input::-webkit-input-placeholder {
-    color: #ffffff;
-  }
-  .donation__input::-moz-placeholder {
-    color: #ffffff;
-    opacity: 1;
-  }
-  .donation__input:focus::-webkit-input-placeholder {
-    opacity: 0;
-  }
-  .donation__input:focus::-moz-placeholder {
-    opacity: 0;
-  }
-  .donation__input:hover {
-    -moz-appearance: none;
-  }
-  .donation__input:focus {
-    -moz-appearance: none;
-  }
-  .donation__input::-webkit-outer-spin-button, .donation__input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  .donation__input[type=number] {
-    -moz-appearance: textfield;
-  }
-  .donation__btn {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 8rem;
-    height: 7.4rem;
-    background-color: #f58021;
-    border-radius: 0.5rem;
-    border-top: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-bottom: 1px solid #ffffff;
-    border-left: none;
-  }
-  .donation__btn:hover {
-    background-color: #d26004;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .donation {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    width: 100%;
-    height: 35.3rem;
-  }
-  .donation__container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: flex-start;
-    margin-top: 5rem;
-    padding-top: 0;
-    padding-left: 9.7rem;
-    padding-right: 10rem;
-    width: 100%;
-    max-width: 1024px;
   }
   .donation__heading {
     max-width: 57.8rem;
@@ -2055,7 +1915,7 @@ li {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
-    height: 45.9rem;
+    height: auto;
   }
   .donation__container {
     display: -webkit-box;
@@ -2068,10 +1928,10 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 5rem;
-    padding-top: 0;
+    padding-top: 5rem;
     padding-left: 3.1rem;
     padding-right: 3.1rem;
+    padding-bottom: 5.1rem;
     width: 100%;
     max-width: 64rem;
   }
@@ -2200,7 +2060,6 @@ li {
         -ms-flex-align: start;
             align-items: flex-start;
     width: 100%;
-    height: 44.6rem;
   }
   .donation__container {
     display: -webkit-box;
@@ -2213,10 +2072,10 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin-top: 3.1rem;
-    padding-top: 0;
+    padding-top: 3.1rem;
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 4.1rem;
     width: 100%;
     max-width: 32rem;
   }
