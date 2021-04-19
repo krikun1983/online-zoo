@@ -1383,10 +1383,10 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .favorite {
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
     height: 64.4rem;
     margin-top: 11rem;
     background-image: url("../images/bgPanda.jpg");
@@ -1397,7 +1397,7 @@ li {
   .favorite__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
     height: 64.4rem;
     padding-top: 5.2rem;
   }
@@ -2102,7 +2102,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .temp {
     position: relative;
     top: -1.1rem;
@@ -2116,7 +2116,7 @@ li {
   .welcome__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
     padding-left: 0rem;
     padding-right: 0rem;
   }
@@ -3036,7 +3036,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .donation {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -3063,7 +3063,7 @@ li {
     padding-right: 3.1rem;
     padding-bottom: 5.1rem;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
   }
   .donation__heading {
     max-width: 56.5rem;
@@ -4770,7 +4770,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .friends {
     width: 100%;
     height: 130.7rem;
@@ -4781,7 +4781,7 @@ li {
   .friends__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
     height: 110.7rem;
   }
   .friends__hidden {
@@ -6396,7 +6396,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .payfeed {
     margin-top: 0;
     width: 100%;
@@ -6407,7 +6407,7 @@ li {
   .payfeed__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
   }
   .payfeed__list {
     margin-bottom: 1rem;
@@ -7775,7 +7775,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .users_think {
     padding-top: 8rem;
     width: 100%;
@@ -7791,7 +7791,7 @@ li {
     position: relative;
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
   }
   .users_think__wrapper {
     width: 100%;
@@ -9554,7 +9554,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 900px) {
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -9563,7 +9563,7 @@ li {
   .animals_love__container {
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 900px;
   }
   .animals_love__heading {
     margin: 0 auto;
