@@ -68,7 +68,37 @@
       }
     }
 }
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
 
+  .favorite {
+    width: 100%;
+    height: 69rem;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+      padding-left: 3.4%;
+      padding-top: 10rem;
+    }
+    &__header {
+      width: 100%;
+      max-width: 89rem;
+      margin-left: 0;
+      margin-bottom: 1.3rem;
+    }
+    &__text {
+      width: 33.9rem;
+      margin-left: 0;
+      margin-bottom: 2.2rem;
+    }
+    &__btn {
+      margin-left: 0;
+      padding-left: 3px;
+    }
+  }
+
+}
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
 
@@ -96,6 +126,69 @@
     &__btn {
       margin-left: 0;
       padding-left: 3px;
+    }
+  }
+
+}
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
+
+  .favorite {
+    width: 100%;
+    max-width: 780px;
+    height: 64.4rem;
+    margin-top: 11rem;
+    background-image: url("../images/bgPanda.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 780px;
+      height: 64.4rem;
+      padding-top: 5.2rem;
+    }
+    &__header {
+      width: 60rem;
+      font-family: $fontsMont-800;
+      font-size: 7.2rem;
+      line-height: 8.77rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      letter-spacing: 0.08rem;
+      margin-bottom: 1.6rem;
+    }
+    &__text {
+      width: 33.9rem;
+      margin-bottom: 2.4rem;
+    }
+    &__btn {
+      @include flex-block-center();
+      width: 28.5rem;
+      height: 7.4rem;
+      padding-left: 0;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0.5rem;
+      &_link {
+        @include flex-block-center();
+        text-decoration: none;
+        color: $text-white;
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
     }
   }
 
@@ -146,6 +239,74 @@
       text-transform: uppercase;
       border: none;
       border-radius: 0.5rem;
+      &_link {
+        @include flex-block-center();
+        text-decoration: none;
+        color: $text-white;
+        width: 100%;
+        height: 100%;
+      }
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+    }
+  }
+
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+  .favorite {
+    width: 100%;
+    max-width: 480px;
+    height: 68.5rem;
+    margin-top: 11rem;
+    background-image: url("../images/bgPanda.jpg");
+    background-repeat: no-repeat;
+    background-position: right -5rem bottom;
+    background-size: 180%;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+      height: 68.6rem;
+      padding-top: 2.1rem;
+      padding-left: 3.4%;
+    }
+    &__header {
+      width: 30rem;
+      font-family: $fontsMont-800;
+      font-size: 4.0rem;
+      line-height: 4.8rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      letter-spacing: 0.01rem;
+      margin: 0 auto 1.6rem;
+      margin-left: 0;
+    }
+    &__text {
+      width: 30rem;
+      margin: 1.5rem auto 2.5rem;
+      margin-left: 0;
+    }
+    &__btn {
+      @include flex-block-center();
+      width: 30rem;
+      height: 4.5rem;
+      margin: 0 auto;
+      padding-left: 0;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border: none;
+      border-radius: 0.5rem;
+      margin-left: 0;
       &_link {
         @include flex-block-center();
         text-decoration: none;
@@ -292,6 +453,85 @@
       }
 
     }
+}
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
+
+  .temp {
+    position: relative;
+    top: -1.1rem;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 174.6rem;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
+
+    &__block {
+      width: 100%;
+      max-width: 100rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-top: 10rem;
+      margin-bottom: 14.8rem;
+    }
+
+    &__news {
+      @include flex-block-justify();
+      flex-direction: column-reverse;
+      max-width: 66rem;
+      margin-bottom: 6.2rem;
+      &:nth-child(2) {
+        @include flex-block-justify();
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: auto;
+      }
+    }
+
+    &__main {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__heading {
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      margin-bottom: 3.2rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 56rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-default;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 66rem;
+      margin-bottom: 4rem;
+      &:nth-child(1) {
+        margin-bottom: 2.9rem;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+    }
+  }
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
@@ -453,6 +693,98 @@
     }
   }
 }
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
+
+  .temp {
+    position: relative;
+    top: -1.1rem;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 157.9rem;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 780px;
+      padding-left: 0rem;
+      padding-right: 0rem;
+    }
+
+    &__block {
+      width: 100%;
+      max-width: 100rem;
+      height: 157.9rem;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__news {
+      @include flex-block-justify();
+      flex-direction: column-reverse;
+      max-width: 66rem;
+      margin-bottom: 3.7rem;
+      &:nth-child(2) {
+        @include flex-block-justify();
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: auto;
+        img {
+          width: 100%;
+          height: 42.5rem;
+        }
+      }
+    }
+    &__news:nth-child(2) {
+      height: 71.1rem;
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__heading {
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      margin-left: 2rem;
+      margin-bottom: 3.2rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 60rem;
+      margin-left: 2rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-default;
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 66rem;
+      height: 43.8rem;
+      margin-bottom: 4rem;
+      &:nth-child(1) {
+        margin-bottom: 2.9rem;
+      }
+      img {
+        width: 100%;
+        height: 43.8rem;
+      }
+
+    }
+  }
+}
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
 
@@ -540,6 +872,101 @@
       img {
         width: 100%;
         height: 43.8rem;
+      }
+
+    }
+  }
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+  .temp {
+    position: relative;
+    top: -9px;
+  }
+
+  .welcome {
+    width: 100%;
+    height: 116.5rem;
+    margin-top: 5rem;
+    margin-bottom: 5.1rem;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    &__block {
+      width: 100%;
+      max-width: 100rem;
+      height: auto;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    &__news {
+      @include flex-block-justify();
+      flex-direction: column-reverse;
+      max-width: 32rem;
+      margin-bottom: 3.5rem;
+      &:nth-child(2) {
+        @include flex-block-justify();
+        flex-direction: column;
+        align-items: flex-start;
+        margin-left: auto;
+        img {
+          width: 100%;
+          height: 21.3rem;
+        }
+      }
+    }
+    &__news:nth-child(2) {
+      height: 100%;
+    }
+    &__main {
+      display: flex;
+      flex-direction: column;
+
+    }
+
+    &__heading {
+      font-family: $fontsMont-600;
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      margin-left: 1rem;
+      margin-bottom: 2.5rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 30rem;
+      margin: 0 1rem;
+      padding-left: 0;
+      padding-right: 0;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-default;
+      span {
+        display: none;
+      }
+    }
+
+    &__img {
+      width: 100%;
+      max-width: 32rem;
+      height: 21.8rem;
+      margin-bottom: 4rem;
+      &:nth-child(1) {
+        margin-bottom: 2.5rem;
+      }
+      img {
+        width: 100%;
+        height: 21.8rem;
       }
 
     }
@@ -770,7 +1197,140 @@
         }
     }
 }
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
 
+  .donation {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+
+    &__container {
+      @include flex-block-justify();
+      align-items: flex-start;
+      flex-wrap: wrap;
+      padding-left: 9.7rem;
+      padding-right: 10rem;
+      padding-bottom: 4.9rem;
+      width: 100%;
+      max-width: 1400px;
+    }
+
+    &__heading {
+      max-width: 57.8rem;
+      text-transform: uppercase;
+      font-family: $fontsMont-500;
+      font-size: 4.2rem;
+      line-height: 5.12rem;
+      font-weight: normal;
+      color: $text-white;
+      margin-bottom: 3.1rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 57.6rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-white;
+    }
+
+    &__form {
+      position: relative;
+      margin-top: 0.3rem;
+    }
+
+    &__label {
+      display: block;
+      width: 60%;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+      color: $text-white;
+      &::before {
+          content: "$";
+          position: absolute;
+          padding-left: 1rem;
+          z-index: 15;
+          top: 7rem;
+          left: 0.3rem;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-family: $fontsMont-600;
+          color: $text-white;
+      }
+    }
+
+  &__input {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 3rem;
+    padding-right: 9rem;
+    width: 32rem;
+    height: 7.4rem;
+    border: 1px solid $bg-white;
+    border-radius: 0.5rem;
+    background-color: $bg-dark-blue;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: $text-white;
+    -moz-appearance: textfield;
+      &::-webkit-input-placeholder {
+        color: $text-white;
+      }
+      &::-moz-placeholder {
+        color: $text-white;
+        opacity:1;
+      }
+      &:focus::-webkit-input-placeholder {
+         opacity:0;
+      }
+      &:focus::-moz-placeholder {
+         opacity:0;
+      }
+
+      &:hover {
+        -moz-appearance: none;
+      }
+      &:focus {
+        -moz-appearance: none;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+  }
+
+  &__btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include flex-block-center();
+      width: 8rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      border-radius: 0.5rem;
+      border-top: 1px solid $bg-white;
+      border-right: 1px solid $bg-white;
+      border-bottom: 1px solid $bg-white;
+      border-left: none;
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
 
@@ -843,6 +1403,144 @@
     padding-left: 3rem;
     padding-right: 9rem;
     width: 32rem;
+    height: 7.4rem;
+    border: 1px solid $bg-white;
+    border-radius: 0.5rem;
+    background-color: $bg-dark-blue;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    text-transform: uppercase;
+    color: $text-white;
+    -moz-appearance: textfield;
+      &::-webkit-input-placeholder {
+        color: $text-white;
+      }
+      &::-moz-placeholder {
+        color: $text-white;
+        opacity:1;
+      }
+      &:focus::-webkit-input-placeholder {
+         opacity:0;
+      }
+      &:focus::-moz-placeholder {
+         opacity:0;
+      }
+
+      &:hover {
+        -moz-appearance: none;
+      }
+      &:focus {
+        -moz-appearance: none;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+  }
+
+  &__btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include flex-block-center();
+      width: 8rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      border-radius: 0.5rem;
+      border-top: 1px solid $bg-white;
+      border-right: 1px solid $bg-white;
+      border-bottom: 1px solid $bg-white;
+      border-left: none;
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
+
+  .donation {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    height: auto;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 5rem;
+      padding-left: 3.1rem;
+      padding-right: 3.1rem;
+      padding-bottom: 5.1rem;
+      width: 100%;
+      max-width: 780px;
+    }
+
+    &__heading {
+      max-width: 56.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 4.2rem;
+      line-height: 5.12rem;
+      font-weight: normal;
+      color: $text-white;
+      margin-bottom: 3.1rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 60rem;
+      text-align: center;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-white;
+    }
+
+    &__form {
+      position: relative;
+      margin-top: 2.7rem;
+    }
+
+    &__label {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+      color: $text-white;
+      &::before {
+          content: "$";
+          position: absolute;
+          padding-left: 3.4rem;
+          z-index: 15;
+          top: 7rem;
+          left: 0.3rem;
+          font-size: 1.8rem;
+          line-height: 2.2rem;
+          font-family: $fontsMont-600;
+          color: $text-white;
+      }
+    }
+
+  &__input {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 5.5rem;
+    padding-right: 9rem;
+    width: 36.3rem;
     height: 7.4rem;
     border: 1px solid $bg-white;
     border-radius: 0.5rem;
@@ -1030,6 +1728,143 @@
       @include flex-block-center();
       width: 8rem;
       height: 7.4rem;
+      background-color: $bg-orange;
+      border-radius: 0.5rem;
+      border-top: 1px solid $bg-white;
+      border-right: 1px solid $bg-white;
+      border-bottom: 1px solid $bg-white;
+      border-left: none;
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+  .donation {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 3.1rem;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      padding-bottom: 4.1rem;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    &__heading {
+      max-width: 56.5rem;
+      text-transform: uppercase;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.12rem;
+      font-weight: normal;
+      color: $text-white;
+      margin-bottom: 3.1rem;
+    }
+
+    &__text {
+      width: 100%;
+      max-width: 60rem;
+      text-align: center;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      color: $text-white;
+    }
+
+    &__form {
+      position: relative;
+      margin-top: 2.7rem;
+    }
+
+    &__label {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+      color: $text-white;
+      &::before {
+          content: "$";
+          position: absolute;
+          padding-left: 2.5rem;
+          z-index: 15;
+          top: 5.8rem;
+          left: 0.2rem;
+          font-size: 1.6rem;
+          line-height: 1.95rem;
+          font-family: $fontsMont-600;
+          color: $text-white;
+      }
+    }
+
+  &__input {
+    position: relative;
+    margin-top: 1rem;
+    padding-left: 4rem;
+    padding-right: 6rem;
+    width: 30rem;
+    height: 4.5rem;
+    border: 1px solid $bg-white;
+    border-radius: 0.5rem;
+    background-color: $bg-dark-blue;
+    font-family: $fontsMont-600;
+    font-size: 1.6rem;
+    line-height: 1.95rem;
+    text-transform: uppercase;
+    color: $text-white;
+    -moz-appearance: textfield;
+      &::-webkit-input-placeholder {
+        color: $text-white;
+      }
+      &::-moz-placeholder {
+        color: $text-white;
+        opacity:1;
+      }
+      &:focus::-webkit-input-placeholder {
+         opacity:0;
+      }
+      &:focus::-moz-placeholder {
+         opacity:0;
+      }
+
+      &:hover {
+        -moz-appearance: none;
+      }
+      &:focus {
+        -moz-appearance: none;
+      }
+      &::-webkit-outer-spin-button,
+      &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+        margin: 0;
+      }
+
+      /* Firefox */
+      &[type=number] {
+        -moz-appearance: textfield;
+      }
+  }
+
+  &__btn {
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      @include flex-block-center();
+      width: 6rem;
+      height: 4.5rem;
       background-color: $bg-orange;
       border-radius: 0.5rem;
       border-top: 1px solid $bg-white;
@@ -1410,6 +2245,240 @@
       color: $text-white;
     }
   }
+}
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
+
+  .friends {
+    width: 100%;
+    // height: 242.2rem;
+    overflow: hidden;
+
+    &__container {
+      // @include flex-block-justify();
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
+
+    &__hidden {
+      position: absolute;
+      right: 0%;
+      width: 100%;
+      max-width: 25rem;
+      height: 153.4rem;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      z-index: 100;
+    }
+
+    &__heading {
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      text-align: center;
+      margin-top: 10.1rem;
+      margin-left: 9.8rem;
+      margin-bottom: 3rem;
+    }
+
+    &__text {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 83rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      text-align: center;
+      color: $text-default;
+    }
+
+    &__arrow {
+      width: 100%;
+      max-width: 17.5rem;
+      margin: 0 auto;
+      margin-top: 10.1rem;
+      @include flex-block-justify();
+    }
+
+    &__left {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionLeft.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionLeftInvert.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &__right {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__carts {
+      position: relative;
+      width: 190rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 1.9rem;
+      margin-left: 3rem;
+    }
+
+    &__cart {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 45.5rem;
+      height: 71.6rem;
+      background-color: $bg-dark-blue;
+      border: 0px solid red;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 48rem;
+        height: 78.7rem;
+        position: relative;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 47.5rem;
+        height: 73.6rem;
+      }
+    }
+
+    &__cart_frame {
+      display: inline-block;
+      position: absolute;
+      padding: 0 2.5rem;
+      height: 6rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 5.4rem;
+      color: $text-white;
+      background-color: $bg-dark-blue;
+      border-top-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    &__cart_link {
+      text-decoration: none;
+    }
+    &__cart_img {
+      width: 100%;
+      max-height: 43.6rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    &__cart_heading {
+      margin: 1.4rem auto 1.5rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      color: $text-white;
+    }
+    &__cart_text {
+      width: 39rem;
+      margin: 0 auto;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+    }
+    &__btn {
+      margin-left: -12rem;
+      position: absolute;
+      left: 50%;
+      bottom: 3.4rem;
+      @include flex-block-center();
+      width: 24rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+  &__choose {
+    margin-top: 4rem;
+    width: 100%;
+    @include flex-block-center();
+  }
+  &__choose_btn {
+    @include flex-block-center();
+    text-transform: uppercase;
+    width: 36rem;
+    height: 7.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 89% 50%;
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-blue;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 89% 50%;
+    }
+  }
+  &__choose_link {
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-right: 3.5rem;
+    color: $text-dark-blue;
+    &:hover {
+      color: $text-white;
+    }
+  }
+  }
+
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
@@ -1879,6 +2948,212 @@
   }
 
 }
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
+
+  .friends {
+    width: 100%;
+    height: 130.7rem;
+    overflow: hidden;
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 780px;
+      height: 110.7rem;
+    }
+
+    &__hidden {
+      position: absolute;
+      right: 0%;
+      width: 100%;
+      max-width: 25rem;
+      height: 153.4rem;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      z-index: 100;
+    }
+
+    &__heading {
+      width: 39.4rem;
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      text-align: center;
+      margin: 0 auto 3rem;
+    }
+
+    &__text {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 60rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      text-align: center;
+      color: $text-default;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__carts {
+      position: relative;
+      width: 247.6rem;
+      height: 62rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 4.2rem;
+      margin-left: 1.1rem;
+      overflow: hidden;
+    }
+
+    &__cart {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 29rem;
+      height: 60rem;
+      background-color: $bg-dark-blue;
+      border: 0px solid red;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 29rem;
+        height: 60rem;
+        position: relative;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 31rem;
+        height: 60rem;
+      }
+      &_wrapper:nth-child(7) {
+        order: -1;
+      }
+      &_wrapper:nth-child(8) {
+        order: -1;
+      }
+    }
+
+    &__cart_frame {
+      display: inline-block;
+      position: absolute;
+      padding: 0 2.5rem;
+      height: 6rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 5.4rem;
+      color: $text-white;
+      background-color: $bg-dark-blue;
+      border-top-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    &__cart_link {
+      text-decoration: none;
+    }
+    &__cart_img {
+      width: 100%;
+      height: 33.3rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    &__cart_heading {
+      margin: 1.4rem auto 1.5rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      color: $text-white;
+    }
+    &__cart_text {
+      width: 24.3rem;
+      margin: 0 auto;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+    }
+    &__btn {
+      margin-left: -12rem;
+      position: absolute;
+      left: 50%;
+      bottom: 1.1rem;
+      @include flex-block-center();
+      width: 24.0rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+  &__choose {
+    margin-top: 4.2rem;
+    width: 100%;
+    @include flex-block-center();
+  }
+  &__choose_btn {
+    @include flex-block-center();
+    text-transform: uppercase;
+    width: 34.3rem;
+    height: 7.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-blue;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+    }
+  }
+  &__choose_link {
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-right: 3.5rem;
+    color: $text-dark-blue;
+    &:hover {
+      color: $text-white;
+    }
+  }
+  }
+
+}
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
 
@@ -2046,6 +3321,215 @@
     margin-top: 4.2rem;
     width: 100%;
     @include flex-block-center();
+  }
+  &__choose_btn {
+    @include flex-block-center();
+    text-transform: uppercase;
+    width: 34.3rem;
+    height: 7.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 92% 50%;
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-blue;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+    }
+  }
+  &__choose_link {
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-right: 3.5rem;
+    color: $text-dark-blue;
+    &:hover {
+      color: $text-white;
+    }
+  }
+  }
+
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+  .friends {
+    width: 100%;
+    height: 98.8rem;
+    overflow: hidden;
+    padding-top: 5rem;
+    padding-bottom: 10rem;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+      height: 110.7rem;
+    }
+
+    &__hidden {
+      position: absolute;
+      right: 0%;
+      width: 100%;
+      max-width: 25rem;
+      height: 153.4rem;
+      background: rgb(255,255,255);
+      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      z-index: 100;
+    }
+
+    &__heading {
+      width: 32rem;
+      font-family: $fontsMont-600;
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      text-align: center;
+      margin: 0 auto 3.3rem;
+    }
+
+    &__text {
+      width: 100%;
+      margin: 0 auto;
+      max-width: 30rem;
+      font-family: $fontsMont-500;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-default;
+    }
+
+    &__arrow {
+      display: none;
+    }
+
+    &__carts {
+      position: relative;
+      width: 253.6rem;
+      height: 62rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: nowrap;
+      margin-top: 1rem;
+      margin-left: 0.5rem;
+      overflow: hidden;
+    }
+
+    &__cart {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      width: 30rem;
+      height: 60rem;
+      background-color: $bg-dark-blue;
+      border: 0px solid red;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 29rem;
+        height: 60rem;
+        position: relative;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 31rem;
+        height: 60rem;
+      }
+      &_wrapper:nth-child(7) {
+        order: -1;
+      }
+      &_wrapper:nth-child(8) {
+        order: -1;
+      }
+    }
+
+    &__cart_frame {
+      display: inline-block;
+      position: absolute;
+      padding: 0 2.5rem;
+      height: 6rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 5.4rem;
+      color: $text-white;
+      background-color: $bg-dark-blue;
+      border-top-left-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
+    }
+    &__cart_link {
+      text-decoration: none;
+    }
+    &__cart_img {
+      width: 100%;
+      height: 33.3rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+    &__cart_heading {
+      margin: 1.4rem auto 1.5rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      color: $text-white;
+    }
+    &__cart_text {
+      width: 24.3rem;
+      margin: 0 auto;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+    }
+    &__btn {
+
+      margin-left: -12rem;
+      position: absolute;
+      left: 50%;
+      bottom: 1.1rem;
+      @include flex-block-center();
+      width: 24.0rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.15rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
+      background-repeat: no-repeat;
+      background-position: 92% 50%;
+      padding-right: 3.6rem;
+
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+  &__choose {
+    margin-top: 4.2rem;
+    width: 100%;
+    @include flex-block-center();
+    display: none;
   }
   &__choose_btn {
     @include flex-block-center();
@@ -2397,6 +3881,139 @@
       }
   }
 }
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
+
+  .payfeed {
+    margin-top: 15rem;
+    width: 100%;
+    height: 100%;
+    background-color: $bg-dark-blue;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
+    &__list {
+      margin-bottom: 1rem;
+      &:nth-child(2) .payfeed__items {
+        padding-top: 6.3rem;
+      }
+      &:nth-child(2) .payfeed__block {
+        margin-top: 2.3rem;
+      }
+      &:nth-child(2) .payfeed__block_text {
+        margin-bottom: 9.3rem;
+      }
+      &:nth-child(3) .payfeed__items {
+        padding-top: 6.3rem;
+      }
+      &:nth-child(3) .payfeed__block {
+        margin-top: 1.8rem;
+      }
+      &:nth-child(3) .payfeed__block_text {
+        margin-bottom: 15.9rem;
+      }
+
+    }
+    &__heading {
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.6rem;
+      color: $text-white;
+      padding-top: 15rem;
+      padding-left: 10.1rem;
+      margin-bottom: 10rem;
+    }
+    &__wrapper {
+      padding-left: 4rem;
+      padding-right: 3.9rem;
+    }
+    &__numbers {
+      // margin: 10rem 0 5.2rem;
+      width: 100%;
+      color: $text-white;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      @include flex-block-justify();
+      hr {
+        width: 92%;
+      }
+    }
+    &__img {
+      width: 100%;
+      img {
+        max-width: 55rem;
+        margin-right: 2rem;
+      }
+    }
+    &__items {
+      padding-top: 10.6rem;
+      display: flex;
+      align-items: start;
+      justify-content: space-between;
+    }
+    &__block {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      margin-top: -4.5rem;
+      margin-right: 0;
+      width: 100%;
+      max-width: 55rem;
+      color: $text-white;
+
+      &_foods {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+      }
+      &_heading {
+        width: 100%;
+        max-width: 50.2rem;
+        margin: 3rem 0 3rem;
+        margin-left: 2.3rem;
+        font-family: $fontsMont-500;
+        font-weight: normal;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        text-align: center;
+      }
+      &_text {
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin-bottom: 7.1rem;
+        text-align: center;
+      }
+  }
+  &__btn {
+    cursor: pointer;
+    margin-top: -4.7rem;
+    margin-left: 50.8%;
+    @include flex-block-center();
+    width: 26.6rem;
+    height: 7.4rem;
+    background-color: $bg-orange;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
 
@@ -2663,7 +4280,150 @@
   }
 
 }
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
 
+  .payfeed {
+    margin-top: 0;
+    width: 100%;
+    height: 317.2rem;
+    background-color: $bg-dark-blue;
+    overflow: hidden;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 780px;
+    }
+    &__list {
+      margin-bottom: 1rem;
+      &:nth-child(2) .payfeed__items {
+        padding-top: 5rem;
+      }
+      &:nth-child(2) .payfeed__block {
+        margin-top: 4.9rem;
+      }
+      &:nth-child(2) .payfeed__block_text {
+        margin-bottom: 3.9rem;
+      }
+      &:nth-child(3) .payfeed__items {
+        padding-top: 5.1rem;
+      }
+      &:nth-child(3) .payfeed__items {
+        height: 92.5rem;
+      }
+      &:nth-child(3) .payfeed__block {
+        margin-top: 4.8rem;
+      }
+      &:nth-child(3) .payfeed__block_text {
+        margin-bottom: 15.9rem;
+      }
+      &:nth-child(3) .payfeed__block_heading {
+        margin-bottom: 3.2rem;
+      }
+
+    }
+    &__heading {
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.6rem;
+      color: $text-white;
+      padding-top: 8rem;
+      padding-left: 10.1rem;
+      margin-bottom: 4.9rem;
+    }
+    &__wrapper {
+      height: 282.3rem;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__numbers {
+      width: 60rem;
+      margin: 0 auto;
+      color: $text-white;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      @include flex-block-justify();
+      hr {
+        width: 93%;
+      }
+    }
+    &__img {
+      width: 64rem;
+      img {
+        width: 64rem;
+        max-width: 64rem;
+        height: 41.7rem;
+        margin-right: 0;
+      }
+    }
+    &__items {
+      padding-top: 5.1rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__block {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      margin-top: 4.9rem;
+      margin-right: 0;
+      width: 100%;
+      max-width: 60rem;
+      color: $text-white;
+
+      &_foods {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+      }
+      &_heading {
+        width: 100%;
+        max-width: 60rem;
+        margin: 2.8rem 0 3rem;
+        margin-left: 0;
+        font-family: $fontsMont-500;
+        font-weight: normal;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        text-align: center;
+      }
+      &_text {
+        width: 60rem;
+        margin: 0 auto;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin-bottom: 3.6rem;
+        text-align: center;
+      }
+  }
+  &__btn {
+    cursor: pointer;
+    margin: 0 auto;
+    @include flex-block-center();
+    width: 29rem;
+    height: 7.4rem;
+    background-color: $bg-orange;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
 
@@ -2790,6 +4550,170 @@
     @include flex-block-center();
     width: 29rem;
     height: 7.4rem;
+    background-color: $bg-orange;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    text-transform: uppercase;
+    border-radius: 0.5rem;
+    border: none;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-orange;
+      }
+  }
+  }
+
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+  .payfeed {
+    margin-top: 0;
+    width: 100%;
+    height: 263.7rem;
+    background-color: $bg-dark-blue;
+    overflow: hidden;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+    }
+    &__list {
+      margin-bottom: 1rem;
+      &:nth-child(2) .payfeed__items {
+        padding-top: 3.1rem;
+      }
+      &:nth-child(2) .payfeed__block {
+        margin-top: 2.8rem;
+      }
+      &:nth-child(2) .payfeed__block_text {
+        width: 30rem;
+        margin: 0 auto;
+        margin-bottom: 3.6rem;
+      }
+      &:nth-child(3) .payfeed__items {
+        padding-top: 3.1rem;
+      }
+      &:nth-child(3) .payfeed__items {
+        height: 75.2rem;
+      }
+      &:nth-child(3) .payfeed__block {
+        margin-top: 2.8rem;
+      }
+      &:nth-child(3) .payfeed__block_text {
+        width: 30rem;
+        margin-bottom: 15.9rem;
+      }
+      &:nth-child(3) .payfeed__block_heading {
+        width: 32rem;
+        font-family: $fontsMont-500;
+        font-weight: normal;
+        font-size: 2.6rem;
+        line-height: 3.38rem;
+        color: $text-white;
+        text-align: center;
+        padding-top: 0rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-bottom: 3.2rem;
+      }
+
+    }
+    &__heading {
+      font-family: $fontsMont-500;
+      font-weight: normal;
+      font-size: 2.6rem;
+      line-height: 3.2rem;
+      color: $text-white;
+      text-align: center;
+      padding-top: 2rem;
+      padding-left: 0rem;
+      margin-bottom: 4.4rem;
+    }
+    &__wrapper {
+      height: 100%;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    &__numbers {
+      width: 31rem;
+      margin: 0 auto;
+      margin-left: 1rem;
+      color: $text-white;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      @include flex-block-justify();
+      hr {
+        width: 87%;
+      }
+    }
+    &__img {
+      width: 32rem;
+      img {
+        width: 32rem;
+        max-width: 32rem;
+        height: 20.87rem;
+        margin-right: 0;
+      }
+    }
+    &__items {
+      padding-top: 3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+    &__block {
+      display: flex;
+      align-content: center;
+      flex-direction: column;
+      margin-top: 2.7rem;
+      margin-right: 0;
+      width: 100%;
+      max-width: 32rem;
+      color: $text-white;
+
+      &_foods {
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+      }
+      &_heading {
+        width: 100%;
+        max-width: 60rem;
+        margin: 2.8rem 0 3rem;
+        margin-left: 0;
+        font-family: $fontsMont-500;
+        font-weight: normal;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        text-align: center;
+      }
+      &_text {
+        width: 28rem;
+        margin: 0 auto;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        margin-bottom: 3.3rem;
+        text-align: center;
+        span {
+          display: none;
+        }
+      }
+  }
+  &__btn {
+    cursor: pointer;
+    margin: 0 auto;
+    margin-top: 1.7rem;
+    @include flex-block-center();
+    width: 30rem;
+    height: 4.5rem;
     background-color: $bg-orange;
     font-family: $fontsMont-600;
     font-size: 1.8rem;
@@ -3152,6 +5076,192 @@
     }
   }
 }
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
+
+  .users_think {
+    padding-top: 10rem;
+    width: 100%;
+    height: 188rem;
+    background-color: $bg-dark-blue;
+    background-image: url("../images/pandaGradient.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+    &__container {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
+    &__wrapper {
+      width: 1161px;
+      margin-left: 3.25%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    &__heading {
+      width: 100%;
+      max-width: 44rem;
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.6rem;
+      text-transform: uppercase;
+      color: $text-white;
+    }
+
+    &__text {
+      margin-top: 1.9rem;
+      margin-bottom: 5.7rem;
+      width: 100%;
+      max-width: 57.7rem;
+      font-family: $fontsMont-600;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      color: $text-white;
+      letter-spacing: -0.2px;
+    }
+
+    &__cards {
+      margin-left: auto;
+      display: flex;
+      flex-wrap: wrap;
+      width: 106rem;
+      gap: 3rem;
+    }
+
+    &__card {
+      position: relative;
+      padding-top: 13.6rem;
+      padding-left: 5rem;
+      width: 51.5rem;
+      height: 46.3rem;
+      background-color: $bg-white;
+      border-radius: 0.5rem;
+      -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      &::before {
+        content: "“";
+        position: absolute;
+        top: 2rem;
+        left: 5rem;
+        font-family: $fontsMont-alternate;
+        font-size: 12rem;
+        line-height: 14.6rem;
+        color: $text-green-lite;
+      }
+      &_heading {
+        font-family: $fontsMont-500;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        margin-bottom: 2rem;
+      }
+      &_text {
+        width: 41.5rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+      }
+      &_author {
+        position: absolute;
+        left: 5rem;
+        bottom: 7rem;
+        margin-top: 4.6rem;
+        text-transform: uppercase;
+        font-family: $fontsMont-600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+      }
+    }
+
+    &__arrow {
+      position: relative;
+      right: 1rem;
+      width: 18.4rem;
+      margin-top: 10rem;
+      margin-right: 2.3%;
+      @include flex-block-center();
+      justify-content: space-between;
+    }
+
+    &__left {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionLeftWhite.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionLeftWhite.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &__right {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionRightWhite.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightWhite.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__leave {
+      margin-top: 9.7rem;
+      margin-left: 13.6rem;
+      width: 100%;
+    }
+    &__leave_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionRightWhite.svg");
+      background-repeat: no-repeat;
+      background-position: 77% 50%;
+      &:hover {
+        background-color: $bg-green-lite;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 77% 50%;
+      }
+    }
+    &__leave_link {
+      padding-right: 3.5rem;
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+
+}
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
 
@@ -3307,6 +5417,203 @@
       @include flex-block-center();
       text-transform: uppercase;
       width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionRightWhite.svg");
+      background-repeat: no-repeat;
+      background-position: 77% 50%;
+      &:hover {
+        background-color: $bg-green-lite;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 77% 50%;
+      }
+    }
+    &__leave_link {
+      padding-right: 3.5rem;
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+
+}
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
+
+.users_think {
+    padding-top: 8rem;
+    width: 100%;
+    height: 167.0rem;
+    background-color: $bg-dark-blue;
+    background-image: url("../images/pandaGradient.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    overflow: hidden;
+    &__container {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width:  780px;
+    }
+    &__wrapper {
+      width: 100%;
+      margin-left: 3.25%;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    &__heading {
+      width: 100%;
+      max-width: 44rem;
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.6rem;
+      text-transform: uppercase;
+      color: $text-white;
+    }
+
+    &__text {
+      margin-top: 1.9rem;
+      margin-bottom: 5.7rem;
+      width: 100%;
+      max-width: 57.7rem;
+      font-family: $fontsMont-600;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+      color: $text-white;
+      letter-spacing: -0.2px;
+    }
+
+    &__cards {
+      margin-left: auto;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 215.2rem;
+      height: 37.2rem;
+      gap: 2rem;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-top: 5rem;
+      padding-left: 0;
+      width: 52.3rem;
+      height: 37.1rem;
+      background-color: $bg-white;
+      border-radius: 0.5rem;
+      -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      &::before {
+        content: "“";
+        position: absolute;
+        top: 2rem;
+        left: 3.2rem;
+        font-family: $fontsMont-alternate;
+        font-size: 12rem;
+        line-height: 14.6rem;
+        color: $text-green-lite;
+      }
+      &_heading {
+        width: 22.6rem;
+        font-family: $fontsMont-500;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        text-align: center;
+        margin-bottom: 3.1rem;
+
+      }
+      &_text {
+        width: 46.3rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+      }
+      &_author {
+        width: 100%;
+        position: absolute;
+        left: 0rem;
+        bottom: 5rem;
+        margin-top: 4.6rem;
+        text-transform: uppercase;
+        font-family: $fontsMont-600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+      }
+    }
+
+    &__arrow {
+      position: relative;
+      right: 1rem;
+      width: 18.4rem;
+      margin-top: 10rem;
+      margin-right: 2.3%;
+      @include flex-block-center();
+      justify-content: space-between;
+      display: none;
+    }
+
+    &__left {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionLeftWhite.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionLeftWhite.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+    &__right {
+      width: 6rem;
+      height: 6rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionRightWhite.svg");
+      background-repeat: no-repeat;
+      background-position: center;
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightWhite.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &__leave {
+      margin-top: 4.8rem;
+      margin-left: 2rem;
+      width: 100%;
+    }
+    &__leave_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36.8rem;
       height: 7.4rem;
       border-radius: 0.5rem;
       border: 1px solid $bg-white;
@@ -3516,6 +5823,181 @@
         background-image: url("../icons/UnionRightInvert.svg");
         background-repeat: no-repeat;
         background-position: 77% 50%;
+      }
+    }
+    &__leave_link {
+      padding-right: 3.5rem;
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      &:hover {
+        color: $text-white;
+      }
+    }
+  }
+
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+.users_think {
+    padding-top: 4.1rem;
+    width: 100%;
+    height: 146.1rem;
+    background-color: $bg-dark-blue;
+    background-image: url("../images/pandaGradient.png");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: cover;
+    overflow: hidden;
+    &__container {
+      position: relative;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+    }
+    &__wrapper {
+      width: 100%;
+      margin-left: 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      flex-wrap: wrap;
+    }
+    &__heading {
+      width: 100%;
+      max-width: 44rem;
+      font-family: $fontsMont-500;
+      font-weight: normal;
+      text-align: center;
+      font-size: 2.6rem;
+      line-height: 3.16rem;
+      text-transform: uppercase;
+      color: $text-white;
+    }
+
+    &__text {
+      margin: 2.5rem auto 3.9rem;
+      width: 100%;
+      max-width: 28rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+      letter-spacing: -0.2px;
+    }
+
+    &__cards {
+      margin-left: 1rem;
+      display: flex;
+      flex-wrap: nowrap;
+      width: 126.0rem;
+      height: 54.9rem;
+      gap: 2rem;
+    }
+
+    &__card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      position: relative;
+      padding-top: 5rem;
+      padding-left: 0;
+      width: 30.0rem;
+      height: 54.9rem;
+      background-color: $bg-white;
+      border-radius: 0.5rem;
+      -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.4);
+      &::before {
+        content: "“";
+        position: absolute;
+        top: 2rem;
+        left: 3.2rem;
+        font-family: $fontsMont-alternate;
+        font-size: 12rem;
+        line-height: 14.6rem;
+        color: $text-green-lite;
+      }
+      &_heading {
+        width: 75%;
+        font-family: $fontsMont-500;
+        font-size: 2.6rem;
+        line-height: 3.4rem;
+        text-align: center;
+        margin-top: 6.6rem;
+        margin-bottom: 2.1rem;
+
+      }
+      &_text {
+        width: 89%;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+      }
+      &_author {
+        width: 100%;
+        position: absolute;
+        left: 0rem;
+        bottom: 5rem;
+        margin-top: 4.6rem;
+        text-transform: uppercase;
+        font-family: $fontsMont-600;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        text-align: center;
+      }
+    }
+    &__pagination {
+        margin: 3rem auto 0;
+        width: 9.2rem;
+        display: flex;
+        justify-content: space-between;
+        span {
+          cursor: pointer;
+          width: 0.8rem;
+          height: 0.8rem;
+          border-radius: 50%;
+          border: 1px solid $bg-default;
+        }
+        .active {
+          border: 1px solid $bg-default;
+          background-color: $bg-default;
+        }
+      }
+    &__arrow {
+      display: none;
+    }
+
+    &__leave {
+      margin-top: 4.8rem;
+      margin-left: 1rem;
+      width: 100%;
+    }
+    &__leave_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 30rem;
+      height: 4.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-white;
+      background-color: transparent;
+      background-image: url("../icons/UnionRightWhite.svg");
+      background-repeat: no-repeat;
+      background-position: 83% 50%;
+      &:hover {
+        background-color: $bg-green-lite;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 83% 50%;
       }
     }
     &__leave_link {
@@ -3881,7 +6363,193 @@
     }
   }
 }
+////////////////1400////////////////////////
+@media screen and (max-width: 1400px) {
 
+  .animals_love {
+    width: 100%;
+    max-width: 100%;
+
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1400px;
+    }
+
+    &__heading {
+      margin: 0 auto;
+      margin-top: 15rem;
+      margin-bottom: 2.9rem;
+      padding-left: 4.8rem;
+      width: 100%;
+      max-width: 65.5rem;
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      text-align: center;
+    }
+
+    &__text {
+      margin: 0 auto;
+      margin-left: 32.5%;
+      margin-bottom: 4.6rem;
+      width: 100%;
+      max-width: 53.7rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.6rem;
+      text-align: center;
+      color: $text-default;
+    }
+
+  &__cards {
+    margin: 0 auto;
+    width: 97rem;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    &_big {
+      margin: 0 auto;
+      width: 93rem;
+      height: 47rem;
+      padding: 0rem;
+      margin-bottom: 1rem;
+      img {
+        width: 93rem;
+        height: 47rem;
+      }
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 45.5rem;
+    height: 64.1rem;
+    background-color: $bg-dark-blue;
+    border-radius: 0.5rem;
+    &:hover {
+      width: 47.5rem;
+      height: 66.1rem;
+      transition-duration: 2s;
+      z-index: 50;
+    }
+    &_wrapper {
+      @include flex-block-center();
+      width: 47.5rem;
+      height: 66.1rem;
+    }
+    &_wrapper:nth-child(odd) {
+      order: 2;
+      margin-top: -0.5rem;
+    }
+
+    &_img {
+      width: 100%;
+      height: 37.3rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+    }
+
+    &_text {
+      margin: 3rem auto 0;
+      width: 89%;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+    }
+    &_link {
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    margin-left: -7rem;
+    position: absolute;
+    left: 50%;
+    bottom: 4.2rem;
+    @include flex-block-center();
+    width: 14.2rem;
+    height: 7.3rem;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: transparent;
+    background-image: url("../icons/UnionOrange.svg");
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    padding-right: 3.6rem;
+    &:hover {
+      color: $text-white;
+      background-color: $bg-dark-orange;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
+    }
+  }
+
+  &__choose {
+    margin-top: 9.1rem;
+    width: 100%;
+    @include flex-block-center();
+  }
+  &__choose_btn {
+    @include flex-block-center();
+    text-transform: uppercase;
+    width: 36rem;
+    height: 7.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 89% 50%;
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-blue;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 89% 50%;
+    }
+  }
+  &__choose_link {
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-right: 3.5rem;
+    color: $text-dark-blue;
+    &:hover {
+      color: $text-white;
+    }
+  }
+
+  &__screen {
+    margin: 15rem auto 14.6rem;
+    img {
+      width: 100%;
+    }
+  }
+  }
+
+}
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
 
@@ -4257,6 +6925,217 @@
   }
 
 }
+////////////////780////////////////////////
+@media screen and (max-width: 780px) {
+
+  .animals_love {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 780px;
+    }
+
+    &__heading {
+      margin: 0 auto;
+      margin-top: 8.2rem;
+      margin-bottom: 2.9rem;
+      padding-left: 0;
+      width: 100%;
+      max-width: 60rem;
+      font-family: $fontsMont-600;
+      font-size: 5.4rem;
+      line-height: 6.5rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      text-align: center;
+    }
+
+    &__text {
+      margin-left: 0;
+      margin: 0 auto;
+      margin-bottom: 5.6rem;
+      width: 100%;
+      max-width: 60rem;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.5rem;
+      text-align: center;
+      color: $text-default;
+    }
+
+  &__cards {
+    margin: 0 auto;
+    margin-left: 0;
+    width: 187.9rem;
+    height: 31.7rem;
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+    flex-wrap: wrap;
+    &_big {
+      display: none;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 60rem;
+    height: 29.7rem;
+    background-color: $bg-dark-blue;
+    border-radius: 0.5rem;
+    &:hover {
+      width: 60rem;
+      height: 29.7rem;
+      transition-duration: 2s;
+      z-index: 50;
+    }
+    &_wrapper {
+      @include flex-block-center();
+      width: 62rem;
+      height: 31.7rem;
+    }
+    &_wrapper:nth-child(odd) {
+      order: 2;
+      margin-top: -0.5rem;
+    }
+
+    &_img {
+      position: absolute;
+      right: 0;
+      top: 0;
+      width: 34.8rem;
+      height: 29.7rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+      &_wrapper {
+        position: relative;
+        width: 30rem;
+        height: 29.7rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        overflow: hidden;
+      }
+    }
+
+    &_text {
+      margin: 6.7rem auto 0;
+      width: 26rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+    }
+    &_link {
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    margin-left: -7rem;
+    position: absolute;
+    left: 75%;
+    bottom: 3.4rem;
+    @include flex-block-center();
+    width: 14.2rem;
+    height: 7.3rem;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: transparent;
+    background-image: url("../icons/UnionOrange.svg");
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    padding-right: 3.6rem;
+    &:hover {
+      color: $text-white;
+      background-color: $bg-dark-orange;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
+    }
+  }
+
+  &__pagination {
+    margin: 4rem auto 0;
+    width: 9.2rem;
+    display: flex;
+    justify-content: space-between;
+    span {
+      cursor: pointer;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      border: 1px solid $bg-default;
+    }
+    .active {
+      border: 1px solid $bg-default;
+      background-color: $bg-default;
+    }
+  }
+
+  &__choose {
+    margin-top: 5.0rem;
+    width: 100%;
+    @include flex-block-center();
+  }
+  &__choose_btn {
+    @include flex-block-center();
+    text-transform: uppercase;
+    width: 35.9rem;
+    height: 7.4rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-blue;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 90% 50%;
+    }
+  }
+  &__choose_link {
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-right: 3.5rem;
+    color: $text-dark-blue;
+    &:hover {
+      color: $text-white;
+    }
+  }
+
+  &__screen {
+    margin: 10rem auto 9.8rem;
+    img {
+      width: 100%;
+      height: 37.9rem;
+    }
+  }
+  }
+
+}
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
 
@@ -4463,6 +7342,220 @@
     img {
       width: 100%;
       height: 37.9rem;
+    }
+  }
+  }
+
+}
+////////////////480////////////////////////
+@media screen and (max-width: 480px) {
+
+  .animals_love {
+    width: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    &__container {
+      margin: 0 auto;
+      width: 100%;
+      max-width: 480px;
+    }
+
+    &__heading {
+      margin: 0 auto;
+      margin-top: 5.1rem;
+      margin-bottom: 2.9rem;
+      padding-left: 0;
+      width: 100%;
+      max-width: 93%;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.1rem;
+      text-transform: uppercase;
+      color: $text-green-lite;
+      text-align: center;
+    }
+
+    &__text {
+      margin-left: 0;
+      margin: 0 auto;
+      margin-bottom: 2.3rem;
+      width: 100%;
+      max-width: 85%;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-default;
+    }
+
+  &__cards {
+    margin: 0 auto;
+    margin-left: 1rem;
+    width: 126.0rem;
+    height: 57rem;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    // align-items: center;
+    flex-wrap: nowrap;
+    &_big {
+      display: none;
+    }
+  }
+
+  &__card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    height: 57rem;
+    background-color: $bg-dark-blue;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    &:hover {
+      width: 30rem;
+      height: 57rem;
+      transition-duration: 2s;
+      z-index: 50;
+    }
+    &_wrapper {
+      @include flex-block-center();
+      width: 30rem;
+      height: 57rem;
+    }
+    &_wrapper:nth-child(odd) {
+      order: 2;
+      margin-top: 0;
+    }
+
+    &_img {
+      position: absolute;
+      left: -58px;
+      top: -21px;
+      width: 44rem;
+      height: 37.3rem;
+      border-top-left-radius: 0.5rem;
+      border-top-right-radius: 0.5rem;
+
+      &_wrapper {
+        position: relative;
+        width: 30rem;
+        height: 35.3rem;
+        border-top-left-radius: 0.5rem;
+        border-bottom-left-radius: 0.5rem;
+        overflow: hidden;
+      }
+    }
+
+    &_text {
+      margin: 1.5rem auto 0;
+      width: 25rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      text-align: center;
+      color: $text-white;
+    }
+    &_link {
+      text-decoration: none;
+    }
+  }
+
+  &__btn {
+    cursor: pointer;
+    margin-left: 0;
+    position: absolute;
+    left: 27%;
+    bottom: 2.2rem;
+    @include flex-block-center();
+    width: 14.2rem;
+    height: 7.3rem;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-orange;
+    text-transform: uppercase;
+    letter-spacing: 0.05rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: transparent;
+    background-image: url("../icons/UnionOrange.svg");
+    background-repeat: no-repeat;
+    background-position: 75% 50%;
+    padding-right: 3.6rem;
+    &:hover {
+      color: $text-white;
+      background-color: $bg-dark-orange;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
+    }
+  }
+
+  &__pagination {
+    margin: 3rem auto 0;
+    width: 9.2rem;
+    display: flex;
+    justify-content: space-between;
+    span {
+      cursor: pointer;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      border: 1px solid $bg-default;
+    }
+    .active {
+      border: 1px solid $bg-default;
+      background-color: $bg-default;
+    }
+  }
+
+  &__choose {
+    margin-top: 5.0rem;
+    width: 100%;
+    @include flex-block-center();
+  }
+  &__choose_btn {
+    @include flex-block-center();
+    text-transform: capitalize;
+    width: 30rem;
+    height: 4.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid $bg-dark-blue;
+    background-color: $bg-white;
+    background-image: url("../icons/UnionRight.svg");
+    background-repeat: no-repeat;
+    background-position: 90% 50%;
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-blue;
+      background-image: url("../icons/UnionRightInvert.svg");
+      background-repeat: no-repeat;
+      background-position: 90% 50%;
+    }
+  }
+  &__choose_link {
+    @include flex-block-center();
+    width: 100%;
+    height: 100%;
+    text-decoration: none;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    padding-right: 3.5rem;
+    color: $text-dark-blue;
+    &:hover {
+      color: $text-white;
+    }
+  }
+
+  &__screen {
+    margin: 8rem auto 7.8rem;
+    img {
+      width: 100%;
+      height: 18.9rem;
     }
   }
   }
