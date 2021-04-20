@@ -1119,6 +1119,12 @@ aside {
   height: 100%;
 }
 
+@media screen and (max-width: 1833px) {
+  .sticky {
+    height: 1497px;
+  }
+}
+
 .sidebar {
   position: -webkit-sticky;
   position: sticky;
@@ -1530,7 +1536,7 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 46.2%;
+    height: 1286px;
   }
   .sidebar {
     position: -webkit-sticky;
@@ -2125,8 +2131,29 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 46.2%;
+    height: 1351px;
   }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 960px) {
+  .sticky {
+    height: 1118px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 960px) {
+  .sticky {
+    height: 1118px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 768px) {
+  .sticky {
+    height: 935px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
@@ -2452,8 +2479,17 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 24.4%;
+    height: 828px;
   }
+}
+
+@media screen and (max-width: 640px) and (max-width: 485px) {
+  .sticky {
+    height: 893px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .sidebar {
     position: -webkit-sticky;
     position: sticky;

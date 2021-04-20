@@ -22,6 +22,9 @@ aside {
   top: 0;
   left: 0;
   height: 100%;
+  @media screen and (max-width: 1833px) {
+    height: 1497px;
+  }
 }
 .sidebar {
   position: sticky;
@@ -370,7 +373,7 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 46.2%;
+    height: 1286px;
   }
   .sidebar {
     position: sticky;
@@ -972,7 +975,16 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 46.2%;
+    height: 1351px;
+    @media screen and (max-width: 960px) {
+      height: 1118px;
+    }
+    @media screen and (max-width: 960px) {
+      height: 1118px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 935px;
+    }
   }
   .sidebar {
     position: sticky;
@@ -1282,7 +1294,10 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 24.4%;
+    height: 828px;
+    @media screen and (max-width: 485px) {
+      height: 893px;
+    }
   }
   .sidebar {
     position: sticky;
