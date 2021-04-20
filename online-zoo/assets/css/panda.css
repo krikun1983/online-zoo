@@ -1303,6 +1303,12 @@ aside {
   max-width: 1430px;
 }
 
+@media screen and (max-width: 1819px) {
+  .cams__container {
+    margin-left: 210px;
+  }
+}
+
 .cams__top {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1423,6 +1429,13 @@ aside {
           justify-content: space-between;
   width: 1228px;
   height: 209px;
+}
+
+@media screen and (max-width: 1469px) {
+  .cams__preview {
+    width: 100%;
+    max-width: 1228px;
+  }
 }
 
 .cams__preview_active {
@@ -1674,12 +1687,31 @@ aside {
   }
   .cams__container {
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 0;
   }
+}
+
+@media screen and (max-width: 1430px) and (max-width: 1430px) {
+  .cams__container {
+    margin-left: 115px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
   .cams__top {
     width: 91.5%;
     margin-left: auto;
   }
+}
+
+@media screen and (max-width: 1430px) and (max-width: 1430px) {
+  .cams__top {
+    width: 99.5%;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 1430px) {
   .cams__top_heading {
     left: 49%;
   }
@@ -1735,6 +1767,15 @@ aside {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
+}
+
+@media screen and (max-width: 1430px) and (max-width: 1430px) {
+  .cams__preview {
+    margin-left: 115px;
+  }
+}
+
+@media screen and (max-width: 1430px) {
   .cams__preview_active {
     border: 3px solid #f58021;
   }
@@ -1971,14 +2012,15 @@ aside {
   }
   .cams__container {
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 0px;
+    margin-left: 116px;
   }
   .cams__top {
-    width: 91.5%;
+    width: 98.5%;
     margin-left: auto;
   }
   .cams__top_heading {
-    left: 49%;
+    left: 43%;
   }
   .cams__top_btn {
     min-height: 56px;
@@ -2029,6 +2071,7 @@ aside {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-left: 4%;
   }
   .cams__preview_active {
     border: 3px solid #f58021;
@@ -2291,10 +2334,11 @@ aside {
   .cams__container {
     position: relative;
     padding-right: 40px;
-    padding-left: 40px;
+    padding-left: 0;
+    margin-left: 116px;
   }
   .cams__top {
-    width: 91.5%;
+    width: 98.5%;
     margin-left: auto;
   }
   .cams__top_heading {
@@ -2624,18 +2668,29 @@ aside {
     margin-top: 110px;
     padding-bottom: 78px;
     padding-top: 20px;
+    overflow: hidden;
   }
   .cams__container {
     padding-right: 20px;
-    padding-left: 20px;
+    padding-left: 0;
+    margin-left: 79px;
   }
   .cams__top {
-    width: 91.5%;
+    width: 100%;
     margin-left: auto;
   }
   .cams__top_heading {
     left: 49%;
   }
+}
+
+@media screen and (max-width: 640px) and (max-width: 506px) {
+  .cams__top_heading {
+    font-size: 32px;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .cams__top_btn {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
@@ -2684,7 +2739,7 @@ aside {
   }
   .cams__heading_small {
     margin-left: 0;
-    margin-right: 91px;
+    margin-right: 28%;
     margin-bottom: 21px;
     padding-left: 0rem;
     padding-right: 0;
@@ -2701,7 +2756,17 @@ aside {
     width: 445px;
     height: 106px;
     margin-right: 0;
+    margin-left: 18%;
   }
+}
+
+@media screen and (max-width: 640px) and (max-width: 639px) {
+  .cams__preview {
+    margin-left: 1%;
+  }
+}
+
+@media screen and (max-width: 640px) {
   .cams__preview_active {
     border: 3px solid #f58021;
   }
@@ -2909,11 +2974,12 @@ aside {
     padding-bottom: 148px;
   }
   .cams__container {
-    padding-left: 10px;
+    padding-left: 0;
     padding-right: 10px;
+    margin-left: 0;
   }
   .cams__top {
-    width: 90.2%;
+    width: 100%;
   }
   .cams__top_heading {
     font-size: 2.6rem;
@@ -2957,9 +3023,10 @@ aside {
     background-color: #d26004;
   }
   .cams__video {
-    left: 10px;
+    left: 0;
     height: 200px;
     margin-top: 15px;
+    margin-left: 51px;
     overflow: hidden;
   }
   .cams__video_iframe {
@@ -3219,9 +3286,12 @@ aside {
     padding-left: 10px;
     padding-right: 10px;
     max-width: 32rem;
+    margin-left: 0;
   }
   .cams__top {
-    width: 90.2%;
+    width: 100%;
+    padding-left: 31px;
+    margin-left: 10px;
   }
   .cams__top_heading {
     padding-left: 0rem;
@@ -3233,7 +3303,7 @@ aside {
             flex-grow: unset;
     font-size: 2.6rem;
     line-height: 3.2rem;
-    margin-left: 1.3rem;
+    margin-left: 0;
     text-transform: uppercase;
     color: #00A092;
     text-align: center;
@@ -3269,9 +3339,10 @@ aside {
     background-color: #d26004;
   }
   .cams__video {
-    left: 10px;
+    left: 0;
     height: 200px;
     margin-top: 15px;
+    margin-left: 0;
   }
   .cams__video_iframe {
     width: 100%;
