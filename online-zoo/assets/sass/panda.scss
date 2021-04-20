@@ -503,9 +503,8 @@ aside {
 
       &_btn {
       cursor: pointer;
-      position: absolute;
+      margin-left: auto;
       top: 4px;
-      right: 0;
       @include flex-block-center();
       width: 24rem;
       height: 5.6rem;
@@ -840,9 +839,7 @@ aside {
 
       &_btn {
       cursor: pointer;
-      position: absolute;
-      top: 4px;
-      right: 0;
+      margin-left: auto;
       @include flex-block-center();
       width: 24rem;
       height: 5.6rem;
@@ -1032,7 +1029,6 @@ aside {
 
   //======main======//
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -1043,7 +1039,7 @@ aside {
   }
   .sidebar {
     position: sticky;
-    top: 11rem;
+    top: 0;
     left: 0;
     width: 7.8rem;
     height: 50rem;
@@ -1345,7 +1341,6 @@ aside {
 
   //======main======//
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -1356,7 +1351,7 @@ aside {
   }
   .sidebar {
     position: sticky;
-    top: 11rem;
+    top: 0;
     left: 0;
     width: 7.8rem;
     height: 50rem;

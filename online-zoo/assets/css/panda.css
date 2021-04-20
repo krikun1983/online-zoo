@@ -1820,9 +1820,8 @@ aside {
   }
   .cams__top_btn {
     cursor: pointer;
-    position: absolute;
+    margin-left: auto;
     top: 4px;
-    right: 0;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2160,9 +2159,7 @@ aside {
   }
   .cams__top_btn {
     cursor: pointer;
-    position: absolute;
-    top: 4px;
-    right: 0;
+    margin-left: auto;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2337,7 +2334,6 @@ aside {
 
 @media screen and (max-width: 1199px) {
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -2349,7 +2345,7 @@ aside {
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 11rem;
+    top: 0;
     left: 0;
     width: 7.8rem;
     height: 50rem;
@@ -2652,7 +2648,6 @@ aside {
 
 @media screen and (max-width: 780px) {
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -2664,7 +2659,7 @@ aside {
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
-    top: 11rem;
+    top: 0;
     left: 0;
     width: 7.8rem;
     height: 50rem;
