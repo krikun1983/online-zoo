@@ -143,6 +143,7 @@ aside {
   width: 100%;
   &__container {
     padding-top: 5.4rem;
+    padding-bottom: 15rem;
     margin: 0 auto;
     width: 100%;
     max-width: $desktop;
@@ -234,41 +235,59 @@ aside {
   }
 
   &__preview {
-    @include flex-block-justify();
-    margin: 0 auto;
-    margin-left: 10.5%;
-    margin-bottom: 14.9rem;
-    width: 100%;
-    max-width: 122.6rem;
-    height: 100%;
-    max-height: 20.9rem;
+    margin-left: auto;
+    margin-right: 27px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1228px;
+    height: 209px;
+    // @include flex-block-justify();
+    // margin: 0 auto;
+    // margin-left: 10.5%;
+    // margin-bottom: 14.9rem;
+    // width: 100%;
+    // max-width: 122.6rem;
+    // height: 100%;
+    // max-height: 20.9rem;
 
     &_active {
       border: 3px solid $bg-orange;
     }
 
     &_list {
-      @include flex-block-justify();
+      // @include flex-block-justify();
       width: 100%;
       max-width: 104rem;
+
+
+      height: 100%;
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      column-gap: 40px;
     }
     &_item {
       position: relative;
-      padding-top: 3rem;
-      height: 0;
+      border-radius: 0.5rem;
       overflow: hidden;
       width: 100%;
-      max-width: 32rem;
-      padding-bottom: 17%;
-      border-radius: 0.5rem;
+      height: 100%;
+
+      // padding-top: 3rem;
+      // height: 0;
+      // width: 100%;
+      // max-width: 32rem;
+      // padding-bottom: 17%;
     }
 
     &_iframe_small {
-      position: absolute;
-      top:0;
-      left: 0;
       width: 100%;
       height: 100%;
+      // position: absolute;
+      // top:0;
+      // left: 0;
+      // width: 100%;
+      // height: 100%;
     }
 
     &_left {
@@ -336,8 +355,8 @@ aside {
     bottom: 8.5%;
   }
 }
-////////////////1400////////////////////////
-@media screen and (max-width: 1400px) {
+////////////////1550////////////////////////
+@media screen and (max-width: 1550px) {
 
   //======main======//
   .main {
@@ -461,9 +480,10 @@ aside {
     &__container {
       padding-top: 3.1rem;
       padding-right: 4rem;
+      padding-bottom: 120px;
       margin: 0 auto;
       width: 100%;
-      max-width: 1400px;
+      max-width: 1550px;
     }
 
     &__top {
@@ -555,38 +575,50 @@ aside {
     }
 
     &__preview {
-    @include flex-block-justify();
-    margin: 0 auto;
-    margin-left: 15.5rem;
-    margin-bottom: 10.1rem;
-    width: 100%;
-    max-width: 98.5rem;
-    height: 100%;
-    max-height: 20.9rem;
+      width: 80%;
+      margin-right: 20px;
+      justify-content: space-between;
+    // @include flex-block-justify();
+    // margin: 0 auto;
+    // margin-left: 15.5rem;
+    // margin-bottom: 10.1rem;
+    // width: 100%;
+    // max-width: 98.5rem;
+    // height: 100%;
+    // max-height: 20.9rem;
 
       &_active {
         border: 3px solid $bg-orange;
       }
 
       &_list {
-        @include flex-block-justify();
-        width: 100%;
-        max-width: 83.5rem;
+        // @include flex-block-justify();
+        // width: 100%;
+        // max-width: 83.5rem;
+        width: 835px;
+        column-gap: 20px;
       }
       &_item {
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 26.5rem;
+        // height: 20.9rem;
+        // border-radius: 0.5rem;
         position: relative;
-        padding-top: 30px;
-        height: 0;
+        border-radius: 5px;
         overflow: hidden;
-        width: 26.5rem;
-        height: 20.9rem;
-        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
       }
 
       &_iframe_small {
-        position: absolute;
-        top:0;
-        left: 0;
+        // position: absolute;
+        // top:0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
         width: 100%;
         height: 100%;
       }
@@ -785,6 +817,7 @@ aside {
     &__container {
       padding-top: 3.1rem;
       padding-right: 4rem;
+      padding-bottom: 100px;
       margin: 0 auto;
       width: 100%;
       max-width: $tablet-landscape;
@@ -879,32 +912,42 @@ aside {
     }
 
     &__preview {
-    @include flex-block-justify();
-    margin: 0 auto;
-    margin-left: 15.5rem;
-    margin-bottom: 10.1rem;
-    width: 100%;
-    max-width: 98.5rem;
-    height: 100%;
-    max-height: 20.9rem;
+      width: 985px;
+      margin-right: 20px;
+      justify-content: space-between;
+    // @include flex-block-justify();
+    // margin: 0 auto;
+    // margin-left: 15.5rem;
+    // margin-bottom: 10.1rem;
+    // width: 100%;
+    // max-width: 98.5rem;
+    // height: 100%;
+    // max-height: 20.9rem;
 
       &_active {
         border: 3px solid $bg-orange;
       }
 
       &_list {
-        @include flex-block-justify();
-        width: 100%;
-        max-width: 83.5rem;
+        // @include flex-block-justify();
+        // width: 100%;
+        // max-width: 83.5rem;
+        width: 835px;
+        column-gap: 20px;
       }
       &_item {
-        position: relative;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
-        width: 26.5rem;
-        height: 20.9rem;
-        border-radius: 0.5rem;
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 26.5rem;
+        // height: 20.9rem;
+        // border-radius: 0.5rem;
+          position: relative;
+          border-radius: 5px;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
       }
 
       &_iframe_small {
@@ -980,6 +1023,319 @@ aside {
       position: absolute;
       right: 4%;
       bottom: 8.5%;
+    }
+  }
+
+}
+////////////////1199////////////////////////
+@media screen and (max-width: 1199px) {
+
+  //======main======//
+  .main {
+    margin-top: 11rem;
+    position: relative;
+  }
+  .sticky {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 24.4%;
+  }
+  .sidebar {
+    position: sticky;
+    top: 11rem;
+    left: 0;
+    width: 7.8rem;
+    height: 50rem;
+    background-color: $bg-dark-blue;
+    z-index: 1000;
+    &__container {
+      position: relative;
+      padding-top: 5rem;
+      width: 100%;
+      border-bottom: 1px solid $bg-white;
+    }
+    &__life {
+      display: none;
+    }
+
+    &__link_brackets {
+      width: 1.6rem;
+      height: 1.5rem;
+      color: $text-white;
+      position: absolute;
+      top: 1.65rem;
+      right: 41%;
+      z-index: 50;
+      background-image: url("../icons/brackets.svg");
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &__list {
+      @include flex-block-justify();
+      flex-direction: column;
+    }
+    &__item {
+      padding-left: 1rem;
+      width: 100%;
+      height: 10.0rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-top: 1px solid $bg-white;
+      &_bg {
+        position: relative;
+        z-index: 15;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 1rem;
+        width: 6rem;
+        height: 6rem;
+        border-radius: 50%;
+        background-color: transparent;
+       }
+      &_link {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          svg {
+            fill: white;
+          }
+      }
+
+      &_body {
+        width: 3.5rem;
+        height: 4rem;
+      }
+      &_icon {
+        fill: $bg-orange;
+      }
+      .panda {
+        width: 4.3rem;
+        height: 4rem;
+      }
+
+      &_active {
+        background-color: transparent;
+        .sidebar__item_icon {
+          fill: $bg-white;
+        }
+        &::after {
+          content: "";
+          display: none;
+        }
+      }
+    }
+
+    &__arrow {
+      display: block;
+      width: 0.9rem;
+      height: 1.5rem;
+      position: absolute;
+      bottom: -3.5rem;
+      right: 50%;
+      z-index: 10;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+  .sidebar__icon {
+    fill: #ffffff;
+  }
+
+  //======Live cams======//
+  .cams {
+    width: 100%;
+    &__container {
+      padding-top: 2.8rem;
+      padding-right: 2.1rem;
+      margin: 0 auto;
+      width: 100%;
+      max-width: 1199px;
+    }
+
+    &__top {
+      margin: 0 auto;
+      margin-bottom: 1.9rem;//=================
+      position: relative;
+      &_heading {
+        padding-left: 6.4rem;
+        width: 100%;
+        font-family: $fontsMont-600;
+        font-size: 4.2rem;
+        line-height: 5.12rem;
+        text-transform: uppercase;
+        color: $text-green-lite;
+        text-align: center;
+      }
+
+      &_btn {
+      cursor: pointer;
+      position: absolute;
+      top: 492px;
+      right: 0;
+      @include flex-block-center();
+      width: 21.2rem;
+      height: 4.8rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
+        img {
+          margin-left: 1rem;
+        }
+        &:hover {
+          background-color: $bg-dark-orange;
+        }
+      }
+    }
+
+    &__video {
+      position: relative;
+      margin-left: 7.8rem;
+      padding-bottom: 60%;
+      padding-top: 3rem;
+      border-top-right-radius: 0.5rem;
+      height: 0;
+      overflow: hidden;
+        &_iframe {
+          position: absolute;
+          top:0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
+        &_default {
+          position: absolute;
+          left: 0;
+          top: 0;
+          padding-top: 1%;
+          padding-left: 1%;
+          font-family: $fontsMont-500;
+          font-size: 1.45rem;
+          line-height: 1.89rem;
+          color: $text-white;
+          z-index: 10;
+        }
+        &_plug {
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: transparent;
+          width: 100%;
+          height: 100%;
+          z-index: 9;
+        }
+    }
+
+    &__heading_small {
+      margin-top: 9rem;//==================
+      margin-bottom: 2rem;
+      padding-left: 0rem;
+      padding-right: 11%;
+      text-align: center;
+      font-family: $fontsMont-500;
+      font-size: 2.6rem;
+      line-height: 3.38rem;
+      text-transform: none;
+      &:first-letter {
+        text-transform: uppercase;
+      }
+    }
+
+    &__preview {
+      width: 80%;
+      margin-right: 20px;
+      // @include flex-block-justify();
+      // margin: 0 auto;
+      // margin-left: 17.4rem;
+      // margin-bottom: 8rem;
+      // width: 100%;
+      // max-width: 44.5rem;
+      // height: 100%;
+      // max-height: 10.6rem;
+
+      &_active {
+        border: 3px solid $bg-orange;
+      }
+
+      &_list {
+        // @include flex-block-justify();
+        width: 100%;
+        max-width: 83.5rem;
+      }
+      &_item {
+        position: relative;
+        border-radius: 5px;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 13.5rem;
+        // height: 10.6rem;
+        // border-radius: 0.5rem;
+      }
+
+      &_iframe_small {
+          width: 100%;
+          height: 100%;
+        // position: absolute;
+        // top:0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
+      }
+
+      &_left {
+        display: none;
+      }
+      &_right {
+        display: none;
+      }
+
+      &_webs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+        width: 100%;
+        max-width: 7.0rem;
+        height: 2.1rem;
+        border-bottom: 1px solid $text-white;
+        border-right: 1px solid $text-white;
+        border-bottom-right-radius: 0.28rem;
+        color: $text-white;
+        font-family: $fontsMont-500;
+        font-size: 1.02rem;
+        line-height: 1.53rem;
+        img {
+          width: 1.13rem;
+          height: 1.13rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    &__logo {
+      position: absolute;
+      width: 5.36rem;
+      height: 2.79rem;
+      right: 4%;
+      bottom: 8%;
     }
   }
 
@@ -1209,40 +1565,50 @@ aside {
     }
 
     &__preview {
-      @include flex-block-justify();
-      margin: 0 auto;
-      margin-left: 17.4rem;
-      margin-bottom: 8rem;
-      width: 100%;
-      max-width: 44.5rem;
-      height: 100%;
-      max-height: 10.6rem;
+      width: 445px;
+      height: 106px;
+      margin-right: 0;
+      // @include flex-block-justify();
+      // margin: 0 auto;
+      // margin-left: 17.4rem;
+      // margin-bottom: 8rem;
+      // width: 100%;
+      // max-width: 44.5rem;
+      // height: 100%;
+      // max-height: 10.6rem;
 
       &_active {
         border: 3px solid $bg-orange;
       }
 
       &_list {
-        @include flex-block-justify();
+        // @include flex-block-justify();
         width: 100%;
         max-width: 83.5rem;
       }
       &_item {
         position: relative;
-        padding-top: 30px;
-        height: 0;
+        border-radius: 5px;
         overflow: hidden;
-        width: 13.5rem;
-        height: 10.6rem;
-        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 13.5rem;
+        // height: 10.6rem;
+        // border-radius: 0.5rem;
       }
 
       &_iframe_small {
-        position: absolute;
-        top:0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+          width: 100%;
+          height: 100%;
+        // position: absolute;
+        // top:0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
       }
 
       &_left {
@@ -1414,6 +1780,7 @@ aside {
     &__container {
       padding-top: 2.8rem;
       padding-right: 2.1rem;
+      padding-bottom: 80px;
       margin: 0 auto;
       width: 100%;
       max-width: $tablet-mini;
@@ -1513,38 +1880,47 @@ aside {
     }
 
     &__preview {
-      @include flex-block-justify();
-      margin: 0 auto;
-      margin-left: 17.4rem;
-      margin-bottom: 8rem;
-      width: 100%;
-      max-width: 44.5rem;
-      height: 100%;
-      max-height: 10.6rem;
+      width: 445px;
+      height: 106px;
+      margin-right: 0;
+      // @include flex-block-justify();
+      // margin: 0 auto;
+      // margin-left: 17.4rem;
+      // margin-bottom: 8rem;
+      // width: 100%;
+      // max-width: 44.5rem;
+      // height: 100%;
+      // max-height: 10.6rem;
 
       &_active {
         border: 3px solid $bg-orange;
       }
 
       &_list {
-        @include flex-block-justify();
         width: 100%;
-        max-width: 83.5rem;
+        // @include flex-block-justify();
+        // width: 100%;
+        // max-width: 83.5rem;
       }
       &_item {
         position: relative;
-        padding-top: 30px;
-        height: 0;
+        border-radius: 5px;
         overflow: hidden;
-        width: 13.5rem;
-        height: 10.6rem;
-        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 13.5rem;
+        // height: 10.6rem;
+        // border-radius: 0.5rem;
       }
 
       &_iframe_small {
-        position: absolute;
-        top:0;
-        left: 0;
+        // position: absolute;
+        // top:0;
+        // left: 0;
         width: 100%;
         height: 100%;
       }
@@ -1719,6 +2095,7 @@ aside {
     &__container {
       padding-top: 2rem;
       padding-right: 0rem;
+      padding-bottom: 148px;
       margin: 0 auto;
       width: 100%;
       max-width: 480px;
@@ -1817,42 +2194,53 @@ aside {
     }
 
     &__preview {
-      @include flex-block-justify();
-      align-items: flex-start;
-      justify-content: flex-start;
-      margin: 0 auto;
-      margin-left: 1rem;
-      margin-bottom: 14.5rem;
-      width: 46rem;
-      max-width: 47rem;
-      height: 100%;
-      max-height: 11rem;
+      width: 100%;
+      // @include flex-block-justify();
+      // align-items: flex-start;
+      // justify-content: flex-start;
+      // margin: 0 auto;
+      // margin-left: 1rem;
+      // margin-bottom: 14.5rem;
+      // width: 46rem;
+      // max-width: 47rem;
+      // height: 100%;
+      // max-height: 11rem;
 
       &_active {
         border: 3px solid $bg-orange;
       }
 
       &_list {
-        @include flex-block-justify();
-        width: 100%;
-        max-width: 47rem;
+        grid-template-columns: repeat(2,47%);
+        grid-auto-flow: column;
+        // @include flex-block-justify();
+        // width: 100%;
+        // max-width: 47rem;
       }
       &_item {
         position: relative;
-        padding-top: 30px;
-        height: 0;
+        border-radius: 5px;
         overflow: hidden;
-        width: 14rem;
-        height: 11rem;
-        border-radius: 0.5rem;
+        width: 100%;
+        height: 100%;
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 14rem;
+        // height: 11rem;
+        // border-radius: 0.5rem;
       }
 
       &_iframe_small {
-        position: absolute;
-        top:0;
-        left: 0;
         width: 100%;
         height: 100%;
+
+        // position: absolute;
+        // top:0;
+        // left: 0;
+        // width: 100%;
+        // height: 100%;
       }
 
       &_left {
@@ -2026,6 +2414,7 @@ aside {
     &__container {
       padding-top: 2rem;
       padding-right: 0rem;
+      padding-bottom: 148px;
       margin: 0 auto;
       width: 100%;
       max-width: $mobile;
@@ -2124,40 +2513,50 @@ aside {
     }
 
     &__preview {
-      @include flex-block-justify();
-      align-items: flex-start;
-      justify-content: flex-start;
-      margin: 0 auto;
-      margin-left: 1rem;
-      margin-bottom: 14.5rem;
-      width: 46rem;
-      max-width: 47rem;
-      height: 100%;
-      max-height: 11rem;
+      width: 100%;
+      height: 106px;
+      // @include flex-block-justify();
+      // align-items: flex-start;
+      // justify-content: flex-start;
+      // margin: 0 auto;
+      // margin-left: 1rem;
+      // margin-bottom: 14.5rem;
+      // width: 46rem;
+      // max-width: 47rem;
+      // height: 100%;
+      // max-height: 11rem;
 
       &_active {
         border: 3px solid $bg-orange;
       }
 
       &_list {
-        @include flex-block-justify();
-        width: 100%;
-        max-width: 47rem;
+        grid-template-columns: repeat(2,46%);
+        grid-auto-flow: column;
+        margin-left: 0.3rem;
+        // @include flex-block-justify();
+        // width: 100%;
+        // max-width: 47rem;
       }
       &_item {
-        position: relative;
-        padding-top: 30px;
-        height: 0;
-        overflow: hidden;
-        width: 14rem;
-        height: 11rem;
-        border-radius: 0.5rem;
+          position: relative;
+          border-radius: 5px;
+          overflow: hidden;
+          width: 100%;
+          height: 100%;
+        // position: relative;
+        // padding-top: 30px;
+        // height: 0;
+        // overflow: hidden;
+        // width: 14rem;
+        // height: 11rem;
+        // border-radius: 0.5rem;
       }
 
       &_iframe_small {
-        position: absolute;
-        top:0;
-        left: 0;
+        // position: absolute;
+        // top:0;
+        // left: 0;
         width: 100%;
         height: 100%;
       }
