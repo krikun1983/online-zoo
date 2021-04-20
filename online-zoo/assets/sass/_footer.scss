@@ -429,10 +429,11 @@
     width: 100%;
     max-width: 480px;
     hr {
+      box-sizing: inherit;
     position: absolute;
     top: 48.8rem;
     left: 0;
-    width: 32rem;
+    width: 100%;
     }
   }
 
@@ -567,7 +568,7 @@
     position: absolute;
     top: 48.8rem;
     left: 0;
-    width: 32rem;
+    width: 100%;
     }
   }
 
@@ -617,10 +618,10 @@
     height: 2.3rem;
   }
   .menu__item {
-  font-family: "Montserrat Semibold";
-  font-size: 1.6rem;
-  line-height: 2.7rem;
-  text-transform: uppercase;
+    font-family: "Montserrat Semibold";
+    font-size: 1.6rem;
+    line-height: 2.7rem;
+    text-transform: uppercase;
   }
 
   .menu_little {

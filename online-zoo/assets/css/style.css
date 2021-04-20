@@ -11234,10 +11234,12 @@ li {
     max-width: 480px;
   }
   .container-footer hr {
+    -webkit-box-sizing: inherit;
+            box-sizing: inherit;
     position: absolute;
     top: 48.8rem;
     left: 0;
-    width: 32rem;
+    width: 100%;
   }
   .footer {
     position: relative;
@@ -11414,7 +11416,7 @@ li {
     position: absolute;
     top: 48.8rem;
     left: 0;
-    width: 32rem;
+    width: 100%;
   }
   .footer {
     position: relative;
