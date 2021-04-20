@@ -588,7 +588,7 @@ li {
   .burger-header {
     position: fixed;
     top: 4rem;
-    right: 4.7rem;
+    right: 5.7rem;
     z-index: 3000;
     cursor: pointer;
     width: 3rem;
@@ -785,7 +785,7 @@ li {
   .burger-header {
     position: fixed;
     top: 4rem;
-    right: 4.7rem;
+    right: 7.7rem;
     z-index: 3000;
     cursor: pointer;
     width: 3rem;
@@ -1424,24 +1424,38 @@ aside {
 
 .cams {
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 15rem;
+  text-align: center;
 }
 
 .cams__container {
-  padding-top: 5.4rem;
-  padding-bottom: 15rem;
+  position: relative;
   margin: 0 auto;
-  width: 100%;
-  max-width: 140rem;
+  padding: 0 15px;
+  max-width: 1430px;
 }
 
 .cams__top {
-  margin: 0 auto;
-  margin-bottom: 5rem;
-  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .cams__top_heading {
-  width: 100%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  position: absolute;
+  top: 5px;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   font-family: "Montserrat Semibold";
   font-size: 5.4rem;
   line-height: 6.58rem;
@@ -1452,9 +1466,7 @@ aside {
 
 .cams__top_btn {
   cursor: pointer;
-  position: absolute;
-  top: -5%;
-  right: 0;
+  margin-left: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1486,16 +1498,14 @@ aside {
 
 .cams__video {
   position: relative;
-  padding-bottom: 54%;
-  padding-top: 3rem;
-  height: 0;
+  margin-top: 46px;
+  margin-bottom: 100px;
+  width: 100%;
+  height: 787px;
   overflow: hidden;
 }
 
 .cams__video_iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
   width: 100%;
   height: 100%;
 }
@@ -1524,8 +1534,7 @@ aside {
 }
 
 .cams__heading_small {
-  margin-top: 10.3rem;
-  margin-bottom: 2.8rem;
+  margin-bottom: 3rem;
   text-align: center;
   font-family: "Montserrat Medium";
   font-size: 4.2rem;
@@ -1652,7 +1661,7 @@ aside {
   bottom: 8.5%;
 }
 
-@media screen and (max-width: 1550px) {
+@media screen and (max-width: 1430px) {
   .main {
     position: relative;
   }
@@ -1793,54 +1802,25 @@ aside {
     fill: #ffffff;
   }
   .cams {
-    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 100px;
   }
   .cams__container {
-    padding-top: 3.1rem;
-    padding-right: 4rem;
-    padding-bottom: 120px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1550px;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .cams__top {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    position: relative;
+    width: 91.5%;
+    margin-left: auto;
   }
   .cams__top_heading {
-    margin-left: 0.7rem;
-    width: 100%;
-    font-family: "Montserrat Semibold";
-    font-size: 5.4rem;
-    line-height: 6.58rem;
-    text-transform: uppercase;
-    color: #00A092;
-    text-align: center;
+    left: 49%;
   }
   .cams__top_btn {
-    cursor: pointer;
-    margin-left: auto;
-    top: 4px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    min-height: 56px;
+    margin-top: 10px;
     width: 24rem;
     height: 5.6rem;
-    background-color: #f58021;
-    font-family: "Montserrat Semibold";
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
   }
   .cams__top_btn img {
     margin-left: 1rem;
@@ -1849,17 +1829,11 @@ aside {
     background-color: #d26004;
   }
   .cams__video {
-    position: relative;
-    margin-left: 13.5rem;
-    padding-bottom: 63%;
-    padding-top: 3rem;
-    height: 0;
-    overflow: hidden;
+    margin-top: 34px;
+    height: 760px;
+    margin-bottom: 10px;
   }
   .cams__video_iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -1885,14 +1859,7 @@ aside {
     z-index: 9;
   }
   .cams__heading_small {
-    margin-top: 1rem;
-    margin-bottom: 2.8rem;
-    padding-left: 12.5rem;
-    text-align: center;
-    font-family: "Montserrat Medium";
-    font-size: 4.2rem;
-    line-height: 5.12rem;
-    text-transform: uppercase;
+    margin-left: 85px;
   }
   .cams__preview {
     width: 80%;
@@ -2132,53 +2099,23 @@ aside {
     fill: #ffffff;
   }
   .cams {
-    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 100px;
   }
   .cams__container {
-    padding-top: 3.1rem;
-    padding-right: 4rem;
-    padding-bottom: 100px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 120rem;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .cams__top {
-    margin: 0 auto;
-    margin-bottom: 3rem;
-    position: relative;
+    width: 91.5%;
+    margin-left: auto;
   }
   .cams__top_heading {
-    margin-left: 0.7rem;
-    width: 100%;
-    font-family: "Montserrat Semibold";
-    font-size: 5.4rem;
-    line-height: 6.58rem;
-    text-transform: uppercase;
-    color: #00A092;
-    text-align: center;
+    left: 49%;
   }
   .cams__top_btn {
-    cursor: pointer;
-    margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 24rem;
-    height: 5.6rem;
-    background-color: #f58021;
-    font-family: "Montserrat Semibold";
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    min-height: 56px;
+    margin-top: 10px;
   }
   .cams__top_btn img {
     margin-left: 1rem;
@@ -2187,17 +2124,11 @@ aside {
     background-color: #d26004;
   }
   .cams__video {
-    position: relative;
-    margin-left: 13.5rem;
-    padding-bottom: 63%;
-    padding-top: 3rem;
-    height: 0;
-    overflow: hidden;
+    margin-top: 34px;
+    height: 760px;
+    margin-bottom: 10px;
   }
   .cams__video_iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -2223,14 +2154,7 @@ aside {
     z-index: 9;
   }
   .cams__heading_small {
-    margin-top: 1rem;
-    margin-bottom: 2.8rem;
-    padding-left: 12.5rem;
-    text-align: center;
-    font-family: "Montserrat Medium";
-    font-size: 4.2rem;
-    line-height: 5.12rem;
-    text-transform: uppercase;
+    margin-left: 85px;
   }
   .cams__preview {
     width: 985px;
@@ -2340,21 +2264,21 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 24.4%;
+    height: 46.2%;
   }
   .sidebar {
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     left: 0;
-    width: 7.8rem;
-    height: 50rem;
+    width: 11.5rem;
+    height: 84.6rem;
     background-color: #20113d;
     z-index: 1000;
   }
   .sidebar__container {
     position: relative;
-    padding-top: 5rem;
+    padding-top: 8rem;
     width: 100%;
     border-bottom: 1px solid #ffffff;
   }
@@ -2363,11 +2287,11 @@ aside {
   }
   .sidebar__link_brackets {
     width: 1.6rem;
-    height: 1.5rem;
+    height: 1.6rem;
     color: #ffffff;
     position: absolute;
-    top: 1.65rem;
-    right: 41%;
+    top: 3rem;
+    right: 44%;
     z-index: 50;
     background-image: url("../icons/brackets.svg");
     background-repeat: no-repeat;
@@ -2391,7 +2315,7 @@ aside {
   .sidebar__item {
     padding-left: 1rem;
     width: 100%;
-    height: 10.0rem;
+    height: 17.2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2438,14 +2362,14 @@ aside {
     fill: white;
   }
   .sidebar__item_body {
-    width: 3.5rem;
+    width: 4.5rem;
     height: 4rem;
   }
   .sidebar__item_icon {
     fill: #f58021;
   }
   .sidebar__item .panda {
-    width: 4.3rem;
+    width: 5.3rem;
     height: 4rem;
   }
   .sidebar__item_active {
@@ -2463,7 +2387,7 @@ aside {
     width: 0.9rem;
     height: 1.5rem;
     position: absolute;
-    bottom: -3.5rem;
+    bottom: -5rem;
     right: 50%;
     z-index: 10;
     background-repeat: no-repeat;
@@ -2473,35 +2397,36 @@ aside {
     fill: #ffffff;
   }
   .cams {
-    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 100px;
   }
   .cams__container {
-    padding-top: 2.8rem;
-    padding-right: 2.1rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 1199px;
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
   }
   .cams__top {
-    margin: 0 auto;
-    margin-bottom: 1.9rem;
-    position: relative;
+    width: 91.5%;
+    margin-left: auto;
   }
   .cams__top_heading {
-    padding-left: 6.4rem;
-    width: 100%;
-    font-family: "Montserrat Semibold";
-    font-size: 4.2rem;
-    line-height: 5.12rem;
-    text-transform: uppercase;
-    color: #00A092;
-    text-align: center;
+    left: 49%;
+    font-size: 42px;
+    font-weight: 500;
+    position: static;
+    -webkit-transform: unset;
+            transform: unset;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    top: 5px;
   }
   .cams__top_btn {
-    cursor: pointer;
-    position: absolute;
-    top: 492px;
-    right: 0;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    min-height: 48px;
+    margin-top: 10px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -2512,7 +2437,6 @@ aside {
         -ms-flex-align: center;
             align-items: center;
     width: 21.2rem;
-    height: 4.8rem;
     background-color: #f58021;
     font-family: "Montserrat Semibold";
     font-size: 1.8rem;
@@ -2529,18 +2453,28 @@ aside {
     background-color: #d26004;
   }
   .cams__video {
-    position: relative;
-    margin-left: 7.8rem;
-    padding-bottom: 60%;
-    padding-top: 3rem;
-    border-top-right-radius: 0.5rem;
-    height: 0;
-    overflow: hidden;
+    margin-top: 34px;
+    height: 760px;
+    margin-bottom: 10px;
   }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 960px) {
+  .cams__video {
+    height: 540px;
+    margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) and (max-width: 768px) {
+  .cams__video {
+    height: 460px;
+    margin-top: 21px;
+  }
+}
+
+@media screen and (max-width: 1199px) {
   .cams__video_iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -2566,15 +2500,7 @@ aside {
     z-index: 9;
   }
   .cams__heading_small {
-    margin-top: 9rem;
-    margin-bottom: 2rem;
-    padding-left: 0rem;
-    padding-right: 11%;
-    text-align: center;
-    font-family: "Montserrat Medium";
-    font-size: 2.6rem;
-    line-height: 3.38rem;
-    text-transform: none;
+    margin-left: 85px;
   }
   .cams__heading_small:first-letter {
     text-transform: uppercase;
@@ -2583,321 +2509,17 @@ aside {
     width: 80%;
     margin-right: 20px;
   }
-  .cams__preview_active {
-    border: 3px solid #f58021;
-  }
-  .cams__preview_list {
-    width: 100%;
-    max-width: 83.5rem;
-  }
-  .cams__preview_item {
-    position: relative;
-    border-radius: 5px;
-    overflow: hidden;
-    width: 100%;
-    height: 100%;
-  }
-  .cams__preview_iframe_small {
-    width: 100%;
-    height: 100%;
-  }
-  .cams__preview_left {
-    display: none;
-  }
-  .cams__preview_right {
-    display: none;
-  }
-  .cams__preview_webs {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 10;
-    width: 100%;
-    max-width: 7.0rem;
-    height: 2.1rem;
-    border-bottom: 1px solid #ffffff;
-    border-right: 1px solid #ffffff;
-    border-bottom-right-radius: 0.28rem;
-    color: #ffffff;
-    font-family: "Montserrat Medium";
-    font-size: 1.02rem;
-    line-height: 1.53rem;
-  }
-  .cams__preview_webs img {
-    width: 1.13rem;
-    height: 1.13rem;
-    margin-left: 1rem;
-  }
-  .cams__logo {
-    position: absolute;
-    width: 5.36rem;
-    height: 2.79rem;
-    right: 4%;
-    bottom: 8%;
-  }
 }
 
-@media screen and (max-width: 780px) {
-  .main {
-    position: relative;
-  }
-  .sticky {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 24.4%;
-  }
-  .sidebar {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 7.8rem;
-    height: 50rem;
-    background-color: #20113d;
-    z-index: 1000;
-  }
-  .sidebar__container {
-    position: relative;
-    padding-top: 5rem;
-    width: 100%;
-    border-bottom: 1px solid #ffffff;
-  }
-  .sidebar__life {
-    display: none;
-  }
-  .sidebar__link_brackets {
-    width: 1.6rem;
-    height: 1.5rem;
-    color: #ffffff;
-    position: absolute;
-    top: 1.65rem;
-    right: 41%;
-    z-index: 50;
-    background-image: url("../icons/brackets.svg");
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .sidebar__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-  .sidebar__item {
-    padding-left: 1rem;
-    width: 100%;
-    height: 10.0rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    border-top: 1px solid #ffffff;
-  }
-  .sidebar__item_bg {
-    position: relative;
-    z-index: 15;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    margin-right: 1rem;
-    width: 6rem;
-    height: 6rem;
-    border-radius: 50%;
-    background-color: transparent;
-  }
-  .sidebar__item_link {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 100%;
-    height: 100%;
-  }
-  .sidebar__item_link svg {
-    fill: white;
-  }
-  .sidebar__item_body {
-    width: 3.5rem;
-    height: 4rem;
-  }
-  .sidebar__item_icon {
-    fill: #f58021;
-  }
-  .sidebar__item .panda {
-    width: 4.3rem;
-    height: 4rem;
-  }
-  .sidebar__item_active {
-    background-color: transparent;
-  }
-  .sidebar__item_active .sidebar__item_icon {
-    fill: #ffffff;
-  }
-  .sidebar__item_active::after {
-    content: "";
-    display: none;
-  }
-  .sidebar__arrow {
-    display: block;
-    width: 0.9rem;
-    height: 1.5rem;
-    position: absolute;
-    bottom: -3.5rem;
-    right: 50%;
-    z-index: 10;
-    background-repeat: no-repeat;
-    background-size: cover;
-  }
-  .sidebar__icon {
-    fill: #ffffff;
-  }
-  .cams {
-    width: 100%;
-  }
-  .cams__container {
-    padding-top: 2.8rem;
-    padding-right: 2.1rem;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 780px;
-  }
-  .cams__top {
-    margin: 0 auto;
-    margin-bottom: 1.9rem;
-    position: relative;
-  }
-  .cams__top_heading {
-    padding-left: 6.4rem;
-    width: 100%;
-    font-family: "Montserrat Semibold";
-    font-size: 4.2rem;
-    line-height: 5.12rem;
-    text-transform: uppercase;
-    color: #00A092;
-    text-align: center;
-  }
-  .cams__top_btn {
-    cursor: pointer;
-    position: absolute;
-    top: 492px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 21.2rem;
-    height: 4.8rem;
-    background-color: #f58021;
-    font-family: "Montserrat Semibold";
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
-  }
-  .cams__top_btn img {
-    margin-left: 1rem;
-  }
-  .cams__top_btn:hover {
-    background-color: #d26004;
-  }
-  .cams__video {
-    position: relative;
-    margin-left: 7.8rem;
-    padding-bottom: 60%;
-    padding-top: 3rem;
-    border-top-right-radius: 0.5rem;
-    height: 0;
-    overflow: hidden;
-  }
-  .cams__video_iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-  .cams__video_default {
-    position: absolute;
-    left: 0;
-    top: 0;
-    padding-top: 1%;
-    padding-left: 1%;
-    font-family: "Montserrat Medium";
-    font-size: 1.45rem;
-    line-height: 1.89rem;
-    color: #ffffff;
-    z-index: 10;
-  }
-  .cams__video_plug {
-    position: absolute;
-    left: 0;
-    top: 0;
-    background: transparent;
-    width: 100%;
-    height: 100%;
-    z-index: 9;
-  }
-  .cams__heading_small {
-    margin-top: 9rem;
-    margin-bottom: 2rem;
-    padding-left: 0rem;
-    padding-right: 11%;
-    text-align: center;
-    font-family: "Montserrat Medium";
-    font-size: 2.6rem;
-    line-height: 3.38rem;
-    text-transform: none;
-  }
-  .cams__heading_small:first-letter {
-    text-transform: uppercase;
-  }
+@media screen and (max-width: 1199px) and (max-width: 768px) {
   .cams__preview {
     width: 445px;
     height: 106px;
     margin-right: 0;
   }
+}
+
+@media screen and (max-width: 1199px) {
   .cams__preview_active {
     border: 3px solid #f58021;
   }
@@ -2963,7 +2585,6 @@ aside {
 
 @media screen and (max-width: 640px) {
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -3103,55 +2724,28 @@ aside {
     fill: #ffffff;
   }
   .cams {
-    width: 100%;
+    margin-top: 110px;
+    padding-bottom: 78px;
+    padding-top: 20px;
   }
   .cams__container {
-    padding-top: 2.8rem;
-    padding-right: 2.1rem;
-    padding-bottom: 80px;
-    margin: 0 auto;
-    width: 100%;
-    max-width: 64rem;
+    padding-right: 20px;
+    padding-left: 20px;
   }
   .cams__top {
-    margin: 0 auto;
-    margin-bottom: 1.9rem;
-    position: relative;
+    width: 91.5%;
+    margin-left: auto;
   }
   .cams__top_heading {
-    padding-left: 6.4rem;
-    width: 100%;
-    font-family: "Montserrat Semibold";
-    font-size: 4.2rem;
-    line-height: 5.12rem;
-    text-transform: uppercase;
-    color: #00A092;
-    text-align: center;
+    left: 49%;
   }
   .cams__top_btn {
-    cursor: pointer;
-    position: absolute;
-    top: 492px;
-    right: 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    width: 21.2rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    min-height: 48px;
+    margin-top: 10px;
     height: 4.8rem;
-    background-color: #f58021;
-    font-family: "Montserrat Semibold";
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: #ffffff;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
   }
   .cams__top_btn img {
     margin-left: 1rem;
@@ -3160,18 +2754,10 @@ aside {
     background-color: #d26004;
   }
   .cams__video {
-    position: relative;
-    margin-left: 7.8rem;
-    padding-bottom: 60%;
-    padding-top: 3rem;
-    border-top-right-radius: 0.5rem;
-    height: 0;
-    overflow: hidden;
+    height: 402px;
+    margin-top: 13px;
   }
   .cams__video_iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
     width: 100%;
     height: 100%;
   }
@@ -3196,11 +2782,15 @@ aside {
     height: 100%;
     z-index: 9;
   }
+  .cams__bottom {
+    margin-top: 22px;
+  }
   .cams__heading_small {
-    margin-top: 9rem;
-    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 91px;
+    margin-bottom: 21px;
     padding-left: 0rem;
-    padding-right: 11%;
+    padding-right: 0;
     text-align: center;
     font-family: "Montserrat Medium";
     font-size: 2.6rem;

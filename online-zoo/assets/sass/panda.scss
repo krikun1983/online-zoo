@@ -141,20 +141,26 @@ aside {
 //======Live cams======//
 .cams {
   width: 100%;
+  padding-top: 50px;
+  padding-bottom: 15rem;
+  text-align: center;
   &__container {
-    padding-top: 5.4rem;
-    padding-bottom: 15rem;
+    position: relative;
     margin: 0 auto;
-    width: 100%;
-    max-width: $desktop;
+    padding: 0 15px;
+    max-width: 1430px;
   }
 
   &__top {
-    margin: 0 auto;
-    margin-bottom: 5rem;//=================
-    position: relative;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
     &_heading {
-      width: 100%;
+      flex-grow: 1;
+      position: absolute;
+      top: 5px;
+      left: 50%;
+      transform: translateX(-50%);
       font-family: $fontsMont-600;
       font-size: 5.4rem;
       line-height: 6.58rem;
@@ -165,9 +171,7 @@ aside {
 
     &_btn {
     cursor: pointer;
-    position: absolute;
-    top: -5%;
-    right: 0;
+    margin-left: auto;
     @include flex-block-center();
     width: 24rem;
     height: 7.4rem;
@@ -190,14 +194,15 @@ aside {
 
   &__video {
     position: relative;
-    padding-bottom: 54%;
-    padding-top: 3rem;
-    height: 0;
+    margin-top: 46px;
+    margin-bottom: 100px;
+    width: 100%;
+    height: 787px;
     overflow: hidden;
       &_iframe {
-        position: absolute;
-        top:0;
-        left: 0;
+        // position: absolute;
+        // top:0;
+        // left: 0;
         width: 100%;
         height: 100%;
       }
@@ -225,8 +230,7 @@ aside {
   }
 
   &__heading_small {
-    margin-top: 10.3rem;//==================
-    margin-bottom: 2.8rem;
+    margin-bottom: 3rem;
     text-align: center;
     font-family: $fontsMont-500;
     font-size: 4.2rem;
@@ -355,8 +359,8 @@ aside {
     bottom: 8.5%;
   }
 }
-////////////////1550////////////////////////
-@media screen and (max-width: 1550px) {
+////////////////1430////////////////////////
+@media screen and (max-width: 1430px) {
 
   //======main======//
   .main {
@@ -476,46 +480,26 @@ aside {
 
   //======Live cams======//
   .cams {
-    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 100px;
     &__container {
-      padding-top: 3.1rem;
-      padding-right: 4rem;
-      padding-bottom: 120px;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 1550px;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
     &__top {
-      margin: 0 auto;
-      margin-bottom: 3rem;//=================
-      position: relative;
+      width: 91.5%;
+      margin-left: auto;
       &_heading {
-        margin-left: 0.7rem;
-        width: 100%;
-        font-family: $fontsMont-600;
-        font-size: 5.4rem;
-        line-height: 6.58rem;
-        text-transform: uppercase;
-        color: $text-green-lite;
-        text-align: center;
+        left: 49%;
       }
 
       &_btn {
-      cursor: pointer;
-      margin-left: auto;
-      top: 4px;
-      @include flex-block-center();
+      min-height: 56px;
+      margin-top: 10px;
       width: 24rem;
       height: 5.6rem;
-      background-color: $bg-orange;
-      font-family: $fontsMont-600;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      color: $text-white;
-      text-transform: uppercase;
-      border-radius: 0.5rem;
-      border: none;
+
         img {
           margin-left: 1rem;
         }
@@ -526,18 +510,12 @@ aside {
     }
 
     &__video {
-      position: relative;
-      margin-left: 13.5rem;
-      padding-bottom: 63%;
-      padding-top: 3rem;
-      height: 0;
-      overflow: hidden;
+      margin-top: 34px;
+      height: 760px;
+      margin-bottom: 10px;
         &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
-          width: 100%;
-          height: 100%;
+            width: 100%;
+            height: 100%;
         }
         &_default {
           position: absolute;
@@ -563,14 +541,7 @@ aside {
     }
 
     &__heading_small {
-      margin-top: 1rem;//==================
-      margin-bottom: 2.8rem;
-      padding-left: 12.5rem;
-      text-align: center;
-      font-family: $fontsMont-500;
-      font-size: 4.2rem;
-      line-height: 5.12rem;
-      text-transform: uppercase;
+      margin-left: 85px;
     }
 
     &__preview {
@@ -812,45 +783,24 @@ aside {
 
   //======Live cams======//
   .cams {
-    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 100px;
     &__container {
-      padding-top: 3.1rem;
-      padding-right: 4rem;
-      padding-bottom: 100px;
-      margin: 0 auto;
-      width: 100%;
-      max-width: $tablet-landscape;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
     &__top {
-      margin: 0 auto;
-      margin-bottom: 3rem;//=================
-      position: relative;
+      width: 91.5%;
+      margin-left: auto;
       &_heading {
-        margin-left: 0.7rem;
-        width: 100%;
-        font-family: $fontsMont-600;
-        font-size: 5.4rem;
-        line-height: 6.58rem;
-        text-transform: uppercase;
-        color: $text-green-lite;
-        text-align: center;
+        left: 49%;
       }
 
       &_btn {
-      cursor: pointer;
-      margin-left: auto;
-      @include flex-block-center();
-      width: 24rem;
-      height: 5.6rem;
-      background-color: $bg-orange;
-      font-family: $fontsMont-600;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      color: $text-white;
-      text-transform: uppercase;
-      border-radius: 0.5rem;
-      border: none;
+      min-height: 56px;
+      margin-top: 10px;
+
         img {
           margin-left: 1rem;
         }
@@ -861,16 +811,10 @@ aside {
     }
 
     &__video {
-      position: relative;
-      margin-left: 13.5rem;
-      padding-bottom: 63%;
-      padding-top: 3rem;
-      height: 0;
-      overflow: hidden;
+      margin-top: 34px;
+      height: 760px;
+      margin-bottom: 10px;
         &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
           width: 100%;
           height: 100%;
         }
@@ -898,14 +842,7 @@ aside {
     }
 
     &__heading_small {
-      margin-top: 1rem;//==================
-      margin-bottom: 2.8rem;
-      padding-left: 12.5rem;
-      text-align: center;
-      font-family: $fontsMont-500;
-      font-size: 4.2rem;
-      line-height: 5.12rem;
-      text-transform: uppercase;
+      margin-left: 85px;
     }
 
     &__preview {
@@ -1035,19 +972,19 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    height: 24.4%;
+    height: 46.2%;
   }
   .sidebar {
     position: sticky;
     top: 0;
     left: 0;
-    width: 7.8rem;
-    height: 50rem;
+    width: 11.5rem;
+    height: 84.6rem;
     background-color: $bg-dark-blue;
     z-index: 1000;
     &__container {
       position: relative;
-      padding-top: 5rem;
+      padding-top: 8rem;
       width: 100%;
       border-bottom: 1px solid $bg-white;
     }
@@ -1057,11 +994,11 @@ aside {
 
     &__link_brackets {
       width: 1.6rem;
-      height: 1.5rem;
+      height: 1.6rem;
       color: $text-white;
       position: absolute;
-      top: 1.65rem;
-      right: 41%;
+      top: 3rem;
+      right: 44%;
       z-index: 50;
       background-image: url("../icons/brackets.svg");
       background-repeat: no-repeat;
@@ -1075,7 +1012,7 @@ aside {
     &__item {
       padding-left: 1rem;
       width: 100%;
-      height: 10.0rem;
+      height: 17.2rem;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -1104,14 +1041,14 @@ aside {
       }
 
       &_body {
-        width: 3.5rem;
+        width: 4.5rem;
         height: 4rem;
       }
       &_icon {
         fill: $bg-orange;
       }
       .panda {
-        width: 4.3rem;
+        width: 5.3rem;
         height: 4rem;
       }
 
@@ -1132,7 +1069,7 @@ aside {
       width: 0.9rem;
       height: 1.5rem;
       position: absolute;
-      bottom: -3.5rem;
+      bottom: -5rem;
       right: 50%;
       z-index: 10;
       background-repeat: no-repeat;
@@ -1145,38 +1082,33 @@ aside {
 
   //======Live cams======//
   .cams {
-    width: 100%;
+    padding-top: 26px;
+    padding-bottom: 100px;
     &__container {
-      padding-top: 2.8rem;
-      padding-right: 2.1rem;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 1199px;
+      position: relative;
+      padding-right: 40px;
+      padding-left: 40px;
     }
 
     &__top {
-      margin: 0 auto;
-      margin-bottom: 1.9rem;//=================
-      position: relative;
+      width: 91.5%;
+      margin-left: auto;
       &_heading {
-        padding-left: 6.4rem;
-        width: 100%;
-        font-family: $fontsMont-600;
-        font-size: 4.2rem;
-        line-height: 5.12rem;
-        text-transform: uppercase;
-        color: $text-green-lite;
-        text-align: center;
+        left: 49%;
+        font-size: 42px;
+        font-weight: 500;
+        position: static;
+        transform: unset;
+        flex-grow: 1;
+        top: 5px;
       }
 
       &_btn {
-      cursor: pointer;
-      position: absolute;
-      top: 492px;
-      right: 0;
+      order: 1;
+      min-height: 48px;
+      margin-top: 10px;
       @include flex-block-center();
       width: 21.2rem;
-      height: 4.8rem;
       background-color: $bg-orange;
       font-family: $fontsMont-600;
       font-size: 1.8rem;
@@ -1195,17 +1127,20 @@ aside {
     }
 
     &__video {
-      position: relative;
-      margin-left: 7.8rem;
-      padding-bottom: 60%;
-      padding-top: 3rem;
-      border-top-right-radius: 0.5rem;
-      height: 0;
-      overflow: hidden;
+      margin-top: 34px;
+      height: 760px;
+      margin-bottom: 10px;
+
+        @media (max-width: 960px) {
+          height: 540px;
+          margin-top: 21px;
+        }
+        @media (max-width: 768px) {
+          height: 460px;
+          margin-top: 21px;
+        }
+
         &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
           width: 100%;
           height: 100%;
         }
@@ -1233,15 +1168,7 @@ aside {
     }
 
     &__heading_small {
-      margin-top: 9rem;//==================
-      margin-bottom: 2rem;
-      padding-left: 0rem;
-      padding-right: 11%;
-      text-align: center;
-      font-family: $fontsMont-500;
-      font-size: 2.6rem;
-      line-height: 3.38rem;
-      text-transform: none;
+      margin-left: 85px;
       &:first-letter {
         text-transform: uppercase;
       }
@@ -1250,6 +1177,13 @@ aside {
     &__preview {
       width: 80%;
       margin-right: 20px;
+
+
+        @media (max-width: 768px) {
+          width: 445px;
+          height: 106px;
+          margin-right: 0;
+        }
       // @include flex-block-justify();
       // margin: 0 auto;
       // margin-left: 17.4rem;
@@ -1336,325 +1270,12 @@ aside {
   }
 
 }
-////////////////780////////////////////////
-@media screen and (max-width: 780px) {
 
-  //======main======//
-  .main {
-    position: relative;
-  }
-  .sticky {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 24.4%;
-  }
-  .sidebar {
-    position: sticky;
-    top: 0;
-    left: 0;
-    width: 7.8rem;
-    height: 50rem;
-    background-color: $bg-dark-blue;
-    z-index: 1000;
-    &__container {
-      position: relative;
-      padding-top: 5rem;
-      width: 100%;
-      border-bottom: 1px solid $bg-white;
-    }
-    &__life {
-      display: none;
-    }
-
-    &__link_brackets {
-      width: 1.6rem;
-      height: 1.5rem;
-      color: $text-white;
-      position: absolute;
-      top: 1.65rem;
-      right: 41%;
-      z-index: 50;
-      background-image: url("../icons/brackets.svg");
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-
-    &__list {
-      @include flex-block-justify();
-      flex-direction: column;
-    }
-    &__item {
-      padding-left: 1rem;
-      width: 100%;
-      height: 10.0rem;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-top: 1px solid $bg-white;
-      &_bg {
-        position: relative;
-        z-index: 15;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin-right: 1rem;
-        width: 6rem;
-        height: 6rem;
-        border-radius: 50%;
-        background-color: transparent;
-       }
-      &_link {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-          width: 100%;
-          height: 100%;
-          svg {
-            fill: white;
-          }
-      }
-
-      &_body {
-        width: 3.5rem;
-        height: 4rem;
-      }
-      &_icon {
-        fill: $bg-orange;
-      }
-      .panda {
-        width: 4.3rem;
-        height: 4rem;
-      }
-
-      &_active {
-        background-color: transparent;
-        .sidebar__item_icon {
-          fill: $bg-white;
-        }
-        &::after {
-          content: "";
-          display: none;
-        }
-      }
-    }
-
-    &__arrow {
-      display: block;
-      width: 0.9rem;
-      height: 1.5rem;
-      position: absolute;
-      bottom: -3.5rem;
-      right: 50%;
-      z-index: 10;
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  }
-  .sidebar__icon {
-    fill: #ffffff;
-  }
-
-  //======Live cams======//
-  .cams {
-    width: 100%;
-    &__container {
-      padding-top: 2.8rem;
-      padding-right: 2.1rem;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 780px;
-    }
-
-    &__top {
-      margin: 0 auto;
-      margin-bottom: 1.9rem;//=================
-      position: relative;
-      &_heading {
-        padding-left: 6.4rem;
-        width: 100%;
-        font-family: $fontsMont-600;
-        font-size: 4.2rem;
-        line-height: 5.12rem;
-        text-transform: uppercase;
-        color: $text-green-lite;
-        text-align: center;
-      }
-
-      &_btn {
-      cursor: pointer;
-      position: absolute;
-      top: 492px;
-      right: 0;
-      @include flex-block-center();
-      width: 21.2rem;
-      height: 4.8rem;
-      background-color: $bg-orange;
-      font-family: $fontsMont-600;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      color: $text-white;
-      text-transform: uppercase;
-      border-radius: 0.5rem;
-      border: none;
-        img {
-          margin-left: 1rem;
-        }
-        &:hover {
-          background-color: $bg-dark-orange;
-        }
-      }
-    }
-
-    &__video {
-      position: relative;
-      margin-left: 7.8rem;
-      padding-bottom: 60%;
-      padding-top: 3rem;
-      border-top-right-radius: 0.5rem;
-      height: 0;
-      overflow: hidden;
-        &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
-          width: 100%;
-          height: 100%;
-        }
-        &_default {
-          position: absolute;
-          left: 0;
-          top: 0;
-          padding-top: 1%;
-          padding-left: 1%;
-          font-family: $fontsMont-500;
-          font-size: 1.45rem;
-          line-height: 1.89rem;
-          color: $text-white;
-          z-index: 10;
-        }
-        &_plug {
-          position: absolute;
-          left: 0;
-          top: 0;
-          background: transparent;
-          width: 100%;
-          height: 100%;
-          z-index: 9;
-        }
-    }
-
-    &__heading_small {
-      margin-top: 9rem;//==================
-      margin-bottom: 2rem;
-      padding-left: 0rem;
-      padding-right: 11%;
-      text-align: center;
-      font-family: $fontsMont-500;
-      font-size: 2.6rem;
-      line-height: 3.38rem;
-      text-transform: none;
-      &:first-letter {
-        text-transform: uppercase;
-      }
-    }
-
-    &__preview {
-      width: 445px;
-      height: 106px;
-      margin-right: 0;
-      // @include flex-block-justify();
-      // margin: 0 auto;
-      // margin-left: 17.4rem;
-      // margin-bottom: 8rem;
-      // width: 100%;
-      // max-width: 44.5rem;
-      // height: 100%;
-      // max-height: 10.6rem;
-
-      &_active {
-        border: 3px solid $bg-orange;
-      }
-
-      &_list {
-        // @include flex-block-justify();
-        width: 100%;
-        max-width: 83.5rem;
-      }
-      &_item {
-        position: relative;
-        border-radius: 5px;
-        overflow: hidden;
-        width: 100%;
-        height: 100%;
-        // position: relative;
-        // padding-top: 30px;
-        // height: 0;
-        // overflow: hidden;
-        // width: 13.5rem;
-        // height: 10.6rem;
-        // border-radius: 0.5rem;
-      }
-
-      &_iframe_small {
-          width: 100%;
-          height: 100%;
-        // position: absolute;
-        // top:0;
-        // left: 0;
-        // width: 100%;
-        // height: 100%;
-      }
-
-      &_left {
-        display: none;
-      }
-      &_right {
-        display: none;
-      }
-
-      &_webs {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 10;
-        width: 100%;
-        max-width: 7.0rem;
-        height: 2.1rem;
-        border-bottom: 1px solid $text-white;
-        border-right: 1px solid $text-white;
-        border-bottom-right-radius: 0.28rem;
-        color: $text-white;
-        font-family: $fontsMont-500;
-        font-size: 1.02rem;
-        line-height: 1.53rem;
-        img {
-          width: 1.13rem;
-          height: 1.13rem;
-          margin-left: 1rem;
-        }
-      }
-    }
-
-    &__logo {
-      position: absolute;
-      width: 5.36rem;
-      height: 2.79rem;
-      right: 4%;
-      bottom: 8%;
-    }
-  }
-
-}
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
 
   //======main======//
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -1771,47 +1392,26 @@ aside {
 
   //======Live cams======//
   .cams {
-    width: 100%;
+    margin-top: 110px;
+    padding-bottom: 78px;
+    padding-top: 20px;
     &__container {
-      padding-top: 2.8rem;
-      padding-right: 2.1rem;
-      padding-bottom: 80px;
-      margin: 0 auto;
-      width: 100%;
-      max-width: $tablet-mini;
+      padding-right: 20px;
+      padding-left: 20px;
     }
 
     &__top {
-      margin: 0 auto;
-      margin-bottom: 1.9rem;//=================
-      position: relative;
+      width: 91.5%;
+      margin-left: auto;
       &_heading {
-        padding-left: 6.4rem;
-        width: 100%;
-        font-family: $fontsMont-600;
-        font-size: 4.2rem;
-        line-height: 5.12rem;
-        text-transform: uppercase;
-        color: $text-green-lite;
-        text-align: center;
+        left: 49%;
       }
 
       &_btn {
-      cursor: pointer;
-      position: absolute;
-      top: 492px;
-      right: 0;
-      @include flex-block-center();
-      width: 21.2rem;
+      order: 1;
+      min-height: 48px;
+      margin-top: 10px;
       height: 4.8rem;
-      background-color: $bg-orange;
-      font-family: $fontsMont-600;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
-      color: $text-white;
-      text-transform: uppercase;
-      border-radius: 0.5rem;
-      border: none;
         img {
           margin-left: 1rem;
         }
@@ -1822,17 +1422,9 @@ aside {
     }
 
     &__video {
-      position: relative;
-      margin-left: 7.8rem;
-      padding-bottom: 60%;
-      padding-top: 3rem;
-      border-top-right-radius: 0.5rem;
-      height: 0;
-      overflow: hidden;
+      height: 402px;
+      margin-top: 13px;
         &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
           width: 100%;
           height: 100%;
         }
@@ -1858,12 +1450,16 @@ aside {
           z-index: 9;
         }
     }
+    &__bottom {
+      margin-top: 22px;
+    }
 
     &__heading_small {
-      margin-top: 9rem;//==================
-      margin-bottom: 2rem;
+      margin-left: 0;
+      margin-right: 91px;
+      margin-bottom: 21px;
       padding-left: 0rem;
-      padding-right: 11%;
+      padding-right: 0;
       text-align: center;
       font-family: $fontsMont-500;
       font-size: 2.6rem;
