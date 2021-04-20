@@ -1564,7 +1564,6 @@ aside {
 
   //======main======//
   .main {
-    margin-top: 11rem;
     position: relative;
   }
   .sticky {
@@ -1681,41 +1680,31 @@ aside {
 
   //======Live cams======//
   .cams {
-    width: 100%;
-    overflow: hidden;
+    margin-top: 110px;
+    padding-bottom: 148px;
     &__container {
-      padding-top: 2rem;
-      padding-right: 0rem;
-      padding-bottom: 148px;
-      margin: 0 auto;
-      width: 100%;
-      max-width: 480px;
+      padding-left: 10px;
+      padding-right: 10px;
     }
 
     &__top {
-      margin: 0 auto;
-      margin-left: 5rem;
-      margin-bottom: 1.4rem;
-      padding-right: 1.5rem;
-      position: relative;
+      width: 90.2%;
       &_heading {
-        padding-left: 0rem;
-        width: 100%;
-        font-family: $fontsMont-600;
         font-size: 2.6rem;
         line-height: 3.2rem;
         text-transform: uppercase;
         color: $text-green-lite;
         text-align: center;
+        flex-grow: unset;
+        margin-left: auto;
       }
 
       &_btn {
-        cursor: pointer;
         position: absolute;
-        top: 468px;
-        right: 4%;
+        bottom: -99px;
+        left: 10px;
+        width: 93.7%;
         @include flex-block-center();
-        width: 30rem;
         height: 4.5rem;
         background-color: $bg-orange;
         font-family: $fontsMont-600;
@@ -1735,17 +1724,11 @@ aside {
     }
 
     &__video {
-      position: relative;
-      margin-left: 5rem;
-      padding-bottom: 53%;
-      padding-top: 3rem;
-      border-top-right-radius: 0.5rem;
-      height: 0;
+      left: 10px;
+      height: 200px;
+      margin-top: 15px;
       overflow: hidden;
         &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
           width: 100%;
           height: 100%;
         }
@@ -1771,11 +1754,14 @@ aside {
           z-index: 9;
         }
     }
-
+    &__bottom {
+      margin-top: 11px;
+    }
     &__heading_small {
       margin-top: 2.1rem;//==================
       margin-bottom: 2rem;
       padding-left: 2.3rem;
+      margin-right: 0;
       padding-right: 0;
       text-align: center;
       font-family: $fontsMont-600;
@@ -2003,38 +1989,33 @@ aside {
     width: 100%;
     overflow: hidden;
     &__container {
-      padding-top: 2rem;
-      padding-right: 0rem;
-      padding-bottom: 148px;
-      margin: 0 auto;
-      width: 100%;
+      padding-left: 10px;
+      padding-right: 10px;
       max-width: $mobile;
     }
 
     &__top {
-      margin: 0 auto;
-      margin-left: 5rem;
-      margin-bottom: 1.4rem;
-      padding-right: 1.5rem;
-      position: relative;
+      width: 90.2%;
       &_heading {
         padding-left: 0rem;
+        left: 49%;
         width: 100%;
         font-family: $fontsMont-600;
+        flex-grow: unset;
         font-size: 2.6rem;
         line-height: 3.2rem;
+        margin-left: 1.3rem;
         text-transform: uppercase;
         color: $text-green-lite;
         text-align: center;
       }
 
       &_btn {
-        cursor: pointer;
         position: absolute;
-        top: 468px;
-        right: 4%;
+        bottom: -99px;
+        left: 10px;
+        width: 93%;
         @include flex-block-center();
-        width: 30rem;
         height: 4.5rem;
         background-color: $bg-orange;
         font-family: $fontsMont-600;
@@ -2054,17 +2035,10 @@ aside {
     }
 
     &__video {
-      position: relative;
-      margin-left: 5rem;
-      padding-bottom: 53%;
-      padding-top: 3rem;
-      border-top-right-radius: 0.5rem;
-      height: 0;
-      overflow: hidden;
+      left: 10px;
+      height: 200px;
+      margin-top: 15px;
         &_iframe {
-          position: absolute;
-          top:0;
-          left: 0;
           width: 100%;
           height: 100%;
         }
@@ -2090,12 +2064,12 @@ aside {
           z-index: 9;
         }
     }
-
+    &__bottom {
+      margin-top: 11px;
+    }
     &__heading_small {
-      margin-top: 2.1rem;//==================
-      margin-bottom: 2rem;
-      padding-left: 2.3rem;
-      padding-right: 0;
+      margin-left: 0;
+      margin-top: 9px;
       text-align: center;
       font-family: $fontsMont-600;
       text-transform: uppercase;
