@@ -150,7 +150,8 @@
       padding-top: 5.2rem;
     }
     &__header {
-      width: 60rem;
+      width: 100%;
+      max-width: 60rem;
       font-family: $fontsMont-800;
       font-size: 7.2rem;
       line-height: 8.77rem;
@@ -213,7 +214,8 @@
       padding-top: 5.2rem;
     }
     &__header {
-      width: 60rem;
+      width: 100%;
+      max-width: 60rem;
       font-family: $fontsMont-800;
       font-size: 7.2rem;
       line-height: 8.77rem;
@@ -838,7 +840,8 @@
     &__main {
       display: flex;
       flex-direction: column;
-
+      width: 100%;
+      padding-left: 2rem;
     }
 
     &__heading {
@@ -847,14 +850,14 @@
       line-height: 6.5rem;
       text-transform: uppercase;
       color: $text-green-lite;
-      margin-left: 2rem;
+      margin-left: 0;
       margin-bottom: 3.2rem;
     }
 
     &__text {
       width: 100%;
       max-width: 60rem;
-      margin-left: 2rem;
+      margin-left: 0;
       font-family: $fontsMont-400;
       font-size: 1.8rem;
       line-height: 2.7rem;
@@ -928,7 +931,8 @@
     &__main {
       display: flex;
       flex-direction: column;
-
+      width: 100%;
+      padding-left: 1rem;
     }
 
     &__heading {
@@ -937,14 +941,14 @@
       line-height: 3.2rem;
       text-transform: uppercase;
       color: $text-green-lite;
-      margin-left: 1rem;
+      margin-left: 0;
       margin-bottom: 2.5rem;
     }
 
     &__text {
       width: 100%;
       max-width: 30rem;
-      margin: 0 1rem;
+      margin: 0 1rem 0 0;
       padding-left: 0;
       padding-right: 0;
       font-family: $fontsMont-400;
@@ -1023,7 +1027,8 @@
     &__main {
       display: flex;
       flex-direction: column;
-
+      width: 100%;
+      padding-left: 1rem;
     }
 
     &__heading {
@@ -1032,14 +1037,14 @@
       line-height: 3.2rem;
       text-transform: uppercase;
       color: $text-green-lite;
-      margin-left: 1rem;
+      margin-left: 0;
       margin-bottom: 2.5rem;
     }
 
     &__text {
       width: 100%;
       max-width: 30rem;
-      margin: 0 1rem;
+      margin: 0 1rem 0 0;
       padding-left: 0;
       padding-right: 0;
       font-family: $fontsMont-400;

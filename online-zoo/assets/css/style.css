@@ -1402,7 +1402,8 @@ li {
     padding-top: 5.2rem;
   }
   .favorite__header {
-    width: 60rem;
+    width: 100%;
+    max-width: 60rem;
     font-family: "Montserrat Bold";
     font-size: 7.2rem;
     line-height: 8.77rem;
@@ -1479,7 +1480,8 @@ li {
     padding-top: 5.2rem;
   }
   .favorite__header {
-    width: 60rem;
+    width: 100%;
+    max-width: 60rem;
     font-family: "Montserrat Bold";
     font-size: 7.2rem;
     line-height: 8.77rem;
@@ -2306,6 +2308,8 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    padding-left: 2rem;
   }
   .welcome__heading {
     font-family: "Montserrat Semibold";
@@ -2313,13 +2317,13 @@ li {
     line-height: 6.5rem;
     text-transform: uppercase;
     color: #00A092;
-    margin-left: 2rem;
+    margin-left: 0;
     margin-bottom: 3.2rem;
   }
   .welcome__text {
     width: 100%;
     max-width: 60rem;
-    margin-left: 2rem;
+    margin-left: 0;
     font-family: "Montserrat Regular";
     font-size: 1.8rem;
     line-height: 2.7rem;
@@ -2423,6 +2427,8 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    padding-left: 1rem;
   }
   .welcome__heading {
     font-family: "Montserrat Semibold";
@@ -2430,13 +2436,13 @@ li {
     line-height: 3.2rem;
     text-transform: uppercase;
     color: #00A092;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-bottom: 2.5rem;
   }
   .welcome__text {
     width: 100%;
     max-width: 30rem;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
     padding-left: 0;
     padding-right: 0;
     font-family: "Montserrat Regular";
@@ -2545,6 +2551,8 @@ li {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    width: 100%;
+    padding-left: 1rem;
   }
   .welcome__heading {
     font-family: "Montserrat Semibold";
@@ -2552,13 +2560,13 @@ li {
     line-height: 3.2rem;
     text-transform: uppercase;
     color: #00A092;
-    margin-left: 1rem;
+    margin-left: 0;
     margin-bottom: 2.5rem;
   }
   .welcome__text {
     width: 100%;
     max-width: 30rem;
-    margin: 0 1rem;
+    margin: 0 1rem 0 0;
     padding-left: 0;
     padding-right: 0;
     font-family: "Montserrat Regular";
