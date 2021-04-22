@@ -1010,6 +1010,9 @@ aside {
   .sidebar {
     position: sticky;
     top: 0;
+    @media screen and (max-width: 740px) {
+      top: 11rem;
+    }
     left: 0;
     width: 11.5rem;
     height: 84.6rem;
@@ -1115,6 +1118,9 @@ aside {
 
   //======Live cams======//
   .cams {
+    @media screen and (max-width: 740px) {
+      margin-top: 110px;
+    }
     padding-top: 26px;
     padding-bottom: 100px;
     &__container {
