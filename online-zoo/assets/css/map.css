@@ -1166,6 +1166,15 @@ li {
     width: 100%;
     max-width: 140.6rem;
   }
+}
+
+@media screen and (max-width: 1200px) and (max-width: 740px) {
+  .map {
+    padding-top: 110px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
   .map__header {
     margin: 3.1rem auto 1.8rem;
     text-align: center;

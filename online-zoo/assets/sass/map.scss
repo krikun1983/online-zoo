@@ -38,6 +38,7 @@
 #map {
   width: 100%;
   max-width: $desktop;
+
   // margin-bottom: ;
 }
 
@@ -48,6 +49,9 @@
     margin: 0 auto;
     width: 100%;
     max-width: 140.6rem;
+    @media screen and (max-width: 740px) {
+    padding-top: 110px;
+    }
     &__header {
       margin: 3.1rem auto 1.8rem;
       text-align: center;
@@ -70,6 +74,7 @@
   #map {
     width: 100%;
     max-width: $tablet-landscape;
+
   }
 
 }

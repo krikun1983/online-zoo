@@ -1171,7 +1171,7 @@ li {
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 740px) {
   .touch {
     width: 100%;
     margin-top: 11rem;
@@ -1179,7 +1179,7 @@ li {
   .touch__countainer {
     margin: 0 auto;
     width: 100%;
-    max-width: 780px;
+    max-width: 740px;
   }
   .touch__countainer img {
     width: 100%;
