@@ -915,7 +915,7 @@
     &__news {
       @include flex-block-justify();
       flex-direction: column-reverse;
-      max-width: 32rem;
+      width: 100%;
       margin-bottom: 3.5rem;
       &:nth-child(2) {
         @include flex-block-justify();
@@ -924,7 +924,7 @@
         margin-left: auto;
         img {
           width: 100%;
-          height: 21.3rem;
+          height: auto;
         }
       }
     }
@@ -943,6 +943,7 @@
       font-size: 2.6rem;
       line-height: 3.2rem;
       text-transform: uppercase;
+
       color: $text-green-lite;
       margin-left: 0;
       margin-bottom: 2.5rem;
@@ -950,7 +951,6 @@
 
     &__text {
       width: 100%;
-      max-width: 30rem;
       margin: 0 1rem 0 0;
       padding-left: 0;
       padding-right: 0;
@@ -965,15 +965,14 @@
 
     &__img {
       width: 100%;
-      max-width: 32rem;
-      height: 21.8rem;
+      height: auto;
       margin-bottom: 4rem;
       &:nth-child(1) {
         margin-bottom: 2.5rem;
       }
       img {
         width: 100%;
-        height: 21.8rem;
+        height: auto;
       }
 
     }
@@ -4648,7 +4647,7 @@
       padding-right: 0;
     }
     &__numbers {
-      width: 31rem;
+      width: 98%;
       margin: 0 auto;
       margin-left: 1rem;
       color: $text-white;
@@ -6981,8 +6980,12 @@
     height: 31.7rem;
     display: flex;
     justify-content: center;
-    // align-items: center;
+    align-items: center;
     flex-wrap: wrap;
+
+    @media (min-width: 641px) and (max-width: 900px) {
+      overflow: hidden;
+    }
     &_big {
       display: none;
     }
@@ -7031,7 +7034,7 @@
     }
 
     &_text {
-      margin: 6.7rem auto 0;
+      margin: 6.7rem 17px 0 17px;
       width: 26rem;
       font-family: $fontsMont-400;
       font-size: 1.8rem;

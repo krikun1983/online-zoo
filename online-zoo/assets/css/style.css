@@ -2285,7 +2285,7 @@ li {
     -webkit-box-direction: reverse;
         -ms-flex-direction: column-reverse;
             flex-direction: column-reverse;
-    max-width: 32rem;
+    width: 100%;
     margin-bottom: 3.5rem;
   }
   .welcome__news:nth-child(2) {
@@ -2309,7 +2309,7 @@ li {
   }
   .welcome__news:nth-child(2) img {
     width: 100%;
-    height: 21.3rem;
+    height: auto;
   }
   .welcome__news:nth-child(2) {
     height: 100%;
@@ -2336,7 +2336,6 @@ li {
   }
   .welcome__text {
     width: 100%;
-    max-width: 30rem;
     margin: 0 1rem 0 0;
     padding-left: 0;
     padding-right: 0;
@@ -2350,8 +2349,7 @@ li {
   }
   .welcome__img {
     width: 100%;
-    max-width: 32rem;
-    height: 21.8rem;
+    height: auto;
     margin-bottom: 4rem;
   }
   .welcome__img:nth-child(1) {
@@ -2359,7 +2357,7 @@ li {
   }
   .welcome__img img {
     width: 100%;
-    height: 21.8rem;
+    height: auto;
   }
 }
 
@@ -6711,7 +6709,7 @@ li {
     padding-right: 0;
   }
   .payfeed__numbers {
-    width: 31rem;
+    width: 98%;
     margin: 0 auto;
     margin-left: 1rem;
     color: #ffffff;
@@ -9505,9 +9503,21 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
   }
+}
+
+@media screen and (max-width: 900px) and (min-width: 641px) and (max-width: 900px) {
+  .animals_love__cards {
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .animals_love__cards_big {
     display: none;
   }
@@ -9569,7 +9579,7 @@ li {
     overflow: hidden;
   }
   .animals_love__card_text {
-    margin: 6.7rem auto 0;
+    margin: 6.7rem 17px 0 17px;
     width: 26rem;
     font-family: "Montserrat Regular";
     font-size: 1.8rem;
