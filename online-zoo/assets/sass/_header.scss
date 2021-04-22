@@ -171,6 +171,12 @@
       height: auto;
     }
   }
+  //==social==//
+  @media (max-width: 984px) {
+    .social.social_header {
+      display: none;
+    }
+  }
 
  .links {
     @include flex-block-justify();
@@ -183,6 +189,11 @@
     @include flex-block-justify();
     width: 100%;
     max-width: 74.1rem;
+
+    @media (max-width: 984px) {
+      max-width: 48.1rem;
+    }
+
   }
 
   .menu-header {
@@ -191,6 +202,8 @@
     width: 100%;
     max-width: 48.1rem;
   }
+
+
 }
 ////////////////780////////////////////////
 @media screen and (max-width: 780px) {
@@ -233,7 +246,7 @@
 
 }
 ////////////////640////////////////////////
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 740px) {
 
   //====!!==HEADER==!!====//
   .main_heading {
@@ -252,7 +265,7 @@
     top: 0;
     left: 0;
     right: 0;
-    max-width: $tablet-mini;
+    max-width: 740px;
     z-index: 3000;
     background-color: $bg-orange;
   }
@@ -350,7 +363,7 @@
   .burger-header {
     position: fixed;
     top: 4rem;
-    right: 7.7rem;
+    right: 4.7rem;
     z-index: 3000;
     cursor: pointer;
     width: 3rem;
