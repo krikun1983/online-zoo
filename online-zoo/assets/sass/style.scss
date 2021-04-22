@@ -137,7 +137,10 @@
     width: 100%;
     max-width: 900px;
     height: 64.4rem;
-    margin-top: 11rem;
+    @media screen and (max-width: 740px) {
+      margin-top: 11rem;
+    }
+
     background-image: url("../images/bgPanda.jpg");
     background-repeat: no-repeat;
     background-position: bottom;

@@ -1275,12 +1275,20 @@ li {
     width: 100%;
     max-width: 900px;
     height: 64.4rem;
-    margin-top: 11rem;
     background-image: url("../images/bgPanda.jpg");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
   }
+}
+
+@media screen and (max-width: 900px) and (max-width: 740px) {
+  .favorite {
+    margin-top: 11rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
   .favorite__container {
     margin: 0 auto;
     width: 100%;
