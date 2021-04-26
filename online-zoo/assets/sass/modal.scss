@@ -1,0 +1,19 @@
+@import "basic";
+@import "variables";
+@import "mixins";
+@import "btn";
+
+.pop-ap-wrapper {
+  margin: 0 auto;
+  width: 116rem;
+  height: 81.5rem;
+  // outline: 1px solid red;
+  &__top {
+    height: 38.7rem;
+    outline: 1px solid green;
+  }
+  &__bottom {
+    height: 42.8rem;
+    outline: 1px solid blue;
+  }
+}
