@@ -3,6 +3,106 @@
 @import "mixins";
 @import "btn";
 
+//modal window one
+.pop-ap-wrapper-container {
+  display: none;
+  position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0, .7);
+	width: 100%;
+	height: 100%;
+
+}
+#win1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -40.75rem -58rem -40.75rem -58rem;
+  z-index: 100000;
+}
+.pop-ap-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 116rem;
+  height: 81.5rem;
+  background-color: $bg-white;
+  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .5rem;
+  &__top {
+    height: 38.7rem;
+  }
+  &-close {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 3.15rem;
+    right: 3.15rem;
+    width: 2.7rem;
+    height: 2.7rem;
+  }
+  &__bottom {
+    height: 42.8rem;
+    &_h2 {
+      margin: 2.1rem auto 3rem;
+      width: 67.8rem;
+      font-size: 5.4rem;
+      line-height: 6.583rem;
+      font-family: $fontsMont-600;
+      font-weight: normal;
+      text-align: center;
+      text-transform: uppercase;
+      color: $text-orange;
+    }
+    &_text {
+      margin: 0 auto 5.1rem;
+      width: 57rem;
+      font-size: 1.8rem;
+      line-height: 2.73rem;
+      font-family: $fontsMont-400;
+      font-weight: normal;
+      text-align: center;
+      color: $text-default;
+    }
+  }
+  &-btn {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto 5rem;
+    width: 100rem;
+    height: 6.5rem;
+  }
+  .pop-ap-btn {
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 12rem;
+    height: 6.5rem;
+    font-size: 1.8rem;
+    line-height: 2.194rem;
+    font-family: $fontsMont-600;
+    font-weight: normal;
+    color: $text-white;
+    background-color: $bg-green-lite;
+    border: 0;
+    border-radius: .5rem;
+    &:hover {
+      background-color: $bg-green-dark;
+    }
+  }
+  .other {
+    width: 20rem;
+    text-transform: uppercase;
+  }
+}
+//end modal wondow one
+
 //====HEADER====//
 @import "header";
 

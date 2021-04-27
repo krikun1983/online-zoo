@@ -1,3 +1,38 @@
+////////////////////// реализация модалки //////////////////////////
+///////ПЕРВАЯ МОДАЛКА/////////////////////
+let showModal = document.querySelector('.payfeed__btn');
+let showModalTwo = document.querySelector('.btn-transparent_link');
+let closeModalWindow = document.querySelector('.pop-ap-wrapper-container');
+let closeModal = document.querySelector('.pop-ap-wrapper-close');
+const scroll = window.innerWidth - document.documentElement.clientWidth;
+
+function openModalOne() {
+  closeModalWindow.style.display = 'block'
+  document.body.style.overflow = 'hidden';
+  document.body.style.paddingRight = scroll + 'px';
+}
+function closeModalOne() {
+  closeModalWindow.style.display = 'none'
+  document.body.style.overflow = ''
+  document.body.style.paddingRight = '0px';
+}
+showModal.addEventListener('click', function () {
+  openModalOne();
+})
+showModalTwo.addEventListener('click', function (e) {
+  e.preventDefault();
+  openModalOne();
+})
+closeModal.addEventListener('click', function () {
+  closeModalOne();
+})
+closeModalWindow.addEventListener("click", (e) => {
+  if (e.target === closeModalWindow) {
+    closeModalOne();
+  }
+})
+///////Конец первой модалки////////////
+
 //Ограничеваю форму с донатом в 4 символа
 document.querySelector('.donation__input').onclick = numberLimitation;
 

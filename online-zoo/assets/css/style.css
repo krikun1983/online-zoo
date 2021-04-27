@@ -116,6 +116,129 @@ li {
   background-position: 90% 50%;
 }
 
+.pop-ap-wrapper-container {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+#win1 {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin: -40.75rem -58rem -40.75rem -58rem;
+  z-index: 100000;
+}
+
+.pop-ap-wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 116rem;
+  height: 81.5rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .5rem;
+}
+
+.pop-ap-wrapper__top {
+  height: 38.7rem;
+}
+
+.pop-ap-wrapper-close {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 3.15rem;
+  right: 3.15rem;
+  width: 2.7rem;
+  height: 2.7rem;
+}
+
+.pop-ap-wrapper__bottom {
+  height: 42.8rem;
+}
+
+.pop-ap-wrapper__bottom_h2 {
+  margin: 2.1rem auto 3rem;
+  width: 67.8rem;
+  font-size: 5.4rem;
+  line-height: 6.583rem;
+  font-family: "Montserrat Semibold";
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #f58021;
+}
+
+.pop-ap-wrapper__bottom_text {
+  margin: 0 auto 5.1rem;
+  width: 57rem;
+  font-size: 1.8rem;
+  line-height: 2.73rem;
+  font-family: "Montserrat Regular";
+  font-weight: normal;
+  text-align: center;
+  color: #000000;
+}
+
+.pop-ap-wrapper-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto 5rem;
+  width: 100rem;
+  height: 6.5rem;
+}
+
+.pop-ap-wrapper .pop-ap-btn {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 12rem;
+  height: 6.5rem;
+  font-size: 1.8rem;
+  line-height: 2.194rem;
+  font-family: "Montserrat Semibold";
+  font-weight: normal;
+  color: #ffffff;
+  background-color: #00A092;
+  border: 0;
+  border-radius: .5rem;
+}
+
+.pop-ap-wrapper .pop-ap-btn:hover {
+  background-color: #05786e;
+}
+
+.pop-ap-wrapper .other {
+  width: 20rem;
+  text-transform: uppercase;
+}
+
 /* BASIC */
 html {
   font-size: 10px;
