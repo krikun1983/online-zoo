@@ -17,9 +17,8 @@
 }
 #win1 {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  margin: -40.75rem -58rem -40.75rem -58rem;
+  top: calc(50% - 40.75rem);
+  left: calc(50% - 58rem);;
   z-index: 100000;
 }
 .pop-ap-wrapper {
@@ -102,6 +101,269 @@
   }
 }
 //end modal wondow one
+
+//modal window two
+.form-donation-wrapper-container {
+  display: none;
+  position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 1000;
+	background-color: rgba(0,0,0, .7);
+	width: 100%;
+	height: 100%;
+}
+#win-form-step1 {
+  position: fixed;
+  top: calc(50% - 40.95rem);
+  left: calc(50% - 46rem);
+  z-index: 100000;
+}
+
+.form-donation-wrapper {
+  margin: 0 auto;
+  width: 92rem;
+  height: 81.9rem;
+  background-color: $bg-white;
+  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .5rem;
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 13.5rem;
+    font-size: 4.2rem;
+    line-height: 5.12rem;
+    font-family: $fontsMont-500;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: $text-white;
+    background-color: $bg-orange;
+  }
+  &__info {
+    width: 100%;
+    height: 8.7rem;
+    padding-top: 5rem;
+    padding-left: 12.3rem;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    font-family: $fontsMont-600;
+    font-weight: normal;
+    border-bottom: 1px solid #A4A8AE;
+  }
+  &__block {
+    margin: 4rem auto 0;
+    width: 68rem;
+    height: 38.3rem;
+  }
+
+  .form-block {
+    &__text {
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      font-family: $fontsMont-400;
+      font-weight: normal;
+      span {
+        color: $text-green-lite;
+      }
+    }
+    &__pop-ap-wrapper-btn {
+      display: flex;
+      justify-content: space-between;
+      text-align: center;
+      margin-top: 1rem;
+      margin-bottom: 4rem;
+      width: 100%;
+      .btn-active {
+        opacity: 1;
+      }
+    }
+    &__pop-ap-btn {
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 8rem;
+      height: 6.5rem;
+      font-size: 1.8rem;
+      line-height: 2.194rem;
+      font-family: $fontsMont-600;
+      font-weight: normal;
+      color: $text-white;
+      background-color: $bg-green-lite;
+      border: 0;
+      border-radius: .5rem;
+      opacity: .5;
+      &:hover {
+        opacity: 1;
+      }
+    }
+
+    &__input-btn {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 44rem;
+      .other {
+        text-transform: uppercase;
+        cursor: auto;
+        width: 20rem;
+        opacity: 1;
+      }
+
+    }
+    &__input {
+      padding-left: 1rem;
+      width: 20rem;
+      height: 6.5rem;
+      border: 1px solid $bg-default;
+      border-radius: .5rem;
+      font-size: 1.8rem;
+      line-height: 2.194rem;
+      font-family: $fontsMont-600;
+      font-weight: normal;
+    }
+
+    &__checkbox {
+      display: flex;
+      align-items: center;
+      margin-top: 4rem;
+      width: 36rem;
+      input {
+        width: 3rem;
+        height: 3rem;
+        margin-right: 2rem;
+      }
+      label {
+        font-size: 1.8rem;
+        line-height: 2.194rem;
+        font-family: $fontsMont-400;
+        font-weight: normal;
+      }
+    }
+    &__button {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 57.5rem;
+      margin-top: 5rem;
+      &_pagination {
+        width: 5rem;
+        height: 1rem;
+        display: flex;
+        justify-content: space-between;
+        span {
+          cursor: pointer;
+          width: 1rem;
+          height: 1rem;
+          border-radius: 50%;
+          border: 1px solid $bg-green-lite;
+        }
+        .active {
+          background-color: $bg-green-lite;
+        }
+      }
+      &_arrow {
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 5%;
+        width: 20rem;
+        height: 7.4rem;
+        font-size: 1.8rem;
+        line-height: 2.194rem;
+        font-family: $fontsMont-600;
+        font-weight: normal;
+        text-transform: uppercase;
+        color: $text-white;
+        border: none;
+        border-radius: .5rem;
+        background-image: url('../icons/UnionRightWhite.svg');
+        background-repeat: no-repeat;
+        background-position: center right 33%;
+        background-color: $text-green-lite;
+        &:hover {
+          background-color: $bg-green-dark;
+        }
+      }
+    }
+  }
+  .form-block__select {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4rem;
+    &_text {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 20rem;
+      height: 6.5rem;
+      font-size: 1.8rem;
+      line-height: 2.194rem;
+      font-family: $fontsMont-600;
+      font-weight: normal;
+      text-transform: uppercase;
+      color: $text-white;
+      background-color: $bg-green-lite;
+      border: 0;
+      border-radius: .5rem;
+      opacity: .5;
+    }
+    select {
+      cursor: pointer;
+      padding-left: 1rem;
+      width: 44rem;
+      height: 6.5rem;
+      border-radius: .5rem;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      font-family: $fontsMont-400;
+      font-weight: normal;
+      text-align: center;
+      appearance: none;
+      color: #a4a8ae;
+    }
+    option {
+      color: $text-default;
+    }
+    option[selected] {
+        padding-left: 10.6rem;
+     }
+    option:checked {
+      background-color: $bg-green-lite;
+      color: $text-white;
+    }
+    &:after {
+      content: "";
+      font-size: 12px;
+      position: absolute;
+      background-color: #80cfc8;
+      right: 0;
+      top: 0;
+      z-index: 10;
+      width: 3.2rem;
+      height: 6.5rem;
+      pointer-events: none;
+      background-image: url('../images/modal/arraw.svg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size:auto;
+      border: 1px solid $bg-default;
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+      box-sizing: border-box;
+    }
+  }
+}
+
+//end modal wondow two
 
 //====HEADER====//
 @import "header";

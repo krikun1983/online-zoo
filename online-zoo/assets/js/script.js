@@ -1,62 +1,132 @@
 ////////////////////// реализация модалки //////////////////////////
 ///////ПЕРВАЯ МОДАЛКА/////////////////////
-let showModal = document.querySelector('.payfeed__btn');
-let showModalTwo = document.querySelector('.btn-transparent_link');
-let closeModalWindow = document.querySelector('.pop-ap-wrapper-container');
-let closeModal = document.querySelector('.pop-ap-wrapper-close');
+let showModalOne = document.querySelector('.payfeed__btn');
+let showModalOneTwo = document.querySelector('.btn-transparent_link');
+let modalOneWindow = document.querySelector('.pop-ap-wrapper-container');
+let closeModalOne = document.querySelector('.pop-ap-wrapper-close');
 const scroll = window.innerWidth - document.documentElement.clientWidth;
 
-function openModalOne() {
-  closeModalWindow.style.display = 'block'
+function openModalOneFn() {
+  modalOneWindow.style.display = 'block';
   document.body.style.overflow = 'hidden';
   document.body.style.paddingRight = scroll + 'px';
 }
-function closeModalOne() {
-  closeModalWindow.style.display = 'none'
+function closeModalOneFn() {
+  modalOneWindow.style.display = 'none'
   document.body.style.overflow = ''
   document.body.style.paddingRight = '0px';
 }
-showModal.addEventListener('click', function () {
-  openModalOne();
+showModalOne.addEventListener('click', function () {
+  openModalOneFn();
 })
-showModalTwo.addEventListener('click', function (e) {
+showModalOneTwo.addEventListener('click', function (e) {
   e.preventDefault();
-  openModalOne();
+  openModalOneFn();
 })
-closeModal.addEventListener('click', function () {
-  closeModalOne();
+closeModalOne.addEventListener('click', function () {
+  closeModalOneFn();
 })
-closeModalWindow.addEventListener("click", (e) => {
-  if (e.target === closeModalWindow) {
-    closeModalOne();
+modalOneWindow.addEventListener('click', (e) => {
+  if (e.target === modalOneWindow) {
+    closeModalOneFn();
   }
 })
+
+//Переход на модлаку №2>
+let bottonsModalOne = document.querySelector('.pop-ap-wrapper-btn');
+bottonsModalOne.addEventListener('click', function (event) {
+  event.preventDefault();
+  document.querySelector('.form-block__input').value = event.target.value;
+
+  modalOneWindow.style.display = 'none';
+  openModalDonatOneFn();
+  if (event.target.value == '') {
+    document.querySelector('.form-block__input').focus();
+  } else {
+    let donatBtns = document.querySelectorAll('.form-block__pop-ap-btn');
+    donatBtns.forEach((btn) => {
+      if (btn.value == event.target.value) {
+        btn.classList.add('btn-active')
+      }
+    })
+  }
+});
+console.log(bottonsModalOne)
 ///////Конец первой модалки////////////
 
-//Ограничеваю форму с донатом в 4 символа
-document.querySelector('.donation__input').onclick = numberLimitation;
+///////ВТОРАЯ МОДАЛКА/////////////////////
+let showModalDonatOne = document.querySelector('.donation__btn');
+let modalDonatOne = document.querySelector('.form-donation-wrapper-container');
 
-function numberLimitation(input, limit) {
-
-  let str;
-
-  if (typeof input === "string") {
-    str = document.querySelector(input);
-  } else {
-    input;
-  }
-
-  const limits = (e) => {
-    let val = str.value.split("");
-    if (val.length > limit) {
-      str.value = val.slice(0, limit).join("");
-    }
-  };
-
-  str.addEventListener("input", limits);
+function openModalDonatOneFn() {
+  modalDonatOne.style.display = 'block';
+  document.body.style.overflow = 'hidden';
+  document.body.style.paddingRight = scroll + 'px';
 }
 
-numberLimitation("#donations", 4);
+function closeModalDonatOneFn() {
+  modalDonatOne.style.display = 'none'
+  document.body.style.overflow = ''
+  document.body.style.paddingRight = '0px';
+}
+
+showModalDonatOne.addEventListener('click', function (e) {
+  e.preventDefault();
+  let inputValue = document.querySelector('.donation__input');
+  let inputOtherValue = document.querySelector('.form-block__input');
+  if (inputValue.value == '') {
+    let formInput = document.querySelector('.form-block__pop-ap-wrapper-btn');
+    formInput.firstElementChild.classList.add('btn-active');
+    inputValue.value = 10;
+  }
+  inputOtherValue.value = inputValue.value;
+  openModalDonatOneFn();
+})
+
+modalDonatOne.addEventListener('click', (event) => {
+  if (event.target === modalDonatOne) {
+    let inputValue = document.querySelector('.donation__input');
+    closeModalDonatOneFn();
+    inputValue.value = '';
+  }
+})
+
+document.querySelector('.form-block__input').addEventListener('input', function () {
+  let donatBtns = document.querySelectorAll('.form-block__pop-ap-btn');
+  donatBtns.forEach((btn) => {
+    btn.classList.remove('btn-active')
+  })
+
+  let number = document.querySelector('.form-block__input');
+  let val = number.value.split("");
+  if (val.length > 4) {
+    number.value = val.slice(0, 4).join("");
+  }
+});
+
+//Делаю, чтобы кнопки переносили данные в поле ввода
+let bottons = document.querySelector('.form-block__pop-ap-wrapper-btn');
+bottons.addEventListener('click', function (event) {
+  event.preventDefault();
+  document.querySelector('.form-block__input').value = event.target.value;
+  let donatBtns = document.querySelectorAll('.form-block__pop-ap-btn');
+  donatBtns.forEach((btn) => {
+    btn.classList.remove('btn-active')
+    if (btn.value == event.target.value) {
+      btn.classList.add('btn-active')
+    }
+  })
+});
+
+///////Конец второй модалки////////////
+//Ограничеваю форму с донатом в 4 символа
+document.querySelector('.donation__input').addEventListener('input', function () {
+  let number = document.querySelector('#donations');
+  let val = number.value.split("");
+  if (val.length > 4) {
+    number.value = val.slice(0, 4).join("");
+  }
+});
 
 //Выдвижение меню в header на 640
 document.querySelector('.burger-header').onclick = function () {

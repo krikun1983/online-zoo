@@ -28,17 +28,66 @@
           the
           world’s most endangered wildlife relying on us to survive.</p>
         <div class="pop-ap-wrapper-btn">
-          <button class="pop-ap-btn">$20</button>
-          <button class="pop-ap-btn">$30</button>
-          <button class="pop-ap-btn">$50</button>
-          <button class="pop-ap-btn">$80</button>
-          <button class="pop-ap-btn">$100</button>
+          <button class="pop-ap-btn" value="20">$20</button>
+          <button class="pop-ap-btn" value="30">$30</button>
+          <button class="pop-ap-btn" value="50">$50</button>
+          <button class="pop-ap-btn" value="80">$80</button>
+          <button class="pop-ap-btn" value="100">$100</button>
           <button class="pop-ap-btn other">Other amount</button>
         </div>
       </div>
     </div>
   </div>
   <!-- end modal window one -->
+  <!-- modal window two -->
+  <div class="form-donation-wrapper-container">
+    <div id="win-form-step1" class="form-donation-wrapper">
+      <div class="form-donation-wrapper__header">make your donation</div>
+      <div class="form-donation-wrapper__info">Donation Information:</div>
+      <div class="form-donation-wrapper__block">
+        <form action="">
+          <p class="form-block__text"><span>*</span> Choose your donation amount:</p>
+          <div class="form-block__pop-ap-wrapper-btn">
+            <button class="form-block__pop-ap-btn" value="10">$10</button>
+            <button class="form-block__pop-ap-btn" value="20">$20</button>
+            <button class="form-block__pop-ap-btn" value="30">$30</button>
+            <button class="form-block__pop-ap-btn" value="50">$50</button>
+            <button class="form-block__pop-ap-btn" value="80">$80</button>
+            <button class="form-block__pop-ap-btn" value="100">$100</button>
+          </div>
+          <div class="form-block__input-btn">
+            <div class="form-block__pop-ap-btn other">Other amount</div>
+            <form action="">
+              <input class="form-block__input" type="number">
+            </form>
+          </div>
+          <div class="form-block__select">
+            <div class="form-block__select_text">for special pet</div>
+            <select name="" id="">
+              <option selected value="">Choose your favourite</option>
+              <option value="panda">Lukas the Panda</option>
+              <option value="lemur">Andy the Lemur</option>
+              <option value="gorilla">Glen the Gorilla</option>
+              <option value="lora">Sam & Lora the eagles family</option>
+              <option value="alligator">Mike the Alligator</option>
+              <option value="lion">Shake the Lion</option>
+              <option value="tiger">Senja the Tiger</option>
+            </select>
+          </div>
+          <div class="form-block__checkbox">
+            <input type="checkbox">
+            <label>Make this a monthly recurring gift</label>
+          </div>
+          <div class="form-block__button">
+            <div class="form-block__button_pagination"><span class="active"></span><span></span><span></span>
+            </div>
+            <button class="form-block__button_arrow">next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- end modal window two -->
   <header class="header">
     <div class="burger-header">
       <span class="burger-header__lines"></span>
@@ -132,7 +181,7 @@
         <form class="donation__form" action="#">
           <label class="donation__label" for="donations">Quick Donate</label>
           <input class="donation__input" type="number" id="donations" placeholder="Donation amount" min="0" max="9999">
-          <button class="donation__btn" type="submit"><img src="assets/icons/Union.svg" alt=""></button>
+          <button class="donation__btn"><img src="assets/icons/Union.svg" alt=""></button>
         </form>
       </div>
     </section>
