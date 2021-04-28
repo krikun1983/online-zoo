@@ -119,6 +119,33 @@ bottons.addEventListener('click', function (event) {
 });
 
 ///////Конец второй модалки////////////
+
+///////ТРЕТЬЯ МОДАЛКА/////////////////////
+const nameField = document.getElementById('name');
+const emailField = document.getElementById('email');
+const nextButton = document.querySelector('.win-donation-two__form-buttom_next');
+//Проверка на валидацию полей name и email
+const validatet = () => {
+  if (nameField.validity.valid && emailField.validity.valid) {
+    nextButton.classList.remove('invalid');
+  } else {
+    nextButton.classList.add('invalid');
+  }
+}
+//Кнопка NEXT - не работает пока поля не валидны
+nextButton.addEventListener('click', () => {
+  if (nextButton.classList.contains('invalid')) return;
+})
+//Проверка на валидацию поля name
+nameField.addEventListener('input', () => {
+  validatet();
+})
+//Проверка на валидацию поля email
+emailField.addEventListener('input', () => {
+  validatet();
+})
+
+///////Конец третьей модалки/////////////////////
 //Ограничеваю форму с донатом в 4 символа
 document.querySelector('.donation__input').addEventListener('input', function () {
   let number = document.querySelector('#donations');
