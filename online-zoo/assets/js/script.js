@@ -1,3 +1,42 @@
+///////КАРУСЕЛЬ///////
+const gap = 480;
+const carousel = document.querySelector('.friends__carts_carousel');
+const content = document.querySelector('.friends__carts_content');
+const next = document.querySelector('.friends__right');
+const prev = document.querySelector('.friends__left');
+
+next.addEventListener('click', (event) => {
+  carousel.scrollBy(480, 0);
+  if (carousel.scrollWidth !== 0) {
+    prev.classList.remove('opacity');
+    // prev.style.display = 'flex';
+  }
+
+  if (content.scrollWidth - width <= carousel.scrollLeft + gap) {
+    next.classList.add('opacity');
+    // next.style.display = 'none';
+  }
+});
+console.log(carousel.offsetWidth); //1920 width
+console.log(content.scrollWidth); //3840
+console.log(carousel.scrollLeft); //0
+prev.addEventListener('click', (event) => {
+  carousel.scrollBy(-(480), 0);
+  if (carousel.scrollLeft - gap <= 0) {
+    prev.classList.add('opacity');
+    // prev.style.display = 'none';
+  }
+  // console.log((content.scrollWidth - width) + '===' + (carousel.scrollLeft + width + gap))
+  if (!content.scrollWidth - width <= carousel.scrollLeft + width) {
+    next.classList.remove('opacity');
+    // next.style.display = 'flex';
+  }
+});
+
+let width = carousel.offsetWidth;
+window.addEventListener('resize', (event) => (width = carousel.offsetWidth));
+
+
 ////////////////////// Модальные окна //////////////////////////
 ///////Дефолтная/////////////////////
 const bodyPage = document.body;
@@ -105,9 +144,9 @@ inputDonatOne.addEventListener('input', () => {
     btn.classList.remove('btn-active')
   })
   //ограничиваю поле input 4 знаками
-  let val = inputDonatOne.value.split("");
+  let val = inputDonatOne.value.split('');
   if (val.length > 4) {
-    inputDonatOne.value = val.slice(0, 4).join("");
+    inputDonatOne.value = val.slice(0, 4).join('');
   }
 });
 
@@ -330,9 +369,9 @@ cvvField.addEventListener('keydown', (event) => {
 
 cvvField.addEventListener('input', () => {
   let number = cvvField;
-  let val = number.value.split("");
+  let val = number.value.split('');
   if (val.length > 3) {
-    number.value = val.slice(0, 3).join("");
+    number.value = val.slice(0, 3).join('');
   }
   validatetCvv();
 });
@@ -340,18 +379,18 @@ cvvField.addEventListener('input', () => {
 //Ограничеваю форму с донатом в 4 символа
 inputPageDonat.addEventListener('input', function () {
   let number = document.querySelector('#donations');
-  let val = number.value.split("");
+  let val = number.value.split('');
   if (val.length > 4) {
-    number.value = val.slice(0, 4).join("");
+    number.value = val.slice(0, 4).join('');
   }
 });
 
 //Выдвижение меню в header на 640
 document.querySelector('.burger-header').onclick = function () {
-  let header = document.querySelector(".nav-header");
-  let burgerHeader = document.querySelector(".burger-header");
-  burgerHeader.classList.toggle("burger-header-active");
-  header.classList.toggle("nav-header-show");
+  let header = document.querySelector('.nav-header');
+  let burgerHeader = document.querySelector('.burger-header');
+  burgerHeader.classList.toggle('burger-header-active');
+  header.classList.toggle('nav-header-show');
 }
 
 //меняю стрелку у кнопок

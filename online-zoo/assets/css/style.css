@@ -4508,18 +4508,6 @@ li {
   max-width: 140rem;
 }
 
-.friends__hidden {
-  position: absolute;
-  right: 0%;
-  width: 100%;
-  max-width: 25rem;
-  height: 153.4rem;
-  background: white;
-  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.515844)), color-stop(89%, white));
-  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.515844) 20%, white 89%);
-  z-index: 100;
-}
-
 .friends__heading {
   font-family: "Montserrat Semibold";
   font-size: 5.4rem;
@@ -4557,6 +4545,11 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.friends__arrow .opacity {
+  cursor: inherit;
+  opacity: 0;
 }
 
 .friends__left {
@@ -4597,22 +4590,44 @@ li {
   background-position: center;
 }
 
+.friends__hidden {
+  position: absolute;
+  right: 0%;
+  width: 100%;
+  max-width: 25rem;
+  height: 153.4rem;
+  background: white;
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), color-stop(20%, rgba(255, 255, 255, 0.515844)), color-stop(89%, white));
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.515844) 20%, white 89%);
+  z-index: 100;
+}
+
 .friends__carts {
   position: relative;
   width: 192rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   margin-top: 3rem;
   margin-left: -2rem;
+}
+
+.friends__carts_carousel {
+  overflow: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.friends__carts_carousel::-webkit-scrollbar {
+  height: 0;
+}
+
+.friends__carts_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: auto auto;
+      grid-template-rows: auto auto;
+  grid-auto-flow: column;
+  margin: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .friends__cart {
