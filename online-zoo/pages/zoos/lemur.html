@@ -12,6 +12,171 @@
 </head>
 
 <body>
+  <!-- modal window one -->
+  <div class="pop-ap-wrapper-container hidden">
+    <div id="win1" class="pop-ap-wrapper">
+      <div class="pop-ap-wrapper-close">
+        <img src="../../assets/images/modal/close.svg" alt="close">
+      </div>
+      <div class="pop-ap-wrapper__top">
+        <img src="../../assets/images/modal/modal_bg.jpg" alt="">
+      </div>
+      <div class="pop-ap-wrapper__bottom">
+        <h2 class="pop-ap-wrapper__bottom_h2">together we care, save and protect!</h2>
+        <p class="pop-ap-wrapper__bottom_text">Your most generous gift not only cares for countless animals, but it also
+          offers hope and a vital lifeline to
+          the
+          world’s most endangered wildlife relying on us to survive.</p>
+        <div class="pop-ap-wrapper-btn">
+          <button class="pop-ap-btn" value="20">$20</button>
+          <button class="pop-ap-btn" value="30">$30</button>
+          <button class="pop-ap-btn" value="50">$50</button>
+          <button class="pop-ap-btn" value="80">$80</button>
+          <button class="pop-ap-btn" value="100">$100</button>
+          <button class="pop-ap-btn other">Other amount</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- end modal window one -->
+  <!-- modal window two -->
+  <div class="form-donation-wrapper-container hidden">
+    <div id="win-form-step1" class="form-donation-wrapper">
+      <div class="form-donation-wrapper__header">make your donation</div>
+      <div class="form-donation-wrapper__info">Donation Information:</div>
+      <div class="form-donation-wrapper__block">
+        <form action="">
+          <p class="form-block__text"><span>*</span> Choose your donation amount:</p>
+          <div class="form-block__pop-ap-wrapper-btn">
+            <button class="form-block__pop-ap-btn" value="10">$10</button>
+            <button class="form-block__pop-ap-btn" value="20">$20</button>
+            <button class="form-block__pop-ap-btn" value="30">$30</button>
+            <button class="form-block__pop-ap-btn" value="50">$50</button>
+            <button class="form-block__pop-ap-btn" value="80">$80</button>
+            <button class="form-block__pop-ap-btn" value="100">$100</button>
+          </div>
+          <div class="form-block__input-btn">
+            <div class="form-block__pop-ap-btn other">Other amount</div>
+            <!-- <form action=""> -->
+            <input id="summa" class="form-block__input" type="number" required>
+            <!-- </form> -->
+          </div>
+          <div class="form-block__select">
+            <div class="form-block__select_text">for special pet</div>
+            <select name="" id="animal" required>
+              <option selected value="">Choose your favourite</option>
+              <option value="panda">Lukas the Panda</option>
+              <option value="lemur">Andy the Lemur</option>
+              <option value="gorilla">Glen the Gorilla</option>
+              <option value="lora">Sam & Lora the eagles family</option>
+              <option value="alligator">Mike the Alligator</option>
+              <option value="lion">Shake the Lion</option>
+              <option value="tiger">Senja the Tiger</option>
+            </select>
+          </div>
+          <div class="form-block__checkbox">
+            <input type="checkbox">
+            <label>Make this a monthly recurring gift</label>
+          </div>
+          <div class="form-block__button">
+            <div class="form-block__button_pagination"><span class="active"></span><span></span><span></span>
+            </div>
+            <button class="form-block__button_arrow invalid" type="submit">next</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- end modal window two -->
+  <!-- modal window three -->
+  <div class="win-donation-two hidden">
+    <div id="win-step2" class="win-donation-two__wrapper">
+      <div class="win-donation-two__header">make your donation</div>
+      <div class="win-donation-two__info">Billing Information:</div>
+      <form class="win-donation-two__form" action="">
+        <div class="win-donation-two__form-wrapper">
+          <div>
+            <label for="name"><span>*</span> Your Name</label>
+            <input id="name" type="text" placeholder="First and last name" required>
+          </div>
+          <div>
+            <label for="email"><span>*</span> Your Email Address</label>
+            <input id="email" type="email" placeholder="Enter your email"
+              pattern="^([a-zA-Z0-9_-]+\.)*[a-zA-Z0-9_-]+@[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+)*\.[a-z]{2,6}$" required>
+          </div>
+        </div>
+        <p>You will receive emails from the Online Zoo, including updates and news on the latest discoveries and
+          translations. You
+          can unsubscribe at any time.</p>
+        <div class="win-donation-two__form-buttom">
+          <div class="win-donation-two__form-buttom__pagination">
+            <span class="active"></span><span class="active"></span><span></span>
+          </div>
+          <button class="win-donation-two__form-buttom_back" type="button">Back</button>
+          <button class="win-donation-two__form-buttom_next invalid" type="submit">next</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- end modal window three -->
+  <!-- modal window four -->
+  <div class="win-donation-three hidden">
+    <div id="win-step3" class="win-donation-three__wrapper">
+      <div class="win-donation-three__header">make your donation</div>
+      <div class="win-donation-three__info">Payment Information:</div>
+      <form class="win-donation-three__form" action="">
+        <div class="win-donation-three__form-input">
+          <div class="win-donation-three__form_one-input">
+            <label for="card"><span>*</span> Credit Card Number</label>
+            <input id="card" class="invalidInput" type="text" pattern="[0-9]{4}-[0-9]{4}-[0-9]{4}-[0-9]{4}" required>
+          </div>
+          <div class="win-donation-three__form_two-input">
+            <label for="cvv"><span>*</span> CVV Number</label>
+            <input id="cvv" class="invalidInput" type="text" pattern="[0-9]{3}" required>
+          </div>
+        </div>
+        <div class="win-donation-three__form-date">
+          <p><span>*</span> Expiration Date</p>
+          <div class="win-donation-three__form-date_month">
+            <select name="" id="month" required>
+              <option selected value="">Month</option>
+              <option value="1">01</option>
+              <option value="2">02</option>
+              <option value="3">03</option>
+              <option value="4">04</option>
+              <option value="5">05</option>
+              <option value="6">06</option>
+              <option value="7">07</option>
+              <option value="8">08</option>
+              <option value="9">09</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="win-donation-three__form-date_year">
+            <select name="" id="year" required>
+              <option selected value="">Year</option>
+              <option value="21">2021</option>
+              <option value="22">2022</option>
+              <option value="23">2023</option>
+              <option value="24">2024</option>
+              <option value="25">2025</option>
+              <option value="26">2026</option>
+            </select>
+          </div>
+        </div>
+        <div class="win-donation-three__form-buttom">
+          <div class="win-donation-three__form-buttom__pagination">
+            <span class="active"></span><span class="active"></span><span class="active"></span>
+          </div>
+          <button class="win-donation-three__form-buttom_back" type="button">Back</button>
+          <button class="win-donation-three__form-buttom_complete invalid" type="submit">complete donation</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <!-- end modal window four -->
   <header class="header">
     <div class="burger-header">
       <span class="burger-header__lines"></span>
@@ -260,7 +425,7 @@
       </div>
     </div>
   </footer>
-  <script src="../../assets/js/script.js">
+  <script src="js/zoos.js">
 
   </script>
 
