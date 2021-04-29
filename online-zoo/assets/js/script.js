@@ -1,25 +1,34 @@
 ///////КАРУСЕЛЬ///////
-const gap = 480;
 const carousel = document.querySelector('.friends__carts_carousel');
 const content = document.querySelector('.friends__carts_content');
 const next = document.querySelector('.friends__right');
 const prev = document.querySelector('.friends__left');
+const gap = () => {
+  if (carousel.offsetWidth === 1920) {
+    return 480;
+  }
+  if (carousel.offsetWidth === 1200) {
+    return 475;
+  }
+}
 
 next.addEventListener('click', (event) => {
-  carousel.scrollBy(480, 0)
+  carousel.scrollBy(gap(), 0)
   if (carousel.scrollWidth !== 0) {
     prev.classList.remove('opacity');
   }
-
-  if (content.scrollWidth - width <= carousel.scrollLeft + gap) {
+  if (content.scrollWidth - (width - gap() / 2) <= carousel.scrollLeft + gap()) {
     next.classList.add('opacity');
   }
 });
+
 prev.addEventListener('click', (event) => {
-  carousel.scrollBy(-(480), 0);
-  if (carousel.scrollLeft - gap <= 0) {
+  carousel.scrollBy(-(gap()), 0);
+  const cof = carousel.scrollLeft + gap();
+  if (cof - gap() <= 0) {
     prev.classList.add('opacity');
   }
+  console.log('3840 - 1920 <= 0 + 1920')
   if (!content.scrollWidth - width <= carousel.scrollLeft + width) {
     next.classList.remove('opacity');
   }
