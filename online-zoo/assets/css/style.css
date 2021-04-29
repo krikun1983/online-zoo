@@ -117,7 +117,6 @@ li {
 }
 
 .pop-ap-wrapper-container {
-  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -239,7 +238,6 @@ li {
 }
 
 .form-donation-wrapper-container {
-  display: none;
   position: fixed;
   left: 0;
   top: 0;
@@ -489,6 +487,11 @@ li {
   background-color: #05786e;
 }
 
+.form-donation-wrapper .form-block__button_arrow.invalid {
+  cursor: none;
+  background-color: #d0d1d4;
+}
+
 .form-donation-wrapper .form-block__select {
   position: relative;
   display: -webkit-box;
@@ -579,8 +582,11 @@ li {
           box-sizing: border-box;
 }
 
-.win-donation-two {
+.hidden {
   display: none;
+}
+
+.win-donation-two {
   position: fixed;
   left: 0;
   top: 0;
@@ -592,8 +598,8 @@ li {
 
 .win-donation-two__wrapper {
   position: fixed;
-  top: calc(50% - 40.95rem);
-  left: calc(50% - 37.25rem);
+  top: calc(50% - 37.25rem);
+  left: calc(50% - 46rem);
   z-index: 100000;
   margin: 0 auto;
   width: 92rem;
@@ -791,9 +797,305 @@ li {
   background-color: #00A092;
 }
 
+.win-donation-two__form-buttom_next:hover {
+  background-color: #05786e;
+}
+
 .win-donation-two__form-buttom_next.invalid {
   cursor: none;
   background-color: #d0d1d4;
+}
+
+.win-donation-three {
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+}
+
+.win-donation-three__wrapper {
+  position: fixed;
+  top: calc(50% - 37rem);
+  left: calc(50% - 46rem);
+  z-index: 100000;
+  margin: 0 auto;
+  width: 92rem;
+  height: 74rem;
+  background-color: #ffffff;
+  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
+  border-radius: .5rem;
+}
+
+.win-donation-three__header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 13.5rem;
+  font-size: 4.2rem;
+  line-height: 5.12rem;
+  font-family: "Montserrat Medium";
+  font-weight: normal;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  background-color: #f58021;
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+.win-donation-three__info {
+  width: 100%;
+  height: 8.7rem;
+  padding-top: 5rem;
+  padding-left: 12.3rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Montserrat Semibold";
+  font-weight: normal;
+  border-bottom: 1px solid #A4A8AE;
+}
+
+.win-donation-three__form {
+  margin: 4rem auto 0;
+  width: 68rem;
+  height: 42.8rem;
+}
+
+.win-donation-three__form-input {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  height: 10.2rem;
+}
+
+.win-donation-three__form_one-input {
+  width: 44.2rem;
+}
+
+.win-donation-three__form_two-input {
+  width: 19.8rem;
+}
+
+.win-donation-three__form label {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Montserrat Regular";
+  font-weight: normal;
+}
+
+.win-donation-three__form label span {
+  color: #00A092;
+}
+
+.win-donation-three__form input {
+  padding-left: 2rem;
+  width: 100%;
+  height: 6.5rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Montserrat Regular";
+  font-weight: normal;
+  color: #000000;
+  border: 1px solid #000000;
+  border-radius: .5rem;
+}
+
+.win-donation-three__form input.invalidInput {
+  color: red;
+}
+
+.win-donation-three__form-date {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+
+.win-donation-three__form-date p {
+  display: block;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Montserrat Regular";
+  font-weight: normal;
+}
+
+.win-donation-three__form-date p span {
+  color: #00A092;
+}
+
+.win-donation-three__form-date_year, .win-donation-three__form-date_month {
+  display: inline-block;
+  position: relative;
+  margin-right: 3.7rem;
+  width: 20.1rem;
+  height: 6.5rem;
+}
+
+.win-donation-three__form-date_year select, .win-donation-three__form-date_month select {
+  cursor: pointer;
+  padding-left: 5rem;
+  width: 100%;
+  height: 100%;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Montserrat Regular";
+  font-weight: normal;
+  color: #a4a8ae;
+  border: 1px solid #000000;
+  border-radius: .5rem;
+}
+
+.win-donation-three__form-date_year select option, .win-donation-three__form-date_month select option {
+  color: #000000;
+}
+
+.win-donation-three__form-date_year select option:checked, .win-donation-three__form-date_month select option:checked {
+  background-color: #00A092;
+  color: #ffffff;
+}
+
+.win-donation-three__form-date_year:after, .win-donation-three__form-date_month:after {
+  content: "";
+  font-size: 12px;
+  position: absolute;
+  background-color: #80cfc8;
+  right: 0;
+  top: 0;
+  z-index: 10;
+  width: 3.2rem;
+  height: 6.5rem;
+  pointer-events: none;
+  background-image: url("../images/modal/arraw.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+  border: 1px solid #000000;
+  border-top-right-radius: .5rem;
+  border-bottom-right-radius: .5rem;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.win-donation-three__form-buttom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 68rem;
+  height: 7.4rem;
+}
+
+.win-donation-three__form-buttom__pagination {
+  width: 5rem;
+  height: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.win-donation-three__form-buttom__pagination span {
+  width: 1rem;
+  height: 1rem;
+  border-radius: 50%;
+  border: 1px solid #00A092;
+}
+
+.win-donation-three__form-buttom__pagination .active {
+  background-color: #00A092;
+}
+
+.win-donation-three__form-buttom_back {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 20rem;
+  height: 7.4rem;
+  font-size: 1.8rem;
+  line-height: 2.7rem;
+  font-family: "Montserrat Semibold";
+  font-weight: normal;
+  text-decoration: underline;
+  color: #00A092;
+  background-color: transparent;
+  border: none;
+  border-radius: .5rem;
+}
+
+.win-donation-three__form-buttom_back:hover {
+  color: #ffffff;
+  background-color: #00A092;
+}
+
+.win-donation-three__form-buttom_complete {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-right: 5%;
+  width: 35.9rem;
+  height: 7.4rem;
+  font-size: 1.8rem;
+  line-height: 2.194rem;
+  font-family: "Montserrat Semibold";
+  font-weight: normal;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: none;
+  border-radius: .5rem;
+  background-image: url("../icons/UnionRightWhite.svg");
+  background-repeat: no-repeat;
+  background-position: center right 16%;
+  background-color: #f58021;
+}
+
+.win-donation-three__form-buttom_complete:hover {
+  background-color: #d26004;
+}
+
+.win-donation-three__form-buttom_complete.invalid {
+  cursor: none;
+  background-color: #d0d1d4;
+}
+
+.invalidInput {
+  color: red;
 }
 
 /* BASIC */
