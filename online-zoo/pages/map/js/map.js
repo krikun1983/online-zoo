@@ -4,16 +4,16 @@ const gorilla = document.getElementById('gorilla');
 const eagle = document.getElementById('eagle');
 const lemur = document.getElementById('lemur');
 panda.addEventListener('click', () => {
-    window.location.href = '../../../pages/zoos/panda.html';
+    window.location.href = '../../pages/zoos/panda.html';
 })
 gorilla.addEventListener('click', () => {
-    window.location.href = '../../../pages/zoos/gorilla.html';
+    window.location.href = '../../pages/zoos/gorilla.html';
 })
 eagle.addEventListener('click', () => {
-    window.location.href = '../../../pages/zoos/eagle.html';
+    window.location.href = '../../pages/zoos/eagle.html';
 })
 lemur.addEventListener('click', () => {
-    window.location.href = '../../../pages/zoos/lemur.html';
+    window.location.href = '../../pages/zoos/lemur.html';
 })
 ////////////////////// Модальные окна //////////////////////////
 ///////Дефолтная/////////////////////
