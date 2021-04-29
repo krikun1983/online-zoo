@@ -6,30 +6,22 @@ const next = document.querySelector('.friends__right');
 const prev = document.querySelector('.friends__left');
 
 next.addEventListener('click', (event) => {
-  carousel.scrollBy(480, 0);
+  carousel.scrollBy(480, 0)
   if (carousel.scrollWidth !== 0) {
     prev.classList.remove('opacity');
-    // prev.style.display = 'flex';
   }
 
   if (content.scrollWidth - width <= carousel.scrollLeft + gap) {
     next.classList.add('opacity');
-    // next.style.display = 'none';
   }
 });
-console.log(carousel.offsetWidth); //1920 width
-console.log(content.scrollWidth); //3840
-console.log(carousel.scrollLeft); //0
 prev.addEventListener('click', (event) => {
   carousel.scrollBy(-(480), 0);
   if (carousel.scrollLeft - gap <= 0) {
     prev.classList.add('opacity');
-    // prev.style.display = 'none';
   }
-  // console.log((content.scrollWidth - width) + '===' + (carousel.scrollLeft + width + gap))
   if (!content.scrollWidth - width <= carousel.scrollLeft + width) {
     next.classList.remove('opacity');
-    // next.style.display = 'flex';
   }
 });
 

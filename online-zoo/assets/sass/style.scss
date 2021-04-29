@@ -2906,9 +2906,10 @@
     // flex-wrap: wrap;
     margin-top: 3rem;
     margin-left: -2rem;
+
     &_carousel {
       overflow: auto;
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
       scrollbar-width: none;
     }
     &_carousel::-webkit-scrollbar {
