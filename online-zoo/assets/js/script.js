@@ -1,4 +1,4 @@
-///////КАРУСЕЛЬ///////
+///////КАРУСЕЛЬ Первая///////
 const carousel = document.querySelector('.friends__carts_carousel');
 const content = document.querySelector('.friends__carts_content');
 const next = document.querySelector('.friends__right');
@@ -28,7 +28,6 @@ prev.addEventListener('click', (event) => {
   if (cof - gap() <= 0) {
     prev.classList.add('opacity');
   }
-  console.log('3840 - 1920 <= 0 + 1920')
   if (!content.scrollWidth - width <= carousel.scrollLeft + width) {
     next.classList.remove('opacity');
   }
@@ -36,7 +35,81 @@ prev.addEventListener('click', (event) => {
 
 let width = carousel.offsetWidth;
 window.addEventListener('resize', (event) => (width = carousel.offsetWidth));
+///////КАРУСЕЛЬ Вторая///////
+const gap2 = 30;
+const carouselThink = document.querySelector('.users_think__cards_carousel');
+const contentThink = document.querySelector('.users_think__cards_content');
+const nextThink = document.querySelector('.users_think__right');
+const prevThink = document.querySelector('.users_think__left');
 
+
+const slideType = 'all';
+let slideIndex = 0;
+let slideCoefficient = 2;
+
+let width2 = carouselThink.offsetWidth;
+let imgWidth = document.querySelector('.users_think__card').offsetWidth;
+window.addEventListener('resize', (event) => {
+  width2 = carouselThink.offsetWidth;
+  imgWidth = document.querySelector('.users_think__card').offsetWidth;
+});
+
+nextThink.addEventListener("click", (event) => {
+  delayAuto();
+  slideIndex += 2;
+  carouselThink.scrollTo((imgWidth + gap2) * slideIndex, 0);
+  if (slideIndex > 0) {
+    prevThink.classList.remove('opacity');
+  }
+  if (slideIndex >= 6) {
+    nextThink.classList.add('opacity');
+  }
+});
+
+prevThink.addEventListener("click", (event) => {
+  delayAuto()
+  slideIndex -= 2;
+  carouselThink.scrollTo((imgWidth + gap2) * slideIndex, 0);
+  if (slideIndex < 6) {
+    nextThink.classList.remove('opacity');
+  }
+  if (slideIndex <= 0) {
+    prevThink.classList.add('opacity');
+  }
+});
+
+const slideFunction = () => {
+  slideIndex += 2;
+  if (slideIndex > 0) {
+    prevThink.classList.remove('opacity');
+  }
+  if (slideIndex >= 6) {
+    nextThink.classList.add('opacity');
+  }
+  if (slideIndex > 6) {
+    if (!(slideIndex < 8)) {
+      slideIndex = 0;
+    }
+    prevThink.classList.add('opacity');
+    nextThink.classList.remove('opacity');
+  }
+  carouselThink.scrollTo((imgWidth + gap2) * slideIndex, 0);
+}
+
+let autoInterval = setInterval(slideFunction, 15000);
+let autoTimeout = null;
+
+const delayAuto = () => {
+  clearTimeout(autoTimeout);
+  clearInterval(autoInterval);
+  autoInterval = null;
+  autoTimeout = setTimeout(() => {
+    clearInterval(autoInterval);
+    autoInterval = setInterval(slideFunction, 15000);
+  }, 45000);
+}
+
+carouselThink.addEventListener('click', delayAuto)
 
 ////////////////////// Модальные окна //////////////////////////
 ///////Дефолтная/////////////////////
