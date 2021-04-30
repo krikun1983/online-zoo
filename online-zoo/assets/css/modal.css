@@ -115,27 +115,49 @@ li {
   background-position: 90% 50%;
 }
 
-#win1 {
-  display: none;
+aside {
+  margin: 0;
+  padding: 0;
 }
 
-.pop-ap-wrapper {
+.main {
   position: relative;
-  margin: 0 auto;
-  width: 116rem;
-  height: 81.5rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  margin: 0;
+  padding: 0;
 }
 
-.pop-ap-wrapper__top {
-  height: 38.7rem;
+.sticky {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
 }
 
-.pop-ap-wrapper-close {
-  cursor: pointer;
+@media screen and (max-width: 1833px) {
+  .sticky {
+    height: 1497px;
+  }
+}
+
+.sidebar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 21rem;
+  height: 84.6rem;
+  background-color: #20113d;
+  z-index: 150;
+}
+
+.sidebar__container {
+  position: relative;
+  padding-top: 8rem;
+  width: 100%;
+  border-bottom: 1px solid #ffffff;
+}
+
+.sidebar__life {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -146,664 +168,56 @@ li {
       -ms-flex-align: center;
           align-items: center;
   position: absolute;
-  top: 3.15rem;
-  right: 3.15rem;
-  width: 2.7rem;
-  height: 2.7rem;
-}
-
-.pop-ap-wrapper__bottom {
-  height: 42.8rem;
-}
-
-.pop-ap-wrapper__bottom_h2 {
-  margin: 2.1rem auto 3rem;
-  width: 67.8rem;
-  font-size: 5.4rem;
-  line-height: 6.583rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #f58021;
-}
-
-.pop-ap-wrapper__bottom_text {
-  margin: 0 auto 5.1rem;
-  width: 57rem;
-  font-size: 1.8rem;
-  line-height: 2.73rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-  text-align: center;
-  color: #000000;
-}
-
-.pop-ap-wrapper-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin: 0 auto 5rem;
-  width: 100rem;
-  height: 6.5rem;
-}
-
-.pop-ap-wrapper .pop-ap-btn {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 12rem;
-  height: 6.5rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  color: #ffffff;
-  background-color: #00A092;
-  border: 0;
-  border-radius: .5rem;
-}
-
-.pop-ap-wrapper .pop-ap-btn:hover {
-  background-color: #05786e;
-}
-
-.pop-ap-wrapper .other {
-  width: 20rem;
-  text-transform: uppercase;
-}
-
-.form-donation-wrapper-container {
-  display: none;
-  position: fixed;
-  left: 0;
   top: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-}
-
-#win-form-step1 {
-  position: fixed;
-  top: calc(50% - 40.95rem);
-  left: calc(50% - 46rem);
-  z-index: 100000;
-}
-
-.form-donation-wrapper {
-  margin: 0 auto;
-  width: 92rem;
-  height: 81.9rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
-}
-
-.form-donation-wrapper__header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  height: 13.5rem;
-  font-size: 4.2rem;
-  line-height: 5.12rem;
-  font-family: "Montserrat Medium";
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
+  left: 0;
+  width: 11.2rem;
+  height: 3.8rem;
+  border-bottom-right-radius: 0.5rem;
   color: #ffffff;
+  font-family: "Montserrat Semibold";
+  font-size: 1.8rem;
+  line-height: 2.9rem;
+  text-transform: uppercase;
   background-color: #f58021;
 }
 
-.form-donation-wrapper__info {
-  width: 100%;
-  height: 8.7rem;
-  padding-top: 5rem;
-  padding-left: 12.3rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  border-bottom: 1px solid #A4A8AE;
+.sidebar__life img {
+  margin-left: 1rem;
 }
 
-.form-donation-wrapper__block {
-  margin: 4rem auto 0;
-  width: 68rem;
-  height: 38.3rem;
-}
-
-.form-donation-wrapper .form-block__text {
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-}
-
-.form-donation-wrapper .form-block__text span {
-  color: #00A092;
-}
-
-.form-donation-wrapper .form-block__pop-ap-wrapper-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 4rem;
-  width: 100%;
-}
-
-.form-donation-wrapper .form-block__pop-ap-wrapper-btn .btn-active {
-  opacity: 1;
-}
-
-.form-donation-wrapper .form-block__pop-ap-btn {
+.sidebar__link_brackets {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 8rem;
-  height: 6.5rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
+  width: 1.6rem;
+  height: 1.6rem;
   color: #ffffff;
-  background-color: #00A092;
-  border: 0;
-  border-radius: .5rem;
-  opacity: .5;
-}
-
-.form-donation-wrapper .form-block__pop-ap-btn:hover {
-  opacity: 1;
-}
-
-.form-donation-wrapper .form-block__input-btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 44rem;
-}
-
-.form-donation-wrapper .form-block__input-btn .other {
-  text-transform: uppercase;
-  cursor: auto;
-  width: 20rem;
-  opacity: 1;
-}
-
-.form-donation-wrapper .form-block__input {
-  padding-left: 1rem;
-  width: 20rem;
-  height: 6.5rem;
-  border: 1px solid #000000;
-  border-radius: .5rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-}
-
-.form-donation-wrapper .form-block__checkbox {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 4rem;
-  width: 36rem;
-}
-
-.form-donation-wrapper .form-block__checkbox input {
-  width: 3rem;
-  height: 3rem;
-  margin-right: 2rem;
-}
-
-.form-donation-wrapper .form-block__checkbox label {
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-}
-
-.form-donation-wrapper .form-block__button {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 57.5rem;
-  margin-top: 5rem;
-}
-
-.form-donation-wrapper .form-block__button_pagination {
-  width: 5rem;
-  height: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.form-donation-wrapper .form-block__button_pagination span {
-  cursor: pointer;
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  border: 1px solid #00A092;
-}
-
-.form-donation-wrapper .form-block__button_pagination .active {
-  background-color: #00A092;
-}
-
-.form-donation-wrapper .form-block__button_arrow {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 5%;
-  width: 20rem;
-  height: 7.4rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  border-radius: .5rem;
-  background-image: url("../icons/UnionRightWhite.svg");
-  background-repeat: no-repeat;
-  background-position: center right 33%;
-  background-color: #00A092;
-}
-
-.form-donation-wrapper .form-block__button_arrow:hover {
-  background-color: #05786e;
-}
-
-.form-donation-wrapper .form-block__select {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin-top: 4rem;
-}
-
-.form-donation-wrapper .form-block__select_text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 20rem;
-  height: 6.5rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #00A092;
-  border: 0;
-  border-radius: .5rem;
-  opacity: .5;
-}
-
-.form-donation-wrapper .form-block__select select {
-  cursor: pointer;
-  padding-left: 1rem;
-  width: 44rem;
-  height: 6.5rem;
-  border-radius: .5rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-  text-align: center;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
-  color: #a4a8ae;
-}
-
-.form-donation-wrapper .form-block__select option {
-  color: #000000;
-}
-
-.form-donation-wrapper .form-block__select option[selected] {
-  padding-left: 10.6rem;
-}
-
-.form-donation-wrapper .form-block__select option:checked {
-  background-color: #00A092;
-  color: #ffffff;
-}
-
-.form-donation-wrapper .form-block__select:after {
-  content: "";
-  font-size: 12px;
   position: absolute;
-  background-color: #80cfc8;
-  right: 0;
-  top: 0;
-  z-index: 10;
-  width: 3.2rem;
-  height: 6.5rem;
-  pointer-events: none;
-  background-image: url("../images/modal/arraw.svg");
+  top: 3rem;
+  right: 3rem;
+  z-index: 50;
+  background-image: url("../icons/brackets.svg");
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  border: 1px solid #000000;
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  background-size: cover;
 }
 
-.win-donation-two {
-  display: none;
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-}
-
-.win-donation-two__wrapper {
-  position: fixed;
-  top: calc(50% - 40.95rem);
-  left: calc(50% - 37.25rem);
-  z-index: 100000;
-  margin: 0 auto;
-  width: 92rem;
-  height: 74.5rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
-}
-
-.win-donation-two__header {
+.sidebar__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 13.5rem;
-  font-size: 4.2rem;
-  line-height: 5.12rem;
-  font-family: "Montserrat Medium";
-  font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-  background-color: #f58021;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
-}
-
-.win-donation-two__info {
-  width: 100%;
-  height: 8.7rem;
-  padding-top: 5rem;
-  padding-left: 12.3rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  border-bottom: 1px solid #A4A8AE;
-}
-
-.win-donation-two__form {
-  margin: 4rem auto 0;
-  width: 68rem;
-  height: 43.3rem;
-}
-
-.win-donation-two__form-wrapper {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+}
+
+.sidebar__item {
   width: 100%;
-  height: 24.5rem;
-}
-
-.win-donation-two__form label {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-}
-
-.win-donation-two__form label span {
-  color: #00A092;
-}
-
-.win-donation-two__form input {
-  display: block;
-  padding-left: 2rem;
-  width: 100%;
-  height: 6rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-  color: #a4a8ae;
-  border: 1px solid #000000;
-  border-radius: .5rem;
-}
-
-.win-donation-two__form p {
-  margin-top: 1rem;
-  margin-bottom: 5rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-}
-
-.win-donation-two__form-buttom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 57.5rem;
-  height: 7.4rem;
-}
-
-.win-donation-two__form-buttom__pagination {
-  width: 5rem;
-  height: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.win-donation-two__form-buttom__pagination span {
-  width: 1rem;
-  height: 1rem;
-  border-radius: 50%;
-  border: 1px solid #00A092;
-}
-
-.win-donation-two__form-buttom__pagination .active {
-  background-color: #00A092;
-}
-
-.win-donation-two__form-buttom_back {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 8%;
-  width: 20rem;
-  height: 7.4rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-decoration: underline;
-  color: #00A092;
-  background-color: transparent;
-  border: none;
-  border-radius: .5rem;
-}
-
-.win-donation-two__form-buttom_back:hover {
-  color: #ffffff;
-  background-color: #00A092;
-}
-
-.win-donation-two__form-buttom_next {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 5%;
-  width: 20rem;
-  height: 7.4rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  border-radius: .5rem;
-  background-image: url("../icons/UnionRightWhite.svg");
-  background-repeat: no-repeat;
-  background-position: center right 33%;
-  background-color: #00A092;
-}
-
-.win-donation-two__form-buttom_next.invalid {
-  cursor: none;
-  background-color: #d0d1d4;
-}
-
-.win-donation-three {
-  position: fixed;
-  left: 0;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(0, 0, 0, 0.7);
-  width: 100%;
-  height: 100%;
-}
-
-.win-donation-three__wrapper {
-  position: fixed;
-  top: calc(50% - 40.95rem);
-  left: calc(50% - 37rem);
-  z-index: 100000;
-  margin: 0 auto;
-  width: 92rem;
-  height: 74rem;
-  background-color: #ffffff;
-  -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
-}
-
-.win-donation-three__header {
+  height: 17.2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -813,257 +227,204 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
-  height: 13.5rem;
-  font-size: 4.2rem;
-  line-height: 5.12rem;
-  font-family: "Montserrat Medium";
+  border-top: 1px solid #ffffff;
+}
+
+.sidebar__item p {
+  display: none;
+  width: 16.9rem;
+  font-family: "Montserrat Regular";
+  font-size: 1.8rem;
+  line-height: 2.7rem;
   font-weight: normal;
-  text-align: center;
-  text-transform: uppercase;
   color: #ffffff;
-  background-color: #f58021;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
 }
 
-.win-donation-three__info {
-  width: 100%;
-  height: 8.7rem;
-  padding-top: 5rem;
-  padding-left: 12.3rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  border-bottom: 1px solid #A4A8AE;
-}
-
-.win-donation-three__form {
-  margin: 4rem auto 0;
-  width: 68rem;
-  height: 42.8rem;
-}
-
-.win-donation-three__form-input {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 100%;
-  height: 10.2rem;
-}
-
-.win-donation-three__form_one-input {
-  width: 44.2rem;
-}
-
-.win-donation-three__form_two-input {
-  width: 19.8rem;
-}
-
-.win-donation-three__form label {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-}
-
-.win-donation-three__form label span {
-  color: #00A092;
-}
-
-.win-donation-three__form input {
-  padding-left: 2rem;
-  width: 100%;
-  height: 6.5rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-  color: #000000;
-  border: 1px solid #000000;
-  border-radius: .5rem;
-}
-
-.win-donation-three__form input.invalidInput {
-  color: red;
-}
-
-.win-donation-three__form-date {
-  margin-top: 5rem;
-  margin-bottom: 10rem;
-}
-
-.win-donation-three__form-date p {
-  display: block;
-  margin-bottom: 1rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-}
-
-.win-donation-three__form-date p span {
-  color: #00A092;
-}
-
-.win-donation-three__form-date_year, .win-donation-three__form-date_month {
-  display: inline-block;
+.sidebar__item_bg {
   position: relative;
-  margin-right: 3.7rem;
-  width: 20.1rem;
-  height: 6.5rem;
+  z-index: 15;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 10.5rem;
+  height: 10.5rem;
+  border-radius: 50%;
+  background-color: #d26004;
 }
 
-.win-donation-three__form-date_year select, .win-donation-three__form-date_month select {
-  cursor: pointer;
-  padding-left: 5rem;
+.sidebar__item_link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Regular";
-  font-weight: normal;
-  color: #a4a8ae;
-  border: 1px solid #000000;
-  border-radius: .5rem;
 }
 
-.win-donation-three__form-date_year select option, .win-donation-three__form-date_month select option {
-  color: #000000;
-}
-
-.win-donation-three__form-date_year select option:checked, .win-donation-three__form-date_month select option:checked {
-  background-color: #00A092;
-  color: #ffffff;
-}
-
-.win-donation-three__form-date_year:after, .win-donation-three__form-date_month:after {
-  content: "";
-  font-size: 12px;
-  position: absolute;
-  background-color: #80cfc8;
-  right: 0;
-  top: 0;
-  z-index: 10;
-  width: 3.2rem;
+.sidebar__item_body {
+  width: 6.5rem;
   height: 6.5rem;
-  pointer-events: none;
-  background-image: url("../images/modal/arraw.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: auto;
-  border: 1px solid #000000;
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
 }
 
-.win-donation-three__form-buttom {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 68rem;
-  height: 7.4rem;
+.sidebar__item_icon {
+  fill: #20113d;
 }
 
-.win-donation-three__form-buttom__pagination {
-  width: 5rem;
-  height: 1rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+.sidebar__item .panda {
+  width: 8rem;
+  height: 8rem;
 }
 
-.win-donation-three__form-buttom__pagination span {
-  width: 1rem;
-  height: 1rem;
+.sidebar__item_active {
+  background-color: #ffffff;
+}
+
+.sidebar__item_active::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 11.5rem;
+  height: 11.5rem;
+  border: 3px solid #ffffff;
   border-radius: 50%;
-  border: 1px solid #00A092;
 }
 
-.win-donation-three__form-buttom__pagination .active {
-  background-color: #00A092;
-}
-
-.win-donation-three__form-buttom_back {
+.sidebar__arrow {
   cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  width: 20rem;
-  height: 7.4rem;
-  font-size: 1.8rem;
-  line-height: 2.7rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-decoration: underline;
-  color: #00A092;
-  background-color: transparent;
-  border: none;
-  border-radius: .5rem;
-}
-
-.win-donation-three__form-buttom_back:hover {
-  color: #ffffff;
-  background-color: #00A092;
-}
-
-.win-donation-three__form-buttom_complete {
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding-right: 5%;
-  width: 35.9rem;
-  height: 7.4rem;
-  font-size: 1.8rem;
-  line-height: 2.194rem;
-  font-family: "Montserrat Semibold";
-  font-weight: normal;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: none;
-  border-radius: .5rem;
-  background-image: url("../icons/UnionRightWhite.svg");
+  display: block;
+  width: 0.9rem;
+  height: 1.5rem;
+  position: absolute;
+  bottom: -5.2rem;
+  right: 11rem;
+  z-index: 10;
   background-repeat: no-repeat;
-  background-position: center right 16%;
-  background-color: #f58021;
+  background-size: cover;
 }
 
-.win-donation-three__form-buttom_complete.invalid {
-  cursor: none;
-  background-color: #d0d1d4;
+.sidebar.show {
+  width: 30rem;
 }
 
-.invalidInput {
-  color: red;
+.sidebar__link_brackets.show {
+  -webkit-transform: scale(-1, 1);
+          transform: scale(-1, 1);
+}
+
+.sidebar__life.show {
+  width: 12rem;
+}
+
+.sidebar__arrow.show {
+  right: 15rem;
+}
+
+.sidebar__item_bg.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 25.6rem;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  margin-left: 0.8rem;
+}
+
+.sidebar__item_bg.show p {
+  display: block;
+}
+
+.sidebar__item_bg.show .sidebar__item_body {
+  width: auto;
+  height: 5rem;
+  margin-right: 2.5rem;
+}
+
+.sidebar__item_bg.show .sidebar__item_icon {
+  fill: #f58021;
+}
+
+.sidebar__item_bg.show .sidebar__item_body.panda {
+  width: auto;
+  height: 5rem;
+}
+
+.sidebar__item_bg.show .sidebar__item_body.lemur {
+  margin-right: 3.8rem;
+}
+
+.sidebar__item_bg.show_active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-left: 0.8rem;
+  width: 25.6rem;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+}
+
+.sidebar__item_bg.show_active::after {
+  display: none;
+}
+
+.sidebar__item_bg.show_active p {
+  display: block;
+}
+
+.sidebar__item_bg.show_active .sidebar__item_body {
+  width: auto;
+  height: 5rem;
+  margin-right: 2.5rem;
+}
+
+.sidebar__item_bg.show_active .sidebar__item_icon {
+  fill: #ffffff;
+}
+
+.sidebar__item_bg.show_active .sidebar__item_body.panda {
+  width: auto;
+  height: 5rem;
+}
+
+.sidebar__item_bg.show_active .sidebar__item_body.lemur {
+  margin-right: 3.8rem;
+}
+
+.sidebar__item_link.show {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 100%;
 }
 /*# sourceMappingURL=modal.css.map */

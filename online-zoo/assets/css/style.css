@@ -8384,14 +8384,26 @@ li {
     letter-spacing: -0.2px;
   }
   .users_think__cards {
-    margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 212rem;
-    gap: 3rem;
+  }
+  .users_think__cards_carousel {
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+  .users_think__cards_carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  .users_think__cards_content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 3rem;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .users_think__card {
     position: relative;
@@ -8547,13 +8559,12 @@ li {
   .users_think {
     padding-top: 10rem;
     width: 100%;
-    height: 188rem;
+    height: 188.3rem;
     background-color: #20113d;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
   }
   .users_think__container {
     position: relative;
@@ -8597,14 +8608,27 @@ li {
     letter-spacing: -0.2px;
   }
   .users_think__cards {
-    margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
     width: 106rem;
-    gap: 3rem;
+    margin-left: 10rem;
+  }
+  .users_think__cards_carousel {
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+  .users_think__cards_carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  .users_think__cards_content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 3rem;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .users_think__card {
     position: relative;
@@ -8651,8 +8675,8 @@ li {
   }
   .users_think__arrow {
     position: relative;
-    right: 1rem;
-    width: 18.4rem;
+    right: 0;
+    width: 17.4rem;
     margin-top: 10rem;
     margin-right: 2.3%;
     display: -webkit-box;
@@ -8811,14 +8835,27 @@ li {
   }
   .users_think__cards {
     margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     width: 215.2rem;
     height: 37.2rem;
-    gap: 2rem;
+  }
+  .users_think__cards_carousel {
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+  .users_think__cards_carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  .users_think__cards_content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .users_think__card {
     display: -webkit-box;
@@ -9041,14 +9078,27 @@ li {
   }
   .users_think__cards {
     margin-left: auto;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     width: 215.2rem;
     height: 37.2rem;
-    gap: 2rem;
+  }
+  .users_think__cards_carousel {
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+  .users_think__cards_carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  .users_think__cards_content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .users_think__card {
     display: -webkit-box;
@@ -9273,14 +9323,27 @@ li {
   }
   .users_think__cards {
     margin-left: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     width: 126.0rem;
     height: 54.9rem;
-    gap: 2rem;
+  }
+  .users_think__cards_carousel {
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+  .users_think__cards_carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  .users_think__cards_content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .users_think__card {
     display: -webkit-box;
@@ -9477,14 +9540,27 @@ li {
   }
   .users_think__cards {
     margin-left: 1rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: nowrap;
-        flex-wrap: nowrap;
     width: 126.0rem;
     height: 54.9rem;
-    gap: 2rem;
+  }
+  .users_think__cards_carousel {
+    overflow: auto;
+    scroll-behavior: auto;
+    scrollbar-width: none;
+  }
+  .users_think__cards_carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  .users_think__cards_content {
+    display: -ms-grid;
+    display: grid;
+    grid-gap: 2rem;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+    grid-auto-flow: column;
+    margin: auto;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
   }
   .users_think__card {
     display: -webkit-box;
@@ -10301,7 +10377,7 @@ li {
     color: #ffffff;
   }
   .animals_love__screen {
-    margin: 15rem auto 14.6rem;
+    margin: 15rem auto 15.5rem;
   }
   .animals_love__screen img {
     width: 100%;

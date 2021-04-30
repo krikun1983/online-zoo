@@ -354,15 +354,38 @@ document.querySelector('.burger-header').onclick = function () {
     header.classList.toggle("nav-header-show");
 }
 
-//меняю стрелку у кнопок
+//Sidebar
 
-// document.querySelector('.friends__left').onclick = arrow;
-// document.querySelector('.friends__right').onclick = arrow;
+const btnArrowShowHidden = document.querySelector('.sidebar__link_brackets');
+const btnArrowShowBottomSlider = document.querySelector('.sidebar__arrow');
 
-// function arrow(cls, img, color) {
-//   document.querySelector(`${cls} img`).setAttribute('src', img);
-//   document.querySelector(cls).style.backgroundColor = color;
-// }
+const sidebar = document.querySelector('.sidebar');
+const sidebarLinkBrackets = document.querySelector('.sidebar__link_brackets');
+const sidebarArrow = document.querySelector('.sidebar__arrow');
 
-// arrow('.friends__left', '../assets/icons/UnionLeftInvert.svg', '#20113D');
-// arrow('.friends__right', '../assets/icons/UnionRightInvert.svg', '#20113D');
+const sidebarLifeAll = document.querySelectorAll('.sidebar__life');
+const sidebarItemBgAll = document.querySelectorAll('.sidebar__item_bg');
+const sidebarItemLinkAll = document.querySelectorAll('.sidebar__item_link');
+
+const sidebarItemBgActive = document.querySelector('.sidebar__item_active');
+
+btnArrowShowHidden.addEventListener('click', () => {
+
+    const arr = [sidebar, sidebarLinkBrackets, sidebarArrow];
+    arr.forEach(elem => {
+        elem.classList.toggle('show');
+    })
+
+    sidebarItemBgActive.classList.toggle('show_active');
+
+    sidebarLifeAll.forEach(elem => {
+        elem.classList.toggle('show');
+    })
+    sidebarItemBgAll.forEach(elem => {
+        elem.classList.toggle('show');
+    })
+    sidebarItemLinkAll.forEach(elem => {
+        elem.classList.toggle('show');
+    })
+
+})

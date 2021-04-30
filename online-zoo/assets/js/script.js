@@ -47,10 +47,10 @@ const slideType = 'all';
 let slideIndex = 0;
 let slideCoefficient = 2;
 
-let width2 = carouselThink.offsetWidth;
+// let width2 = carouselThink.offsetWidth;
 let imgWidth = document.querySelector('.users_think__card').offsetWidth;
 window.addEventListener('resize', (event) => {
-  width2 = carouselThink.offsetWidth;
+  // width2 = carouselThink.offsetWidth;
   imgWidth = document.querySelector('.users_think__card').offsetWidth;
 });
 

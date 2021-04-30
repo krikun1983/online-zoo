@@ -6025,12 +6025,24 @@
     }
 
     &__cards {
-      margin-left: auto;
-      display: flex;
-      flex-wrap: wrap;
-      width: 212rem;
-      gap: 3rem;
+    width: 212rem;
+    &_carousel {
+      overflow: auto;
+      scroll-behavior: auto;
+      scrollbar-width: none;
     }
+    &_carousel::-webkit-scrollbar {
+      height: 0;
+    }
+    &_content {
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-rows: auto auto;
+      grid-auto-flow: column;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
 
     &__card {
       position: relative;
@@ -6167,13 +6179,12 @@
   .users_think {
     padding-top: 10rem;
     width: 100%;
-    height: 188rem;
+    height: 188.3rem;
     background-color: $bg-dark-blue;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    overflow: hidden;
     &__container {
       position: relative;
       margin: 0 auto;
@@ -6211,12 +6222,25 @@
     }
 
     &__cards {
-      margin-left: auto;
-      display: flex;
-      flex-wrap: wrap;
-      width: 106rem;
-      gap: 3rem;
+    width: 106rem;
+    margin-left: 10rem;
+    &_carousel {
+      overflow: auto;
+      scroll-behavior: auto;
+      scrollbar-width: none;
     }
+    &_carousel::-webkit-scrollbar {
+      height: 0;
+    }
+    &_content {
+      display: grid;
+      grid-gap: 3rem;
+      grid-template-rows: auto auto;
+      grid-auto-flow: column;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
 
     &__card {
       position: relative;
@@ -6265,8 +6289,8 @@
 
     &__arrow {
       position: relative;
-      right: 1rem;
-      width: 18.4rem;
+      right: 0;
+      width: 17.4rem;
       margin-top: 10rem;
       margin-right: 2.3%;
       @include flex-block-center();
@@ -6398,12 +6422,25 @@
 
     &__cards {
       margin-left: auto;
-      display: flex;
-      flex-wrap: nowrap;
       width: 215.2rem;
       height: 37.2rem;
-      gap: 2rem;
+    &_carousel {
+      overflow: auto;
+      scroll-behavior: auto;
+      scrollbar-width: none;
     }
+    &_carousel::-webkit-scrollbar {
+      height: 0;
+    }
+    &_content {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-rows: auto;
+      grid-auto-flow: column;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
 
     &__card {
       display: flex;
@@ -6595,12 +6632,25 @@
 
     &__cards {
       margin-left: auto;
-      display: flex;
-      flex-wrap: nowrap;
       width: 215.2rem;
       height: 37.2rem;
-      gap: 2rem;
+    &_carousel {
+      overflow: auto;
+      scroll-behavior: auto;
+      scrollbar-width: none;
     }
+    &_carousel::-webkit-scrollbar {
+      height: 0;
+    }
+    &_content {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-rows: auto;
+      grid-auto-flow: column;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
 
     &__card {
       display: flex;
@@ -6794,12 +6844,25 @@
 
     &__cards {
       margin-left: 1rem;
-      display: flex;
-      flex-wrap: nowrap;
       width: 126.0rem;
       height: 54.9rem;
-      gap: 2rem;
+    &_carousel {
+      overflow: auto;
+      scroll-behavior: auto;
+      scrollbar-width: none;
     }
+    &_carousel::-webkit-scrollbar {
+      height: 0;
+    }
+    &_content {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-rows: auto;
+      grid-auto-flow: column;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
 
     &__card {
       display: flex;
@@ -6967,14 +7030,27 @@
       letter-spacing: -0.2px;
     }
 
-    &__cards {
+   &__cards {
       margin-left: 1rem;
-      display: flex;
-      flex-wrap: nowrap;
       width: 126.0rem;
       height: 54.9rem;
-      gap: 2rem;
+    &_carousel {
+      overflow: auto;
+      scroll-behavior: auto;
+      scrollbar-width: none;
     }
+    &_carousel::-webkit-scrollbar {
+      height: 0;
+    }
+    &_content {
+      display: grid;
+      grid-gap: 2rem;
+      grid-template-rows: auto;
+      grid-auto-flow: column;
+      margin: auto;
+      box-sizing: border-box;
+    }
+  }
 
     &__card {
       display: flex;
@@ -7628,7 +7704,7 @@
   }
 
   &__screen {
-    margin: 15rem auto 14.6rem;
+    margin: 15rem auto 15.5rem;
     img {
       width: 100%;
     }
