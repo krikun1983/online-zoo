@@ -133,6 +133,13 @@ li {
   z-index: 100000;
 }
 
+@media screen and (max-width: 1200px) {
+  #win1 {
+    top: calc(50% - 35rem);
+    left: calc(50% - 56.05rem);
+  }
+}
+
 .pop-ap-wrapper {
   position: relative;
   margin: 0 auto;
@@ -144,8 +151,25 @@ li {
   border-radius: .5rem;
 }
 
+@media screen and (max-width: 1200px) {
+  .pop-ap-wrapper {
+    width: 112.1rem;
+    height: 70rem;
+  }
+}
+
 .pop-ap-wrapper__top {
   height: 38.7rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .pop-ap-wrapper__top {
+    height: 31.2rem;
+  }
+  .pop-ap-wrapper__top img {
+    width: 112.1rem;
+    height: 31.2rem;
+  }
 }
 
 .pop-ap-wrapper-close {
