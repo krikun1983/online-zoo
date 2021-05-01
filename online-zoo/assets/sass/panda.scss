@@ -1155,19 +1155,19 @@ aside {
       // @include flex-block-justify();
       width: 100%;
       max-width: 104rem;
-
-
       height: 100%;
       display: grid;
+      grid-template-rows: auto;
       grid-template-columns: repeat(3,1fr);
       column-gap: 40px;
+      overflow: hidden;
     }
     &_item {
       position: relative;
       border-radius: 0.5rem;
       overflow: hidden;
       width: 100%;
-      height: 100%;
+      height: 209px;
 
       // padding-top: 3rem;
       // height: 0;
@@ -1482,7 +1482,6 @@ aside {
         border-radius: 5px;
         overflow: hidden;
         width: 100%;
-        height: 100%;
       }
 
       &_iframe_small {
@@ -1785,7 +1784,7 @@ aside {
           border-radius: 5px;
           overflow: hidden;
           width: 100%;
-          height: 100%;
+          height: 209px;
       }
 
       &_iframe_small {

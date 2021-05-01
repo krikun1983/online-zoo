@@ -2595,10 +2595,13 @@ aside {
   height: 100%;
   display: -ms-grid;
   display: grid;
+  -ms-grid-rows: auto;
+      grid-template-rows: auto;
   -ms-grid-columns: (1fr)[3];
       grid-template-columns: repeat(3, 1fr);
   -webkit-column-gap: 40px;
           column-gap: 40px;
+  overflow: hidden;
 }
 
 .cams__preview_item {
@@ -2606,7 +2609,7 @@ aside {
   border-radius: 0.5rem;
   overflow: hidden;
   width: 100%;
-  height: 100%;
+  height: 209px;
 }
 
 .cams__preview_iframe_small {
@@ -2936,7 +2939,6 @@ aside {
     border-radius: 5px;
     overflow: hidden;
     width: 100%;
-    height: 100%;
   }
   .cams__preview_iframe_small {
     width: 100%;
@@ -3233,7 +3235,7 @@ aside {
     border-radius: 5px;
     overflow: hidden;
     width: 100%;
-    height: 100%;
+    height: 209px;
   }
   .cams__preview_iframe_small {
     position: absolute;
