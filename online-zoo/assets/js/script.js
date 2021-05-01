@@ -42,22 +42,18 @@ const contentThink = document.querySelector('.users_think__cards_content');
 const nextThink = document.querySelector('.users_think__right');
 const prevThink = document.querySelector('.users_think__left');
 
-
-const slideType = 'all';
 let slideIndex = 0;
 let slideCoefficient = 2;
 
-// let width2 = carouselThink.offsetWidth;
-let imgWidth = document.querySelector('.users_think__card').offsetWidth;
+let cardWidth = document.querySelector('.users_think__card').offsetWidth;
 window.addEventListener('resize', (event) => {
-  // width2 = carouselThink.offsetWidth;
-  imgWidth = document.querySelector('.users_think__card').offsetWidth;
+  cardWidth = document.querySelector('.users_think__card').offsetWidth;
 });
 
 nextThink.addEventListener("click", (event) => {
   delayAuto();
   slideIndex += 2;
-  carouselThink.scrollTo((imgWidth + gap2) * slideIndex, 0);
+  carouselThink.scrollTo((cardWidth + gap2) * slideIndex, 0);
   if (slideIndex > 0) {
     prevThink.classList.remove('opacity');
   }
@@ -69,7 +65,7 @@ nextThink.addEventListener("click", (event) => {
 prevThink.addEventListener("click", (event) => {
   delayAuto()
   slideIndex -= 2;
-  carouselThink.scrollTo((imgWidth + gap2) * slideIndex, 0);
+  carouselThink.scrollTo((cardWidth + gap2) * slideIndex, 0);
   if (slideIndex < 6) {
     nextThink.classList.remove('opacity');
   }
@@ -93,7 +89,7 @@ const slideFunction = () => {
     prevThink.classList.add('opacity');
     nextThink.classList.remove('opacity');
   }
-  carouselThink.scrollTo((imgWidth + gap2) * slideIndex, 0);
+  carouselThink.scrollTo((cardWidth + gap2) * slideIndex, 0);
 }
 
 let autoInterval = setInterval(slideFunction, 15000);

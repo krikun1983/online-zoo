@@ -810,7 +810,7 @@ aside {
   width: 21rem;
   height: 84.6rem;
   background-color: $bg-dark-blue;
-  z-index: 1000;
+  z-index: 150;
   &__container {
     position: relative;
     padding-top: 8rem;
@@ -822,7 +822,7 @@ aside {
     position: absolute;
     top: 0;
     left: 0;
-    width: 11rem;
+    width: 11.2rem;
     height: 3.8rem;
     border-bottom-right-radius: 0.5rem;
     color: $text-white;
@@ -853,7 +853,22 @@ aside {
   &__list {
     @include flex-block-justify();
     flex-direction: column;
+    width: 100%;
+    height: 68.8rem;
+    position: relative;
+    &_content {
+      display: block;
+      @include flex-block-justify();
+      flex-direction: column;
+      width: 100%;
+      height: 68.8rem;
+      position: absolute;
+    }
+    .hidden{
+      display: none;
+    }
   }
+
   &__item {
     width: 100%;
     height: 17.2rem;
@@ -861,13 +876,21 @@ aside {
     justify-content: center;
     align-items: center;
     border-top: 1px solid $bg-white;
+    p {
+      display: none;
+      width: 16.9rem;
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      font-weight: normal;
+      color: $text-white;
+    }
     &_bg {
       position: relative;
       z-index: 15;
       display: flex;
       justify-content: center;
       align-items: center;
-      margin-right: 1rem;
       width: 10.5rem;
       height: 10.5rem;
       border-radius: 50%;
@@ -929,6 +952,85 @@ aside {
     background-repeat: no-repeat;
     background-size: cover;
   }
+}
+.sidebar.show {
+  width: 30rem;
+}
+.sidebar__link_brackets.show {
+    transform: scale(-1, 1);
+}
+.sidebar__life.show {
+  width: 12rem;
+}
+.sidebar__arrow.show {
+  right: 15rem;
+}
+.sidebar__item_bg.show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25.6rem;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  margin-left: 0.8rem;
+  p {
+    display: block;
+  }
+  .sidebar__item_body {
+    width: auto;
+    height: 5rem;
+    margin-right: 2.5rem;
+  }
+  .sidebar__item_icon {
+    fill: $bg-orange;
+  }
+  .sidebar__item_body.panda {
+    width: auto;
+    height: 5rem;
+  }
+  .sidebar__item_body.lemur {
+    margin-right: 3.8rem;
+  }
+}
+
+.sidebar__item_bg.show_active {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 0.8rem;
+  width: 25.6rem;
+  height: auto;
+  border-radius: 0;
+  background-color: transparent;
+  &::after {
+    display: none;
+  }
+  p {
+    display: block;
+  }
+  .sidebar__item_body {
+    width: auto;
+    height: 5rem;
+    margin-right: 2.5rem;
+  }
+  .sidebar__item_icon {
+    fill: $bg-white;
+  }
+  .sidebar__item_body.panda {
+    width: auto;
+    height: 5rem;
+  }
+  .sidebar__item_body.lemur {
+    margin-right: 3.8rem;
+  }
+}
+.sidebar__item_link.show {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: 100%;
 }
 
 //======Live cams======//

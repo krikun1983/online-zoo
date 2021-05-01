@@ -357,7 +357,6 @@ document.querySelector('.burger-header').onclick = function () {
 //Sidebar
 
 const btnArrowShowHidden = document.querySelector('.sidebar__link_brackets');
-const btnArrowShowBottomSlider = document.querySelector('.sidebar__arrow');
 
 const sidebar = document.querySelector('.sidebar');
 const sidebarLinkBrackets = document.querySelector('.sidebar__link_brackets');
@@ -388,4 +387,12 @@ btnArrowShowHidden.addEventListener('click', () => {
         elem.classList.toggle('show');
     })
 
+})
+
+const btnArrowShowBottomSlider = document.querySelector('.sidebar__arrow');
+const lists = document.querySelectorAll('.sidebar__list_content');
+btnArrowShowBottomSlider.addEventListener('click', () => {
+    lists.forEach(elem => {
+        elem.classList.toggle('hidden');
+    })
 })

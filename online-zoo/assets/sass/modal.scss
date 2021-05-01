@@ -69,8 +69,31 @@ aside {
   }
 
   &__list {
-    @include flex-block-justify();
-    flex-direction: column;
+    width: 100%;
+    height: 68.8rem;
+
+    &_carousel {
+      width: 100%;
+      height: 68.8rem;
+      position: relative;
+    }
+    &_content {
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 68.8rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      transition: All ease 1s;
+    }
+    &_content_img {
+      width: 100%;
+      height: 68.8rem;
+      display: block;
+    }
+    .hidden{
+      display: none;
+    }
   }
   &__item {
     width: 100%;
@@ -100,6 +123,7 @@ aside {
       background-color: $bg-dark-orange;
     }
     &_link {
+        position: relative;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -107,7 +131,7 @@ aside {
         height: 100%;
     }
     &_body {
-      width: 6.5rem;
+      width: 100%;
       height: 6.5rem;
     }
     &_icon {
@@ -203,6 +227,7 @@ aside {
   p {
     display: block;
   }
+
   .sidebar__item_body {
     width: auto;
     height: 5rem;
@@ -218,6 +243,7 @@ aside {
   .sidebar__item_body.lemur {
     margin-right: 3.8rem;
   }
+
 }
 .sidebar__item_link.show {
   display: flex;
@@ -226,4 +252,6 @@ aside {
   width: 100%;
   height: 100%;
 }
+
+
 
