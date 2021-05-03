@@ -172,8 +172,13 @@ const modalBtnsDonatNumbers = document.querySelectorAll('.form-block__pop-ap-btn
 modalBtnsNumbersParent.addEventListener('click', (event) => {
   event.preventDefault();
   inputDonatOne.value = event.target.value;
-  hiddenModal();
-  openModalDonatOne();
+  if (event.target.contains(modalBtnsNumbersParent)){
+    return;
+  } else {
+    hiddenModal();
+    openModalDonatOne();
+  }
+
   if (event.target.value == '') {
     inputDonatOne.focus();
   } else {
@@ -195,6 +200,13 @@ showModalDonatOneBtn.addEventListener('click', (event) => {
   }
   inputDonatOne.value = inputPageDonat.value;
   openModalDonatOne();
+  modalBtnsDonatNumbers.forEach((btn) => {
+      if (btn.value == inputPageDonat.value) {
+        btn.classList.add('btn-active');
+      } else {
+        btn.classList.remove('btn-active');
+      }
+  })
 })
 //Закрываем первое окно донаты нажатием на мимо окна
 modalDonatOne.addEventListener('click', (event) => {
