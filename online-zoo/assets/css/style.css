@@ -148,7 +148,7 @@ li {
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 @media screen and (max-width: 1200px) {
@@ -249,7 +249,7 @@ li {
   color: #ffffff;
   background-color: #00A092;
   border: 0;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .pop-ap-wrapper .pop-ap-btn:hover {
@@ -285,7 +285,7 @@ li {
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .form-donation-wrapper__header {
@@ -308,8 +308,8 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #f58021;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .form-donation-wrapper__info {
@@ -321,7 +321,7 @@ li {
   line-height: 2.7rem;
   font-family: "Montserrat Semibold";
   font-weight: normal;
-  border-bottom: 1px solid #A4A8AE;
+  border-bottom: 1px solid #a4a8ae;
 }
 
 .form-donation-wrapper__block {
@@ -378,8 +378,8 @@ li {
   color: #ffffff;
   background-color: #00A092;
   border: 0;
-  border-radius: .5rem;
-  opacity: .5;
+  border-radius: 0.5rem;
+  opacity: 0.5;
 }
 
 .form-donation-wrapper .form-block__pop-ap-btn:hover {
@@ -411,7 +411,7 @@ li {
   width: 20rem;
   height: 6.5rem;
   border: 1px solid #000000;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.8rem;
   line-height: 2.194rem;
   font-family: "Montserrat Semibold";
@@ -500,7 +500,7 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-image: url("../icons/UnionRightWhite.svg");
   background-repeat: no-repeat;
   background-position: center right 33%;
@@ -512,7 +512,7 @@ li {
 }
 
 .form-donation-wrapper .form-block__button_arrow.invalid {
-  cursor: none;
+  cursor: default;
   background-color: #d0d1d4;
 }
 
@@ -550,8 +550,8 @@ li {
   color: #ffffff;
   background-color: #00A092;
   border: 0;
-  border-radius: .5rem;
-  opacity: .5;
+  border-radius: 0.5rem;
+  opacity: 0.5;
 }
 
 .form-donation-wrapper .form-block__select select {
@@ -559,7 +559,7 @@ li {
   padding-left: 1rem;
   width: 44rem;
   height: 6.5rem;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   font-size: 1.8rem;
   line-height: 2.7rem;
   font-family: "Montserrat Regular";
@@ -600,8 +600,8 @@ li {
   background-position: center;
   background-size: auto;
   border: 1px solid #000000;
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -631,7 +631,7 @@ li {
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-two__header {
@@ -654,8 +654,8 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #f58021;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .win-donation-two__info {
@@ -667,7 +667,7 @@ li {
   line-height: 2.7rem;
   font-family: "Montserrat Semibold";
   font-weight: normal;
-  border-bottom: 1px solid #A4A8AE;
+  border-bottom: 1px solid #a4a8ae;
 }
 
 .win-donation-two__form {
@@ -715,7 +715,7 @@ li {
   font-weight: normal;
   color: #a4a8ae;
   border: 1px solid #000000;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-two__form p {
@@ -785,7 +785,7 @@ li {
   color: #00A092;
   background-color: transparent;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-two__form-buttom_back:hover {
@@ -814,7 +814,7 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-image: url("../icons/UnionRightWhite.svg");
   background-repeat: no-repeat;
   background-position: center right 33%;
@@ -826,7 +826,7 @@ li {
 }
 
 .win-donation-two__form-buttom_next.invalid {
-  cursor: none;
+  cursor: default;
   background-color: #d0d1d4;
 }
 
@@ -851,7 +851,7 @@ li {
   background-color: #ffffff;
   -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-three__header {
@@ -874,8 +874,8 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   background-color: #f58021;
-  border-top-right-radius: .5rem;
-  border-top-left-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
 }
 
 .win-donation-three__info {
@@ -887,7 +887,7 @@ li {
   line-height: 2.7rem;
   font-family: "Montserrat Semibold";
   font-weight: normal;
-  border-bottom: 1px solid #A4A8AE;
+  border-bottom: 1px solid #a4a8ae;
 }
 
 .win-donation-three__form {
@@ -938,7 +938,7 @@ li {
   font-weight: normal;
   color: #000000;
   border: 1px solid #000000;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-three__form input.invalidInput {
@@ -982,7 +982,7 @@ li {
   font-weight: normal;
   color: #a4a8ae;
   border: 1px solid #000000;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-three__form-date_year select option, .win-donation-three__form-date_month select option {
@@ -1010,8 +1010,8 @@ li {
   background-position: center;
   background-size: auto;
   border: 1px solid #000000;
-  border-top-right-radius: .5rem;
-  border-bottom-right-radius: .5rem;
+  border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
@@ -1073,7 +1073,7 @@ li {
   color: #00A092;
   background-color: transparent;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
 }
 
 .win-donation-three__form-buttom_back:hover {
@@ -1102,7 +1102,7 @@ li {
   text-transform: uppercase;
   color: #ffffff;
   border: none;
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   background-image: url("../icons/UnionRightWhite.svg");
   background-repeat: no-repeat;
   background-position: center right 16%;
@@ -1114,7 +1114,7 @@ li {
 }
 
 .win-donation-three__form-buttom_complete.invalid {
-  cursor: none;
+  cursor: default;
   background-color: #d0d1d4;
 }
 
@@ -2462,7 +2462,7 @@ li {
   .favorite__header {
     width: 30rem;
     font-family: "Montserrat Bold";
-    font-size: 4.0rem;
+    font-size: 4rem;
     line-height: 4.8rem;
     text-transform: uppercase;
     color: #00A092;
@@ -2544,7 +2544,7 @@ li {
   .favorite__header {
     width: 30rem;
     font-family: "Montserrat Bold";
-    font-size: 4.0rem;
+    font-size: 4rem;
     line-height: 4.8rem;
     text-transform: uppercase;
     color: #00A092;
@@ -3621,7 +3621,7 @@ li {
   margin: 0;
 }
 
-.donation__input[type=number] {
+.donation__input[type="number"] {
   -moz-appearance: textfield;
 }
 
@@ -3768,7 +3768,7 @@ li {
     -webkit-appearance: none;
     margin: 0;
   }
-  .donation__input[type=number] {
+  .donation__input[type="number"] {
     -moz-appearance: textfield;
   }
   .donation__btn {
@@ -3913,7 +3913,7 @@ li {
     -webkit-appearance: none;
     margin: 0;
   }
-  .donation__input[type=number] {
+  .donation__input[type="number"] {
     -moz-appearance: textfield;
   }
   .donation__btn {
@@ -4058,7 +4058,7 @@ li {
     -webkit-appearance: none;
     margin: 0;
   }
-  .donation__input[type=number] {
+  .donation__input[type="number"] {
     -moz-appearance: textfield;
   }
   .donation__btn {
@@ -4203,7 +4203,7 @@ li {
     -webkit-appearance: none;
     margin: 0;
   }
-  .donation__input[type=number] {
+  .donation__input[type="number"] {
     -moz-appearance: textfield;
   }
   .donation__btn {
@@ -4347,7 +4347,7 @@ li {
     -webkit-appearance: none;
     margin: 0;
   }
-  .donation__input[type=number] {
+  .donation__input[type="number"] {
     -moz-appearance: textfield;
   }
   .donation__btn {
@@ -4491,7 +4491,7 @@ li {
     -webkit-appearance: none;
     margin: 0;
   }
-  .donation__input[type=number] {
+  .donation__input[type="number"] {
     -moz-appearance: textfield;
   }
   .donation__btn {
@@ -4655,7 +4655,7 @@ li {
 }
 
 .friends__carts_content::after {
-  content: '';
+  content: "";
   width: 480px;
   height: auto;
 }
@@ -5894,7 +5894,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 24.0rem;
+    width: 24rem;
     height: 7.3rem;
     font-family: "Montserrat Semibold";
     font-size: 1.8rem;
@@ -6155,7 +6155,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 24.0rem;
+    width: 24rem;
     height: 7.3rem;
     font-family: "Montserrat Semibold";
     font-size: 1.8rem;
@@ -6416,7 +6416,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 24.0rem;
+    width: 24rem;
     height: 7.3rem;
     font-family: "Montserrat Semibold";
     font-size: 1.8rem;
@@ -6557,7 +6557,7 @@ li {
   }
   .friends__carts {
     position: relative;
-    width: 31.0rem;
+    width: 31rem;
     height: 62rem;
     margin-top: 1rem;
     margin-left: 0.5rem;
@@ -6678,7 +6678,7 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    width: 24.0rem;
+    width: 24rem;
     height: 7.3rem;
     font-family: "Montserrat Semibold";
     font-size: 1.8rem;
@@ -8808,7 +8808,7 @@ li {
   .users_think {
     padding-top: 8rem;
     width: 100%;
-    height: 167.0rem;
+    height: 167rem;
     background-color: #20113d;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
@@ -9051,7 +9051,7 @@ li {
   .users_think {
     padding-top: 8rem;
     width: 100%;
-    height: 167.0rem;
+    height: 167rem;
     background-color: #20113d;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
@@ -9347,7 +9347,7 @@ li {
   }
   .users_think__cards {
     margin-left: 1rem;
-    width: 126.0rem;
+    width: 126rem;
     height: 54.9rem;
   }
   .users_think__cards_carousel {
@@ -9383,7 +9383,7 @@ li {
     position: relative;
     padding-top: 5rem;
     padding-left: 0;
-    width: 30.0rem;
+    width: 30rem;
     height: 54.9rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
@@ -9564,7 +9564,7 @@ li {
   }
   .users_think__cards {
     margin-left: 1rem;
-    width: 126.0rem;
+    width: 126rem;
     height: 54.9rem;
   }
   .users_think__cards_carousel {
@@ -9600,7 +9600,7 @@ li {
     position: relative;
     padding-top: 5rem;
     padding-left: 0;
-    width: 30.0rem;
+    width: 30rem;
     height: 54.9rem;
     background-color: #ffffff;
     border-radius: 0.5rem;
@@ -10830,7 +10830,7 @@ li {
     background-color: #000000;
   }
   .animals_love__choose {
-    margin-top: 5.0rem;
+    margin-top: 5rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11085,7 +11085,7 @@ li {
     background-color: #000000;
   }
   .animals_love__choose {
-    margin-top: 5.0rem;
+    margin-top: 5rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11197,7 +11197,7 @@ li {
   .animals_love__cards {
     margin: 0 auto;
     margin-left: 1rem;
-    width: 126.0rem;
+    width: 126rem;
     height: 57rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11342,7 +11342,7 @@ li {
     background-color: #000000;
   }
   .animals_love__choose {
-    margin-top: 5.0rem;
+    margin-top: 5rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11454,7 +11454,7 @@ li {
   .animals_love__cards {
     margin: 0 auto;
     margin-left: 1rem;
-    width: 126.0rem;
+    width: 126rem;
     height: 57rem;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -11599,7 +11599,7 @@ li {
     background-color: #000000;
   }
   .animals_love__choose {
-    margin-top: 5.0rem;
+    margin-top: 5rem;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;

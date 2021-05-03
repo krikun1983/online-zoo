@@ -6,12 +6,12 @@
 //modal window one
 .pop-ap-wrapper-container {
   position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1000;
-	background-color: rgba(0,0,0, .7);
-	width: 100%;
-	height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
 }
 #win1 {
   position: fixed;
@@ -32,7 +32,7 @@
   -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   @media screen and (max-width: 1200px) {
     width: 112.1rem;
     height: 70rem;
@@ -103,7 +103,7 @@
     color: $text-white;
     background-color: $bg-green-lite;
     border: 0;
-    border-radius: .5rem;
+    border-radius: 0.5rem;
     &:hover {
       background-color: $bg-green-dark;
     }
@@ -118,12 +118,12 @@
 //modal window two
 .form-donation-wrapper-container {
   position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1000;
-	background-color: rgba(0,0,0, .7);
-	width: 100%;
-	height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
 }
 #win-form-step1 {
   position: fixed;
@@ -140,7 +140,7 @@
   -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-  border-radius: .5rem;
+  border-radius: 0.5rem;
   &__header {
     display: flex;
     justify-content: center;
@@ -155,8 +155,8 @@
     text-transform: uppercase;
     color: $text-white;
     background-color: $bg-orange;
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
   }
   &__info {
     width: 100%;
@@ -167,7 +167,7 @@
     line-height: 2.7rem;
     font-family: $fontsMont-600;
     font-weight: normal;
-    border-bottom: 1px solid #A4A8AE;
+    border-bottom: 1px solid #a4a8ae;
   }
   &__block {
     margin: 4rem auto 0;
@@ -210,8 +210,8 @@
       color: $text-white;
       background-color: $bg-green-lite;
       border: 0;
-      border-radius: .5rem;
-      opacity: .5;
+      border-radius: 0.5rem;
+      opacity: 0.5;
       &:hover {
         opacity: 1;
       }
@@ -228,14 +228,13 @@
         width: 20rem;
         opacity: 1;
       }
-
     }
     &__input {
       padding-left: 1rem;
       width: 20rem;
       height: 6.5rem;
       border: 1px solid $bg-default;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       font-size: 1.8rem;
       line-height: 2.194rem;
       font-family: $fontsMont-600;
@@ -296,8 +295,8 @@
         text-transform: uppercase;
         color: $text-white;
         border: none;
-        border-radius: .5rem;
-        background-image: url('../icons/UnionRightWhite.svg');
+        border-radius: 0.5rem;
+        background-image: url("../icons/UnionRightWhite.svg");
         background-repeat: no-repeat;
         background-position: center right 33%;
         background-color: $text-green-lite;
@@ -306,7 +305,7 @@
         }
       }
       &_arrow.invalid {
-        cursor: none;
+        cursor: default;
         background-color: #d0d1d4;
       }
     }
@@ -331,15 +330,15 @@
       color: $text-white;
       background-color: $bg-green-lite;
       border: 0;
-      border-radius: .5rem;
-      opacity: .5;
+      border-radius: 0.5rem;
+      opacity: 0.5;
     }
     select {
       cursor: pointer;
       padding-left: 1rem;
       width: 44rem;
       height: 6.5rem;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
       font-size: 1.8rem;
       line-height: 2.7rem;
       font-family: $fontsMont-400;
@@ -352,8 +351,8 @@
       color: $text-default;
     }
     option[selected] {
-        padding-left: 10.6rem;
-     }
+      padding-left: 10.6rem;
+    }
     option:checked {
       background-color: $bg-green-lite;
       color: $text-white;
@@ -369,13 +368,13 @@
       width: 3.2rem;
       height: 6.5rem;
       pointer-events: none;
-      background-image: url('../images/modal/arraw.svg');
+      background-image: url("../images/modal/arraw.svg");
       background-repeat: no-repeat;
       background-position: center;
-      background-size:auto;
+      background-size: auto;
       border: 1px solid $bg-default;
-      border-top-right-radius: .5rem;
-      border-bottom-right-radius: .5rem;
+      border-top-right-radius: 0.5rem;
+      border-bottom-right-radius: 0.5rem;
       box-sizing: border-box;
     }
   }
@@ -390,12 +389,12 @@
 
 .win-donation-two {
   position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1000;
-	background-color: rgba(0,0,0, .7);
-	width: 100%;
-	height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
 
   &__wrapper {
     position: fixed;
@@ -409,7 +408,7 @@
     -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
   &__header {
@@ -426,8 +425,8 @@
     text-transform: uppercase;
     color: $text-white;
     background-color: $bg-orange;
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
   }
 
   &__info {
@@ -439,7 +438,7 @@
     line-height: 2.7rem;
     font-family: $fontsMont-600;
     font-weight: normal;
-    border-bottom: 1px solid #A4A8AE;
+    border-bottom: 1px solid #a4a8ae;
   }
 
   &__form {
@@ -475,7 +474,7 @@
       font-weight: normal;
       color: #a4a8ae;
       border: 1px solid $bg-default;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
     }
     p {
       margin-top: 1rem;
@@ -522,7 +521,7 @@
         color: $text-green-lite;
         background-color: transparent;
         border: none;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         &:hover {
           color: $text-white;
           background-color: $text-green-lite;
@@ -543,8 +542,8 @@
         text-transform: uppercase;
         color: $text-white;
         border: none;
-        border-radius: .5rem;
-        background-image: url('../icons/UnionRightWhite.svg');
+        border-radius: 0.5rem;
+        background-image: url("../icons/UnionRightWhite.svg");
         background-repeat: no-repeat;
         background-position: center right 33%;
         background-color: $text-green-lite;
@@ -553,23 +552,21 @@
         }
       }
       &_next.invalid {
-        cursor: none;
+        cursor: default;
         background-color: #d0d1d4;
       }
-
     }
   }
-
 }
 //end modal window three
 .win-donation-three {
   position: fixed;
-	left: 0;
-	top: 0;
-	z-index: 1000;
-	background-color: rgba(0,0,0, .7);
-	width: 100%;
-	height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 1000;
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
 
   &__wrapper {
     position: fixed;
@@ -583,7 +580,7 @@
     -webkit-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
     -moz-box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 4px 4px 50px 0px rgba(0, 0, 0, 0.25);
-    border-radius: .5rem;
+    border-radius: 0.5rem;
   }
 
   &__header {
@@ -600,8 +597,8 @@
     text-transform: uppercase;
     color: $text-white;
     background-color: $bg-orange;
-    border-top-right-radius: .5rem;
-    border-top-left-radius: .5rem;
+    border-top-right-radius: 0.5rem;
+    border-top-left-radius: 0.5rem;
   }
 
   &__info {
@@ -613,7 +610,7 @@
     line-height: 2.7rem;
     font-family: $fontsMont-600;
     font-weight: normal;
-    border-bottom: 1px solid #A4A8AE;
+    border-bottom: 1px solid #a4a8ae;
   }
 
   &__form {
@@ -653,7 +650,7 @@
       font-weight: normal;
       color: $text-default;
       border: 1px solid $bg-default;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
     }
     input.invalidInput {
       color: red;
@@ -690,7 +687,7 @@
           font-weight: normal;
           color: #a4a8ae;
           border: 1px solid $bg-default;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
           option {
             color: $text-default;
           }
@@ -710,13 +707,13 @@
           width: 3.2rem;
           height: 6.5rem;
           pointer-events: none;
-          background-image: url('../images/modal/arraw.svg');
+          background-image: url("../images/modal/arraw.svg");
           background-repeat: no-repeat;
           background-position: center;
-          background-size:auto;
+          background-size: auto;
           border: 1px solid $bg-default;
-          border-top-right-radius: .5rem;
-          border-bottom-right-radius: .5rem;
+          border-top-right-radius: 0.5rem;
+          border-bottom-right-radius: 0.5rem;
           box-sizing: border-box;
         }
       }
@@ -757,7 +754,7 @@
         color: $text-green-lite;
         background-color: transparent;
         border: none;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
         &:hover {
           color: $text-white;
           background-color: $text-green-lite;
@@ -778,8 +775,8 @@
         text-transform: uppercase;
         color: $text-white;
         border: none;
-        border-radius: .5rem;
-        background-image: url('../icons/UnionRightWhite.svg');
+        border-radius: 0.5rem;
+        background-image: url("../icons/UnionRightWhite.svg");
         background-repeat: no-repeat;
         background-position: center right 16%;
         background-color: $bg-error;
@@ -788,10 +785,9 @@
         }
       }
       &_complete.invalid {
-        cursor: none;
+        cursor: default;
         background-color: #d0d1d4;
       }
-
     }
   }
 }
@@ -810,62 +806,61 @@
   background-position: center;
   background-size: cover;
 
-    &__container {
-      margin: 0 auto;
-      width: 100%;
-      max-width: $desktop;
-      padding-top: 12.9rem;
-    }
-    &__header {
-      width: 100%;
-      max-width: 89rem;
-      font-family: $fontsMont-800;
-      font-size: 8.2rem;
-      line-height: 10rem;
-      text-transform: uppercase;
-      color: $text-green-lite;
-      letter-spacing: 0.08rem;
-      margin-bottom: 3.2rem;
-    }
-    &__text {
-      width: 43rem;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      color: $text-default;
-      margin-bottom: 4.3rem;
-    }
-    &__btn {
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
+    padding-top: 12.9rem;
+  }
+  &__header {
+    width: 100%;
+    max-width: 89rem;
+    font-family: $fontsMont-800;
+    font-size: 8.2rem;
+    line-height: 10rem;
+    text-transform: uppercase;
+    color: $text-green-lite;
+    letter-spacing: 0.08rem;
+    margin-bottom: 3.2rem;
+  }
+  &__text {
+    width: 43rem;
+    font-family: $fontsMont-400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $text-default;
+    margin-bottom: 4.3rem;
+  }
+  &__btn {
+    @include flex-block-center();
+    width: 24rem;
+    height: 7.4rem;
+    background-color: $bg-orange;
+    font-family: $fontsMont-600;
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: $text-white;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 0.5rem;
+    padding-left: 3px;
+    &_link {
       @include flex-block-center();
-      width: 24rem;
-      height: 7.4rem;
-      background-color: $bg-orange;
-      font-family: $fontsMont-600;
-      font-size: 1.8rem;
-      line-height: 2.2rem;
+      text-decoration: none;
       color: $text-white;
-      text-transform: uppercase;
-      border: none;
-      border-radius: 0.5rem;
-      padding-left: 3px;
-      &_link {
-        @include flex-block-center();
-        text-decoration: none;
-        color: $text-white;
-        width: 100%;
-        height: 100%;
-      }
-      img {
-        margin-left: 1rem;
-      }
-      &:hover {
-        background-color: $bg-dark-orange;
-      }
+      width: 100%;
+      height: 100%;
     }
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-orange;
+    }
+  }
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .favorite {
     width: 100%;
     height: 69rem;
@@ -892,11 +887,9 @@
       padding-left: 3px;
     }
   }
-
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .favorite {
     width: 100%;
     height: 69rem;
@@ -923,11 +916,9 @@
       padding-left: 3px;
     }
   }
-
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
   .favorite {
     width: 100%;
     max-width: 900px;
@@ -990,11 +981,9 @@
       }
     }
   }
-
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
   .favorite {
     width: 100%;
     max-width: $tablet-mini;
@@ -1054,11 +1043,9 @@
       }
     }
   }
-
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
   .favorite {
     width: 100%;
     max-width: 480px;
@@ -1079,7 +1066,7 @@
     &__header {
       width: 30rem;
       font-family: $fontsMont-800;
-      font-size: 4.0rem;
+      font-size: 4rem;
       line-height: 4.8rem;
       text-transform: uppercase;
       color: $text-green-lite;
@@ -1122,11 +1109,9 @@
       }
     }
   }
-
 }
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
   .favorite {
     width: 100%;
     max-width: $mobile;
@@ -1147,7 +1132,7 @@
     &__header {
       width: 30rem;
       font-family: $fontsMont-800;
-      font-size: 4.0rem;
+      font-size: 4rem;
       line-height: 4.8rem;
       text-transform: uppercase;
       color: $text-green-lite;
@@ -1190,7 +1175,6 @@
       }
     }
   }
-
 }
 //======Welcome to the zoo / How it works======//
 .temp {
@@ -1201,62 +1185,60 @@
 .welcome {
   width: 100%;
 
-    &__container {
-      margin: 0 auto;
+  &__container {
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 121.4rem;
+    margin-top: 15rem;
+    margin-bottom: 14.8rem;
+  }
+
+  &__news {
+    @include flex-block-justify();
+  }
+
+  &__main {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__heading {
+    font-family: $fontsMont-600;
+    font-size: 5.4rem;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+    color: $text-green-lite;
+    margin-bottom: 5rem;
+  }
+
+  &__text {
+    width: 100%;
+    max-width: 56rem;
+    font-family: $fontsMont-400;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
+    color: $text-default;
+  }
+
+  &__img {
+    width: 100%;
+    max-width: 80rem;
+
+    img {
       width: 100%;
-      max-width: $desktop;
+      height: auto;
     }
-
-    &__block {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      height: 121.4rem;
-      margin-top: 15rem;
-      margin-bottom: 14.8rem;
-    }
-
-    &__news {
-      @include flex-block-justify();
-    }
-
-    &__main {
-      display: flex;
-      flex-direction: column;
-    }
-
-    &__heading {
-      font-family: $fontsMont-600;
-      font-size: 5.4rem;
-      line-height: 6.5rem;
-      text-transform: uppercase;
-      color: $text-green-lite;
-      margin-bottom: 5rem;
-    }
-
-    &__text {
-      width: 100%;
-      max-width: 56rem;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      color: $text-default;
-    }
-
-    &__img {
-      width: 100%;
-      max-width: 80rem;
-
-      img {
-        width: 100%;
-        height: auto;
-      }
-
-    }
+  }
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .temp {
     position: relative;
     top: -1.1rem;
@@ -1298,7 +1280,6 @@
     &__main {
       display: flex;
       flex-direction: column;
-
     }
 
     &__heading {
@@ -1335,7 +1316,6 @@
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .temp {
     position: relative;
     top: -1.1rem;
@@ -1377,7 +1357,6 @@
     &__main {
       display: flex;
       flex-direction: column;
-
     }
 
     &__heading {
@@ -1414,7 +1393,6 @@
 }
 ////////////////1024////////////////////////
 @media screen and (max-width: 1024px) {
-
   .temp {
     position: relative;
     top: -1.1rem;
@@ -1458,7 +1436,6 @@
     &__main {
       display: flex;
       flex-direction: column;
-
     }
 
     &__heading {
@@ -1495,7 +1472,6 @@
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
   .temp {
     position: relative;
     top: -1.1rem;
@@ -1546,7 +1522,6 @@
     &__main {
       display: flex;
       flex-direction: column;
-
     }
 
     &__heading {
@@ -1581,13 +1556,11 @@
         width: 100%;
         height: 43.8rem;
       }
-
     }
   }
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
   .temp {
     position: relative;
     top: -1.1rem;
@@ -1674,13 +1647,11 @@
         width: 100%;
         height: 43.8rem;
       }
-
     }
   }
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
   .temp {
     position: relative;
     top: -9px;
@@ -1769,13 +1740,11 @@
         width: 100%;
         height: auto;
       }
-
     }
   }
 }
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
   .temp {
     position: relative;
     top: -9px;
@@ -1865,7 +1834,6 @@
         width: 100%;
         height: 21.8rem;
       }
-
     }
   }
 }
@@ -1878,14 +1846,14 @@
   background-color: $bg-dark-blue;
 
   &__container {
-      @include flex-block-justify();
-      align-items: flex-start;
-      margin: 0 auto;
-      padding-top: 0.9rem;
-      width: 100%;
-      max-width: $desktop;
-      padding-top: 50px;
-      padding-bottom: 46px;
+    @include flex-block-justify();
+    align-items: flex-start;
+    margin: 0 auto;
+    padding-top: 0.9rem;
+    width: 100%;
+    max-width: $desktop;
+    padding-top: 50px;
+    padding-bottom: 46px;
   }
 
   &__heading {
@@ -1919,16 +1887,16 @@
     line-height: 3.38rem;
     color: $text-white;
     &::before {
-        content: "$";
-        position: absolute;
-        padding-left: 1rem;
-        z-index: 15;
-        top: 7rem;
-        left: 0.3rem;
-        font-size: 1.8rem;
-        line-height: 2.2rem;
-        font-family: $fontsMont-600;
-        color: $text-white;
+      content: "$";
+      position: absolute;
+      padding-left: 1rem;
+      z-index: 15;
+      top: 7rem;
+      left: 0.3rem;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      font-family: $fontsMont-600;
+      color: $text-white;
     }
   }
 
@@ -1948,60 +1916,59 @@
     text-transform: uppercase;
     color: $text-white;
     -moz-appearance: textfield;
-      &::-webkit-input-placeholder {
-        color: $text-white;
-      }
-      &::-moz-placeholder {
-        color: $text-white;
-        opacity:1;
-      }
-      &:focus::-webkit-input-placeholder {
-         opacity:0;
-      }
-      &:focus::-moz-placeholder {
-         opacity:0;
-      }
+    &::-webkit-input-placeholder {
+      color: $text-white;
+    }
+    &::-moz-placeholder {
+      color: $text-white;
+      opacity: 1;
+    }
+    &:focus::-webkit-input-placeholder {
+      opacity: 0;
+    }
+    &:focus::-moz-placeholder {
+      opacity: 0;
+    }
 
-      &:hover {
-        -moz-appearance: none;
-      }
-      &:focus {
-        -moz-appearance: none;
-      }
-      &::-webkit-outer-spin-button,
-      &::-webkit-inner-spin-button {
+    &:hover {
+      -moz-appearance: none;
+    }
+    &:focus {
+      -moz-appearance: none;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
       -webkit-appearance: none;
-        margin: 0;
-      }
+      margin: 0;
+    }
 
-      /* Firefox */
-      &[type=number] {
-        -moz-appearance: textfield;
-      }
+    /* Firefox */
+    &[type="number"] {
+      -moz-appearance: textfield;
+    }
   }
 
-    &__btn {
-      cursor: pointer;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      @include flex-block-center();
-      width: 8rem;
-      height: 7.4rem;
-      background-color: $bg-orange;
-      border-radius: 0.5rem;
-      border-top: 1px solid $bg-white;
-      border-right: 1px solid $bg-white;
-      border-bottom: 1px solid $bg-white;
-      border-left: none;
-        &:hover {
-          background-color: $bg-dark-orange;
-        }
+  &__btn {
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    @include flex-block-center();
+    width: 8rem;
+    height: 7.4rem;
+    background-color: $bg-orange;
+    border-radius: 0.5rem;
+    border-top: 1px solid $bg-white;
+    border-right: 1px solid $bg-white;
+    border-bottom: 1px solid $bg-white;
+    border-left: none;
+    &:hover {
+      background-color: $bg-dark-orange;
     }
+  }
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .donation {
     display: flex;
     align-items: flex-start;
@@ -2052,47 +2019,47 @@
       line-height: 3.38rem;
       color: $text-white;
       &::before {
-          content: "$";
-          position: absolute;
-          padding-left: 1rem;
-          z-index: 15;
-          top: 7rem;
-          left: 0.3rem;
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          font-family: $fontsMont-600;
-          color: $text-white;
+        content: "$";
+        position: absolute;
+        padding-left: 1rem;
+        z-index: 15;
+        top: 7rem;
+        left: 0.3rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-family: $fontsMont-600;
+        color: $text-white;
       }
     }
 
-  &__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 9rem;
-    width: 32rem;
-    height: 7.4rem;
-    border: 1px solid $bg-white;
-    border-radius: 0.5rem;
-    background-color: $bg-dark-blue;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-    color: $text-white;
-    -moz-appearance: textfield;
+    &__input {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 3rem;
+      padding-right: 9rem;
+      width: 32rem;
+      height: 7.4rem;
+      border: 1px solid $bg-white;
+      border-radius: 0.5rem;
+      background-color: $bg-dark-blue;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      text-transform: uppercase;
+      color: $text-white;
+      -moz-appearance: textfield;
       &::-webkit-input-placeholder {
         color: $text-white;
       }
       &::-moz-placeholder {
         color: $text-white;
-        opacity:1;
+        opacity: 1;
       }
       &:focus::-webkit-input-placeholder {
-         opacity:0;
+        opacity: 0;
       }
       &:focus::-moz-placeholder {
-         opacity:0;
+        opacity: 0;
       }
 
       &:hover {
@@ -2103,17 +2070,17 @@
       }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
         margin: 0;
       }
 
       /* Firefox */
-      &[type=number] {
+      &[type="number"] {
         -moz-appearance: textfield;
       }
-  }
+    }
 
-  &__btn {
+    &__btn {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2129,13 +2096,11 @@
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .donation {
     display: flex;
     align-items: flex-start;
@@ -2186,47 +2151,47 @@
       line-height: 3.38rem;
       color: $text-white;
       &::before {
-          content: "$";
-          position: absolute;
-          padding-left: 1rem;
-          z-index: 15;
-          top: 7rem;
-          left: 0.3rem;
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          font-family: $fontsMont-600;
-          color: $text-white;
+        content: "$";
+        position: absolute;
+        padding-left: 1rem;
+        z-index: 15;
+        top: 7rem;
+        left: 0.3rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-family: $fontsMont-600;
+        color: $text-white;
       }
     }
 
-  &__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 3rem;
-    padding-right: 9rem;
-    width: 32rem;
-    height: 7.4rem;
-    border: 1px solid $bg-white;
-    border-radius: 0.5rem;
-    background-color: $bg-dark-blue;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-    color: $text-white;
-    -moz-appearance: textfield;
+    &__input {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 3rem;
+      padding-right: 9rem;
+      width: 32rem;
+      height: 7.4rem;
+      border: 1px solid $bg-white;
+      border-radius: 0.5rem;
+      background-color: $bg-dark-blue;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      text-transform: uppercase;
+      color: $text-white;
+      -moz-appearance: textfield;
       &::-webkit-input-placeholder {
         color: $text-white;
       }
       &::-moz-placeholder {
         color: $text-white;
-        opacity:1;
+        opacity: 1;
       }
       &:focus::-webkit-input-placeholder {
-         opacity:0;
+        opacity: 0;
       }
       &:focus::-moz-placeholder {
-         opacity:0;
+        opacity: 0;
       }
 
       &:hover {
@@ -2237,17 +2202,17 @@
       }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
         margin: 0;
       }
 
       /* Firefox */
-      &[type=number] {
+      &[type="number"] {
         -moz-appearance: textfield;
       }
-  }
+    }
 
-  &__btn {
+    &__btn {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2263,13 +2228,11 @@
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
   .donation {
     display: flex;
     align-items: flex-start;
@@ -2324,47 +2287,47 @@
       line-height: 3.38rem;
       color: $text-white;
       &::before {
-          content: "$";
-          position: absolute;
-          padding-left: 3.4rem;
-          z-index: 15;
-          top: 7rem;
-          left: 0.3rem;
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          font-family: $fontsMont-600;
-          color: $text-white;
+        content: "$";
+        position: absolute;
+        padding-left: 3.4rem;
+        z-index: 15;
+        top: 7rem;
+        left: 0.3rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-family: $fontsMont-600;
+        color: $text-white;
       }
     }
 
-  &__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 5.5rem;
-    padding-right: 9rem;
-    width: 36.3rem;
-    height: 7.4rem;
-    border: 1px solid $bg-white;
-    border-radius: 0.5rem;
-    background-color: $bg-dark-blue;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-    color: $text-white;
-    -moz-appearance: textfield;
+    &__input {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 5.5rem;
+      padding-right: 9rem;
+      width: 36.3rem;
+      height: 7.4rem;
+      border: 1px solid $bg-white;
+      border-radius: 0.5rem;
+      background-color: $bg-dark-blue;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      text-transform: uppercase;
+      color: $text-white;
+      -moz-appearance: textfield;
       &::-webkit-input-placeholder {
         color: $text-white;
       }
       &::-moz-placeholder {
         color: $text-white;
-        opacity:1;
+        opacity: 1;
       }
       &:focus::-webkit-input-placeholder {
-         opacity:0;
+        opacity: 0;
       }
       &:focus::-moz-placeholder {
-         opacity:0;
+        opacity: 0;
       }
 
       &:hover {
@@ -2375,17 +2338,17 @@
       }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
         margin: 0;
       }
 
       /* Firefox */
-      &[type=number] {
+      &[type="number"] {
         -moz-appearance: textfield;
       }
-  }
+    }
 
-  &__btn {
+    &__btn {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2401,13 +2364,11 @@
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
   .donation {
     display: flex;
     align-items: flex-start;
@@ -2462,47 +2423,47 @@
       line-height: 3.38rem;
       color: $text-white;
       &::before {
-          content: "$";
-          position: absolute;
-          padding-left: 3.4rem;
-          z-index: 15;
-          top: 7rem;
-          left: 0.3rem;
-          font-size: 1.8rem;
-          line-height: 2.2rem;
-          font-family: $fontsMont-600;
-          color: $text-white;
+        content: "$";
+        position: absolute;
+        padding-left: 3.4rem;
+        z-index: 15;
+        top: 7rem;
+        left: 0.3rem;
+        font-size: 1.8rem;
+        line-height: 2.2rem;
+        font-family: $fontsMont-600;
+        color: $text-white;
       }
     }
 
-  &__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 5.5rem;
-    padding-right: 9rem;
-    width: 36.3rem;
-    height: 7.4rem;
-    border: 1px solid $bg-white;
-    border-radius: 0.5rem;
-    background-color: $bg-dark-blue;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    text-transform: uppercase;
-    color: $text-white;
-    -moz-appearance: textfield;
+    &__input {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 5.5rem;
+      padding-right: 9rem;
+      width: 36.3rem;
+      height: 7.4rem;
+      border: 1px solid $bg-white;
+      border-radius: 0.5rem;
+      background-color: $bg-dark-blue;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      text-transform: uppercase;
+      color: $text-white;
+      -moz-appearance: textfield;
       &::-webkit-input-placeholder {
         color: $text-white;
       }
       &::-moz-placeholder {
         color: $text-white;
-        opacity:1;
+        opacity: 1;
       }
       &:focus::-webkit-input-placeholder {
-         opacity:0;
+        opacity: 0;
       }
       &:focus::-moz-placeholder {
-         opacity:0;
+        opacity: 0;
       }
 
       &:hover {
@@ -2513,17 +2474,17 @@
       }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
         margin: 0;
       }
 
       /* Firefox */
-      &[type=number] {
+      &[type="number"] {
         -moz-appearance: textfield;
       }
-  }
+    }
 
-  &__btn {
+    &__btn {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2539,13 +2500,11 @@
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
   .donation {
     display: flex;
     align-items: flex-start;
@@ -2599,47 +2558,47 @@
       line-height: 3.38rem;
       color: $text-white;
       &::before {
-          content: "$";
-          position: absolute;
-          padding-left: 2.5rem;
-          z-index: 15;
-          top: 5.8rem;
-          left: 0.2rem;
-          font-size: 1.6rem;
-          line-height: 1.95rem;
-          font-family: $fontsMont-600;
-          color: $text-white;
+        content: "$";
+        position: absolute;
+        padding-left: 2.5rem;
+        z-index: 15;
+        top: 5.8rem;
+        left: 0.2rem;
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+        font-family: $fontsMont-600;
+        color: $text-white;
       }
     }
 
-  &__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 4rem;
-    padding-right: 6rem;
-    width: 30rem;
-    height: 4.5rem;
-    border: 1px solid $bg-white;
-    border-radius: 0.5rem;
-    background-color: $bg-dark-blue;
-    font-family: $fontsMont-600;
-    font-size: 1.6rem;
-    line-height: 1.95rem;
-    text-transform: uppercase;
-    color: $text-white;
-    -moz-appearance: textfield;
+    &__input {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 4rem;
+      padding-right: 6rem;
+      width: 30rem;
+      height: 4.5rem;
+      border: 1px solid $bg-white;
+      border-radius: 0.5rem;
+      background-color: $bg-dark-blue;
+      font-family: $fontsMont-600;
+      font-size: 1.6rem;
+      line-height: 1.95rem;
+      text-transform: uppercase;
+      color: $text-white;
+      -moz-appearance: textfield;
       &::-webkit-input-placeholder {
         color: $text-white;
       }
       &::-moz-placeholder {
         color: $text-white;
-        opacity:1;
+        opacity: 1;
       }
       &:focus::-webkit-input-placeholder {
-         opacity:0;
+        opacity: 0;
       }
       &:focus::-moz-placeholder {
-         opacity:0;
+        opacity: 0;
       }
 
       &:hover {
@@ -2650,17 +2609,17 @@
       }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
         margin: 0;
       }
 
       /* Firefox */
-      &[type=number] {
+      &[type="number"] {
         -moz-appearance: textfield;
       }
-  }
+    }
 
-  &__btn {
+    &__btn {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2676,13 +2635,11 @@
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
   .donation {
     display: flex;
     align-items: flex-start;
@@ -2736,47 +2693,47 @@
       line-height: 3.38rem;
       color: $text-white;
       &::before {
-          content: "$";
-          position: absolute;
-          padding-left: 2.5rem;
-          z-index: 15;
-          top: 5.8rem;
-          left: 0.2rem;
-          font-size: 1.6rem;
-          line-height: 1.95rem;
-          font-family: $fontsMont-600;
-          color: $text-white;
+        content: "$";
+        position: absolute;
+        padding-left: 2.5rem;
+        z-index: 15;
+        top: 5.8rem;
+        left: 0.2rem;
+        font-size: 1.6rem;
+        line-height: 1.95rem;
+        font-family: $fontsMont-600;
+        color: $text-white;
       }
     }
 
-  &__input {
-    position: relative;
-    margin-top: 1rem;
-    padding-left: 4rem;
-    padding-right: 6rem;
-    width: 30rem;
-    height: 4.5rem;
-    border: 1px solid $bg-white;
-    border-radius: 0.5rem;
-    background-color: $bg-dark-blue;
-    font-family: $fontsMont-600;
-    font-size: 1.6rem;
-    line-height: 1.95rem;
-    text-transform: uppercase;
-    color: $text-white;
-    -moz-appearance: textfield;
+    &__input {
+      position: relative;
+      margin-top: 1rem;
+      padding-left: 4rem;
+      padding-right: 6rem;
+      width: 30rem;
+      height: 4.5rem;
+      border: 1px solid $bg-white;
+      border-radius: 0.5rem;
+      background-color: $bg-dark-blue;
+      font-family: $fontsMont-600;
+      font-size: 1.6rem;
+      line-height: 1.95rem;
+      text-transform: uppercase;
+      color: $text-white;
+      -moz-appearance: textfield;
       &::-webkit-input-placeholder {
         color: $text-white;
       }
       &::-moz-placeholder {
         color: $text-white;
-        opacity:1;
+        opacity: 1;
       }
       &:focus::-webkit-input-placeholder {
-         opacity:0;
+        opacity: 0;
       }
       &:focus::-moz-placeholder {
-         opacity:0;
+        opacity: 0;
       }
 
       &:hover {
@@ -2787,17 +2744,17 @@
       }
       &::-webkit-outer-spin-button,
       &::-webkit-inner-spin-button {
-      -webkit-appearance: none;
+        -webkit-appearance: none;
         margin: 0;
       }
 
       /* Firefox */
-      &[type=number] {
+      &[type="number"] {
         -moz-appearance: textfield;
       }
-  }
+    }
 
-  &__btn {
+    &__btn {
       position: absolute;
       right: 0;
       bottom: 0;
@@ -2813,9 +2770,8 @@
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 //======Meet some our friends======//
 
@@ -2824,22 +2780,22 @@
   overflow: hidden;
 
   &__container {
-      // @include flex-block-justify();
-      margin: 0 auto;
-      width: 100%;
-      max-width: $desktop;
+    // @include flex-block-justify();
+    margin: 0 auto;
+    width: 100%;
+    max-width: $desktop;
   }
 
   &__heading {
-      font-family: $fontsMont-600;
-      font-size: 5.4rem;
-      line-height: 6.5rem;
-      text-transform: uppercase;
-      color: $text-green-lite;
-      text-align: center;
-      margin-top: 13.6rem;
-      margin-left: 2rem;
-      margin-bottom: 5rem;
+    font-family: $fontsMont-600;
+    font-size: 5.4rem;
+    line-height: 6.5rem;
+    text-transform: uppercase;
+    color: $text-green-lite;
+    text-align: center;
+    margin-top: 13.6rem;
+    margin-left: 2rem;
+    margin-bottom: 5rem;
   }
 
   &__text {
@@ -2905,8 +2861,13 @@
     width: 100%;
     max-width: 25rem;
     height: 153.4rem;
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+    background: rgb(255, 255, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.5158438375350141) 20%,
+      rgba(255, 255, 255, 1) 89%
+    );
     z-index: 100;
   }
 
@@ -2931,7 +2892,7 @@
       box-sizing: border-box;
     }
     &_content::after {
-      content: '';
+      content: "";
       width: 480px;
       height: auto;
     }
@@ -3068,7 +3029,6 @@
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .friends {
     width: 100%;
     // height: 242.2rem;
@@ -3087,8 +3047,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -3266,52 +3231,50 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 36rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 89% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 89% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 89% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
   }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-  }
-
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .friends {
     width: 100%;
     // height: 242.2rem;
@@ -3331,8 +3294,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -3512,51 +3480,50 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 36rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 89% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 89% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 89% 50%;
+      }
     }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
-  }
   }
 }
 ////////////////1024////////////////////////
 @media screen and (max-width: 1024px) {
-
   .friends {
     width: 100%;
     // height: 242.2rem;
@@ -3566,7 +3533,7 @@
       // @include flex-block-justify();
       margin: 0 auto;
       width: 100%;
-      max-width:1024px;
+      max-width: 1024px;
     }
 
     &__hidden {
@@ -3575,8 +3542,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -3755,52 +3727,50 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 36rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 89% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 89% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 89% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
   }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-  }
-
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
   .friends {
     width: 100%;
     height: 130.7rem;
@@ -3822,8 +3792,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -3874,7 +3849,7 @@
         box-sizing: border-box;
       }
       &_content::after {
-      display: none;
+        display: none;
       }
     }
     &__cart {
@@ -3950,7 +3925,7 @@
       left: 50%;
       bottom: 1.1rem;
       @include flex-block-center();
-      width: 24.0rem;
+      width: 24rem;
       height: 7.3rem;
       font-family: $fontsMont-600;
       font-size: 1.8rem;
@@ -3973,52 +3948,50 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4.2rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 34.3rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 92% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4.2rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 34.3rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 92% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
   }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-  }
-
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
   .friends {
     width: 100%;
     height: 130.7rem;
@@ -4040,8 +4013,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -4166,7 +4144,7 @@
       left: 50%;
       bottom: 1.1rem;
       @include flex-block-center();
-      width: 24.0rem;
+      width: 24rem;
       height: 7.3rem;
       font-family: $fontsMont-600;
       font-size: 1.8rem;
@@ -4189,52 +4167,50 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4.2rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 34.3rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 92% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4.2rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 34.3rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 92% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
   }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-  }
-
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
   .friends {
     width: 100%;
     height: 98.8rem;
@@ -4256,8 +4232,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -4378,13 +4359,12 @@
       color: $text-white;
     }
     &__btn {
-
       margin-left: -12rem;
       position: absolute;
       left: 50%;
       bottom: 1.1rem;
       @include flex-block-center();
-      width: 24.0rem;
+      width: 24rem;
       height: 7.3rem;
       font-family: $fontsMont-600;
       font-size: 1.8rem;
@@ -4408,53 +4388,51 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4.2rem;
-    width: 100%;
-    @include flex-block-center();
-    display: none;
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 34.3rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 92% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4.2rem;
+      width: 100%;
+      @include flex-block-center();
+      display: none;
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 34.3rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 92% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
   }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-  }
-
 }
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
   .friends {
     width: 100%;
     height: 98.8rem;
@@ -4476,8 +4454,13 @@
       width: 100%;
       max-width: 25rem;
       height: 153.4rem;
-      background: rgb(255,255,255);
-      background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.5158438375350141) 20%, rgba(255,255,255,1) 89%);
+      background: rgb(255, 255, 255);
+      background: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0) 0%,
+        rgba(255, 255, 255, 0.5158438375350141) 20%,
+        rgba(255, 255, 255, 1) 89%
+      );
       z-index: 100;
     }
 
@@ -4509,7 +4492,7 @@
 
     &__carts {
       position: relative;
-      width: 31.0rem;
+      width: 31rem;
       height: 62rem;
       margin-top: 1rem;
       margin-left: 0.5rem;
@@ -4597,13 +4580,12 @@
       color: $text-white;
     }
     &__btn {
-
       margin-left: -12rem;
       position: absolute;
       left: 50%;
       bottom: 1.1rem;
       @include flex-block-center();
-      width: 24.0rem;
+      width: 24rem;
       height: 7.3rem;
       font-family: $fontsMont-600;
       font-size: 1.8rem;
@@ -4627,49 +4609,48 @@
         background-position: 92% 50%;
       }
     }
-  &__choose {
-    margin-top: 4.2rem;
-    width: 100%;
-    @include flex-block-center();
-    display: none;
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 34.3rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 92% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 4.2rem;
+      width: 100%;
+      @include flex-block-center();
+      display: none;
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 34.3rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 92% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 92% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
     }
   }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-  }
-
 }
 //======Pay and feed======//
 //======Pay and feed======//
@@ -4695,11 +4676,11 @@
     margin-bottom: 10rem;
   }
   &__img {
-      width: 100%;
-      img {
-        margin-right: 2rem;
-      }
+    width: 100%;
+    img {
+      margin-right: 2rem;
     }
+  }
   &__numbers {
     // margin: 10rem 0 5.2rem;
     width: 100%;
@@ -4728,25 +4709,25 @@
     max-width: 56rem;
     color: $text-white;
 
-      &_foods {
-        display: inline-block;
-        width: 100%;
-      }
-      &_heading {
-        width: 100%;
-        max-width: 50.2rem;
-        margin: 3rem 0 5rem;
-        font-family: $fontsMont-500;
-        font-weight: normal;
-        font-size: 2.6rem;
-        line-height: 3.4rem;
-      }
-      &_text {
-        font-family: $fontsMont-400;
-        font-size: 1.8rem;
-        line-height: 2.7rem;
-        margin-bottom: 9.2rem;
-      }
+    &_foods {
+      display: inline-block;
+      width: 100%;
+    }
+    &_heading {
+      width: 100%;
+      max-width: 50.2rem;
+      margin: 3rem 0 5rem;
+      font-family: $fontsMont-500;
+      font-weight: normal;
+      font-size: 2.6rem;
+      line-height: 3.4rem;
+    }
+    &_text {
+      font-family: $fontsMont-400;
+      font-size: 1.8rem;
+      line-height: 2.7rem;
+      margin-bottom: 9.2rem;
+    }
   }
   &__btn {
     &_wrapper {
@@ -4766,17 +4747,16 @@
     text-transform: uppercase;
     border-radius: 0.5rem;
     border: none;
-      img {
-        margin-left: 1rem;
-      }
-      &:hover {
-        background-color: $bg-dark-orange;
-      }
+    img {
+      margin-left: 1rem;
+    }
+    &:hover {
+      background-color: $bg-dark-orange;
+    }
   }
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .payfeed {
     margin-top: 15rem;
     width: 100%;
@@ -4808,7 +4788,6 @@
       &:nth-child(3) .payfeed__block_text {
         margin-bottom: 15.9rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-600;
@@ -4881,35 +4860,33 @@
         margin-bottom: 7.1rem;
         text-align: center;
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin-top: -4.7rem;
-    margin-left: 50.8%;
-    @include flex-block-center();
-    width: 26.6rem;
-    height: 7.4rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin-top: -4.7rem;
+      margin-left: 50.8%;
+      @include flex-block-center();
+      width: 26.6rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .payfeed {
     margin-top: 15rem;
     width: 100%;
@@ -4941,7 +4918,6 @@
       &:nth-child(3) .payfeed__block_text {
         margin-bottom: 15.9rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-600;
@@ -5014,35 +4990,33 @@
         margin-bottom: 7.1rem;
         text-align: center;
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin-top: -4.7rem;
-    margin-left: 50.8%;
-    @include flex-block-center();
-    width: 26.6rem;
-    height: 7.4rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin-top: -4.7rem;
+      margin-left: 50.8%;
+      @include flex-block-center();
+      width: 26.6rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////1024////////////////////////
 @media screen and (max-width: 1024px) {
-
   .payfeed {
     margin-top: 15rem;
     width: 100%;
@@ -5074,7 +5048,6 @@
       &:nth-child(3) .payfeed__block_text {
         margin-bottom: 15.9rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-600;
@@ -5147,35 +5120,33 @@
         margin-bottom: 7.1rem;
         text-align: center;
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin-top: -10%;
-    margin-left: 50.8%;
-    @include flex-block-center();
-    width: 26.6rem;
-    height: 7.4rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin-top: -10%;
+      margin-left: 50.8%;
+      @include flex-block-center();
+      width: 26.6rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
   .payfeed {
     margin-top: 0;
     width: 100%;
@@ -5213,7 +5184,6 @@
       &:nth-child(3) .payfeed__block_heading {
         margin-bottom: 3.2rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-600;
@@ -5292,34 +5262,32 @@
         margin-bottom: 3.6rem;
         text-align: center;
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin: 0 auto;
-    @include flex-block-center();
-    width: 29rem;
-    height: 7.4rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin: 0 auto;
+      @include flex-block-center();
+      width: 29rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
   .payfeed {
     margin-top: 0;
     width: 100%;
@@ -5357,7 +5325,6 @@
       &:nth-child(3) .payfeed__block_heading {
         margin-bottom: 3.2rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-600;
@@ -5436,34 +5403,32 @@
         margin-bottom: 3.6rem;
         text-align: center;
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin: 0 auto;
-    @include flex-block-center();
-    width: 29rem;
-    height: 7.4rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin: 0 auto;
+      @include flex-block-center();
+      width: 29rem;
+      height: 7.4rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
   .payfeed {
     margin-top: 0;
     width: 100%;
@@ -5514,7 +5479,6 @@
         padding-right: 1rem;
         margin-bottom: 3.2rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-500;
@@ -5599,35 +5563,33 @@
           display: none;
         }
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 1.7rem;
-    @include flex-block-center();
-    width: 30rem;
-    height: 4.5rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin: 0 auto;
+      margin-top: 1.7rem;
+      @include flex-block-center();
+      width: 30rem;
+      height: 4.5rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
   .payfeed {
     margin-top: 0;
     width: 100%;
@@ -5678,7 +5640,6 @@
         padding-right: 1rem;
         margin-bottom: 3.2rem;
       }
-
     }
     &__heading {
       font-family: $fontsMont-500;
@@ -5763,31 +5724,30 @@
           display: none;
         }
       }
-  }
-  &__btn {
-    cursor: pointer;
-    margin: 0 auto;
-    margin-top: 1.7rem;
-    @include flex-block-center();
-    width: 30rem;
-    height: 4.5rem;
-    background-color: $bg-orange;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-white;
-    text-transform: uppercase;
-    border-radius: 0.5rem;
-    border: none;
+    }
+    &__btn {
+      cursor: pointer;
+      margin: 0 auto;
+      margin-top: 1.7rem;
+      @include flex-block-center();
+      width: 30rem;
+      height: 4.5rem;
+      background-color: $bg-orange;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-white;
+      text-transform: uppercase;
+      border-radius: 0.5rem;
+      border: none;
       img {
         margin-left: 1rem;
       }
       &:hover {
         background-color: $bg-dark-orange;
       }
+    }
   }
-  }
-
 }
 //======What our users think======//
 .users_think {
@@ -5991,7 +5951,6 @@
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .users_think {
     padding-top: 10rem;
     width: 100%;
@@ -6039,24 +5998,24 @@
     }
 
     &__cards {
-    width: 212rem;
-    &_carousel {
-      overflow: auto;
-      scroll-behavior: auto;
-      scrollbar-width: none;
+      width: 212rem;
+      &_carousel {
+        overflow: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+      }
+      &_carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      &_content {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
     }
-    &_carousel::-webkit-scrollbar {
-      height: 0;
-    }
-    &_content {
-      display: grid;
-      grid-gap: 3rem;
-      grid-template-rows: auto auto;
-      grid-auto-flow: column;
-      margin: auto;
-      box-sizing: border-box;
-    }
-  }
 
     &__card {
       position: relative;
@@ -6185,11 +6144,9 @@
       }
     }
   }
-
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .users_think {
     padding-top: 10rem;
     width: 100%;
@@ -6236,25 +6193,25 @@
     }
 
     &__cards {
-    width: 106rem;
-    margin-left: 10rem;
-    &_carousel {
-      overflow: auto;
-      scroll-behavior: auto;
-      scrollbar-width: none;
+      width: 106rem;
+      margin-left: 10rem;
+      &_carousel {
+        overflow: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+      }
+      &_carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      &_content {
+        display: grid;
+        grid-gap: 3rem;
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
     }
-    &_carousel::-webkit-scrollbar {
-      height: 0;
-    }
-    &_content {
-      display: grid;
-      grid-gap: 3rem;
-      grid-template-rows: auto auto;
-      grid-auto-flow: column;
-      margin: auto;
-      box-sizing: border-box;
-    }
-  }
 
     &__card {
       position: relative;
@@ -6383,15 +6340,13 @@
       }
     }
   }
-
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
-.users_think {
+  .users_think {
     padding-top: 8rem;
     width: 100%;
-    height: 167.0rem;
+    height: 167rem;
     background-color: $bg-dark-blue;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
@@ -6438,23 +6393,23 @@
       margin-left: auto;
       width: 215.2rem;
       height: 37.2rem;
-    &_carousel {
-      overflow: auto;
-      scroll-behavior: auto;
-      scrollbar-width: none;
+      &_carousel {
+        overflow: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+      }
+      &_carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      &_content {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-rows: auto;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
     }
-    &_carousel::-webkit-scrollbar {
-      height: 0;
-    }
-    &_content {
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-rows: auto;
-      grid-auto-flow: column;
-      margin: auto;
-      box-sizing: border-box;
-    }
-  }
 
     &__card {
       display: flex;
@@ -6487,7 +6442,6 @@
         line-height: 3.4rem;
         text-align: center;
         margin-bottom: 3.1rem;
-
       }
       &_text {
         width: 46.3rem;
@@ -6593,15 +6547,13 @@
       }
     }
   }
-
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
-.users_think {
+  .users_think {
     padding-top: 8rem;
     width: 100%;
-    height: 167.0rem;
+    height: 167rem;
     background-color: $bg-dark-blue;
     background-image: url("../images/pandaGradient.png");
     background-repeat: no-repeat;
@@ -6648,23 +6600,23 @@
       margin-left: auto;
       width: 215.2rem;
       height: 37.2rem;
-    &_carousel {
-      overflow: auto;
-      scroll-behavior: auto;
-      scrollbar-width: none;
+      &_carousel {
+        overflow: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+      }
+      &_carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      &_content {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-rows: auto;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
     }
-    &_carousel::-webkit-scrollbar {
-      height: 0;
-    }
-    &_content {
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-rows: auto;
-      grid-auto-flow: column;
-      margin: auto;
-      box-sizing: border-box;
-    }
-  }
 
     &__card {
       display: flex;
@@ -6697,7 +6649,6 @@
         line-height: 3.4rem;
         text-align: center;
         margin-bottom: 3.1rem;
-
       }
       &_text {
         width: 46.3rem;
@@ -6803,12 +6754,10 @@
       }
     }
   }
-
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
-.users_think {
+  .users_think {
     padding-top: 4.1rem;
     width: 100%;
     height: 146.1rem;
@@ -6858,25 +6807,25 @@
 
     &__cards {
       margin-left: 1rem;
-      width: 126.0rem;
+      width: 126rem;
       height: 54.9rem;
-    &_carousel {
-      overflow: auto;
-      scroll-behavior: auto;
-      scrollbar-width: none;
+      &_carousel {
+        overflow: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+      }
+      &_carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      &_content {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-rows: auto;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
     }
-    &_carousel::-webkit-scrollbar {
-      height: 0;
-    }
-    &_content {
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-rows: auto;
-      grid-auto-flow: column;
-      margin: auto;
-      box-sizing: border-box;
-    }
-  }
 
     &__card {
       display: flex;
@@ -6885,7 +6834,7 @@
       position: relative;
       padding-top: 5rem;
       padding-left: 0;
-      width: 30.0rem;
+      width: 30rem;
       height: 54.9rem;
       background-color: $bg-white;
       border-radius: 0.5rem;
@@ -6910,7 +6859,6 @@
         text-align: center;
         margin-top: 6.6rem;
         margin-bottom: 2.1rem;
-
       }
       &_text {
         width: 89%;
@@ -6933,22 +6881,22 @@
       }
     }
     &__pagination {
-        margin: 3rem auto 0;
-        width: 9.2rem;
-        display: flex;
-        justify-content: space-between;
-        span {
-          cursor: pointer;
-          width: 0.8rem;
-          height: 0.8rem;
-          border-radius: 50%;
-          border: 1px solid $bg-default;
-        }
-        .active {
-          border: 1px solid $bg-default;
-          background-color: $bg-default;
-        }
+      margin: 3rem auto 0;
+      width: 9.2rem;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid $bg-default;
       }
+      .active {
+        border: 1px solid $bg-default;
+        background-color: $bg-default;
+      }
+    }
     &__arrow {
       display: none;
     }
@@ -6991,12 +6939,10 @@
       }
     }
   }
-
 }
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
-.users_think {
+  .users_think {
     padding-top: 4.1rem;
     width: 100%;
     height: 146.1rem;
@@ -7044,27 +6990,27 @@
       letter-spacing: -0.2px;
     }
 
-   &__cards {
+    &__cards {
       margin-left: 1rem;
-      width: 126.0rem;
+      width: 126rem;
       height: 54.9rem;
-    &_carousel {
-      overflow: auto;
-      scroll-behavior: auto;
-      scrollbar-width: none;
+      &_carousel {
+        overflow: auto;
+        scroll-behavior: auto;
+        scrollbar-width: none;
+      }
+      &_carousel::-webkit-scrollbar {
+        height: 0;
+      }
+      &_content {
+        display: grid;
+        grid-gap: 2rem;
+        grid-template-rows: auto;
+        grid-auto-flow: column;
+        margin: auto;
+        box-sizing: border-box;
+      }
     }
-    &_carousel::-webkit-scrollbar {
-      height: 0;
-    }
-    &_content {
-      display: grid;
-      grid-gap: 2rem;
-      grid-template-rows: auto;
-      grid-auto-flow: column;
-      margin: auto;
-      box-sizing: border-box;
-    }
-  }
 
     &__card {
       display: flex;
@@ -7073,7 +7019,7 @@
       position: relative;
       padding-top: 5rem;
       padding-left: 0;
-      width: 30.0rem;
+      width: 30rem;
       height: 54.9rem;
       background-color: $bg-white;
       border-radius: 0.5rem;
@@ -7098,7 +7044,6 @@
         text-align: center;
         margin-top: 6.6rem;
         margin-bottom: 2.1rem;
-
       }
       &_text {
         width: 89%;
@@ -7121,22 +7066,22 @@
       }
     }
     &__pagination {
-        margin: 3rem auto 0;
-        width: 9.2rem;
-        display: flex;
-        justify-content: space-between;
-        span {
-          cursor: pointer;
-          width: 0.8rem;
-          height: 0.8rem;
-          border-radius: 50%;
-          border: 1px solid $bg-default;
-        }
-        .active {
-          border: 1px solid $bg-default;
-          background-color: $bg-default;
-        }
+      margin: 3rem auto 0;
+      width: 9.2rem;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid $bg-default;
       }
+      .active {
+        border: 1px solid $bg-default;
+        background-color: $bg-default;
+      }
+    }
     &__arrow {
       display: none;
     }
@@ -7179,7 +7124,6 @@
       }
     }
   }
-
 }
 //======Care fro the animals you love======//
 
@@ -7354,7 +7298,6 @@
 }
 ////////////////1400////////////////////////
 @media screen and (max-width: 1400px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -7393,155 +7336,153 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    width: 97rem;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    flex-wrap: wrap;
-    &_big {
+    &__cards {
       margin: 0 auto;
-      width: 93rem;
-      height: 47rem;
-      padding: 0rem;
-      margin-bottom: 1rem;
-      img {
+      width: 97rem;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-wrap: wrap;
+      &_big {
+        margin: 0 auto;
         width: 93rem;
         height: 47rem;
+        padding: 0rem;
+        margin-bottom: 1rem;
+        img {
+          width: 93rem;
+          height: 47rem;
+        }
+      }
+    }
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 45.5rem;
+      height: 64.1rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 47.5rem;
+        height: 66.1rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 47.5rem;
+        height: 66.1rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: -0.5rem;
+      }
+
+      &_img {
+        width: 100%;
+        height: 37.3rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+
+      &_text {
+        margin: 3rem auto 0;
+        width: 89%;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: -7rem;
+      position: absolute;
+      left: 50%;
+      bottom: 4.2rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
+    }
+
+    &__choose {
+      margin-top: 9.1rem;
+      width: 100%;
+      @include flex-block-center();
+    }
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
+      background-repeat: no-repeat;
+      background-position: 89% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 89% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 15rem auto 14.6rem;
+      img {
+        width: 100%;
       }
     }
   }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 45.5rem;
-    height: 64.1rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    &:hover {
-      width: 47.5rem;
-      height: 66.1rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 47.5rem;
-      height: 66.1rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: -0.5rem;
-    }
-
-    &_img {
-      width: 100%;
-      height: 37.3rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-
-    &_text {
-      margin: 3rem auto 0;
-      width: 89%;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
-
-  &__btn {
-    cursor: pointer;
-    margin-left: -7rem;
-    position: absolute;
-    left: 50%;
-    bottom: 4.2rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
-      background-repeat: no-repeat;
-      background-position: 75% 50%;
-    }
-  }
-
-  &__choose {
-    margin-top: 9.1rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 36rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 89% 50%;
-    img {
-      margin-left: 1rem;
-    }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
-      background-repeat: no-repeat;
-      background-position: 89% 50%;
-    }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 15rem auto 14.6rem;
-    img {
-      width: 100%;
-    }
-  }
-  }
-
 }
 ////////////////1200////////////////////////
 @media screen and (max-width: 1200px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -7580,156 +7521,154 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    width: 97rem;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    flex-wrap: wrap;
-    &_big {
+    &__cards {
       margin: 0 auto;
-      width: 93rem;
-      height: 47rem;
-      padding: 0rem;
-      margin-bottom: 1rem;
-      img {
+      width: 97rem;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-wrap: wrap;
+      &_big {
+        margin: 0 auto;
         width: 93rem;
         height: 47rem;
+        padding: 0rem;
+        margin-bottom: 1rem;
+        img {
+          width: 93rem;
+          height: 47rem;
+        }
+      }
+    }
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 45.5rem;
+      height: 64.1rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 47.5rem;
+        height: 66.1rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 47.5rem;
+        height: 66.1rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: -0.5rem;
+      }
+
+      &_img {
+        width: 100%;
+        height: 37.3rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+
+      &_text {
+        margin: 3rem auto 0;
+        width: 89%;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: -7rem;
+      position: absolute;
+      left: 50%;
+      bottom: 4.2rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
+    }
+
+    &__choose {
+      margin-top: 9.1rem;
+      width: 100%;
+      @include flex-block-center();
+    }
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
+      background-repeat: no-repeat;
+      background-position: 89% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 89% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 15rem auto 15.5rem;
+      img {
+        width: 100%;
       }
     }
   }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 45.5rem;
-    height: 64.1rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    &:hover {
-      width: 47.5rem;
-      height: 66.1rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 47.5rem;
-      height: 66.1rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: -0.5rem;
-    }
-
-    &_img {
-      width: 100%;
-      height: 37.3rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-
-    &_text {
-      margin: 3rem auto 0;
-      width: 89%;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
-
-  &__btn {
-    cursor: pointer;
-    margin-left: -7rem;
-    position: absolute;
-    left: 50%;
-    bottom: 4.2rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
-      background-repeat: no-repeat;
-      background-position: 75% 50%;
-    }
-  }
-
-  &__choose {
-    margin-top: 9.1rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 36rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 89% 50%;
-    img {
-      margin-left: 1rem;
-    }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
-      background-repeat: no-repeat;
-      background-position: 89% 50%;
-    }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 15rem auto 15.5rem;
-    img {
-      width: 100%;
-    }
-  }
-  }
-
 }
 
 ////////////////1024////////////////////////
 @media screen and (max-width: 1024px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -7768,155 +7707,153 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    width: 97rem;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    flex-wrap: wrap;
-    &_big {
+    &__cards {
       margin: 0 auto;
-      width: 93rem;
-      height: 47rem;
-      padding: 0rem;
-      margin-bottom: 1rem;
-      img {
+      width: 97rem;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-wrap: wrap;
+      &_big {
+        margin: 0 auto;
         width: 93rem;
         height: 47rem;
+        padding: 0rem;
+        margin-bottom: 1rem;
+        img {
+          width: 93rem;
+          height: 47rem;
+        }
+      }
+    }
+
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 45.5rem;
+      height: 64.1rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 47.5rem;
+        height: 66.1rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 47.5rem;
+        height: 66.1rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: -0.5rem;
+      }
+
+      &_img {
+        width: 100%;
+        height: 37.3rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+      }
+
+      &_text {
+        margin: 3rem auto 0;
+        width: 89%;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: -7rem;
+      position: absolute;
+      left: 50%;
+      bottom: 4.2rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
+      background-repeat: no-repeat;
+      background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
+    }
+
+    &__choose {
+      margin-top: 9.1rem;
+      width: 100%;
+      @include flex-block-center();
+    }
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 36rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
+      background-repeat: no-repeat;
+      background-position: 89% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 89% 50%;
+      }
+    }
+    &__choose_link {
+      @include flex-block-center();
+      width: 100%;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 15rem auto 14.6rem;
+      img {
+        width: 100%;
       }
     }
   }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 45.5rem;
-    height: 64.1rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    &:hover {
-      width: 47.5rem;
-      height: 66.1rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 47.5rem;
-      height: 66.1rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: -0.5rem;
-    }
-
-    &_img {
-      width: 100%;
-      height: 37.3rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-    }
-
-    &_text {
-      margin: 3rem auto 0;
-      width: 89%;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
-
-  &__btn {
-    cursor: pointer;
-    margin-left: -7rem;
-    position: absolute;
-    left: 50%;
-    bottom: 4.2rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
-      background-repeat: no-repeat;
-      background-position: 75% 50%;
-    }
-  }
-
-  &__choose {
-    margin-top: 9.1rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 36rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 89% 50%;
-    img {
-      margin-left: 1rem;
-    }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
-      background-repeat: no-repeat;
-      background-position: 89% 50%;
-    }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 15rem auto 14.6rem;
-    img {
-      width: 100%;
-    }
-  }
-  }
-
 }
 ////////////////900////////////////////////
 @media screen and (max-width: 900px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -7955,183 +7892,181 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    margin-left: 0;
-    width: 187.9rem;
-    height: 31.7rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-
-    @media (min-width: 641px) and (max-width: 900px) {
-      overflow: hidden;
-    }
-    &_big {
-      display: none;
-    }
-  }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 60rem;
-    height: 29.7rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    &:hover {
-      width: 60rem;
-      height: 29.7rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 62rem;
+    &__cards {
+      margin: 0 auto;
+      margin-left: 0;
+      width: 187.9rem;
       height: 31.7rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: -0.5rem;
-    }
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
 
-    &_img {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 34.8rem;
-      height: 29.7rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-      &_wrapper {
-        position: relative;
-        width: 30rem;
-        height: 29.7rem;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
+      @media (min-width: 641px) and (max-width: 900px) {
         overflow: hidden;
+      }
+      &_big {
+        display: none;
       }
     }
 
-    &_text {
-      margin: 6.7rem 17px 0 17px;
-      width: 26rem;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 60rem;
+      height: 29.7rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 60rem;
+        height: 29.7rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 62rem;
+        height: 31.7rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: -0.5rem;
+      }
 
-  &__btn {
-    cursor: pointer;
-    margin-left: -7rem;
-    position: absolute;
-    left: 75%;
-    bottom: 3.4rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
+      &_img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 34.8rem;
+        height: 29.7rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        &_wrapper {
+          position: relative;
+          width: 30rem;
+          height: 29.7rem;
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          overflow: hidden;
+        }
+      }
+
+      &_text {
+        margin: 6.7rem 17px 0 17px;
+        width: 26rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: -7rem;
+      position: absolute;
+      left: 75%;
+      bottom: 3.4rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
       background-repeat: no-repeat;
       background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
     }
-  }
 
-  &__pagination {
-    margin: 4rem auto 0;
-    width: 9.2rem;
-    display: flex;
-    justify-content: space-between;
-    span {
-      cursor: pointer;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      border: 1px solid $bg-default;
+    &__pagination {
+      margin: 4rem auto 0;
+      width: 9.2rem;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid $bg-default;
+      }
+      .active {
+        border: 1px solid $bg-default;
+        background-color: $bg-default;
+      }
     }
-    .active {
-      border: 1px solid $bg-default;
-      background-color: $bg-default;
-    }
-  }
 
-  &__choose {
-    margin-top: 5.0rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 35.9rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 5rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 35.9rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 90% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+      }
     }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 10rem auto 9.8rem;
-    img {
+    &__choose_link {
+      @include flex-block-center();
       width: 100%;
-      height: 37.9rem;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 10rem auto 9.8rem;
+      img {
+        width: 100%;
+        height: 37.9rem;
+      }
     }
   }
-  }
-
 }
 ////////////////640////////////////////////
 @media screen and (max-width: 640px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -8170,179 +8105,177 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    margin-left: 0;
-    width: 187.9rem;
-    height: 31.7rem;
-    display: flex;
-    justify-content: center;
-    // align-items: center;
-    flex-wrap: wrap;
-    &_big {
-      display: none;
-    }
-  }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 60rem;
-    height: 29.7rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    &:hover {
-      width: 60rem;
-      height: 29.7rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 62rem;
+    &__cards {
+      margin: 0 auto;
+      margin-left: 0;
+      width: 187.9rem;
       height: 31.7rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: -0.5rem;
-    }
-
-    &_img {
-      position: absolute;
-      right: 0;
-      top: 0;
-      width: 34.8rem;
-      height: 29.7rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-      &_wrapper {
-        position: relative;
-        width: 30rem;
-        height: 29.7rem;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-        overflow: hidden;
+      display: flex;
+      justify-content: center;
+      // align-items: center;
+      flex-wrap: wrap;
+      &_big {
+        display: none;
       }
     }
 
-    &_text {
-      margin: 6.7rem auto 0;
-      width: 26rem;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 60rem;
+      height: 29.7rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      &:hover {
+        width: 60rem;
+        height: 29.7rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 62rem;
+        height: 31.7rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: -0.5rem;
+      }
 
-  &__btn {
-    cursor: pointer;
-    margin-left: -7rem;
-    position: absolute;
-    left: 75%;
-    bottom: 3.4rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
+      &_img {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 34.8rem;
+        height: 29.7rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+        &_wrapper {
+          position: relative;
+          width: 30rem;
+          height: 29.7rem;
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          overflow: hidden;
+        }
+      }
+
+      &_text {
+        margin: 6.7rem auto 0;
+        width: 26rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: -7rem;
+      position: absolute;
+      left: 75%;
+      bottom: 3.4rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
       background-repeat: no-repeat;
       background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
     }
-  }
 
-  &__pagination {
-    margin: 4rem auto 0;
-    width: 9.2rem;
-    display: flex;
-    justify-content: space-between;
-    span {
-      cursor: pointer;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      border: 1px solid $bg-default;
+    &__pagination {
+      margin: 4rem auto 0;
+      width: 9.2rem;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid $bg-default;
+      }
+      .active {
+        border: 1px solid $bg-default;
+        background-color: $bg-default;
+      }
     }
-    .active {
-      border: 1px solid $bg-default;
-      background-color: $bg-default;
-    }
-  }
 
-  &__choose {
-    margin-top: 5.0rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: uppercase;
-    width: 35.9rem;
-    height: 7.4rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 5rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: uppercase;
+      width: 35.9rem;
+      height: 7.4rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 90% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+      }
     }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 10rem auto 9.8rem;
-    img {
+    &__choose_link {
+      @include flex-block-center();
       width: 100%;
-      height: 37.9rem;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 10rem auto 9.8rem;
+      img {
+        width: 100%;
+        height: 37.9rem;
+      }
     }
   }
-  }
-
 }
 ////////////////480////////////////////////
 @media screen and (max-width: 480px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -8381,183 +8314,181 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    margin-left: 1rem;
-    width: 126.0rem;
-    height: 57rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    // align-items: center;
-    flex-wrap: nowrap;
-    &_big {
-      display: none;
-    }
-  }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    height: 57rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    &:hover {
-      width: 30rem;
+    &__cards {
+      margin: 0 auto;
+      margin-left: 1rem;
+      width: 126rem;
       height: 57rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 30rem;
-      height: 57rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: 0;
-    }
-
-    &_img {
-      position: absolute;
-      left: -58px;
-      top: -21px;
-      width: 44rem;
-      height: 37.3rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-
-      &_wrapper {
-        position: relative;
-        width: 30rem;
-        height: 35.3rem;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-        overflow: hidden;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      // align-items: center;
+      flex-wrap: nowrap;
+      &_big {
+        display: none;
       }
     }
 
-    &_text {
-      margin: 1.5rem auto 0;
-      width: 25rem;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      height: 57rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      &:hover {
+        width: 30rem;
+        height: 57rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 30rem;
+        height: 57rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: 0;
+      }
 
-  &__btn {
-    cursor: pointer;
-    margin-left: 0;
-    position: absolute;
-    left: 27%;
-    bottom: 2.2rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
+      &_img {
+        position: absolute;
+        left: -58px;
+        top: -21px;
+        width: 44rem;
+        height: 37.3rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+
+        &_wrapper {
+          position: relative;
+          width: 30rem;
+          height: 35.3rem;
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          overflow: hidden;
+        }
+      }
+
+      &_text {
+        margin: 1.5rem auto 0;
+        width: 25rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: 0;
+      position: absolute;
+      left: 27%;
+      bottom: 2.2rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
       background-repeat: no-repeat;
       background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
     }
-  }
 
-  &__pagination {
-    margin: 3rem auto 0;
-    width: 9.2rem;
-    display: flex;
-    justify-content: space-between;
-    span {
-      cursor: pointer;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      border: 1px solid $bg-default;
+    &__pagination {
+      margin: 3rem auto 0;
+      width: 9.2rem;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid $bg-default;
+      }
+      .active {
+        border: 1px solid $bg-default;
+        background-color: $bg-default;
+      }
     }
-    .active {
-      border: 1px solid $bg-default;
-      background-color: $bg-default;
-    }
-  }
 
-  &__choose {
-    margin-top: 5.0rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: capitalize;
-    width: 30rem;
-    height: 4.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 5rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: capitalize;
+      width: 30rem;
+      height: 4.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 90% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+      }
     }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 8rem auto 7.8rem;
-    img {
+    &__choose_link {
+      @include flex-block-center();
       width: 100%;
-      height: 18.9rem;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 8rem auto 7.8rem;
+      img {
+        width: 100%;
+        height: 18.9rem;
+      }
     }
   }
-  }
-
 }
 
 ////////////////320////////////////////////
 @media screen and (max-width: 320px) {
-
   .animals_love {
     width: 100%;
     max-width: 100%;
@@ -8596,178 +8527,177 @@
       color: $text-default;
     }
 
-  &__cards {
-    margin: 0 auto;
-    margin-left: 1rem;
-    width: 126.0rem;
-    height: 57rem;
-    display: flex;
-    justify-content: center;
-    gap: 2rem;
-    // align-items: center;
-    flex-wrap: nowrap;
-    &_big {
-      display: none;
-    }
-  }
-
-  &__card {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    width: 30rem;
-    height: 57rem;
-    background-color: $bg-dark-blue;
-    border-radius: 0.5rem;
-    overflow: hidden;
-    &:hover {
-      width: 30rem;
+    &__cards {
+      margin: 0 auto;
+      margin-left: 1rem;
+      width: 126rem;
       height: 57rem;
-      transition-duration: 2s;
-      z-index: 50;
-    }
-    &_wrapper {
-      @include flex-block-center();
-      width: 30rem;
-      height: 57rem;
-    }
-    &_wrapper:nth-child(odd) {
-      order: 2;
-      margin-top: 0;
-    }
-
-    &_img {
-      position: absolute;
-      left: -58px;
-      top: -21px;
-      width: 44rem;
-      height: 37.3rem;
-      border-top-left-radius: 0.5rem;
-      border-top-right-radius: 0.5rem;
-
-      &_wrapper {
-        position: relative;
-        width: 30rem;
-        height: 35.3rem;
-        border-top-left-radius: 0.5rem;
-        border-bottom-left-radius: 0.5rem;
-        overflow: hidden;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      // align-items: center;
+      flex-wrap: nowrap;
+      &_big {
+        display: none;
       }
     }
 
-    &_text {
-      margin: 1.5rem auto 0;
-      width: 25rem;
-      font-family: $fontsMont-400;
-      font-size: 1.8rem;
-      line-height: 2.7rem;
-      text-align: center;
-      color: $text-white;
-    }
-    &_link {
-      text-decoration: none;
-    }
-  }
+    &__card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      width: 30rem;
+      height: 57rem;
+      background-color: $bg-dark-blue;
+      border-radius: 0.5rem;
+      overflow: hidden;
+      &:hover {
+        width: 30rem;
+        height: 57rem;
+        transition-duration: 2s;
+        z-index: 50;
+      }
+      &_wrapper {
+        @include flex-block-center();
+        width: 30rem;
+        height: 57rem;
+      }
+      &_wrapper:nth-child(odd) {
+        order: 2;
+        margin-top: 0;
+      }
 
-  &__btn {
-    cursor: pointer;
-    margin-left: 0;
-    position: absolute;
-    left: 27%;
-    bottom: 2.2rem;
-    @include flex-block-center();
-    width: 14.2rem;
-    height: 7.3rem;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    color: $text-orange;
-    text-transform: uppercase;
-    letter-spacing: 0.05rem;
-    border-radius: 0.5rem;
-    border: none;
-    background-color: transparent;
-    background-image: url("../icons/UnionOrange.svg");
-    background-repeat: no-repeat;
-    background-position: 75% 50%;
-    padding-right: 3.6rem;
-    &:hover {
-      color: $text-white;
-      background-color: $bg-dark-orange;
-      background-image: url("../icons/UnionRightInvert.svg");
+      &_img {
+        position: absolute;
+        left: -58px;
+        top: -21px;
+        width: 44rem;
+        height: 37.3rem;
+        border-top-left-radius: 0.5rem;
+        border-top-right-radius: 0.5rem;
+
+        &_wrapper {
+          position: relative;
+          width: 30rem;
+          height: 35.3rem;
+          border-top-left-radius: 0.5rem;
+          border-bottom-left-radius: 0.5rem;
+          overflow: hidden;
+        }
+      }
+
+      &_text {
+        margin: 1.5rem auto 0;
+        width: 25rem;
+        font-family: $fontsMont-400;
+        font-size: 1.8rem;
+        line-height: 2.7rem;
+        text-align: center;
+        color: $text-white;
+      }
+      &_link {
+        text-decoration: none;
+      }
+    }
+
+    &__btn {
+      cursor: pointer;
+      margin-left: 0;
+      position: absolute;
+      left: 27%;
+      bottom: 2.2rem;
+      @include flex-block-center();
+      width: 14.2rem;
+      height: 7.3rem;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      color: $text-orange;
+      text-transform: uppercase;
+      letter-spacing: 0.05rem;
+      border-radius: 0.5rem;
+      border: none;
+      background-color: transparent;
+      background-image: url("../icons/UnionOrange.svg");
       background-repeat: no-repeat;
       background-position: 75% 50%;
+      padding-right: 3.6rem;
+      &:hover {
+        color: $text-white;
+        background-color: $bg-dark-orange;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 75% 50%;
+      }
     }
-  }
 
-  &__pagination {
-    margin: 3rem auto 0;
-    width: 9.2rem;
-    display: flex;
-    justify-content: space-between;
-    span {
-      cursor: pointer;
-      width: 0.8rem;
-      height: 0.8rem;
-      border-radius: 50%;
-      border: 1px solid $bg-default;
+    &__pagination {
+      margin: 3rem auto 0;
+      width: 9.2rem;
+      display: flex;
+      justify-content: space-between;
+      span {
+        cursor: pointer;
+        width: 0.8rem;
+        height: 0.8rem;
+        border-radius: 50%;
+        border: 1px solid $bg-default;
+      }
+      .active {
+        border: 1px solid $bg-default;
+        background-color: $bg-default;
+      }
     }
-    .active {
-      border: 1px solid $bg-default;
-      background-color: $bg-default;
-    }
-  }
 
-  &__choose {
-    margin-top: 5.0rem;
-    width: 100%;
-    @include flex-block-center();
-  }
-  &__choose_btn {
-    @include flex-block-center();
-    text-transform: capitalize;
-    width: 30rem;
-    height: 4.5rem;
-    border-radius: 0.5rem;
-    border: 1px solid $bg-dark-blue;
-    background-color: $bg-white;
-    background-image: url("../icons/UnionRight.svg");
-    background-repeat: no-repeat;
-    background-position: 90% 50%;
-    img {
-      margin-left: 1rem;
+    &__choose {
+      margin-top: 5rem;
+      width: 100%;
+      @include flex-block-center();
     }
-    &:hover {
-      background-color: $bg-dark-blue;
-      background-image: url("../icons/UnionRightInvert.svg");
+    &__choose_btn {
+      @include flex-block-center();
+      text-transform: capitalize;
+      width: 30rem;
+      height: 4.5rem;
+      border-radius: 0.5rem;
+      border: 1px solid $bg-dark-blue;
+      background-color: $bg-white;
+      background-image: url("../icons/UnionRight.svg");
       background-repeat: no-repeat;
       background-position: 90% 50%;
+      img {
+        margin-left: 1rem;
+      }
+      &:hover {
+        background-color: $bg-dark-blue;
+        background-image: url("../icons/UnionRightInvert.svg");
+        background-repeat: no-repeat;
+        background-position: 90% 50%;
+      }
     }
-  }
-  &__choose_link {
-    @include flex-block-center();
-    width: 100%;
-    height: 100%;
-    text-decoration: none;
-    font-family: $fontsMont-600;
-    font-size: 1.8rem;
-    line-height: 2.2rem;
-    padding-right: 3.5rem;
-    color: $text-dark-blue;
-    &:hover {
-      color: $text-white;
-    }
-  }
-
-  &__screen {
-    margin: 8rem auto 7.8rem;
-    img {
+    &__choose_link {
+      @include flex-block-center();
       width: 100%;
-      height: 18.9rem;
+      height: 100%;
+      text-decoration: none;
+      font-family: $fontsMont-600;
+      font-size: 1.8rem;
+      line-height: 2.2rem;
+      padding-right: 3.5rem;
+      color: $text-dark-blue;
+      &:hover {
+        color: $text-white;
+      }
+    }
+
+    &__screen {
+      margin: 8rem auto 7.8rem;
+      img {
+        width: 100%;
+        height: 18.9rem;
+      }
     }
   }
-  }
-
 }
 //====FOOTER====//
 @import "footer";
