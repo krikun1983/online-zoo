@@ -468,7 +468,6 @@ li {
 }
 
 .form-donation-wrapper .form-block__button_pagination span {
-  cursor: pointer;
   width: 1rem;
   height: 1rem;
   border-radius: 50%;
@@ -9439,7 +9438,6 @@ li {
             justify-content: space-between;
   }
   .users_think__pagination span {
-    cursor: pointer;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
@@ -9656,7 +9654,6 @@ li {
             justify-content: space-between;
   }
   .users_think__pagination span {
-    cursor: pointer;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
@@ -10819,7 +10816,6 @@ li {
             justify-content: space-between;
   }
   .animals_love__pagination span {
-    cursor: pointer;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
@@ -11074,7 +11070,6 @@ li {
             justify-content: space-between;
   }
   .animals_love__pagination span {
-    cursor: pointer;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
@@ -11331,7 +11326,6 @@ li {
             justify-content: space-between;
   }
   .animals_love__pagination span {
-    cursor: pointer;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
@@ -11588,7 +11582,6 @@ li {
             justify-content: space-between;
   }
   .animals_love__pagination span {
-    cursor: pointer;
     width: 0.8rem;
     height: 0.8rem;
     border-radius: 50%;
