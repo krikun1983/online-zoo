@@ -10,7 +10,7 @@ gorilla.addEventListener('click', () => {
     window.location.href = '../../pages/zoos/gorilla.html';
 })
 eagle.addEventListener('click', () => {
-    window.location.href = '../../pages/zoos/eagle.html';
+    window.location.href = '../../pages/zoos/baldEagle.html';
 })
 lemur.addEventListener('click', () => {
     window.location.href = '../../pages/zoos/lemur.html';
