@@ -241,6 +241,19 @@ inputDonatOne.addEventListener('input', () => {
     inputDonatOne.value = val.slice(0, 4).join('');
   }
 });
+//делаю активной кнопку for special pet
+const forSpecialPet = document.querySelector('.form-block__select_text');
+const animalField = document.getElementById('animal');
+
+animalField.addEventListener('click', (event) => {
+  if (event.target.value !== '') {
+    forSpecialPet.style.opacity = '1';
+  } else {
+    forSpecialPet.style.opacity = '0.5';
+  }
+
+})
+
 const modalBtnDonatOther = document.querySelector('#OtherAmount');
 //Делаю, чтобы кнопки переносили данные в поле ввода первого окна днатов
 modalBtnsDonatNumbersParent.addEventListener('click', (event) => {
@@ -279,7 +292,7 @@ const nextBtnOne = document.querySelector('.form-block__button_arrow');
 const backBtnOne = document.querySelector('.win-donation-two__form-buttom_back');
 const modalDonatTwo = document.querySelector('.win-donation-two');
 const summaField = document.getElementById('summa');
-const animalField = document.getElementById('animal');
+
 //Открыть второе окно донатов
 const openModalDonatTwo = () => {
   modalDonatTwo.classList.remove('hidden');
