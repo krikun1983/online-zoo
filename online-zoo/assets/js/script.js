@@ -183,6 +183,7 @@ modalBtnsNumbersParent.addEventListener('click', (event) => {
   if (event.target.value == '') {
     inputDonatOne.focus();
     modalBtnDonatOther.style.opacity = '1';
+    nextBtnOne.classList.add('invalid');
   } else {
     modalBtnsDonatNumbers.forEach((btn) => {
       if (btn.value == event.target.value) {
@@ -200,12 +201,13 @@ showModalDonatOneBtn.addEventListener('click', (event) => {
   if (inputPageDonat.value == '') {
     modalBtnsDonatNumbersParent.firstElementChild.classList.add('btn-active');
     inputPageDonat.value = 10;
+    nextBtnOne.classList.remove('invalid');
   } else {
     modalBtnDonatOther.style.opacity = '1';
   }
   inputDonatOne.value = inputPageDonat.value;
   openModalDonatOne();
-
+  nextBtnOne.classList.remove('invalid');
   modalBtnsDonatNumbers.forEach((btn) => {
       if (btn.value == inputPageDonat.value) {
         btn.classList.add('btn-active');
@@ -246,8 +248,9 @@ modalBtnsDonatNumbersParent.addEventListener('click', (event) => {
   if (event.target.contains(modalBtnsDonatNumbersParent)){
     return;
   } else {
-  inputDonatOne.value = event.target.value;
-  modalBtnsDonatNumbers.forEach((btn) => {
+    inputDonatOne.value = event.target.value;
+    nextBtnOne.classList.remove('invalid');
+    modalBtnsDonatNumbers.forEach((btn) => {
     btn.classList.remove('btn-active')
     if (btn.value == event.target.value) {
       btn.classList.add('btn-active');
@@ -258,7 +261,6 @@ modalBtnsDonatNumbersParent.addEventListener('click', (event) => {
 
 });
 
-// console.log(modalBtnDonatOther);
 modalBtnDonatOther.addEventListener('click', (event) => {
   event.preventDefault();
   modalBtnDonatOther.style.opacity = '1';
@@ -292,7 +294,7 @@ const hiddenModalDonatTwo = () => {
 }
 //Проверка на валидацию поля сумма и животные
 const validatetSum = () => {
-  if (summaField.validity.valid && animalField.validity.valid) {
+  if (summaField.validity.valid) {
     nextBtnOne.classList.remove('invalid');
   } else {
     nextBtnOne.classList.add('invalid');
@@ -303,11 +305,8 @@ nextBtnOne.addEventListener('click', () => {
   if (nextBtnOne.classList.contains('invalid')) return;
 })
 //Проверка на валидацию поля сумма
+
 summaField.addEventListener('input', () => {
-  validatetSum();
-})
-//Проверка на валидацию поля животные
-animalField.addEventListener('input', () => {
   validatetSum();
 })
 
