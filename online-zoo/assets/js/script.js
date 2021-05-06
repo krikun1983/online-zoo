@@ -250,7 +250,7 @@ const modalBtnDonatOther = document.querySelector('#OtherAmount');
 // console.log(modalBtnDonatOther);
 modalBtnDonatOther.addEventListener('click', (event) => {
   event.preventDefault();
-  inputDonatOne.value = '';
+  // inputDonatOne.value = '';
   inputDonatOne.focus();
   modalBtnsDonatNumbers.forEach((btn) => {
     btn.classList.remove('btn-active')

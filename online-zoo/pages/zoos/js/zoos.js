@@ -406,13 +406,19 @@ const iframes = document.querySelector('.cams__preview_iframe_small');
 // const camBtnRight = document.querySelector('.cams__preview_right');
 
 cams.addEventListener('click', (event) => {
-  const camsActive = event.target.parentNode;
-  let iframe = event.target.nextElementSibling;
-  let srcTemp = camBig.src;
-  camBig.src = iframe.src;
-  iframe.src = srcTemp;
-  camsItems.forEach(elem => {
-    elem.classList.remove('cams__preview_active');
-  })
-  camsActive.classList.add('cams__preview_active');
+  if (event.target.contains(cams)){
+    return;
+  } else {
+    const camsActive = event.target.parentNode;
+      console.log(camsActive)
+      let iframe = event.target.nextElementSibling;
+      let srcTemp = camBig.src;
+      camBig.src = iframe.src;
+      iframe.src = srcTemp;
+      camsItems.forEach(elem => {
+        elem.classList.remove('cams__preview_active');
+      })
+      camsActive.classList.add('cams__preview_active');
+  }
+
 })
