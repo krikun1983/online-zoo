@@ -169,6 +169,7 @@ const hiddenModalDonatOne = () => {
 const modalBtnsNumbersParent = document.querySelector('.pop-ap-wrapper-btn');
 const modalBtnsDonatNumbersParent = document.querySelector('.form-block__pop-ap-wrapper-btn');
 const modalBtnsDonatNumbers = document.querySelectorAll('.form-block__pop-ap-btn');
+
 modalBtnsNumbersParent.addEventListener('click', (event) => {
   event.preventDefault();
   inputDonatOne.value = event.target.value;
@@ -191,6 +192,7 @@ modalBtnsNumbersParent.addEventListener('click', (event) => {
     })
   }
 });
+
 //Открываем первое окно донаты нажатием на кнопку в блоке донаты
 showModalDonatOneBtn.addEventListener('click', (event) => {
   event.preventDefault();
@@ -242,7 +244,22 @@ modalBtnsDonatNumbersParent.addEventListener('click', (event) => {
       btn.classList.add('btn-active');
     }
   })
+
 });
+const modalBtnDonatOther = document.querySelector('#OtherAmount');
+// console.log(modalBtnDonatOther);
+modalBtnDonatOther.addEventListener('click', (event) => {
+  event.preventDefault();
+  inputDonatOne.value = '';
+  inputDonatOne.focus();
+  modalBtnsDonatNumbers.forEach((btn) => {
+    btn.classList.remove('btn-active')
+    if (btn.value == event.target.value) {
+      btn.classList.add('btn-active');
+    }
+  })
+})
+
 //Переход из первой модлаки донатов во вторую по кнопке NEXT
 const nextBtnOne = document.querySelector('.form-block__button_arrow');
 const backBtnOne = document.querySelector('.win-donation-two__form-buttom_back');

@@ -401,7 +401,7 @@ li {
 
 .form-donation-wrapper .form-block__input-btn .other {
   text-transform: uppercase;
-  cursor: auto;
+  cursor: pointer;
   width: 20rem;
   opacity: 1;
 }
