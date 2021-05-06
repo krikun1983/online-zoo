@@ -182,6 +182,7 @@ modalBtnsNumbersParent.addEventListener('click', (event) => {
 
   if (event.target.value == '') {
     inputDonatOne.focus();
+    modalBtnDonatOther.style.opacity = '1';
   } else {
     modalBtnsDonatNumbers.forEach((btn) => {
       if (btn.value == event.target.value) {
@@ -233,10 +234,13 @@ inputDonatOne.addEventListener('input', () => {
     inputDonatOne.value = val.slice(0, 4).join('');
   }
 });
-
+const modalBtnDonatOther = document.querySelector('#OtherAmount');
 //Делаю, чтобы кнопки переносили данные в поле ввода первого окна днатов
 modalBtnsDonatNumbersParent.addEventListener('click', (event) => {
   event.preventDefault();
+  if (event.target.contains(modalBtnsDonatNumbersParent)){
+    return;
+  } else {
   inputDonatOne.value = event.target.value;
   modalBtnsDonatNumbers.forEach((btn) => {
     btn.classList.remove('btn-active')
@@ -244,19 +248,22 @@ modalBtnsDonatNumbersParent.addEventListener('click', (event) => {
       btn.classList.add('btn-active');
     }
   })
+  modalBtnDonatOther.style.opacity = '0.5';
+  }
 
 });
-const modalBtnDonatOther = document.querySelector('#OtherAmount');
+
 // console.log(modalBtnDonatOther);
 modalBtnDonatOther.addEventListener('click', (event) => {
   event.preventDefault();
+  modalBtnDonatOther.style.opacity = '1';
   // inputDonatOne.value = '';
   inputDonatOne.focus();
   modalBtnsDonatNumbers.forEach((btn) => {
     btn.classList.remove('btn-active')
-    if (btn.value == event.target.value) {
-      btn.classList.add('btn-active');
-    }
+    // if (btn.value == event.target.value) {
+    //   btn.classList.add('btn-active');
+    // }
   })
 })
 
