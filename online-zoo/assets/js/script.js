@@ -200,14 +200,19 @@ showModalDonatOneBtn.addEventListener('click', (event) => {
   if (inputPageDonat.value == '') {
     modalBtnsDonatNumbersParent.firstElementChild.classList.add('btn-active');
     inputPageDonat.value = 10;
+  } else {
+    modalBtnDonatOther.style.opacity = '1';
   }
   inputDonatOne.value = inputPageDonat.value;
   openModalDonatOne();
+
   modalBtnsDonatNumbers.forEach((btn) => {
       if (btn.value == inputPageDonat.value) {
         btn.classList.add('btn-active');
+        modalBtnDonatOther.style.opacity = '0.5';
       } else {
         btn.classList.remove('btn-active');
+        inputDonatOne.focus();
       }
   })
 })
