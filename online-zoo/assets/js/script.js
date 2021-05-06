@@ -235,6 +235,7 @@ inputDonatOne.addEventListener('input', () => {
   modalBtnsDonatNumbers.forEach((btn) => {
     btn.classList.remove('btn-active')
   })
+  modalBtnDonatOther.style.opacity = '1';
   //ограничиваю поле input 4 знаками
   let val = inputDonatOne.value.split('');
   if (val.length > 4) {
